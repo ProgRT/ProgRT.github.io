@@ -4,6 +4,9 @@
 
 	<xsl:template match="/">
 		<html>
+			<head>
+				<meta charsset="utf-8"/>
+			</head>
 			<link rel="stylesheet" href="style.css" />
 			<body>
 				<div id="page">
