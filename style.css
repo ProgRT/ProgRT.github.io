@@ -1,0 +1,84 @@
+a {
+	text-decoration:none;
+}
+
+html {
+	height:100%;
+}
+body {
+	/*background: linear-gradient(to bottom, 	#B2E0C2 , #0D0D0D);
+	background: -moz-linear-gradient(to bottom, 	#B2E0C2, #0D0D0D);*/
+	background-attachment:fixed;
+
+	height: 80%;
+	
+
+}
+body:after {
+	background:  url('http://upload.wikimedia.org/wikipedia/commons/1/1f/Chest_Xray_PA_3-8-2010_inverted.png');
+	background-size: cover;
+  opacity: 0.6;
+	width:100%;
+	height:100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+  content: "";
+}
+#page{
+  background-color: white;
+  padding: 20px;
+  width: 600px;
+  margin: auto;
+  margin-bottom:10px;
+  margin-top:30px;
+  border-radius: 4px;
+}
+
+h2 {
+	border-bottom:none;
+	padding-left:5px;
+	font-size:large;
+}
+
+h1 {
+	border-bottom: 1px solid black;
+	padding-left: 4px;
+}
+
+th {
+  text-align: left;
+  vertical-align: top;
+  padding-right: 20px;
+	width:140px;
+	font-weight:normal;
+}
+td, th {
+  padding-top:4px;
+  padding-bottom:4px;
+  }
+table {margin-left: 20px;}
+p {
+  background-color: none;
+  margin:0px;
+}
+#Coordonnees {
+	text-align:center;
+	margin-top:15px;
+	border-top:1px solid black;
+	padding-top:10px;
+}
+#Coordonnees a:before {
+	content:" | ";
+	color:black;
+	margin:5px;
+}
+#Coordonnees a:first-child:before {
+	content:"";
+	color:black;
+}
+.institution {
+  font-style: italic;
+  margin-top: 0px;
+}
