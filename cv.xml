@@ -11,18 +11,18 @@
 
 		<Emploi>
 			<Titre>Coordonateur technique en inhalotherapie</Titre>
-			<Institution>Centre hospitalier de l'Universite de Montréal</Institution>
+			<Institution>Centre hospitalier de l'Universite de Montreal</Institution>
 			<Moment>Depuis 2013</Moment>
 		</Emploi>
 
 		<Emploi>
-			<Titre>Inhalothérapeute</Titre>
-			<Institution>Centre hospitalier de l'Université de Montréal</Institution>
+			<Titre>Inhalotherapeute</Titre>
+			<Institution>Centre hospitalier de l'Universite de Montreal</Institution>
 			<Moment>2006 à 2013</Moment>
 		</Emploi>
 
 		<Emploi>
-			<Titre>Inhalothérapeute</Titre>
+			<Titre>Inhalotherapeute</Titre>
 			<Institution>CSSS de Gatineau</Institution>
 			<Moment>2004 à 2006</Moment>
 		</Emploi>
@@ -32,13 +32,13 @@
 	<Formations>
 
 		<Formation>
-			<Titre>Certificat en inhalothérapie</Titre>
-			<Institution>Université du québec en Abitibi-Témiscamingue</Institution>
+			<Titre>Certificat en inhalotherapie</Titre>
+			<Institution>Universite du quebec en Abitibi-Temiscamingue</Institution>
 			<Moment>En cours</Moment>
 		</Formation>
 
 		<Formation>
-			<Titre>DEC en technique en inhalothérapie</Titre>
+			<Titre>DEC en technique en inhalotherapie</Titre>
 			<Institution>Collège de Sherbrooke</Institution>
 			<Moment>2004</Moment>
 		</Formation>
@@ -52,7 +52,7 @@
 		</Langue>
 		<Langue>
 			<NomLangue>Anglais</NomLangue>
-			<Competence>Excellente compréhension de l'écris</Competence>
+			<Competence>Excellente comprehension de l'ecris</Competence>
 			<Competence>Usage fonctionnel de l'oral</Competence>
 		</Langue>
 	</Langues>
