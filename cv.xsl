@@ -26,7 +26,7 @@
 	</xsl:template>
 
 	<xsl:template match="cv/Experiences">
-		<h2>Experiences proffessionnelles</h2>
+		<h2>Expériences proffessionnelles</h2>
 		<table>				
 			<xsl:apply-templates select="Emploi"/>	
 		</table>
@@ -42,7 +42,7 @@
 	</xsl:template>
 
 	<xsl:template match="cv/Formations">
-		<h2>Formation accademique</h2>
+		<h2>Formation accadémique</h2>
 		<table>				
 			<xsl:apply-templates select="Formation"/>	
 		</table>
@@ -59,7 +59,7 @@
 	</xsl:template>
 
 	<xsl:template match="cv/Langues">
-		<h2>Competences linguistiques</h2>
+		<h2>Compétences linguistiques</h2>
 		<table>				
 			<xsl:apply-templates select="Langue"/>	
 		</table>
@@ -107,7 +107,7 @@
 				<p class="institution">
 					<xsl:value-of select="Revue"/>,
 					volume <xsl:value-of select="Volume"/>,
-					numero <xsl:value-of select="Numerot"/>.
+					numéro <xsl:value-of select="Numerot"/>.
 					</p>
 			</td>
 		</tr>
