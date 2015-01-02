@@ -1,24 +1,26 @@
-$bgDark: mix(black, gray, 85%)
-$bgClear: mix(black, gray, 30%)
+$bgDark: mix(black, gray, 65%)
+$bgClear: mix(black, gray, 40%)
 
 
 html
 	color: white
 	background: linear-gradient(to top, $bgDark, $bgClear)
+	background-attachment: fixed
 	height: 100%
 	letter-spacing: 1px
+	font-family: 'TrabajoRegular' 
 
 #container
-	transform: translateY(-50%)
-	margin-top: 30%
+	//transform: translateY(50%)
+	margin-top: 6%
 	margin-left: auto
 	margin-right: auto
 	display: table
 	height: 100%
 
-#container>div
-	display: table-cell
-	vertical-align: middle
+	div
+		display: table-cell
+		vertical-align: middle
 
 ul.menu
 	list-style-type: none
@@ -28,13 +30,9 @@ ul.menu
 	font-size: 180%
 
 ul.menu ul
+
 	font-size: 60%
-	list-style-type: disc
 	margin-left: 20px
-
-
-ul.menu ul
-
 	margin-top: 20px
 	margin-bottom: 20px
 	list-style-type: none
@@ -58,6 +56,7 @@ svg
 text
 	text-align: center
 	fill: rgb(230, 230, 230)
+	letter-spacing: 0.5em
 
 
 #ruban
