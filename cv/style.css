@@ -6,9 +6,9 @@ html {
 	height:100%;
 }
 body {
-	/*background: linear-gradient(to bottom, 	#B2E0C2 , #0D0D0D);
-	background: -moz-linear-gradient(to bottom, 	#B2E0C2, #0D0D0D);*/
-	background:  url('http://upload.wikimedia.org/wikipedia/commons/1/1f/Chest_Xray_PA_3-8-2010_inverted.png');
+	background: linear-gradient(to bottom, 	#B2E0C2 , #0D0D0D);
+	background: -moz-linear-gradient(to bottom, 	gray, #0D0D0D);
+/*	background:  url('http://upload.wikimedia.org/wikipedia/commons/1/1f/Chest_Xray_PA_3-8-2010_inverted.png');*/
 	background-attachment:fixed;
 	background-size: cover;
 
