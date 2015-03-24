@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/xsl" href="cv.xsl"?>
+
 <cv>
 
 	<Nom>Nicolas Blais St-Laurent</Nom>
+
 	<Coordonnees>
 		<Courriel>nicolas.blais.stlaurent@gmail.com</Courriel>
 		<Telephone>+1-514-522-2003</Telephone>
 	</Coordonnees>
+
 	<Experiences>
 
 		<Emploi>
+			<Moment>Depuis 2013</Moment>
 			<Titre>Coordonateur technique en inhalothérapie</Titre>
 			<Institution>Centre hospitalier de l'Université de Montréal</Institution>
-			<Moment>Depuis 2013</Moment>
 		</Emploi>
 
 		<Emploi>
@@ -46,15 +49,18 @@
 	</Formations>
 
 	<Langues>
+
 		<Langue>
 			<NomLangue>Francais</NomLangue>
-			<Competence>Langue Maternelle</Competence>
+			<Competence>Langue maternelle</Competence>
 		</Langue>
+
 		<Langue>
 			<NomLangue>Anglais</NomLangue>
 			<Competence>Excellente compréhension de l'écris</Competence>
 			<Competence>Usage fonctionnel de l'oral</Competence>
 		</Langue>
+
 	</Langues>
 
 	<Publications>
@@ -66,5 +72,31 @@
 			<Numerot>3</Numerot>
 		</Publication>
 	</Publications>
+
+	<Informatique>
+
+		<Domaine>
+			<NomDomaine>Champs d'intérèt</NomDomaine>
+			<Competence>Simulations mathématique dans le domaine de la ventilation mécanique</Competence>
+			<Competence>Gestion et mise en valeur de l'information</Competence>
+			<Competence>Infographie et typographie</Competence>
+		</Domaine>
+
+		<Domaine>
+			<NomDomaine>Languages de balisage</NomDomaine>
+			<Competence>HTML5 + CSS3, LaTeX</Competence>
+		</Domaine>
+
+		<Domaine>
+			<NomDomaine>Languages de scripts</NomDomaine>
+			<Competence>Python, Javascript (D3, Jquery)</Competence>
+		</Domaine>
+
+		<Domaine>
+			<NomDomaine>Bureautique</NomDomaine>
+			<Competence>Word, Excel, Access</Competence>
+		</Domaine>
+
+	</Informatique>
 
 </cv>

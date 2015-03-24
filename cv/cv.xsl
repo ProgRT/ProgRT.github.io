@@ -14,6 +14,7 @@
 					<xsl:apply-templates select="cv/Experiences"/>
 					<xsl:apply-templates select="cv/Formations"/>
 					<xsl:apply-templates select="cv/Publications"/>
+					<xsl:apply-templates select="cv/Informatique"/>
 					<xsl:apply-templates select="cv/Langues"/>
 					<xsl:apply-templates select="cv/Coordonnees"/>
 				</div>
@@ -78,6 +79,30 @@
 				<xsl:value-of select="current()"/>	
 			</p>
 	</xsl:template>
+
+<!---
+Informatique 
+-->
+	<xsl:template match="cv/Informatique">
+		<h2>Compétences informatiques</h2>
+		<table>				
+			<xsl:apply-templates select="Domaine"/>	
+		</table>
+	</xsl:template>
+
+	<xsl:template match="Domaine">
+		<tr>
+			<th><xsl:value-of select="NomDomaine"/></th>
+			<td>
+				<xsl:apply-templates select="Competence"/>	
+			</td>
+		</tr>
+	</xsl:template>
+
+<!---
+Coordonnees 
+-->
+
 	<xsl:template match="cv/Coordonnees">
 		<div id="Coordonnees">
 			<xsl:apply-templates select="Courriel"/>	
@@ -91,6 +116,8 @@
 	<xsl:template match="Telephone">
 		<a href="tel:{.}"><xsl:value-of select="current()"/></a>
 	</xsl:template>
+
+	<!---   Publications -->
 
 	<xsl:template match="cv/Publications">
 		<h2>Publications</h2>
@@ -112,4 +139,5 @@
 			</td>
 		</tr>
 	</xsl:template>
+
 </xsl:stylesheet> 
