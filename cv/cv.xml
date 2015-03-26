@@ -75,27 +75,10 @@
 
 	<Informatique>
 
-		<Domaine>
-			<NomDomaine>Champs d'intérèt</NomDomaine>
-			<Competence>Simulations mathématique dans le domaine de la ventilation mécanique</Competence>
-			<Competence>Gestion et mise en valeur de l'information</Competence>
-			<Competence>Infographie et typographie</Competence>
-		</Domaine>
-
-		<Domaine>
-			<NomDomaine>Languages de balisage</NomDomaine>
-			<Competence>HTML5 + CSS3, LaTeX</Competence>
-		</Domaine>
-
-		<Domaine>
-			<NomDomaine>Languages de scripts</NomDomaine>
-			<Competence>Python, Javascript (D3, Jquery)</Competence>
-		</Domaine>
-
-		<Domaine>
-			<NomDomaine>Bureautique</NomDomaine>
-			<Competence>Word, Excel, Access</Competence>
-		</Domaine>
+		<Logiciel>
+			<Nom>Word</Nom>
+			<Domaine>Bureautique</Domaine>
+		</Logiciel>
 
 	</Informatique>
 
