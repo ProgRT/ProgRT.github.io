@@ -80,6 +80,16 @@
 			<Domaine>Bureautique</Domaine>
 		</Logiciel>
 
+		<Logiciel>
+			<Nom>Excell</Nom>
+			<Domaine>Bureautique</Domaine>
+		</Logiciel>
+
+		<Logiciel>
+			<Nom>Access</Nom>
+			<Domaine>Bureautique</Domaine>
+		</Logiciel>
+
 	</Informatique>
 
 </cv>

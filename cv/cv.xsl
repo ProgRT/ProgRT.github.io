@@ -6,8 +6,8 @@
 		<html>
 			<head>
 				<meta charsset="utf-8"/>
+				<link rel="stylesheet" href="style.css" />
 			</head>
-			<link rel="stylesheet" href="style.css" />
 			<body>
 				<div id="page">
 					<xsl:apply-templates select="cv/Nom"/>
@@ -26,12 +26,17 @@
 		<h1><xsl:value-of select="current()"/></h1>
 	</xsl:template>
 
+<!---
+                  Experience professionnelle                            
+-->
+
 	<xsl:template match="cv/Experiences">
 		<h2>Expériences proffessionnelles</h2>
 		<table>				
 			<xsl:apply-templates select="Emploi"/>	
 		</table>
 	</xsl:template>
+
 	<xsl:template match="Emploi">
 		<tr>
 			<th><xsl:value-of select="Moment"/></th>
@@ -41,6 +46,10 @@
 			</td>
 		</tr>
 	</xsl:template>
+
+<!---
+                          Formation accademique                            
+-->
 
 	<xsl:template match="cv/Formations">
 		<h2>Formation accadémique</h2>
@@ -59,6 +68,10 @@
 		</tr>
 	</xsl:template>
 
+<!---
+                          competences linguistiques                            
+-->
+
 	<xsl:template match="cv/Langues">
 		<h2>Compétences linguistiques</h2>
 		<table>				
@@ -74,6 +87,7 @@
 			</td>
 		</tr>
 	</xsl:template>
+
 	<xsl:template match="Competence">
 			<p>
 				<xsl:value-of select="current()"/>	
@@ -81,26 +95,27 @@
 	</xsl:template>
 
 <!---
-Informatique 
+                          Informatique                                         
 -->
+
 	<xsl:template match="cv/Informatique">
 		<h2>Compétences informatiques</h2>
 		<table>				
-			<xsl:apply-templates select="Domaine"/>	
+			<xsl:apply-templates select="Logiciel[Domaine='Bureautique']"/>	
 		</table>
 	</xsl:template>
 
-	<xsl:template match="Domaine">
+	<xsl:template match="Logiciel[Domaine='Bureautique']">
 		<tr>
-			<th><xsl:value-of select="NomDomaine"/></th>
+			<th>Bureautique</th>
 			<td>
-				<xsl:apply-templates select="Competence"/>	
+				<xsl:apply-templates select="Nom"/>	
 			</td>
 		</tr>
 	</xsl:template>
 
 <!---
-Coordonnees 
+			  Coordonnees                                         
 -->
 
 	<xsl:template match="cv/Coordonnees">
@@ -119,6 +134,10 @@ Coordonnees
 
 	<!---   Publications -->
 
+<!---
+			  Coordonnees                                         
+-->
+
 	<xsl:template match="cv/Publications">
 		<h2>Publications</h2>
 		<table>
@@ -135,7 +154,7 @@ Coordonnees
 					<xsl:value-of select="Revue"/>,
 					volume <xsl:value-of select="Volume"/>,
 					numéro <xsl:value-of select="Numerot"/>.
-					</p>
+				</p>
 			</td>
 		</tr>
 	</xsl:template>
