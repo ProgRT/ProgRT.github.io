@@ -7,6 +7,7 @@
 			<head>
 				<meta charsset="utf-8"/>
 				<link rel="stylesheet" href="style.css" />
+				<link rel="stylesheet" href="print.css" media="print" />
 			</head>
 			<body>
 				<div id="page">
