@@ -78,16 +78,19 @@
 		<Logiciel>
 			<Nom>Word</Nom>
 			<Domaine>Bureautique</Domaine>
+			<Domaine>Édition</Domaine>
 		</Logiciel>
 
 		<Logiciel>
 			<Nom>Excell</Nom>
 			<Domaine>Bureautique</Domaine>
+			<Domaine>Données</Domaine>
 		</Logiciel>
 
 		<Logiciel>
 			<Nom>Access</Nom>
-			<Domaine>Bases de donnees</Domaine>
+			<Domaine>Bureautique</Domaine>
+			<Domaine>Données</Domaine>
 		</Logiciel>
 
 	</Informatique>

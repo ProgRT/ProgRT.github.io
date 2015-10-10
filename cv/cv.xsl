@@ -3,6 +3,7 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 	<xsl:template match="/">
+
 		<html>
 			<head>
 				<meta charsset="utf-8"/>
@@ -102,17 +103,31 @@
 	<xsl:template match="cv/Informatique">
 		<h2>Compétences informatiques</h2>
 		<table>				
-			<xsl:apply-templates select="Logiciel[Domaine='Bureautique']"/>	
+			<tr>
+				<th>Gestion de données</th>
+				<td>
+					<ul>
+						<xsl:apply-templates select="Logiciel[Domaine='Données']"/>	
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<th>Bureautique</th>
+				<td>
+					<ul>
+						<xsl:apply-templates select="Logiciel[Domaine='Bureautique']"/>	
+					</ul>
+				</td>
+			</tr>
 		</table>
 	</xsl:template>
 
 	<xsl:template match="Logiciel[Domaine='Bureautique']">
-		<tr>
-			<th>Bureautique</th>
-			<td>
-				<xsl:apply-templates select="Nom"/>	
-			</td>
-		</tr>
+		<li><xsl:apply-templates select="Nom"/></li>	
+	</xsl:template>
+
+	<xsl:template match="Logiciel[Domaine='Données']">
+		<li><xsl:apply-templates select="Nom"/></li>	
 	</xsl:template>
 
 <!---
@@ -133,10 +148,9 @@
 		<a href="tel:{.}"><xsl:value-of select="current()"/></a>
 	</xsl:template>
 
-	<!---   Publications -->
 
 <!---
-			  Coordonnees                                         
+			  Publications                                         
 -->
 
 	<xsl:template match="cv/Publications">
