@@ -8,7 +8,7 @@ html {
 body {
 	background: linear-gradient(to bottom, 	#B2E0C2 , #0D0D0D);
 	background: -moz-linear-gradient(to bottom, 	gray, #0D0D0D);
-/*	background:  url('http://upload.wikimedia.org/wikipedia/commons/1/1f/Chest_Xray_PA_3-8-2010_inverted.png');*/
+	background:  url('http://upload.wikimedia.org/wikipedia/commons/1/1f/Chest_Xray_PA_3-8-2010_inverted.png');
 	background-attachment:fixed;
 	background-size: cover;
 
@@ -34,7 +34,6 @@ body:after {
 #page{
   background-color: white;
   padding: 20px;
-  width: 600px;
   margin: auto;
   margin-bottom:10px;
   margin-top:30px;
@@ -48,15 +47,26 @@ h2 {
 }
 
 h1 {
+	display: inline;
+	display: table-cell;
+	vertical-align: bottom;
+padding:0px;
+margin:0px;
+}
+
+header {
 	border-bottom: 1px solid black;
-	padding-left: 4px;
+	width:100%;
+	display: table;
+	padding-bottom: 10px;
+	margin-bottom: 30px;
 }
 
 th {
-  text-align: left;
-  vertical-align: top;
-  padding-right: 20px;
-	width:140px;
+	text-align: left;
+	vertical-align: top;
+	padding-right: 20px;
+	width:120px;
 	font-weight:normal;
 }
 td, th {
@@ -69,19 +79,13 @@ p {
   margin:0px;
 }
 #Coordonnees {
-	text-align:center;
-	margin-top:15px;
-	border-top:1px solid black;
-	padding-top:10px;
+	text-align:right;
+	display: table-cell;
+	vertical-align: bottom;
 }
-#Coordonnees a:before {
-	content:" | ";
-	color:black;
-	margin:5px;
-}
-#Coordonnees a:first-child:before {
-	content:"";
-	color:black;
+
+#Coordonnees a {
+display: block;
 }
 .institution {
   font-style: italic;

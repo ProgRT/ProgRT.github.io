@@ -8,17 +8,20 @@
 			<head>
 				<meta charsset="utf-8"/>
 				<link rel="stylesheet" href="style.css" />
+				<link rel="stylesheet" href="screen.css" media="screen" />
 				<link rel="stylesheet" href="print.css" media="print" />
 			</head>
 			<body>
 				<div id="page">
+					<header>
 					<xsl:apply-templates select="cv/Nom"/>
+					<xsl:apply-templates select="cv/Coordonnees"/>
+					</header>
 					<xsl:apply-templates select="cv/Experiences"/>
 					<xsl:apply-templates select="cv/Formations"/>
 					<xsl:apply-templates select="cv/Publications"/>
 					<xsl:apply-templates select="cv/Informatique"/>
 					<xsl:apply-templates select="cv/Langues"/>
-					<xsl:apply-templates select="cv/Coordonnees"/>
 				</div>
 			</body>
 		</html>
@@ -33,10 +36,12 @@
 -->
 
 	<xsl:template match="cv/Experiences">
-		<h2>Expériences proffessionnelles</h2>
-		<table>				
-			<xsl:apply-templates select="Emploi"/>	
-		</table>
+		<section>
+			<h2>Expériences proffessionnelles</h2>
+			<table>				
+				<xsl:apply-templates select="Emploi"/>	
+			</table>
+		</section>
 	</xsl:template>
 
 	<xsl:template match="Emploi">
@@ -54,10 +59,12 @@
 -->
 
 	<xsl:template match="cv/Formations">
+		<section>
 		<h2>Formation accadémique</h2>
 		<table>				
 			<xsl:apply-templates select="Formation"/>	
 		</table>
+		</section>
 	</xsl:template>
 
 	<xsl:template match="Formation">
@@ -75,10 +82,12 @@
 -->
 
 	<xsl:template match="cv/Langues">
+		<section>
 		<h2>Compétences linguistiques</h2>
 		<table>				
 			<xsl:apply-templates select="Langue"/>	
 		</table>
+		</section>
 	</xsl:template>
 
 	<xsl:template match="Langue">
@@ -101,6 +110,7 @@
 -->
 
 	<xsl:template match="cv/Informatique">
+		<section>
 		<h2>Compétences informatiques</h2>
 		<table>				
 			<tr>
@@ -120,6 +130,7 @@
 				</td>
 			</tr>
 		</table>
+		</section>
 	</xsl:template>
 
 	<xsl:template match="Logiciel[Domaine='Bureautique']">
@@ -136,8 +147,8 @@
 
 	<xsl:template match="cv/Coordonnees">
 		<div id="Coordonnees">
-			<xsl:apply-templates select="Courriel"/>	
 			<xsl:apply-templates select="Telephone"/>
+			<xsl:apply-templates select="Courriel"/>	
 		</div>
 	</xsl:template>
 
@@ -154,10 +165,12 @@
 -->
 
 	<xsl:template match="cv/Publications">
+		<section>
 		<h2>Publications</h2>
 		<table>
 			<xsl:apply-templates select="Publication"/>	
 		</table>
+		</section>
 	</xsl:template>
 
 	<xsl:template match="Publication">
