@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/xsl" href="cv.xsl"?>
 <cv>
+	<Nom>Nicolas Blais St-Laurent</Nom>
 	<Coordonnees>
 		<Courriel>nicolas.blais.stlaurent@gmail.com</Courriel>
 		<Telephone>+1-514-522-2003</Telephone>
