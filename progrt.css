@@ -37,10 +37,6 @@ ul.menu ul > li:before {
   content: "-";
   margin-right: 20px; }
 
-ul.menu > li:before {
-  content: "-";
-  margin-right: 20px; }
-
 svg {
   display: inline; }
 
