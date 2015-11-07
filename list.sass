@@ -1,0 +1,56 @@
+ul.progrt
+  position: absolute
+  left: 50%
+  transform: translateX(-50%)
+  border-left: 1px solid black
+  list-style-type: none
+  padding-left: 0px
+  transition: all 1s
+
+  ul
+    transition: all 1s
+    list-style-type: none
+
+  li:before
+    content: "- "
+    margin-left: 0px
+    padding-left: 0px
+
+  li
+    margin-left: 0px
+    padding-left: 0px
+    margin-top: 10px
+    margin-bottom: 10px
+
+  >li:before
+    transition: all 1s
+
+  span.collapsible
+    transition: all 1s
+
+
+ul.progrt.mini
+  left: 30px
+  transform: translateX(0%)
+
+  ul
+    margin-left: 0px
+    padding-left: 0px
+
+  >li:before
+    color: red
+    font-size: 0px
+
+  li:before
+    margin-left: 0px
+    padding-left: 0pc
+  li
+    margin-left: 0px
+    padding-left: 0px
+
+  >li>ul>li:before
+    margin-left: 0px
+
+  span.collapsible
+    color: red
+    font-size: 0px
