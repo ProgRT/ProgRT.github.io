@@ -3,10 +3,10 @@ html {
   background: linear-gradient(to top, #2c2c2c, #4c4c4c);
   background-attachment: fixed;
   height: 100%;
-  letter-spacing: 1px;
   font-family: "TrabajoRegular"; }
 
 #container {
+  transition: all 1s;
   position:absolute;
   top: 50%;
   left: 50%;
@@ -15,8 +15,8 @@ html {
   margin-right: auto;
   display: table;}
   #container div {
-    display: table-cell;
-    vertical-align: middle; }
+  display: table-cell;
+  vertical-align: middle; }
 
 ul.menu {
   list-style-type: none;
@@ -26,6 +26,7 @@ ul.menu {
   font-size: 180%; }
 
 ul.menu ul {
+  transition: all 1s;
   font-size: 60%;
   margin-left: 20px;
   margin-top: 20px;
@@ -33,7 +34,7 @@ ul.menu ul {
   list-style-type: none;
   color: #d2d2d2; }
 
-ul.menu ul > li:before {
+ul.menu  li:before {
   content: "-";
   margin-right: 20px; }
 
@@ -53,3 +54,30 @@ text {
 a {
   text-decoration: none;
   color: inherit; }
+
+.collapsible {
+	transition: all 1s;
+}
+
+/**********************************
+ *  Minified state
+ *  *******************************/
+
+#container.collapsed {
+	left: 0%;
+	transform: translate(20px, -50%);
+}
+
+#container.collapsed .collapsible {
+	opacity: 0;
+	font-size: 0px;
+}
+
+#container.collapsed ul.menu >li:before {
+	opacity: 0;
+}
+
+#container.collapsed ul.menu ul{
+	padding-left: 0px;
+	margin-left: 0px;
+}
