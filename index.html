@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <head>
 	<title>progrt.github.io</title>
+
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width initial-scale=1 user scalable=no"/>
+
 	<link rel="stylesheet" href="progrt.css"/>
-	 <link rel="stylesheet" media="screen" href="http://openfontlibrary.org/face/trabajo" rel="stylesheet" type="text/css"/> 
+	<link rel="stylesheet" href="progrt-menu.css"/>
+	<link rel="stylesheet" media="screen" href="http://openfontlibrary.org/face/trabajo" rel="stylesheet" type="text/css"/> 
+
+	<script src="progrt.js"></script>
 </head>
 <body>
 
 <div id="container">
 	<div id="ruban" style="vertical-align:middle">
-		<svg width="100px" height="400px">
+		<svg width="100px" height="400px" onclick="progrt.toggle()">
 			<text 	class="ruban" 
 				x="50%" 
 				y="50%" 
@@ -26,7 +31,7 @@
 			<li>
 			<span class="collapsible">Projets</span>
 				<ul>
-					<a href="http://progrt.github.io/simvent.js"><li>s<span class="collapsible">im</span>v<span class="collapsible">ent.js</span></a></li>
+					<a href="http://progrt.github.io/simvent.js" target="content"><li>s<span class="collapsible">im</span>v<span class="collapsible">ent.js</span></a></li>
 					<a href="cv/cv.xml"><li>VDR<span class="collapsible">.js</span></a></li>
 				</ul>
 			</li>
