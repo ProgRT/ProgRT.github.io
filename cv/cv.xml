@@ -8,7 +8,12 @@
 	</Coordonnees>
 	<Experiences>
 		<Emploi>
-			<Moment>Depuis 2013</Moment>
+			<Titre>Inhalotherapeute</Titre>
+			<Institution>Centre hospitalier de l'Université de Montréal</Institution>
+			<Moment>Depuis juillet 2016</Moment>
+		</Emploi>
+		<Emploi>
+			<Moment>2013 à juillet 2016</Moment>
 			<Titre>Coordonateur technique en inhalothérapie</Titre>
 			<Institution>Centre hospitalier de l'Université de Montréal</Institution>
 		</Emploi>
