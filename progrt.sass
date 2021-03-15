@@ -4,13 +4,38 @@ $bgDark: mix(black, gray, 65%)
 $bgClear: mix(black, gray, 40%)
 
 html
-  background: linear-gradient(to top, $bgDark, $bgClear)
+  background: gainsboro
   background-attachment: fixed
   height: 100vh
-  overflow: hidden
 
 body
-  margin: 0px
-  height: 100vh
-  overflow: hidden
-  
+
+#projects
+  margin-left: auto
+  margin-right: auto
+  display: flex
+  flex-flow: row wrap
+  max-width: 20cm
+  flex: 1
+  justify-content: center
+  border: none
+  padding: 0px
+
+article
+  border: 1px solid gray
+  border-radius: 0px 
+  background-color: white
+  text-align: center
+  padding: 5mm
+  margin: 5px
+  max-width: 8cm
+  overflow: clip
+
+  img
+    width: 100%
+
+h1
+  color: gray
+  text-align: center
+  font-size: 6vw
+  margin: 15px

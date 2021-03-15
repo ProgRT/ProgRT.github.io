@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <head>
 	<title>progrt.github.io</title>
@@ -6,45 +8,18 @@
 	<meta name="viewport" content="width=device-width initial-scale=1 user scalable=no"/>
 
 	<link rel="stylesheet" href="progrt.css"/>
-	<link rel="stylesheet" href="progrt-menu.css"/>
-	<link rel="stylesheet" media="screen" href="http://openfontlibrary.org/face/trabajo" rel="stylesheet" type="text/css"/> 
 
 </head>
 <body>
 
-<div id="container">
-	<div id="ruban" style="vertical-align:middle">
-		<svg width="100px" height="800px" onclick="progrt.toggle()">
-			<text 	class="ruban" 
-				x="50%" 
-				y="50%" 
-				letter-spacing="100%" 
-				style="text-anchor:middle"
-				transform="rotate(-90 50,400)">
-				ProgRT.github.io
-			</text>
-		</svg>
+	<h1>progrt.github.io</h1>
+	<div id=projects >
+		{% for post in site.posts %}
+		<article>
+			<a href='{{post.Homepage}}' title='{{ post.Title }}'>
+				<img src='img/{{ post.Image }}'/>
+			</a>
+		</article>
+		{% endfor %}
 	</div>
-	<div>
-		<ul class="menu">
-			<li>
-			<span class="collapsible">Projets</span>
-				<ul>
-					<li><a href="http://progrt.github.io/simvent.js">s<span class="collapsible">im</span>v<span class="collapsible">ent.js</span></a></li>
-					<li><a href="http://progrt.github.io/P">P <small>(comme dans poumon)</small></a></li>
-					<li><a href="http://progrt.github.io/Servouscope">Servouscope</li>
-					<li><a href="http://progrt.github.io/palettechum">palettechum</a></li>
-					<li><a href="http://progrt.github.io/formationvdr4">Formation VDR-4</a></a></li>
-				</ul>
-			</li>
-			<li>
-			<span class="collapsible">À propos</span>
-				<ul>
-					<li><a href="cv/cv.xml">C<span class="collapsible">urirulum </span>V<span class="collapsible">itae</span></a></li>
-				</ul>
-			</li>
-		</ul>
-	</div>
-</div>
-
 </body>
