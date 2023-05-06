@@ -1,40 +1,39 @@
 ---
+title: Présentations
 ---
+<!---
 <!DOCTYPE html>
-<head>
-	<title>progrt.github.io</title>
+<meta charset="utf-8"/>
+<meta lang="fr-ca"/>
+<title>Nicolas Blais St-Laurent - Présentations</title>
+--->
 
-	<meta charset="utf-8"/>
-	<meta name="viewport" content="width=device-width initial-scale=1 user scalable=no"/>
-
-	<link rel="stylesheet" href="progrt.css"/>
-
-</head>
-<body>
-
-	<h1>progrt.github.io</h1>
-
-	<h2> Projets </h2>
-
-	<div id=projects >
-		{% for post in site.posts %}
-		<article>
-			<a href='{{post.Homepage}}' title='{{ post.Title }}'>
-				<img src='img/{{ post.Image }}'/>
-			</a>
-		</article>
-		{% endfor %}
-	</div>
-
-	<h2> Présentations </h2>
-
-	<div id=presentations >
-		{% for pres in site.presentations %}
+<h2>Projets</h2>
+<link rel='stylesheet' href='preslist.css' />
+{% for post in site.posts %}
+<a href='{{post.Homepage}}' title='{{ post.Title }}'>
+	<article>
+		<img src='img/{{ post.Image }}'>
 		<div>
-			<a href='{{pres.presurl}}' title='{{ pres.title }}'>
-				{{pres.date|date: '%Y-%m-%d'}} - {{ pres.title }}
-			</a>
+			<p class='titrepres'> {{ post.Title }} </p>
+			<p class='evtpres'> {{ post.Description }} </p>
+			<p class='datepres'>{{ pres.Date }} </p>
 		</div>
-		{% endfor %}
-	</div>
-</body>
+	</article>
+</a>
+{% endfor %}
+
+<h2>Présentations</h2>
+<link rel='stylesheet' href='preslist.css' />
+{% for pres in site.data.presentations %}
+<a href='{{ pres.Chemin}}/{{ pres.Fichier }}'>
+	<article>
+		<img src='{{pres.Chemin}}/thumbnail.png'>
+		<div>
+			<p class='titrepres'> {{ pres.Titre }} </p>
+			<p class='evtpres'> {{ pres.Evenement }} </p>
+			<p class='datepres'>{{ pres.Date }} </p>
+		</div>
+	</article>
+</a>
+{% endfor %}
