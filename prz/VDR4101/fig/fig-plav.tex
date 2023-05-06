@@ -1,0 +1,20 @@
+\begin{tikzpicture}
+\begin{axis}[
+	width=\textwidth,
+	height=0.7\textheight,
+	enlarge y limits=upper,
+	enlarge x limits=false,
+	xmax=8,
+	xlabel=Temps (sec.),
+	ylabel=Pression (hPa),
+	legend=true,
+	legend image post style={mark=none}
+]
+
+	\addplot table [mark=none, y=Pao ] {dat/simvent1.dat};
+\addlegendentry{Pcirc}
+	\addplot table [mark=none, y=Palv ] {dat/simvent1.dat};
+\addlegendentry{Palv}
+
+\end{axis}
+\end{tikzpicture}

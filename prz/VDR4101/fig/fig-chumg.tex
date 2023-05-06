@@ -1,0 +1,12 @@
+	\begin{tikzpicture}
+		\begin{axis}[
+				xlabel=Temps (Jours),
+				ylabel=$P_aO_2 / F_iO_2$,
+				grid=both,
+				ymin=0,
+				enlarge x limits=false
+				]
+			\addplot [] table [y=HFPV] {dat/Chung-rounded.csv};
+			\addplot [color=red] table [y=LTV] {dat/Chung-rounded.csv};
+		\end{axis}
+	\end{tikzpicture}\footcite{Chung2010}

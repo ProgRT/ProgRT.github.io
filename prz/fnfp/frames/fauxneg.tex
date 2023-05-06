@@ -1,0 +1,88 @@
+\def\fauxneg{"data/Faux_négatifs/1555833401655-parsed.dat"}
+\def\fauxnegbis{"data/Faux_négatifs/1555833504659-parsed.dat"}
+\def\fauxnegtri{"data/Faux_négatifs/1558262528660-parsed.dat"}
+\def\fauxnegcorige{"data/Faux_négatifs/1558262056661-parsed.dat"}
+
+\tikzset{
+	annot/.style={
+		red,
+		<-,
+		draw,
+		thick,
+		circle,
+		minimum width=30,
+		inner sep=0,
+		yshift=-2,
+		font=\normalfont
+	}
+}
+
+\begin{frame}{Qu'est-ce qui cloche ?}
+	\begin{tikzpicture}[]
+
+		\begin{groupplot}[
+				group style={
+					group name=my group,
+					group size=1 by 3,
+				},
+				xmax=16,
+				every axis style/.append style={
+					minor x ticks num=3,
+					grid=both,
+				}
+				height=0.5\textheight,
+				xlabel=Temps (s),
+				anchor=center,
+				at={(0,0)}
+			]
+
+			\nextgroupplot[
+				ymin=0,
+				ylabel=Pression (\cmh),
+				height=0.32\textheight
+			]
+
+			\addplot [] table[x index=0, y index=2] {\fauxnegtri};
+
+			\nextgroupplot[ylabel=Débit (l/m), height=0.45\textheight]
+				\addplot [] table[x index=0, y index=3] {\fauxnegtri};
+				\coordinate (myanchor) at(12.75,0) ;
+				\node<2,3>[annot] at (4,0) {};
+				\node<2,3>[annot] at (11.8,0) {};
+
+			\only<3->{
+				\nextgroupplot[ylabel=EADI (mcv), height=0.31\textheight]
+					\addplot[] table[x index=0, y index=5] {\fauxnegtri};
+					\coordinate (x1) at(axis cs:3.05,0);
+					\coordinate (x2) at(axis cs:8,0);
+					\coordinate (x3) at(axis cs:8.75,0);
+			}
+
+		\end{groupplot}
+
+		\only<4-5>{
+			\draw [red, dashed] (x1) -- ++(0, \textheight-66pt);
+		}
+		
+		\only<5>{
+			\draw [red, dashed] (x2) -- ++(0, \textheight-66pt) coordinate(c1);
+			\draw [red, dashed] (x3) -- ++(0, \textheight-66pt) coordinate(c2);
+			\draw [<->, red] (c1) -- (c2) node[midway, above] {0,75 s};
+		}
+
+		\node <6>[
+			postit,
+		] at (myanchor) {
+			\begin{tabular}{l @{\ :\ \ } r @{ } >{\footnotesize}l }
+				Volume courant   & 450 & ml \\
+				PEP              & 5   & \cmh \\
+				F resp.          & 12  & resp/min \\
+				Conc. \ox        & 35  & \% \\
+				Pente tps insp.  & 0   & s \\
+				Durée de plateau & 0   & s \\
+				Décl. en débit   & 0   & l/min \\
+				Ti               & 0,5 & s
+			\end{tabular}
+		};
+	\end{tikzpicture}
+\end{frame}

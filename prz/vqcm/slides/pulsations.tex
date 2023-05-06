@@ -1,0 +1,57 @@
+\def\zoomedplot{%
+	\begin{tikzpicture}
+
+		\begin{groupplot}[
+			group style={
+				group size=1 by 2,
+				xlabels at=edge bottom,
+			},
+			height=0.35\textheight,
+			width=0.6\textwidth,
+			xlabel=Temps (s),
+			xmin=2.5,
+			xmax=9,
+			]
+
+			\nextgroupplot[ylabel=Pression (hPa)]
+			\addplot [vertchum] table[x index=0, y index=2] {data/1648128876436-parsed.dat};
+
+			\nextgroupplot[ylabel=Débit (l/m)]
+			\addplot [bleuclairchum] table[x index=0, y index=3] {data/1648128876436-parsed.dat};
+
+		\end{groupplot}
+	\end{tikzpicture}
+}
+
+\begin{frame}
+	\begin{tikzpicture}[
+		highlight/.style={
+			fill=white,
+			opacity=0.3
+		}
+		]
+
+		\begin{groupplot}[
+			group style={
+				group size=1 by 2,
+				xlabels at=edge bottom,
+			},
+			height=0.40\textheight,
+			xlabel=Temps (s),
+			]
+
+			\nextgroupplot[ylabel=Pression (hPa)]
+			\addplot [vertchum] table[x index=0, y index=2] {data/1648128876436-parsed.dat};
+			\fill<2> [highlight] (2,0) rectangle (9,\pgfkeysvalueof{/pgfplots/ymax});
+
+			\nextgroupplot[ylabel=Débit (l/m)]
+			\addplot [bleuclairchum] table[x index=0, y index=3] {data/1648128876436-parsed.dat};
+			\fill<2> [highlight] (2,\pgfkeysvalueof{/pgfplots/ymin}) rectangle (9,\pgfkeysvalueof{/pgfplots/ymax});
+
+		\end{groupplot}
+		\node<2> [
+			draw,
+			fill=marinechum!20!black,
+			] at(9,-1) {\zoomedplot};
+	\end{tikzpicture}
+\end{frame}

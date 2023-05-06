@@ -1,0 +1,14 @@
+	\begin{tikzpicture}
+		\begin{axis}[
+				width=\textwidth,
+				height=0.7\textheight,
+				enlarge y limits=upper,
+				enlarge x limits=false,
+				xmax=8,
+				xlabel=Temps (sec.),
+				ylabel=Pression (hPa)
+				]
+
+			\addplot table [y=Pao ] {dat/simvent1.dat};
+		\end{axis}
+	\end{tikzpicture}

@@ -1,0 +1,45 @@
+\begin{frame}{Électromyogramme du diaphragme}
+	\centering
+
+	\begin{tikzpicture}[
+		fleche/.style={
+			vertchum,
+			->,
+			ultra thick,
+			shorten <=2mm,
+			shorten >=2mm
+		},
+		filtre/.style={
+			draw,
+			pos=0.5,
+			vertchum,
+			ultra thick,
+			fill=white
+		},
+		]
+
+		\begin{groupplot}[
+			discrete axis,
+			height=0.45\textheight,
+			width=0.45\textwidth,
+			hide x axis,
+			axis line shift=0,
+			group style={
+				group size=2 by 1,
+				horizontal sep=3cm
+			}
+			]
+			\nextgroupplot[title=EMGdi (µV)]
+			\addplot graphics[points={(0,-150)(100,150)}, includegraphics={clip, trim=0 0 4cm 0},]{jonkman/jonkman_b_emgdi-250_250};
+
+			\nextgroupplot[title=Edi (µV)]
+			\addplot graphics[points={(0,-0)(100,30)}, includegraphics={clip, trim=0 0 4cm 0},]{jonkman/jonkman_b_eadi-0_50};
+		\end{groupplot}
+		
+		\path (group c1r1.east)--(group c2r1.west) node[filtre] (F) {Filtre};
+		\draw [fleche] (group c1r1.east) -- (F) ;
+		\draw [fleche] (F) -- (group c2r1.west) ;
+
+	\end{tikzpicture}\\[5mm]
+	\adapte{jonkman_inadequate_2020}
+\end{frame}

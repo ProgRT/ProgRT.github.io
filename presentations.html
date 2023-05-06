@@ -1,0 +1,24 @@
+---
+title: Présentations
+---
+<!---
+<!DOCTYPE html>
+<meta charset="utf-8"/>
+<meta lang="fr-ca"/>
+<title>Nicolas Blais St-Laurent - Présentations</title>
+--->
+
+<h1>{{page.title}}</h1>
+<link rel='stylesheet' href='preslist.css' />
+{% for pres in site.data.presentations %}
+<a href='{{ pres.Chemin}}/{{ pres.Fichier }}'>
+	<article>
+		<img src='{{pres.Chemin}}/thumbnail.png'>
+		<div>
+			<p class='titrepres'> {{ pres.Titre }} </p>
+			<p class='evtpres'> {{ pres.Evenement }} </p>
+			<p class='datepres'>{{ pres.Date }} </p>
+		</div>
+	</article>
+</a>
+{% endfor %}

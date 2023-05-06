@@ -1,0 +1,179 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{imanaka_autotriggering_2000}{article}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=5bbd084290e5576b83b34b010fc4debe}{%
+           family={Imanaka},
+           familyi={I\bibinitperiod},
+           given={Hideaki},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e7e7394a8bc99f7af66c7334a99c55e6}{%
+           family={Nishimura},
+           familyi={N\bibinitperiod},
+           given={Masaji},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9e54690de9a0fff09c916ed95bd349ae}{%
+           family={Takeuchi},
+           familyi={T\bibinitperiod},
+           given={Muneyuki},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e26552e2bdcf1bb0c700c1205581b689}{%
+           family={Kimball},
+           familyi={K\bibinitperiod},
+           given={William\bibnamedelima R.},
+           giveni={W\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=accb465b059122e52982718918a9fa4e}{%
+           family={Yahagi},
+           familyi={Y\bibinitperiod},
+           given={Naoki},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9ae11606c8eb0af921c49b1b3ba4e149}{%
+           family={Kumon},
+           familyi={K\bibinitperiod},
+           given={Keiji},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en-US}%
+      }
+      \strng{namehash}{34682064eb82f48f29c34a077f5444bb}
+      \strng{fullhash}{3cfde1240dc4cfc8b313f4240434ff3c}
+      \strng{bibnamehash}{34682064eb82f48f29c34a077f5444bb}
+      \strng{authorbibnamehash}{34682064eb82f48f29c34a077f5444bb}
+      \strng{authornamehash}{34682064eb82f48f29c34a077f5444bb}
+      \strng{authorfullhash}{3cfde1240dc4cfc8b313f4240434ff3c}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Objectives:  We noticed that in some patients after cardiac surgery, when flow triggering was used, cardiogenic oscillation might be autotriggering the ventilatory support. In a prospective study, we evaluated the degree of cardiogenic oscillation and the frequency rate of autotriggering. We suspected that autotriggering caused by cardiogenic oscillation was more common than clinically appreciated. Design:  Prospective, nonrandomized, clinical study. Setting:  Surgical intensive care unit in a national heart institute. Patients:  A total of 104 adult patients were enrolled after cardiac surgery. Interventions:  During the study period, patients were paralyzed and ventilated with intermittent mandatory ventilation at a rate of 10 breaths/min, pressure support of 10 cm H2O, and flow triggering with a sensitivity of 1 L/min. Measurements and Main Results:  Because the patients would not be able to breathe spontaneously, we counted pressure-support (PS) breaths as instances of autotriggering. Then, we classified the patients into two groups according to the number of PS breaths: an “AT group” (PS breaths of {>}5/min) and a “non-AT group” (PS breaths of ≤5/min). If autotriggering occurred, we decreased the sensitivity so autotriggering disappeared (threshold triggering sensitivity). The intensity of cardiogenic oscillation was assessed as the flow and airway pressure at the airway opening. A total of 23 patients (22\%) demonstrated more than five autotriggered breaths/min. During mechanical ventilation, the inspiratory flow fluctuation caused by cardiogenic oscillation was significantly greater in the AT group than in the non-AT group (4.67 ± 1.26 L/min vs. 2.03 ± 0.86 L/min;p{<} .01). The AT group also showed larger cardiac output, higher ventricular filling pressures, larger heart size, and lower respiratory system resistance than the non-AT group. As the inspiratory flow fluctuation caused by cardiogenic oscillation increased, the level of triggering sensitivity also was increased to avoid autotriggering. In the AT group with 1 L/min of sensitivity, the respiratory rate increased (19.9 ± 2.7 vs. 10 ± 0 breaths/min,p{<} .01), PaCO2 decreased (30.8 ± 4.0 torr [4.11 ± 0.36 kPa] vs. 37.6 ± 4.3 torr [5.01 ± 0.57 kPa];p{<} .01), and mean esophageal pressure increased (7.7 ± 3.0 vs. 6.9 ± 3.0 cm H2O;p{<} .01) compared with the threshold triggering sensitivity. Conclusions:  Autotriggering caused by cardiogenic oscillation is common in postcardiac surgery patients when flow triggering is used. Autotriggering occurred more often in patients with more dynamic circulation. Autotriggering caused respiratory alkalosis and hyperinflation of the lungs.}
+      \field{issn}{0090-3493}
+      \field{journaltitle}{Critical Care Medicine}
+      \field{month}{2}
+      \field{number}{2}
+      \field{title}{Autotriggering caused by cardiogenic oscillation during flow-triggered mechanical ventilation}
+      \field{urlday}{2}
+      \field{urlmonth}{8}
+      \field{urlyear}{2021}
+      \field{volume}{28}
+      \field{year}{2000}
+      \field{urldateera}{ce}
+      \field{pages}{402\bibrangedash 407}
+      \range{pages}{6}
+      \verb{file}
+      \verb Autotriggering_caused_by_cardiogenic_oscillation.19.pdf:/home/nicolas/Zotero/storage/IQC58QH2/Autotriggering_caused_by_cardiogenic_oscillation.19.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://journals.lww.com/ccmjournal/Abstract/2000/02000/Autotriggering_caused_by_cardiogenic_oscillation.19.aspx
+      \endverb
+      \verb{url}
+      \verb https://journals.lww.com/ccmjournal/Abstract/2000/02000/Autotriggering_caused_by_cardiogenic_oscillation.19.aspx
+      \endverb
+      \keyw{Asynchronie}
+    \endentry
+    \entry{thille_patient-ventilator_2006}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=903f53e1f0a2aa1225f3ec3510f5b8f3}{%
+           family={Thille},
+           familyi={T\bibinitperiod},
+           given={Arnaud\bibnamedelima W.},
+           giveni={A\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=499fdf216980a7351aa375d19f2e225a}{%
+           family={Rodriguez},
+           familyi={R\bibinitperiod},
+           given={Pablo},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2da2203772a19d1714a55335956d83f7}{%
+           family={Cabello},
+           familyi={C\bibinitperiod},
+           given={Belen},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d62764309ea3e42ff126ff9f60d2e461}{%
+           family={Lellouche},
+           familyi={L\bibinitperiod},
+           given={François},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5f34fc234498252a6ff69f85b6ff250e}{%
+           family={Brochard},
+           familyi={B\bibinitperiod},
+           given={Laurent},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{63e250415720f073d46d5cbd55a1a107}
+      \strng{fullhash}{85ec418312abad484984259d69c20d6d}
+      \strng{bibnamehash}{63e250415720f073d46d5cbd55a1a107}
+      \strng{authorbibnamehash}{63e250415720f073d46d5cbd55a1a107}
+      \strng{authornamehash}{63e250415720f073d46d5cbd55a1a107}
+      \strng{authorfullhash}{85ec418312abad484984259d69c20d6d}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Objective: The incidence, pathophysiology, and consequences of patient-ventilator asynchrony are poorly known. We assessed the incidence of patient-ventilator asynchrony during assisted mechanical ventilation and we identiﬁed associated factors. Methods: Sixty-two consecutive patients requiring mechanical ventilation for more than 24 h were included prospectively as soon as they triggered all ventilator breaths: assist-control ventilation (ACV) in 11 and pressure-support ventilation (PSV) in 51. Measurements: Gross asynchrony detected visually on 30-min recordings of ﬂow and airway pressure was quantiﬁed using an asynchrony index. Results: Fifteen patients (24\%) had an asynchrony index greater than 10\% of respiratory efforts. Ineffective triggering and double-triggering were the two main asynchrony patterns. Asynchrony existed during both ACV and PSV, with a median number of episodes per patient of 72 (range 13–215) vs. 16 (4–47) in 30 min, respectively (p = 0.04).}
+      \field{issn}{0342-4642, 1432-1238}
+      \field{journaltitle}{Intensive Care Medicine}
+      \field{month}{10}
+      \field{number}{10}
+      \field{title}{Patient-ventilator asynchrony during assisted mechanical ventilation}
+      \field{urlday}{2}
+      \field{urlmonth}{8}
+      \field{urlyear}{2021}
+      \field{volume}{32}
+      \field{year}{2006}
+      \field{urldateera}{ce}
+      \field{pages}{1515\bibrangedash 1522}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1007/s00134-006-0301-8
+      \endverb
+      \verb{file}
+      \verb Thille et al. - 2006 - Patient-ventilator asynchrony during assisted mech.pdf:/home/nicolas/Zotero/storage/YEZG8I5L/Thille et al. - 2006 - Patient-ventilator asynchrony during assisted mech.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://link.springer.com/10.1007/s00134-006-0301-8
+      \endverb
+      \verb{url}
+      \verb http://link.springer.com/10.1007/s00134-006-0301-8
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

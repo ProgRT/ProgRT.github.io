@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Copyright (C) 2022 Nicolas Blais St-Laurent</title>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] },
+  TeX: { equationNumbers: { autoNumber: 'all' } }
+});
+</script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+<style>
+body > * {
+  max-width: 42em;
+}
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  padding-left: 7.5em;
+  padding-right: 7.5em;
+}
+pre, code {
+  max-width: 50em;
+  font-family: monospace;
+}
+pre.oct-code {
+  border: 1px solid Grey;
+  padding: 5px;
+}
+pre.oct-code-output {
+  margin-left: 2em;
+}
+span.comment {
+  color: ForestGreen;
+}
+span.keyword {
+  color: Blue;
+}
+span.string {
+  color: DarkOrchid;
+}
+footer {
+  margin-top: 2em;
+  font-size: 80%;
+}
+a, a:visited {
+  color: Blue;
+}
+h2 {
+  font-family: "Roboto Condensed", serif;
+  margin-top: 1.5em;
+}
+h2 a, h2 a:visited {
+  color: Black;
+}
+</style>
+
+</head>
+<body>
+<h1>Copyright (C) 2022 Nicolas Blais St-Laurent</h1>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#node1">This program is free software: you can redistribute it and/or modify</a></li>
+<li><a href="#node2">it under the terms of the GNU General Public License as published by</a></li>
+<li><a href="#node3">the Free Software Foundation, either version 3 of the License, or</a></li>
+<li><a href="#node4">(at your option) any later version.</a></li>
+<li><a href="#node5">This program is distributed in the hope that it will be useful,</a></li>
+<li><a href="#node6">but WITHOUT ANY WARRANTY; without even the implied warranty of</a></li>
+<li><a href="#node7">MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</a></li>
+<li><a href="#node8">GNU General Public License for more details.</a></li>
+<li><a href="#node9">You should have received a copy of the GNU General Public License</a></li>
+<li><a href="#node10">along with this program.  If not, see <a href="https://www.gnu.org/licenses/">https://www.gnu.org/licenses/</a>.</a></li>
+<li><a href="#node11">-<b>- texinfo -</b>-</a></li>
+<li><a href="#node12">@deftypefn {} {@var{retval} =} test (@var{input1}, @var{input2})</a></li>
+<li><a href="#node13">@seealso{}</a></li>
+<li><a href="#node14">@end deftypefn</a></li>
+<li><a href="#node15">Author: Nicolas Blais St-Laurent <a href="nicolas@prise2">nicolas@prise2</a></a></li>
+<li><a href="#node16">Created: 2022-03-30</a></li>
+</ul>
+<h2><a id="node1">This program is free software: you can redistribute it and/or modify</a></h2><h2><a id="node2">it under the terms of the GNU General Public License as published by</a></h2><h2><a id="node3">the Free Software Foundation, either version 3 of the License, or</a></h2><h2><a id="node4">(at your option) any later version.</a></h2><h2><a id="node5">This program is distributed in the hope that it will be useful,</a></h2><h2><a id="node6">but WITHOUT ANY WARRANTY; without even the implied warranty of</a></h2><h2><a id="node7">MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</a></h2><h2><a id="node8">GNU General Public License for more details.</a></h2><h2><a id="node9">You should have received a copy of the GNU General Public License</a></h2><h2><a id="node10">along with this program.  If not, see <a href="https://www.gnu.org/licenses/">https://www.gnu.org/licenses/</a>.</a></h2><h2><a id="node11">-<b>- texinfo -</b>-</a></h2><h2><a id="node12">@deftypefn {} {@var{retval} =} test (@var{input1}, @var{input2})</a></h2><h2><a id="node13">@seealso{}</a></h2><h2><a id="node14">@end deftypefn</a></h2><h2><a id="node15">Author: Nicolas Blais St-Laurent <a href="nicolas@prise2">nicolas@prise2</a></a></h2><h2><a id="node16">Created: 2022-03-30</a></h2>
+<pre class="oct-code">graphics_toolkit(<span class="string">"gnuplot"</span>);
+var1 = <span class="string">"Allo, le monde!"</span>
+
+plot(sin(1:0.1:10))
+figure()
+plot(1./1:0.1:10)</pre>
+
+<pre class="oct-code-output">var1 = Allo, le monde!
+</pre>
+<img src="test-1.svg" alt="test-1.svg"><img src="test-2.svg" alt="test-2.svg">
+<footer>
+<hr>
+<a href="https://www.octave.org">Published with GNU Octave 6.4.0</a>
+</footer>
+<!--
+##### SOURCE BEGIN #####
+## Copyright (C) 2022 Nicolas Blais St-Laurent
+##
+## This program is free software: you can redistribute it and/or modify
+## it under the terms of the GNU General Public License as published by
+## the Free Software Foundation, either version 3 of the License, or
+## (at your option) any later version.
+##
+## This program is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+## GNU General Public License for more details.
+##
+## You should have received a copy of the GNU General Public License
+## along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+## -*- texinfo -*-
+## @deftypefn {} {@var{retval} =} test (@var{input1}, @var{input2})
+##
+## @seealso{}
+## @end deftypefn
+
+## Author: Nicolas Blais St-Laurent <nicolas@prise2>
+## Created: 2022-03-30
+graphics_toolkit("gnuplot");
+var1 = "Allo, le monde!"
+
+plot(sin(1:0.1:10))
+figure()
+plot(1./1:0.1:10)
+##### SOURCE END #####
+-->
+</body>
+</html>

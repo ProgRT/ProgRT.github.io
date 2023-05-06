@@ -1,0 +1,53 @@
+\newenvironment{colorbg}[1]{%
+	\begingroup
+	\setbeamercolor{background canvas}{bg=#1}%
+}{%
+	\endgroup
+}
+
+\newenvironment{darkbg}[1]{%
+	\begingroup
+	\setbeamercolor{background canvas}{bg=#1}%
+	\color{white}%
+}{%
+	\endgroup
+}
+
+\newcommand{\nbdoctitling}{%
+	\color{white}\usebeamerfont{title}\inserttitle\\
+	\color{white}\usebeamerfont{subtitle}\insertsubtitle\\
+	\color{vertchum}\rule{\textwidth}{0.5pt}\\[0.5\baselineskip]
+	\color{white}\usebeamerfont{normal text}\insertauthor\\
+	\color{white}\usebeamerfont{institute}\insertinstitute\\[0.5\baselineskip]
+	\color{white}\usebeamerfont{date}\insertdate
+}
+
+\def\nbtitlepage{
+	\begin{darkbg}{marinechum!60!black}
+
+	\begin{frame}[plain]
+		\begin{tikzpicture}[
+				overlay,
+				remember picture,
+				titling/.style={
+					align=left, 
+					anchor=west,
+				}
+			]
+
+			\coordinate [xshift=-3cm] (E) at(current page.east);
+			\coordinate [xshift=7mm] (W) at(current page.west);
+			\coordinate [xshift=7mm, yshift=7mm,] (SW) at(current page.south west);
+
+			\node [anchor=south west] at(SW) {\logochum[blanc, height=10mm]};
+			\node [titling ] at(W) {\nbdoctitling};
+
+			\draw [clip](E) \hexagon{3.1cm};
+			\fill [grischum](E) \hexagon{3.1cm};
+			%\node [scale=0.9] at(E) {\includegraphics{pdffig/vdr4101-figure6.pdf}};
+			\node [scale=0.93, yshift=1mm, xshift=-2mm] at(E) {\includegraphics{img/VDR-4_cropped.png}};
+
+		\end{tikzpicture}
+	\end{frame}
+	\end{darkbg}
+}

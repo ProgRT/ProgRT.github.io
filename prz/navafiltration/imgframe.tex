@@ -1,0 +1,17 @@
+\newenvironment{imgframe}{%
+	\setbeamercolor{normal text}{bg=black!92, fg=white}
+	\begin{frame}
+		\centering
+}{%
+	\end{frame}
+}
+
+\def\imgframe#1{%
+	\begingroup
+	\setbeamercolor{normal text}{bg=black!92, fg=white}
+	\begin{frame}
+		\centering
+		\includegraphics[height=\pageheight]{#1}
+	\end{frame}
+	\endgroup
+}

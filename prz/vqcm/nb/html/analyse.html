@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>analyse</title>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] },
+  TeX: { equationNumbers: { autoNumber: 'all' } }
+});
+</script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+<style>
+body > * {
+  max-width: 42em;
+}
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  padding-left: 7.5em;
+  padding-right: 7.5em;
+}
+pre, code {
+  max-width: 50em;
+  font-family: monospace;
+}
+pre.oct-code {
+  border: 1px solid Grey;
+  padding: 5px;
+}
+pre.oct-code-output {
+  margin-left: 2em;
+}
+span.comment {
+  color: ForestGreen;
+}
+span.keyword {
+  color: Blue;
+}
+span.string {
+  color: DarkOrchid;
+}
+footer {
+  margin-top: 2em;
+  font-size: 80%;
+}
+a, a:visited {
+  color: Blue;
+}
+h2 {
+  font-family: "Roboto Condensed", serif;
+  margin-top: 1.5em;
+}
+h2 a, h2 a:visited {
+  color: Black;
+}
+</style>
+
+</head>
+<body>
+<h1>analyse</h1>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#node1">Portion sans efforts respiratoire</a></li>
+<li><a href="#node2">Analyse du signal de débit</a></li>
+<li><a href="#node3">Calcul de la fréquence</a></li>
+</ul>
+
+<pre class="oct-code"><span class="comment">#!/usr/bin/octave</span>
+pkg load signal
+
+<span class="keyword">function</span> pftplot(p, f, t)
+	fig = figure();
+	subplot(211);
+	plot(t, p);
+	ylabel(<span class="string">"Pression (hPa)"</span>);
+
+	subplot(212);
+	plot(t, f);
+	ylabel(<span class="string">"Débit (l/m)"</span>);
+	xlabel(<span class="string">"Temps (s)"</span>);
+<span class="keyword">endfunction</span>
+set(groot,<span class="string">'defaultAxesXGrid'</span>,<span class="string">'on'</span>)
+set(groot,<span class="string">'defaultAxesYGrid'</span>,<span class="string">'on'</span>)
+
+s = parsesu(<span class="string">"../data/1648128876436.txt"</span>);
+
+pftplot(s.data.pression, s.data.debit, s.data.temps);</pre>
+<img src="analyse-1.png" alt="analyse-1.png"><h2><a id="node1">Portion sans efforts respiratoire</a></h2>
+<pre class="oct-code">ind = s.data.temps &gt; 2 &amp; s.data.temps &lt; 9;
+temps = s.data.temps(ind);
+debit = s.data.debit(ind);
+pression = s.data.pression(ind);
+
+pftplot(pression, debit, temps);</pre>
+<img src="analyse-2.png" alt="analyse-2.png"><h2><a id="node2">Analyse du signal de débit</a></h2>
+<p>Première passe</p>
+
+<pre class="oct-code">[peaks, loc] = findpeaks(debit, <span class="string">"MinPeakDistance"</span>, 18, <span class="string">"MinPeakWidth"</span>, 50, <span class="string">"DoubleSided"</span>);
+f = figure();
+plot (temps, debit, temps(loc), peaks, <span class="string">"or"</span>)
+pbaspect(gca(), [2 1 1])</pre>
+<img src="analyse-3.png" alt="analyse-3.png">
+<p>Deuxième passe</p>
+
+<pre class="oct-code">filtered = abs([2;diff(peaks)])&gt;1;
+
+pf = peaks(filtered);
+lf = loc(filtered);
+
+f=figure();
+plot(temps, debit, temps(lf), pf, <span class="string">"or"</span>)
+pbaspect([2 1 1])</pre>
+<img src="analyse-4.png" alt="analyse-4.png"><h2><a id="node3">Calcul de la fréquence</a></h2>
+<pre class="oct-code">ttop = temps(lf(pf&gt;0));
+periods = diff(ttop);
+freqs = 60./periods;
+
+printf(<span class="string">"%.3fs\n"</span>, ttop)
+printf(<span class="string">"\n"</span>);
+printf(<span class="string">"%.3fs | %.0f /min\n"</span>, [periods<span class="string">'; freqs'</span>])
+
+mean(periods)
+
+mean(freqs)</pre>
+
+<pre class="oct-code-output">2.510s
+3.180s
+3.850s
+4.550s
+5.240s
+5.930s
+6.630s
+7.320s
+8.010s
+8.700s
+ 
+0.670s | 90 /min
+0.670s | 90 /min
+0.700s | 86 /min
+0.690s | 87 /min
+0.690s | 87 /min
+0.700s | 86 /min
+0.690s | 87 /min
+0.690s | 87 /min
+0.690s | 87 /min
+ans = 0.6878
+ans = 87.257
+</pre>
+
+<footer>
+<hr>
+<a href="https://www.octave.org">Published with GNU Octave 6.4.0</a>
+</footer>
+<!--
+##### SOURCE BEGIN #####
+#!/usr/bin/octave
+pkg load signal
+
+function pftplot(p, f, t)
+	fig = figure();
+	subplot(211);
+	plot(t, p);
+	ylabel("Pression (hPa)");
+
+	subplot(212);
+	plot(t, f);
+	ylabel("Débit (l/m)");
+	xlabel("Temps (s)");
+endfunction
+set(groot,'defaultAxesXGrid','on')
+set(groot,'defaultAxesYGrid','on')
+
+s = parsesu("../data/1648128876436.txt");
+
+pftplot(s.data.pression, s.data.debit, s.data.temps);
+
+## Portion sans efforts respiratoire
+ind = s.data.temps > 2 & s.data.temps < 9;
+temps = s.data.temps(ind);
+debit = s.data.debit(ind);
+pression = s.data.pression(ind);
+
+pftplot(pression, debit, temps);
+
+## Analyse du signal de débit
+# Première passe
+
+[peaks, loc] = findpeaks(debit, "MinPeakDistance", 18, "MinPeakWidth", 50, "DoubleSided");
+f = figure();
+plot (temps, debit, temps(loc), peaks, "or")
+pbaspect(gca(), [2 1 1])
+
+##
+# Deuxième passe
+filtered = abs([2;diff(peaks)])>1;
+
+pf = peaks(filtered);
+lf = loc(filtered);
+
+f=figure();
+plot(temps, debit, temps(lf), pf, "or")
+pbaspect([2 1 1])
+
+## Calcul de la fréquence
+ttop = temps(lf(pf>0));
+periods = diff(ttop);
+freqs = 60./periods;
+
+printf("%.3fs\n", ttop)
+printf("\n");
+printf("%.3fs | %.0f /min\n", [periods'; freqs'])
+
+mean(periods)
+
+mean(freqs)
+##### SOURCE END #####
+-->
+</body>
+</html>

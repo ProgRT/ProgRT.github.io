@@ -1,0 +1,44 @@
+\usefonttheme{structurebold}
+\useoutertheme{default}
+
+%\setbeamercolor{normal text}{bg=grischum!20}
+\setbeamertemplate{itemize item}[square]
+\setbeamertemplate{section in toc}[sections numbered]
+
+%\setbeamercolor{frametitle}{fg=marinechum, bg=grischum!60}
+\setbeamercolor{frametitle}{fg=marinechum, bg=bleuclairchum!35}
+\setbeamercolor{title}{fg=bleufoncechum}
+\setbeamercolor{structure}{fg=marinechum}
+
+%\AtBeginSection[]{
+%	\begin{frame}
+%		\tableofcontents[currentsection]
+%	\end{frame}
+%}
+
+\pgfplotsset{
+	every axis/.style={
+		axis background/.style={fill=white}
+	},
+	every axis plot/.style={
+		mark=none,
+	},
+	cycle list={
+		{bleufoncechum},
+		{vertchum},
+		{marinechum}
+	}
+}
+
+\pgfplotsset{
+	schoolbook/.style={
+		enlargelimits=upper,
+		axis lines*=left,
+		axis line style={->},
+		axis background/.style={
+			fill=none
+		}
+	}
+}
+
+\setbeamercovered{transparent=40}

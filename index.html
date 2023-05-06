@@ -13,6 +13,9 @@
 <body>
 
 	<h1>progrt.github.io</h1>
+
+	<h2> Projets </h2>
+
 	<div id=projects >
 		{% for post in site.posts %}
 		<article>
@@ -20,6 +23,18 @@
 				<img src='img/{{ post.Image }}'/>
 			</a>
 		</article>
+		{% endfor %}
+	</div>
+
+	<h2> Présentations </h2>
+
+	<div id=presentations >
+		{% for pres in site.presentations %}
+		<div>
+			<a href='{{pres.presurl}}' title='{{ pres.title }}'>
+				{{pres.date|date: '%Y-%m-%d'}} - {{ pres.title }}
+			</a>
+		</div>
 		{% endfor %}
 	</div>
 </body>

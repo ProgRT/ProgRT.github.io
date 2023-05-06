@@ -1,0 +1,15 @@
+[0] Config.pm:311> INFO - This is Biber 2.16
+[0] Config.pm:314> INFO - Logfile is 'slides.blg'
+[87] biber:340> INFO - === lun mai  9, 2022, 22:01:07
+[103] Biber.pm:415> INFO - Reading 'slides.bcf'
+[182] Biber.pm:949> INFO - Using all citekeys in bib section 0
+[197] Biber.pm:4340> INFO - Processing section 0
+[208] Biber.pm:4531> INFO - Looking for bibtex format file 'autotriggering.bib' for section 0
+[210] bibtex.pm:1689> INFO - LaTeX decoding ...
+[227] bibtex.pm:1494> INFO - Found BibTeX data source 'autotriggering.bib'
+[331] UCollate.pm:68> INFO - Overriding locale 'fr-FR' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[331] UCollate.pm:68> INFO - Overriding locale 'fr-FR' defaults 'variable = shifted' with 'variable = non-ignorable'
+[331] Biber.pm:4168> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'fr-FR'
+[331] Biber.pm:4174> INFO - No sort tailoring available for locale 'fr-FR'
+[347] bbl.pm:654> INFO - Writing 'slides.bbl' with encoding 'UTF-8'
+[354] bbl.pm:757> INFO - Output to slides.bbl

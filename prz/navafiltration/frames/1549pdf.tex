@@ -1,0 +1,21 @@
+	\usetikzlibrary{spy}
+	\begingroup
+	\setbeamercolor{normal text}{bg=black!92, fg=white}
+	\begin{frame}
+		\centering
+		\begin{tikzpicture}[
+			spy using outlines={
+				circle, magnification=4, size=3cm, connect spies
+			}
+			]
+			\node [anchor=south west, inner sep=0] (I) {%
+			\includegraphics[height=\pageheight]{captures/220520_091549.pdf}
+		};
+
+		\begin{scope}[x={(I.south east)}, y={(I.north west)}]
+			%\spy [blue] on (0.5,0.5) in node at (5,5);
+			\node [white]at(0.5,0.5) {Allo};
+		\end{scope}
+	\end{tikzpicture}
+	\end{frame}
+	\endgroup

@@ -1,0 +1,40 @@
+\begin{frame}[label=406]{La catastrophe !}
+	\begin{tikzpicture}[
+		zonedecompte/.style={
+			fill=turquoisechum,
+			opacity=0.15
+		}
+		]
+		\begin{groupplot}[
+			discrete axis,
+			group style={
+				group size=1 by 3,
+				vertical sep=5mm
+			}
+			]
+			\nextgroupplot[pcirc]
+			\addplot table {data/1652614813406-parsed.dat};
+			\nextgroupplot[debit]
+			\addplot table {data/1652614813406-parsed.dat};
+			\nextgroupplot[eadi]
+			\addplot table {data/1652614813406-parsed.dat};
+			\coordinate (A) at(0,0);
+			\coordinate (B) at(axis cs:6,\pgfkeysvalueof{/pgfplots/ymax});
+			\coordinate (C) at(axis cs:0,13);
+			\coordinate (D) at(axis cs:6,13);
+		\end{groupplot}
+
+		\fill<2>[zonedecompte] (A) rectangle (B);
+		\draw<2>[
+			%bleufoncechum!70!white,
+			turquoisechum,
+			shorten <=0.5mm,
+			shorten >=0.5mm,
+			<->,
+			%thick,
+			font=\scriptsize
+			]
+			(C) -- (D) node[midway, above] {6 sec.};
+	\end{tikzpicture}
+\end{frame}
+

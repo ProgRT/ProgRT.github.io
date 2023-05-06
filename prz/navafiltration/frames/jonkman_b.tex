@@ -1,0 +1,48 @@
+\begin{frame}{Électromyogramme du diaphragme}
+	\centering
+
+	\begin{tikzpicture}[
+		]
+
+		\begin{groupplot}[
+			discrete axis,
+			height=0.40\textheight,
+			width=\textwidth,
+			hide x axis,
+			group style={
+				vertical sep=5mm,
+				group size=1 by 3,
+			},
+			]
+			\nextgroupplot[eadi]
+			\addplot graphics[
+				points={(0,-0)(100,50)}
+				]{jonkman/jonkman_b_eadi-0_50};
+
+			\nextgroupplot[emgdi]
+			\addplot graphics[
+				xmin=0,
+				xmax=100,
+				ymin=-250,
+				ymax=250,
+				]{jonkman/jonkman_b_emgdi-250_250};
+
+				\only<3>{
+			\nextgroupplot[pdi]
+			\addplot graphics[
+				xmin=0,
+				xmax=100,
+				ymin=-5,
+				ymax=25,
+				]{jonkman/jonkman_b_pdi-5_25};
+			}
+
+		\end{groupplot}
+		
+		\foreach \x in {3, 26, 31, 37, 60, 66, 72, 95}{%
+			\draw <2->[red](\x mm, 1mm) circle[radius=2mm];
+		}
+
+	\end{tikzpicture}
+	\adapte{jonkman_inadequate_2020}
+\end{frame}

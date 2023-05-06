@@ -1,0 +1,38 @@
+\documentclass[
+aspectratio=169,
+bigger,
+xcolor=table,
+]{beamer}
+\usepackage[french]{babel}
+\usepackage{
+	palettechum,
+	n,
+	pgfplots,
+	emoji,
+	wasysym,
+	servou,
+	colortbl,
+	beamer-progress,
+	biblatex
+}
+\usetheme{viger}
+%\usetikzlibrary{spy, matrix}
+%\usepgfplotslibrary{groupplots}
+%
+%\setbeamertemplate{footline}[progress bar]
+%\setbeamercovered{transparent=50}
+%\input{pgfplotsconf}
+%
+\AtBeginSection{
+	\begin{frame}{Plan}
+		\tableofcontents[currentsection]
+	\end{frame}
+
+\def\chm{cm\,H\textsubscript{2}O}
+\addbibresource{autotriggering.bib}
+\begin{document}
+\nocite{*}
+\begin{frame}{Bibliographie}
+	\printbibliography{}
+\end{frame}
+\end{document}

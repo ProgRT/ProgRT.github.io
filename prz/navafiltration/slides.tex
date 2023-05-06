@@ -1,0 +1,55 @@
+\documentclass[aspectratio=169]{beamer}
+\usetheme[sectiontoc]{montreal}
+
+\input{plotsconf}
+\input{imgframe}
+\setbeamertemplate{footline}[frame number]
+
+\def\fnote#1{\footnote[1]{#1}}
+\def\adapte#1{\fnote{\em Adapté de \cite{#1}.}}
+\def\tire#1{\fnote{\em Tiré de \cite{#1}.}}
+
+
+\subtitle{Enjeux reliés à la filtration du signal EMGdi}
+\title{Zones d'ombre du NAVA}
+\date{20 juillet 2022}
+\institute{\noihu\\[0.1\baselineskip]\papp}
+\titlebg{captures/220515_113919.png}
+\addbibresource{filtration.bib}
+
+\begin{document}
+
+\maketitle
+
+\input{frames/discussion1}
+\input{frames/406dat}
+
+\maketoc
+
+\section{Filtration du signal EMGdi}
+
+\input{frames/emgdi.tex}
+\input{frames/emgdieadi.tex}
+\input{frames/emgdieadi3.tex}
+
+\section{Filtration incomplète}
+
+\input{frames/jonkman_b}
+\input{frames/jonkman_a}
+\againframe<1>{406}
+\imgframe{Inata/inata}
+\imgframe{Inata/inata-positioning}
+
+\input{frames/somers}
+
+\section{Perte de signal}
+
+\input{frames/zone_ombre}
+\input{frames/887dat}
+\imgframe{captures/220520_091549.pdf}
+
+\input{frames/discussion2}
+\appendix
+\input{frames/bibliographie}
+
+\end{document}

@@ -1,0 +1,113 @@
+\usepackage[french]{babel}
+\usepackage{
+	amsmath,
+	logochum,
+	alveoli,
+	n,
+	hexagon,
+	pgfplots,
+	appendixnumberbeamer
+}
+\usepackage[
+	backend=biber,
+	autolang=none,
+	style=authoryear,
+	doi=false,
+%	url=false,
+	isbn=false
+]{biblatex}
+
+\input{fancytitlepage.sty}
+
+\usetikzlibrary{
+	datavisualization,
+	external,
+	shapes,
+	shadows,
+	matrix,
+}
+\usepgfplotslibrary{groupplots}
+
+\tikzset{external/force remake}
+\tikzsetexternalprefix{fig-pdf/}
+%\tikzexternalize
+
+\usecolortheme{stdenis}
+\setbeamercolor{author}{fg=normal text.fg}
+\setbeamercolor{date}{fg=normal text.fg}
+\setbeamercolor{institute}{fg=normal text.fg}
+\usefonttheme{structurebold}
+\setbeamertemplate{title page}[fancy][left]
+\setbeamertemplate{footline}{
+	\begin{tikzpicture}
+		\fill[structure, opacity=0.2] (0,0) rectangle (\pagewidth, 1mm);
+		\fill[structure] (0,0) rectangle
+		({\pagewidth*((\insertframenumber)/(\inserttotalframenumber))}, 1mm);
+	\end{tikzpicture}
+}
+\setbeamertemplate{navigation symbols}{}
+\setbeamerfont{subtitle}{shape=\itshape, series=\mdseries}
+
+\def\cmh{cmH\scalebox{0.7}{2}O}
+\def\ox{O\scalebox{0.7}{2}}
+
+\tikzset{
+	postit/.style={
+		fill=jaunechum,
+		rounded corners,
+		inner sep=3mm,
+		drop shadow={
+			opacity=0.3,
+			fill=black
+		},
+		scale=0.8
+	}
+}
+
+\pgfplotsset{
+	compat=newest,
+	tickwidth=1mm,
+	every axis plot post/.append style={
+		structure!60,
+		line width=1pt,
+	},
+	every axis/.style={
+		font=\tiny,
+		fg!65,
+		grid style={fg!30!bg, dotted},
+		width=\textwidth,
+		height=0.45\textheight,
+		no markers,
+		grid=both,
+		minor x tick num=1,
+		axis lines*=left,
+		enlargelimits=false,
+	},
+}
+
+\def\showwaveforms#1{%
+	\begin{tikzpicture}[]
+
+		\begin{groupplot}[
+				group style={group size=1 by 2},
+				xlabel=Temps (s),
+			]
+
+			\nextgroupplot[ymin=0,ylabel=Pression (\cmh)]
+			\addplot [] table[x index=0, y index=2] {#1};
+
+			\nextgroupplot[ylabel=Débit (l/m)]
+			\addplot [] table[x index=0, y index=3] {#1};
+
+		\end{groupplot}
+
+	\end{tikzpicture}
+}
+
+\def\adaptcite#1{%
+	\begingroup
+	\vskip8pt
+	\footnotesize
+	\em{* Adapté de: \cite{#1}.}
+	\endgroup
+}

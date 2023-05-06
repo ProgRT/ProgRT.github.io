@@ -1,0 +1,100 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Document configuration %
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[
+aspectratio=169,
+bigger,
+xcolor=table,
+]{beamer}
+
+\usepackage[french]{babel}
+\usepackage{
+	palettechum,
+	n,
+	pgfplots,
+	emoji,
+	wasysym,
+	servou,
+	colortbl,
+	beamer-progress,
+}
+\usepackage[
+	backend=biber,
+	autolang=none,
+	style=authoryear,
+	doi=false,
+%	url=false,
+	isbn=false
+]{biblatex}
+
+
+\usetheme{viger}
+\usetikzlibrary{spy, matrix}
+\usepgfplotslibrary{groupplots}
+
+\setbeamertemplate{footline}[progress bar]
+\setbeamertemplate{frametitle continuation}[from second]
+\setbeamercovered{transparent=50}
+\input{pgfplotsconf}
+
+\defbibheading{bibliography}[\bibname]{}
+\AtBeginSection{
+	\begin{frame}{Plan}
+		\tableofcontents[currentsection]
+	\end{frame}
+}
+
+\def\chm{cm\,H\textsubscript{2}O}
+%%%%%%%%%%%%%%%%%%%%
+% Meta-information %
+%%%%%%%%%%%%%%%%%%%%
+
+\title{Ventilation: quand le coeur s'en mêle ...\emoji{beating-heart}}
+\author{\ninh}
+\institute{\qhum}
+
+\addbibresource{autotriggering.bib}
+
+%%%%%%%%%%%
+% Content %
+%%%%%%%%%%%
+
+\begin{document}
+
+\input{sectionPréambule}
+\begin{frame}{Discussion}
+	\begin{itemize}
+		\item Avez-vous déjà été témoin d'un autodéclenchement ?
+		\item Comment vous en êtes-vous rendu compte ?
+		\item Quelle est votre \emph{recette} pour ajuster le seuil de
+			déclenchement ?
+	\end{itemize}
+\end{frame}
+\input{sectionHistoire}
+\input{sectionAnalyse}
+\input{sectionLitérature}
+\section{Discussion}
+\begin{frame}{Discussion}
+	\begin{itemize}
+		\item Est-ce un sujet important ?
+		\item Quels sont les enjeux ?
+		\item Quelles sont les améliorations possibles/comment peut-on
+			faire mieux ?
+		\item Quel rôle l'inhalothérapeute peut/doit jouer à ce sujet ?
+	\end{itemize}
+\end{frame}
+
+\nocite{*}
+
+\begin{frame}[allowframebreaks]{Bibliographie}
+	\printbibliography[]{}
+\end{frame}
+
+\typeout{}
+\typeout{***************}
+\typeout{\inserttotalframenumber\space diapositives}
+\typeout{***************}
+\typeout{}
+%\input{sectionDiscussion}
+\end{document}

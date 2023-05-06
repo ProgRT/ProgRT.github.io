@@ -1,0 +1,38 @@
+\begin{frame}{Magie du NAVA ...}
+	\begin{tikzpicture}[]
+
+		\begin{groupplot}[
+				group style={
+					group name=my group,
+					group size=1 by 3,
+				},
+				xmax=16,
+				height=0.5\textheight,
+				xlabel=Temps (s),
+				anchor=center,
+				at={(0,0)}
+			]
+
+			\nextgroupplot[ymin=0,ylabel=Pression (\cmh), height=0.35\textheight]
+			\addplot [] table[x index=0, y index=2] {\fauxnegcorige};
+
+			\nextgroupplot[ylabel=Débit (l/m), height=0.42\textheight]
+			\addplot [] table[x index=0, y index=3] {\fauxnegcorige};
+			\coordinate (myanchor) at(12.5,0);
+
+			\nextgroupplot[ylabel=EADI (mcv), height=0.35\textheight]
+			\addplot [] table[x index=0, y index=5] {\fauxnegcorige};
+
+		\end{groupplot}
+
+			\node <2>[postit] at (myanchor) {
+				\begin{tabular}{l @{\ :\ \ } r @{ } >{\footnotesize}l }
+					PEP            & 5   & \cmh \\
+					Conc. \ox      & 35  & \% \\
+					Décl. en débit & 0   & l/min \\
+					Niveau NAVA    & 3,8 & \cmh/uV \\
+					Trigger Edi    & 0,5 & uV
+				\end{tabular}
+			};
+	\end{tikzpicture}
+\end{frame}

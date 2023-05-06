@@ -1,0 +1,117 @@
+\def\tripledown{$\downarrow\downarrow\downarrow$}
+\tikzset{
+	pres/.style={
+		draw,
+		circle,
+		inner sep=2pt
+	},
+	negpres/.style={
+		pres,
+		node contents=-,
+		label=[pres]-120:-,
+		label=[pres]-60:-,
+	},
+	pospres/.style={
+		pres,
+		node contents=+,
+		label=[pres]120:+,
+		label=[pres]60:+,
+	},
+	flowdown/.style={
+		node contents={$\downarrow$},
+		inner sep=1pt
+	},
+	bflowdown/.style={
+		node contents={$\downarrow$},
+		label=100:$\downarrow$,
+		label=80:$\downarrow$,
+		inner sep=1pt
+	},
+	bflowup/.style={
+		node contents={$\uparrow$},
+		label=-100:$\uparrow$,
+		label=-80:$\uparrow$,
+		inner sep=1pt
+	},
+	flowup/.style={
+		node contents={$\uparrow$},
+		inner sep=1pt
+	},
+	flowlabel/.style={
+		pin=[pin distance=1cm]right:$\frac{\Delta P}{R}$
+	}
+}
+
+\begin{frame}{Comment respirer...}{En 4 étapes \em{faciles} !}
+	\centering
+	\begin{tikzpicture}
+
+		\pic<1-2>(A) {assini={alveoli radius=1.15cm}};
+
+		\uncover<2>{
+			\node[below, label=0:$P_{musc.}$] at(A-alveoli.south) {\tripledown};
+		}
+
+		\uncover<3->{
+			\pic<+->(A) {assini={previous volume radius=1.15cm}};
+			\node[below, label=0:$P_{musc.}$] at(A-alveoli.south) {\tripledown};
+
+			\node[above] at(A-alveoli.south) {$\uparrow$};
+			\node[above, rotate=45, label={[absolute, label distance=3mm]-0:$P_{el}$}] (PELR) at(A-alveoli.-45) {$\uparrow$};
+			\node[above, rotate=-45] at(A-alveoli.-135) {$\uparrow$};
+		}
+
+		\uncover<4->{\draw (A-previous) node [negpres];}
+
+		\uncover<5>{\draw (A-bronchus) node [flowdown];}
+
+		\uncover<6->{
+			\draw (A-bronchus.north) node [pospres, above];
+			\draw (A-bronchus) node [bflowdown];
+		}
+	\end{tikzpicture}
+\end{frame}
+
+\begin{frame}{Quand ça ne marche pas comme prévu ...}
+	{En 4 étapes moins faciles ...}
+	\centering
+
+	\begin{tikzpicture}[
+		]
+		\pic (A) at(0,0) {assini={ previous volume radius=1.15cm, }};
+
+		%%%%%%%%%%
+		% Labels %
+		%%%%%%%%%%
+
+		\uncover<+>{
+			\node [pin={0:Vol. act.}] at(A-alveoli.-15) {};
+			\node [pin=0:CRF] at(A-previous.0) {};
+		}
+
+
+		%%%%%%%%%%%%%%%%%%
+		% Elastic recoil %
+		%%%%%%%%%%%%%%%%%%
+		\uncover<+->{
+			\node[above] at(A-alveoli.south) {$\uparrow$};
+			\node[above, rotate=45] (PELR) at(A-alveoli.-45) {$\uparrow$};
+			\node[above, rotate=-45] at(A-alveoli.-135) {$\uparrow$};
+		}
+
+		\uncover<+->{
+			\draw (A-previous) node [pospres, rotate=180];
+		}
+
+		\uncover<+>{
+			\draw (A-bronchus) node [bflowup];
+		}
+
+		\uncover<+->{
+			\node[below, label=0:$P_{musc.}$] at(A-alveoli.south) {\tripledown};
+			\draw (A-bronchus) node [flowup];
+		}
+
+	\end{tikzpicture}
+
+\end{frame}
