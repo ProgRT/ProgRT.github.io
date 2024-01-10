@@ -1,0 +1,8 @@
+---
+title: "Diapositives"
+listing:
+  template: templates/diapo.ejs
+  sort: "date desc"
+  contents: 
+    - data/diapo.yml
+---

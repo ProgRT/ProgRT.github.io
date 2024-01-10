@@ -1,0 +1,20 @@
+<ul class="list quarto-listing-default">
+<% for (const item of items) { %>
+<div class="quarto-post image-right">
+
+<div class="thumbnail">
+<a href="<%= item.url %>" class="listing-name">
+<img src="/img/projets/<%= item.thumbnail %>">
+</a>
+</div>
+
+<div class="body">
+<a href="<%= item.url %>" class="listing-name">
+<h3 class="no-anchor listing-title"><%= item.title %></h3>
+<%= item.description %>
+</a>
+</div>
+
+</div>
+<% } %>
+</ul>

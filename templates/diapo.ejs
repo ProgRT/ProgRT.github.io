@@ -1,0 +1,34 @@
+<div class="quarto-listing quarto-listing-container-default">
+<div class="list quarto-listing-default">
+<% for (const item of items) { %>
+<div class="quarto-post image-right">
+
+<div class="thumbnail">
+<a href="https://progrt.github.io/Presentations/src/<%= item.file %>" class="listing-name">
+<img src="img/diapo/<%= item.thumbnail %>">
+</a>
+</div>
+
+<div class="body">
+<a href="https://progrt.github.io/Presentations/src/<%= item.file %>" class="listing-name">
+<h3 class="no-anchor listing-title"><%= item.title %></h3>
+<p><%= item.subtitle %></p>
+<div class="metadata">
+<div class="listing-date"><%= item.date %></div>
+<div class="listing-event"><%= item.event %></div>
+</div>
+<p><%= item.description %></p>
+</a>
+</div>
+<!--
+<div class="metadata">
+<a href="diapo/<%= item.file %>" class="listing-name">
+<div class="listing-date"><%= item.date %></div>
+<div class="listing-event"><%= item.event %></div>
+</a>
+</div>
+-->
+</div>
+<% } %>
+</div>
+</div>

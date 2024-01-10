@@ -1,0 +1,23 @@
+project:
+  type: website
+  resources:
+    - awesomestyle.css
+
+website:
+  title: "Carnet de Nicolas"
+  favicon: img/favicon/favicon.png
+  navbar:
+    background: primary
+    title: false
+    logo: img/logo/nlogo-blanc.png
+    left:
+      - index.qmd
+      - projets.qmd
+      - diapo.qmd
+
+format:
+  html:
+    html-math-method: mathml
+    lang: fr
+    theme: flatly
+    css: awesomestyle.css
