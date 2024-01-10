@@ -62,13 +62,12 @@ expiratoire positive (PEP) affichée par le Monitron (lue à la crête)
 était inférieure à la pression expiratoire moyenne affichée par le
 multimètre numérique du VDR-4.
 
-Il en résulte nécessairement que la pression moyenne
-inspiratoire *sous-estime* la pression dans les alvéoles à la fin de
-l'expiration. Et que la pression moyenne expiratoire *surestime* la
-pression dans les alvéoles à la fin de l'expiration. Et par conséquent
-que ces deux pressions moyenne *sous-estiment* les variation de
-pression subies par les alvéoles entre la phase expiratoire et la
-phase inspiratoire.
+Il en résulte nécessairement que la pression moyenne inspiratoire
+*sous-estime* la pression dans les alvéoles à la fin de l'inspiration.
+Et que la pression moyenne expiratoire *surestime* la pression dans
+les alvéoles à la fin de l'expiration. Et par conséquent que ces deux
+pressions moyenne *sous-estiment* les variation de pression subies par
+les alvéoles entre la phase expiratoire et la phase inspiratoire.
 
 ### Simulation du protocole CHUM et du protocole Percussionaire
 
