@@ -23,30 +23,22 @@ que les pressions lues à la crête de l'inspiration et de l'expiration.
 Le raisonnement étant que ces pressions moyennes reflèteraient mieux
 les variations de pressions subies par les alvéoles pulmonaires.
 
-```{ojs}
-pscale = Plot.scale({ color: {domain:["Pcirc", "Palv"]}
-});
-```
 
 ```{ojs}
-Plot.legend({
-color: {domain:["Pcirc", "Palv"]}
-});
-```
+pscale = Plot.scale({ color: {domain:["Pcirc", "Palv"]} });
 
-```{ojs}
+Plot.legend({ color: {domain:["Pcirc", "Palv"]} });
+
 palvPlot = {
 	return Plot.plot({... plOpts,
 		marks: [
-			Plot.line(dataPA, {x:
-				"time",
-				y: "Palv",
+			Plot.line(dataPA, {
+				x: "time", y: "Palv",
 				stroke: pscale.apply('Palv'),
 				strokeWidth: 2
 			}),
 			Plot.line(dataPA, {
-				x: "time",
-				y: "Pao",
+				x: "time", y: "Pao",
 				stroke: pscale.apply("Pcirc")
 			}),
 		]
@@ -79,23 +71,20 @@ Alors que le protocole du CHUM vise une pression moyenne
 expiratoire de 5 cmH₂O, celui de Percussionaire vise une PEP de 10
 cmH₂O lue à la crête.
 
-:::{layout-ncol=2}
 ```{ojs}
+//|layout-ncol: 2
 viewof simCHUM = Inputs.form({
 	label: md`**Protocole CHUM**`,
 	Fiph: Inputs.range([0, 3], {value: 1, step:0.05, label: "Débit pulsé"}),
 	Fipl: Inputs.range([0, .5], {value: .027, step:0.001, label: "PEP oscillante"}),
 	})
-```
 
-```{ojs}
 viewof simPA = Inputs.form({
 	label: md`**Protocole Percussionaire**`,
 	Fiph: Inputs.range([0, 3], {value: 1, step:0.05, label: "Débit pulsé"}),
 	Fipl: Inputs.range([0, .5], {value: .155, step:0.001, label: "PEP oscillante"}),
 	})
 ```
-:::
 
 ```{ojs}
 dataCHUM = {
@@ -110,9 +99,7 @@ dataCHUM = {
 
 	return data;
 }
-```
 
-```{ojs}
 dataPA = {
 	var vdr = new sv.VDR({
 		...simPA,
@@ -129,9 +116,6 @@ dataPA = {
 
 ```{ojs}
 anCHUM = va.analyse(dataCHUM, "Protocole CHUM");
-```
-
-```{ojs}
 anPA = va.analyse(dataPA, "Protocole Percussionaire");
 ```
 
@@ -159,17 +143,12 @@ viewof tbl = {
 ```
 
 ```{ojs}
-cscale = Plot.scale({ color: {domain:["CHUM", "Percussionaire"]}
-});
-```
+cscale = Plot.scale({ color: {domain:["CHUM", "Percussionaire"]} });
 
-```{ojs}
 Plot.legend({
-color: {domain:["Protocole CHUM", "Protocole Percussionaire"]}
+	color: {domain:["Protocole CHUM", "Protocole Percussionaire"]}
 });
-```
 
-```{ojs}
 protocolsPlots = {
 	return Plot.plot({... plOpts,
 		marks: [
@@ -193,13 +172,8 @@ protocolsPlots = {
 
 ```{ojs}
 sv = import("https://progrt.github.io/simvent.js/src/simvent.js");
-```
-
-```{ojs}
 va = import('https://progrt.github.io/simvent.js/src/vdrSignalAnalysis.js');
-```
 
-```{ojs}
 drawPlage = function(data, start, end){
 	return Plot.rect(data, {
 		x1: start,
@@ -210,9 +184,7 @@ drawPlage = function(data, start, end){
 		opacity: tbl == "endMean" ? 1 : 0
 	});
 }
-```
 
-```{ojs}
 plOpts = {
 	return {
 	height: 300,
@@ -221,4 +193,3 @@ plOpts = {
 	}
 }
 ```
-

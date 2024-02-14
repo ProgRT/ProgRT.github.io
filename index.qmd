@@ -1,14 +1,7 @@
 ---
-title: "Billets"
+title: "Projets"
 listing:
-  contents: posts
-  sort: "date desc"
-  type: default
-  categories: false
-  sort-ui: false
-  filter-ui: false
-  image-height: 200px
-page-layout: full
+  template: templates/projets.ejs
+  contents: 
+    - data/projets.yml
 ---
-
-

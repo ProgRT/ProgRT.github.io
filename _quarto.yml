@@ -12,7 +12,7 @@ website:
     logo: img/logo/nlogo-blanc.png
     left:
       - index.qmd
-      - projets.qmd
+      - billets.qmd
       - diapo.qmd
 
 format:

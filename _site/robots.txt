@@ -1,1 +1,0 @@
-Sitemap: ssh://git@github.com/ProgRT/progrt.github.io/sitemap.xml
