@@ -1,17 +1,17 @@
 [
   {
-    "listing": "/diapo.html",
-    "items": []
-  },
-  {
-    "listing": "/index.html",
+    "listing": "/billets.html",
     "items": [
       "/posts/vdrmoyenne/vdrmoyen.html",
       "/posts/bohr/christian_bohr.html"
     ]
   },
   {
-    "listing": "/projets.html",
+    "listing": "/index.html",
+    "items": []
+  },
+  {
+    "listing": "/diapo.html",
     "items": []
   }
 ]

@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>ssh://git@github.com/ProgRT/progrt.github.io/posts/bohr/christian_bohr.html</loc>
-    <lastmod>2024-01-10T02:23:23.038Z</lastmod>
-  </url>
-  <url>
-    <loc>ssh://git@github.com/ProgRT/progrt.github.io/posts/vdrmoyenne/vdrmoyen.html</loc>
-    <lastmod>2024-01-10T02:23:15.248Z</lastmod>
-  </url>
-  <url>
-    <loc>ssh://git@github.com/ProgRT/progrt.github.io/diapo.html</loc>
-    <lastmod>2024-01-10T02:23:13.927Z</lastmod>
+    <loc>ssh://git@github.com/ProgRT/progrt.github.io/billets.html</loc>
+    <lastmod>2024-01-10T02:13:34.375Z</lastmod>
   </url>
   <url>
     <loc>ssh://git@github.com/ProgRT/progrt.github.io/index.html</loc>
-    <lastmod>2024-01-10T02:23:13.225Z</lastmod>
+    <lastmod>2024-01-10T02:13:34.375Z</lastmod>
   </url>
   <url>
-    <loc>ssh://git@github.com/ProgRT/progrt.github.io/projets.html</loc>
-    <lastmod>2024-01-10T02:23:14.356Z</lastmod>
+    <loc>ssh://git@github.com/ProgRT/progrt.github.io/diapo.html</loc>
+    <lastmod>2024-01-10T02:13:34.372Z</lastmod>
+  </url>
+  <url>
+    <loc>ssh://git@github.com/ProgRT/progrt.github.io/posts/vdrmoyenne/vdrmoyen.html</loc>
+    <lastmod>2024-01-31T22:21:49.228Z</lastmod>
+  </url>
+  <url>
+    <loc>ssh://git@github.com/ProgRT/progrt.github.io/posts/bohr/christian_bohr.html</loc>
+    <lastmod>2024-01-31T16:46:45.739Z</lastmod>
   </url>
 </urlset>
