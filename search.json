@@ -1,10 +1,24 @@
 [
   {
+    "objectID": "posts/tbas/tbas.html",
+    "href": "posts/tbas/tbas.html",
+    "title": "Ajustement du Tbas en APRV",
+    "section": "",
+    "text": "Le protocole Time Controled Adaptative Ventilation requier de régler des temps expiratoire assez court pour que l’expiration prenne fin lorsque le débit expiratoire a atteint 75 % du débit expiratoire de pointe (Nieman et al. 2018).\nLe simulateur suivant permet d’expérimenter l’influence de la compliance et des résistances du poumon sur le temps expiratoire à régler pour atteindre cet objectif.\nPlot.plot({\n    width: width,\n    height: 150,\n    grid: true,\n    x: {label: \"Temps (s)\"},\n    y: {label: \"Débit (l/s)\"},\n    marks: [\n    Plot.line(data, {x: \"time\", y: \"Flung\"}),\n    ]\n})\nimport {exalations, peakDim, minDim, sigPosToNeg, sigNegToPos, deriv} from \"@progrt/signal\";\n\nsv = import(\"https://cdn.jsdelivr.net/gh/progrt/simvent.js@3.3/src/simvent.js\");\n\ndata = vent.ventilate(lung).timeData;\n\nex = exalations(data).slice(-1)[0];"
+  },
+  {
+    "objectID": "posts/tbas/tbas.html#éléments-du-protocole-tcav",
+    "href": "posts/tbas/tbas.html#éléments-du-protocole-tcav",
+    "title": "Ajustement du Tbas en APRV",
+    "section": "Éléments du protocole TCAV",
+    "text": "Éléments du protocole TCAV\n\nMode Pression Contrôlée cyclé par le temps;\nTemps inspiratoire ocupant ~ 90 % du cycle;\nPression haute suffisante pour recruter en maintenir la capacité vitale;\nTemps bas suffisament court pour terminer l’expiration à 75 % du débit expiratoire de pointe (typiquement &lt; 0,5 s);\nPression basse à 0;"
+  },
+  {
     "objectID": "billets.html",
     "href": "billets.html",
     "title": "Billets",
     "section": "",
-    "text": "Pressions monitorées lors de la ventilation percussive\n\n\n\n\n\nLors de la ventilation percussive, les variations de pressions mesurées dans le circuit du ventilateur sont en très grande partie dissipées en chaleur par les résistances des voies aériennes.\n\n\n\n\n\n29 déc. 2023\n\n\nNicolas Blais St-Laurent\n\n\n\n\n\n\n\n\n\n\n\n\nChristian Bohr était dans les patates\n\n\nMais pas au sujet de l’espace mort\n\n\n\n\n\n\n\n\n1 oct. 2023\n\n\nNicolas Blais St-Laurent\n\n\n\n\n\n\nAucun article correspondant"
+    "text": "Ajustement du Tbas en APRV\n\n\n\n\n\n Le protocole Time Controled Adaptative Ventilation requier de régler des temps expiratoire assez court pour que l’expiration prenne fin lorsque le débit expiratoire a atteint 75 % du débit expiratoire de pointe.\nLe simulateur suivant permet d’expérimenter l’influence de la compliance et des résistances du poumon sur le temps expiratoire à régler pour atteindre cet objectif. \n\n\n\n\n\nNicolas Blais St-Laurent\n\n\n\n\n\n\n\n\n\n\n\n\nPressions monitorées lors de la ventilation percussive\n\n\n\n\n\nLors de la ventilation percussive, les variations de pressions mesurées dans le circuit du ventilateur sont en très grande partie dissipées en chaleur par les résistances des voies aériennes.\n\n\n\n\n\n29 déc. 2023\n\n\nNicolas Blais St-Laurent\n\n\n\n\n\n\n\n\n\n\n\n\nChristian Bohr était dans les patates\n\n\nMais pas au sujet de l’espace mort\n\n\n\n\n\n\n\n\n1 oct. 2023\n\n\nNicolas Blais St-Laurent\n\n\n\n\n\n\nAucun article correspondant"
   },
   {
     "objectID": "index.html",

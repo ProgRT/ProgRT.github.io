@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>ssh://git@github.com/ProgRT/progrt.github.io/posts/tbas/tbas.html</loc>
+    <lastmod>2024-02-14T19:11:36.741Z</lastmod>
+  </url>
+  <url>
     <loc>ssh://git@github.com/ProgRT/progrt.github.io/billets.html</loc>
     <lastmod>2024-01-10T02:13:34.375Z</lastmod>
   </url>

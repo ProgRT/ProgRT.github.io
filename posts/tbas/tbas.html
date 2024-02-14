@@ -7,6 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Nicolas Blais St-Laurent">
+<meta name="description" content="Le protocole Time Controled Adaptative Ventilation requier de régler des temps expiratoire assez court pour que l’expiration prenne fin lorsque le débit expiratoire a atteint 75 % du débit expiratoire de pointe. Le simulateur suivant permet d’expérimenter l’influence de la compliance et des résistances du poumon sur le temps expiratoire à régler pour atteindre cet objectif.">
 
 <title>Carnet de Nicolas - Ajustement du Tbas en APRV</title>
 <style>
@@ -55,7 +56,27 @@ div.sourceCode
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -178,41 +199,43 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
+<p>Le protocole <em>Time Controled Adaptative Ventilation</em> requier de régler des temps expiratoire assez court pour que l’expiration prenne fin lorsque le débit expiratoire a atteint 75 % du débit expiratoire de pointe <span class="citation" data-cites="nieman2018">(<a href="#ref-nieman2018" role="doc-biblioref">Nieman et al. 2018</a>)</span>.</p>
+<p>Le simulateur suivant permet d’expérimenter l’influence de la compliance et des résistances du poumon sur le temps expiratoire à régler pour atteindre cet objectif.</p>
 <div class="cell card card-body" style="margin-bottom: 20px">
-<div class="sourceCode cell-code hidden" id="cb1" data-startfrom="10" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 9;"><span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    <span class="dt">width</span><span class="op">:</span> width<span class="op">,</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    <span class="dt">height</span><span class="op">:</span> <span class="dv">150</span><span class="op">,</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    <span class="dt">grid</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    <span class="dt">x</span><span class="op">:</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"Temps (s)"</span>}<span class="op">,</span></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    <span class="dt">y</span><span class="op">:</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"Débit (l/s)"</span>}<span class="op">,</span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    <span class="dt">marks</span><span class="op">:</span> [</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">line</span>(data<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"time"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"Flung"</span>})<span class="op">,</span></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    ]</span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>})</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb1" data-startfrom="28" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 27;"><span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>    <span class="dt">width</span><span class="op">:</span> width<span class="op">,</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>    <span class="dt">height</span><span class="op">:</span> <span class="dv">150</span><span class="op">,</span></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>    <span class="dt">grid</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>    <span class="dt">x</span><span class="op">:</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"Temps (s)"</span>}<span class="op">,</span></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>    <span class="dt">y</span><span class="op">:</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"Débit (l/s)"</span>}<span class="op">,</span></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>    <span class="dt">marks</span><span class="op">:</span> [</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">line</span>(data<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"time"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"Flung"</span>})<span class="op">,</span></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>    ]</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>})</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-1" data-nodetype="expression">
 
 </div>
 </div>
 </div>
-<div class="sourceCode cell-code hidden" id="cb2" data-startfrom="26" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 25;"><span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>viewof formLung <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">form</span>({</span>
-<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>    <span class="dt">label</span><span class="op">:</span> <span class="fu">md</span><span class="vs">`**🫁 Mécanique**`</span><span class="op">,</span></span>
-<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>    <span class="dt">Raw</span><span class="op">:</span> Inputs<span class="op">.</span><span class="fu">range</span>([<span class="dv">1</span><span class="op">,</span> <span class="dv">40</span>]<span class="op">,</span> {<span class="dt">value</span><span class="op">:</span> <span class="dv">5</span><span class="op">,</span> <span class="dt">step</span><span class="op">:</span> <span class="dv">1</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="fu">md</span><span class="vs">`R&lt;sub&gt;aw&lt;/sub&gt;`</span>})<span class="op">,</span></span>
-<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>    <span class="dt">Crs</span><span class="op">:</span> Inputs<span class="op">.</span><span class="fu">range</span>([<span class="dv">5</span><span class="op">,</span> <span class="dv">100</span>]<span class="op">,</span> {<span class="dt">value</span><span class="op">:</span> <span class="dv">40</span><span class="op">,</span> <span class="dt">step</span><span class="op">:</span> <span class="dv">1</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="fu">md</span><span class="vs">`C&lt;sub&gt;st&lt;/sub&gt;`</span>})<span class="op">,</span></span>
-<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>})</span>
-<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>lung <span class="op">=</span> <span class="kw">new</span> sv<span class="op">.</span><span class="fu">SimpleLung</span>(formLung)<span class="op">;</span></span>
-<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a><span class="fu">md</span><span class="vs">`Constante de temps : </span><span class="sc">${</span>lung<span class="op">.</span><span class="at">TC</span><span class="op">.</span><span class="fu">toFixed</span>(<span class="dv">2</span>)<span class="sc">}</span><span class="vs"> s`</span></span>
-<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>viewof formVent <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">form</span>({</span>
-<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>    <span class="dt">label</span><span class="op">:</span> <span class="fu">md</span><span class="vs">`**🎛️ Paramètres de ventilation**`</span><span class="op">,</span></span>
-<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>    <span class="dt">Phigh</span><span class="op">:</span> Inputs<span class="op">.</span><span class="fu">range</span>([<span class="dv">0</span><span class="op">,</span> <span class="dv">50</span>]<span class="op">,</span> {<span class="dt">value</span><span class="op">:</span> <span class="dv">20</span><span class="op">,</span> <span class="dt">step</span><span class="op">:</span> <span class="dv">1</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="fu">md</span><span class="vs">`P&lt;sub&gt;hte&lt;/sub&gt; &lt;small&gt;(mbar)&lt;/small&gt;`</span>})<span class="op">,</span></span>
-<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a>    <span class="dt">Plow</span><span class="op">:</span> Inputs<span class="op">.</span><span class="fu">range</span>([<span class="dv">0</span><span class="op">,</span> <span class="dv">40</span>]<span class="op">,</span> {<span class="dt">value</span><span class="op">:</span> <span class="dv">0</span><span class="op">,</span> <span class="dt">step</span><span class="op">:</span> <span class="dv">1</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="fu">md</span><span class="vs">`P&lt;sub&gt;basse&lt;/sub&gt; &lt;small&gt;(mbar)&lt;/small&gt;`</span>})<span class="op">,</span></span>
-<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a>    <span class="dt">Thigh</span><span class="op">:</span> Inputs<span class="op">.</span><span class="fu">range</span>([<span class="op">.</span><span class="dv">5</span><span class="op">,</span> <span class="dv">30</span>]<span class="op">,</span> {<span class="dt">value</span><span class="op">:</span> <span class="dv">4</span><span class="op">,</span> <span class="dt">step</span><span class="op">:.</span><span class="dv">1</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="fu">md</span><span class="vs">`T&lt;sub&gt;haut&lt;/sub&gt; &lt;small&gt;(s)&lt;/small&gt;`</span>})<span class="op">,</span></span>
-<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a>    <span class="dt">Tlow</span><span class="op">:</span> Inputs<span class="op">.</span><span class="fu">range</span>([<span class="op">.</span><span class="bn">01</span><span class="op">,</span> <span class="dv">1</span>]<span class="op">,</span> {<span class="dt">value</span><span class="op">:</span> <span class="op">.</span><span class="dv">5</span><span class="op">,</span> <span class="dt">step</span><span class="op">:.</span><span class="bn">01</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="fu">md</span><span class="vs">`T&lt;sub&gt;bas&lt;/sub&gt; &lt;small&gt;(s)&lt;/small&gt;`</span>})<span class="op">,</span></span>
-<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a>    <span class="dt">Tvent</span><span class="op">:</span> Inputs<span class="op">.</span><span class="fu">range</span>([<span class="dv">6</span><span class="op">,</span> <span class="dv">60</span>]<span class="op">,</span> {<span class="dt">value</span><span class="op">:</span> <span class="dv">24</span><span class="op">,</span> <span class="dt">step</span><span class="op">:</span><span class="dv">1</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="fu">md</span><span class="vs">`Durée sim. &lt;small&gt;(s)&lt;/small&gt;`</span>})<span class="op">,</span></span>
-<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a>})</span>
-<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a>vent <span class="op">=</span> <span class="kw">new</span> sv<span class="op">.</span><span class="fu">APRV</span>({<span class="op">...</span>formVent})<span class="op">;</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb2" data-startfrom="44" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 43;"><span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a>viewof formLung <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">form</span>({</span>
+<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a>    <span class="dt">label</span><span class="op">:</span> <span class="fu">md</span><span class="vs">`**🫁 Mécanique**`</span><span class="op">,</span></span>
+<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a>    <span class="dt">Raw</span><span class="op">:</span> Inputs<span class="op">.</span><span class="fu">range</span>([<span class="dv">1</span><span class="op">,</span> <span class="dv">40</span>]<span class="op">,</span> {<span class="dt">value</span><span class="op">:</span> <span class="dv">5</span><span class="op">,</span> <span class="dt">step</span><span class="op">:</span> <span class="dv">1</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="fu">md</span><span class="vs">`R&lt;sub&gt;aw&lt;/sub&gt;`</span>})<span class="op">,</span></span>
+<span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a>    <span class="dt">Crs</span><span class="op">:</span> Inputs<span class="op">.</span><span class="fu">range</span>([<span class="dv">5</span><span class="op">,</span> <span class="dv">100</span>]<span class="op">,</span> {<span class="dt">value</span><span class="op">:</span> <span class="dv">40</span><span class="op">,</span> <span class="dt">step</span><span class="op">:</span> <span class="dv">1</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="fu">md</span><span class="vs">`C&lt;sub&gt;st&lt;/sub&gt;`</span>})<span class="op">,</span></span>
+<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a>})</span>
+<span id="cb2-49"><a href="#cb2-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-50"><a href="#cb2-50" aria-hidden="true" tabindex="-1"></a>lung <span class="op">=</span> <span class="kw">new</span> sv<span class="op">.</span><span class="fu">SimpleLung</span>(formLung)<span class="op">;</span></span>
+<span id="cb2-51"><a href="#cb2-51" aria-hidden="true" tabindex="-1"></a><span class="fu">md</span><span class="vs">`Constante de temps : </span><span class="sc">${</span>lung<span class="op">.</span><span class="at">TC</span><span class="op">.</span><span class="fu">toFixed</span>(<span class="dv">2</span>)<span class="sc">}</span><span class="vs"> s`</span></span>
+<span id="cb2-52"><a href="#cb2-52" aria-hidden="true" tabindex="-1"></a>viewof formVent <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">form</span>({</span>
+<span id="cb2-53"><a href="#cb2-53" aria-hidden="true" tabindex="-1"></a>    <span class="dt">label</span><span class="op">:</span> <span class="fu">md</span><span class="vs">`**🎛️ Paramètres de ventilation**`</span><span class="op">,</span></span>
+<span id="cb2-54"><a href="#cb2-54" aria-hidden="true" tabindex="-1"></a>    <span class="dt">Phigh</span><span class="op">:</span> Inputs<span class="op">.</span><span class="fu">range</span>([<span class="dv">0</span><span class="op">,</span> <span class="dv">50</span>]<span class="op">,</span> {<span class="dt">value</span><span class="op">:</span> <span class="dv">20</span><span class="op">,</span> <span class="dt">step</span><span class="op">:</span> <span class="dv">1</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="fu">md</span><span class="vs">`P&lt;sub&gt;hte&lt;/sub&gt; &lt;small&gt;(mbar)&lt;/small&gt;`</span>})<span class="op">,</span></span>
+<span id="cb2-55"><a href="#cb2-55" aria-hidden="true" tabindex="-1"></a>    <span class="dt">Plow</span><span class="op">:</span> Inputs<span class="op">.</span><span class="fu">range</span>([<span class="dv">0</span><span class="op">,</span> <span class="dv">40</span>]<span class="op">,</span> {<span class="dt">value</span><span class="op">:</span> <span class="dv">0</span><span class="op">,</span> <span class="dt">step</span><span class="op">:</span> <span class="dv">1</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="fu">md</span><span class="vs">`P&lt;sub&gt;basse&lt;/sub&gt; &lt;small&gt;(mbar)&lt;/small&gt;`</span>})<span class="op">,</span></span>
+<span id="cb2-56"><a href="#cb2-56" aria-hidden="true" tabindex="-1"></a>    <span class="dt">Thigh</span><span class="op">:</span> Inputs<span class="op">.</span><span class="fu">range</span>([<span class="op">.</span><span class="dv">5</span><span class="op">,</span> <span class="dv">30</span>]<span class="op">,</span> {<span class="dt">value</span><span class="op">:</span> <span class="dv">4</span><span class="op">,</span> <span class="dt">step</span><span class="op">:.</span><span class="dv">1</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="fu">md</span><span class="vs">`T&lt;sub&gt;haut&lt;/sub&gt; &lt;small&gt;(s)&lt;/small&gt;`</span>})<span class="op">,</span></span>
+<span id="cb2-57"><a href="#cb2-57" aria-hidden="true" tabindex="-1"></a>    <span class="dt">Tlow</span><span class="op">:</span> Inputs<span class="op">.</span><span class="fu">range</span>([<span class="op">.</span><span class="bn">01</span><span class="op">,</span> <span class="dv">1</span>]<span class="op">,</span> {<span class="dt">value</span><span class="op">:</span> <span class="op">.</span><span class="dv">5</span><span class="op">,</span> <span class="dt">step</span><span class="op">:.</span><span class="bn">01</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="fu">md</span><span class="vs">`T&lt;sub&gt;bas&lt;/sub&gt; &lt;small&gt;(s)&lt;/small&gt;`</span>})<span class="op">,</span></span>
+<span id="cb2-58"><a href="#cb2-58" aria-hidden="true" tabindex="-1"></a>    <span class="dt">Tvent</span><span class="op">:</span> Inputs<span class="op">.</span><span class="fu">range</span>([<span class="dv">6</span><span class="op">,</span> <span class="dv">60</span>]<span class="op">,</span> {<span class="dt">value</span><span class="op">:</span> <span class="dv">24</span><span class="op">,</span> <span class="dt">step</span><span class="op">:</span><span class="dv">1</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="fu">md</span><span class="vs">`Durée sim. &lt;small&gt;(s)&lt;/small&gt;`</span>})<span class="op">,</span></span>
+<span id="cb2-59"><a href="#cb2-59" aria-hidden="true" tabindex="-1"></a>})</span>
+<span id="cb2-60"><a href="#cb2-60" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-61"><a href="#cb2-61" aria-hidden="true" tabindex="-1"></a>vent <span class="op">=</span> <span class="kw">new</span> sv<span class="op">.</span><span class="fu">APRV</span>({<span class="op">...</span>formVent})<span class="op">;</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="quarto-layout-panel" data-layout-ncol="2">
 <div class="quarto-layout-row">
 <div class="cell card card-body quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
@@ -256,22 +279,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<div class="sourceCode cell-code hidden" id="cb3" data-startfrom="56" data-source-offset="-2"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 55;"><span id="cb3-56"><a href="#cb3-56" aria-hidden="true" tabindex="-1"></a>cropped <span class="op">=</span> data<span class="op">.</span><span class="fu">filter</span>(d<span class="kw">=&gt;</span>{</span>
-<span id="cb3-57"><a href="#cb3-57" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> d<span class="op">.</span><span class="at">time</span> <span class="op">&gt;</span> ex<span class="op">.</span><span class="at">midPoint</span> <span class="op">-</span> <span class="dv">2</span><span class="op">*</span> ex<span class="op">.</span><span class="at">Tlow</span> <span class="op">&amp;&amp;</span> d<span class="op">.</span><span class="at">time</span> <span class="op">&lt;</span> ex<span class="op">.</span><span class="at">midPoint</span> <span class="op">+</span> <span class="dv">2</span><span class="op">*</span>ex<span class="op">.</span><span class="at">Tlow</span></span>
-<span id="cb3-58"><a href="#cb3-58" aria-hidden="true" tabindex="-1"></a>        }</span>
-<span id="cb3-59"><a href="#cb3-59" aria-hidden="true" tabindex="-1"></a>    )<span class="op">;</span></span>
-<span id="cb3-60"><a href="#cb3-60" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-61"><a href="#cb3-61" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">plot</span>({</span>
-<span id="cb3-62"><a href="#cb3-62" aria-hidden="true" tabindex="-1"></a>        <span class="dt">width</span><span class="op">:</span> <span class="dv">400</span><span class="op">,</span></span>
-<span id="cb3-63"><a href="#cb3-63" aria-hidden="true" tabindex="-1"></a>        <span class="dt">height</span><span class="op">:</span> <span class="dv">300</span><span class="op">,</span></span>
-<span id="cb3-64"><a href="#cb3-64" aria-hidden="true" tabindex="-1"></a>        <span class="dt">grid</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
-<span id="cb3-65"><a href="#cb3-65" aria-hidden="true" tabindex="-1"></a>        <span class="dt">x</span><span class="op">:</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"Temps (s)"</span>}<span class="op">,</span></span>
-<span id="cb3-66"><a href="#cb3-66" aria-hidden="true" tabindex="-1"></a>        <span class="dt">y</span><span class="op">:</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"Débit (l/s)"</span>}<span class="op">,</span></span>
-<span id="cb3-67"><a href="#cb3-67" aria-hidden="true" tabindex="-1"></a>        <span class="dt">marks</span><span class="op">:</span> [</span>
-<span id="cb3-68"><a href="#cb3-68" aria-hidden="true" tabindex="-1"></a>            Plot<span class="op">.</span><span class="fu">line</span>(cropped<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"time"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"Flung"</span>})<span class="op">,</span></span>
-<span id="cb3-69"><a href="#cb3-69" aria-hidden="true" tabindex="-1"></a>            Plot<span class="op">.</span><span class="fu">dot</span>([ex<span class="op">.</span><span class="at">start</span><span class="op">,</span> ex<span class="op">.</span><span class="at">end</span>]<span class="op">,</span> { <span class="dt">x</span><span class="op">:</span> <span class="st">"time"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"Flung"</span><span class="op">,</span> <span class="dt">stroke</span><span class="op">:</span> <span class="st">"red"</span> })<span class="op">,</span></span>
-<span id="cb3-70"><a href="#cb3-70" aria-hidden="true" tabindex="-1"></a>        ]</span>
-<span id="cb3-71"><a href="#cb3-71" aria-hidden="true" tabindex="-1"></a>    })<span class="op">;</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb3" data-startfrom="74" data-source-offset="-2"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 73;"><span id="cb3-74"><a href="#cb3-74" aria-hidden="true" tabindex="-1"></a>cropped <span class="op">=</span> data<span class="op">.</span><span class="fu">filter</span>(d<span class="kw">=&gt;</span>{</span>
+<span id="cb3-75"><a href="#cb3-75" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> d<span class="op">.</span><span class="at">time</span> <span class="op">&gt;</span> ex<span class="op">.</span><span class="at">midPoint</span> <span class="op">-</span> <span class="dv">2</span><span class="op">*</span> ex<span class="op">.</span><span class="at">Tlow</span> <span class="op">&amp;&amp;</span> d<span class="op">.</span><span class="at">time</span> <span class="op">&lt;</span> ex<span class="op">.</span><span class="at">midPoint</span> <span class="op">+</span> <span class="dv">2</span><span class="op">*</span>ex<span class="op">.</span><span class="at">Tlow</span></span>
+<span id="cb3-76"><a href="#cb3-76" aria-hidden="true" tabindex="-1"></a>        }</span>
+<span id="cb3-77"><a href="#cb3-77" aria-hidden="true" tabindex="-1"></a>    )<span class="op">;</span></span>
+<span id="cb3-78"><a href="#cb3-78" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-79"><a href="#cb3-79" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">plot</span>({</span>
+<span id="cb3-80"><a href="#cb3-80" aria-hidden="true" tabindex="-1"></a>        <span class="dt">width</span><span class="op">:</span> <span class="dv">400</span><span class="op">,</span></span>
+<span id="cb3-81"><a href="#cb3-81" aria-hidden="true" tabindex="-1"></a>        <span class="dt">height</span><span class="op">:</span> <span class="dv">300</span><span class="op">,</span></span>
+<span id="cb3-82"><a href="#cb3-82" aria-hidden="true" tabindex="-1"></a>        <span class="dt">grid</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
+<span id="cb3-83"><a href="#cb3-83" aria-hidden="true" tabindex="-1"></a>        <span class="dt">x</span><span class="op">:</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"Temps (s)"</span>}<span class="op">,</span></span>
+<span id="cb3-84"><a href="#cb3-84" aria-hidden="true" tabindex="-1"></a>        <span class="dt">y</span><span class="op">:</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"Débit (l/s)"</span>}<span class="op">,</span></span>
+<span id="cb3-85"><a href="#cb3-85" aria-hidden="true" tabindex="-1"></a>        <span class="dt">marks</span><span class="op">:</span> [</span>
+<span id="cb3-86"><a href="#cb3-86" aria-hidden="true" tabindex="-1"></a>            Plot<span class="op">.</span><span class="fu">line</span>(cropped<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"time"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"Flung"</span>})<span class="op">,</span></span>
+<span id="cb3-87"><a href="#cb3-87" aria-hidden="true" tabindex="-1"></a>            Plot<span class="op">.</span><span class="fu">dot</span>([ex<span class="op">.</span><span class="at">start</span><span class="op">,</span> ex<span class="op">.</span><span class="at">end</span>]<span class="op">,</span> { <span class="dt">x</span><span class="op">:</span> <span class="st">"time"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"Flung"</span><span class="op">,</span> <span class="dt">stroke</span><span class="op">:</span> <span class="st">"red"</span> })<span class="op">,</span></span>
+<span id="cb3-88"><a href="#cb3-88" aria-hidden="true" tabindex="-1"></a>        ]</span>
+<span id="cb3-89"><a href="#cb3-89" aria-hidden="true" tabindex="-1"></a>    })<span class="op">;</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="quarto-layout-panel" data-layout-ncol="2">
 <div class="quarto-layout-row">
 <div class="cell card card-body quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
@@ -339,13 +362,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code hidden" id="cb4" data-startfrom="89" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 88;"><span id="cb4-89"><a href="#cb4-89" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> {exalations<span class="op">,</span> peakDim<span class="op">,</span> minDim<span class="op">,</span> sigPosToNeg<span class="op">,</span> sigNegToPos<span class="op">,</span> deriv} <span class="im">from</span> <span class="st">"@progrt/signal"</span><span class="op">;</span></span>
-<span id="cb4-90"><a href="#cb4-90" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-91"><a href="#cb4-91" aria-hidden="true" tabindex="-1"></a>sv <span class="op">=</span> <span class="im">import</span>(<span class="st">"https://cdn.jsdelivr.net/gh/progrt/simvent.js@3.3/src/simvent.js"</span>)<span class="op">;</span></span>
-<span id="cb4-92"><a href="#cb4-92" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-93"><a href="#cb4-93" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> vent<span class="op">.</span><span class="fu">ventilate</span>(lung)<span class="op">.</span><span class="at">timeData</span><span class="op">;</span></span>
-<span id="cb4-94"><a href="#cb4-94" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-95"><a href="#cb4-95" aria-hidden="true" tabindex="-1"></a>ex <span class="op">=</span> <span class="fu">exalations</span>(data)<span class="op">.</span><span class="fu">slice</span>(<span class="op">-</span><span class="dv">1</span>)[<span class="dv">0</span>]<span class="op">;</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb4" data-startfrom="107" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 106;"><span id="cb4-107"><a href="#cb4-107" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> {exalations<span class="op">,</span> peakDim<span class="op">,</span> minDim<span class="op">,</span> sigPosToNeg<span class="op">,</span> sigNegToPos<span class="op">,</span> deriv} <span class="im">from</span> <span class="st">"@progrt/signal"</span><span class="op">;</span></span>
+<span id="cb4-108"><a href="#cb4-108" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-109"><a href="#cb4-109" aria-hidden="true" tabindex="-1"></a>sv <span class="op">=</span> <span class="im">import</span>(<span class="st">"https://cdn.jsdelivr.net/gh/progrt/simvent.js@3.3/src/simvent.js"</span>)<span class="op">;</span></span>
+<span id="cb4-110"><a href="#cb4-110" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-111"><a href="#cb4-111" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> vent<span class="op">.</span><span class="fu">ventilate</span>(lung)<span class="op">.</span><span class="at">timeData</span><span class="op">;</span></span>
+<span id="cb4-112"><a href="#cb4-112" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-113"><a href="#cb4-113" aria-hidden="true" tabindex="-1"></a>ex <span class="op">=</span> <span class="fu">exalations</span>(data)<span class="op">.</span><span class="fu">slice</span>(<span class="op">-</span><span class="dv">1</span>)[<span class="dv">0</span>]<span class="op">;</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div>
 <div id="ojs-cell-5-1" data-nodetype="declaration">
@@ -375,6 +398,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
+<section id="éléments-du-protocole-tcav" class="level2">
+<h2 class="anchored" data-anchor-id="éléments-du-protocole-tcav">Éléments du protocole TCAV</h2>
+<ul>
+<li>Mode Pression Contrôlée cyclé par le temps;</li>
+<li>Temps inspiratoire ocupant ~ 90 % du cycle;</li>
+<li>Pression haute suffisante pour recruter en maintenir la capacité vitale;</li>
+<li>Temps bas suffisament court pour terminer l’expiration à 75 % du débit expiratoire de pointe (typiquement &lt; 0,5 s);</li>
+<li>Pression basse à 0;</li>
+</ul>
 
 
 <div class="ojs-auto-generated hidden">
@@ -383,7 +415,13 @@ eyJjb250ZW50cyI6WyAgeyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiaW5saW5lIjoidHJ1ZSIsInNv
 </script>
 </div>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Réutilisation</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr">CC BY-SA 4.0</a></div></div></section></div></main> <!-- /main -->
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Les références</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-nieman2018" class="csl-entry" role="listitem">
+Nieman, Gary F., Penny Andrews, Joshua Satalin, Kailyn Wilcox, Michaela Kollisch-Singule, Maria Madden, Hani Aiash, Sarah J. Blair, Louis A. Gatto, et Nader M. Habashi. 2018. <span>«&nbsp;Acute Lung Injury: How to Stabilize a Broken Lung&nbsp;»</span>. <em>Critical Care (London, England)</em> 22 (1): 136. <a href="https://doi.org/10.1186/s13054-018-2051-8">https://doi.org/10.1186/s13054-018-2051-8</a>.
+</div>
+</div></section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Réutilisation</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr">CC BY-SA 4.0</a></div></div></section></div></main> <!-- /main -->
 <script type="ojs-module-contents">
 eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6IlBsb3QucGxvdCh7XG5cdHdpZHRoOiB3aWR0aCxcblx0aGVpZ2h0OiAxNTAsXG5cdGdyaWQ6IHRydWUsXG5cdHg6IHtsYWJlbDogXCJUZW1wcyAocylcIn0sXG5cdHk6IHtsYWJlbDogXCJEw6liaXQgKGwvcylcIn0sXG5cdG1hcmtzOiBbXG5cdFBsb3QubGluZShkYXRhLCB7eDogXCJ0aW1lXCIsIHk6IFwiRmx1bmdcIn0pLFxuXHRdXG59KVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0yIiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoidmlld29mIGZvcm1MdW5nID0gSW5wdXRzLmZvcm0oe1xuXHRsYWJlbDogbWRgKirwn6uBIE3DqWNhbmlxdWUqKmAsXG5cdFJhdzogSW5wdXRzLnJhbmdlKFsxLCA0MF0sIHt2YWx1ZTogNSwgc3RlcDogMSwgbGFiZWw6IG1kYFI8c3ViPmF3PC9zdWI+YH0pLFxuXHRDcnM6IElucHV0cy5yYW5nZShbNSwgMTAwXSwge3ZhbHVlOiA0MCwgc3RlcDogMSwgbGFiZWw6IG1kYEM8c3ViPnN0PC9zdWI+YH0pLFxufSlcblxubHVuZyA9IG5ldyBzdi5TaW1wbGVMdW5nKGZvcm1MdW5nKTtcbm1kYENvbnN0YW50ZSBkZSB0ZW1wcyA6ICR7bHVuZy5UQy50b0ZpeGVkKDIpfSBzYFxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0zIiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoidmlld29mIGZvcm1WZW50ID0gSW5wdXRzLmZvcm0oe1xuXHRsYWJlbDogbWRgKirwn46b77iPIFBhcmFtw6h0cmVzIGRlIHZlbnRpbGF0aW9uKipgLFxuXHRQaGlnaDogSW5wdXRzLnJhbmdlKFswLCA1MF0sIHt2YWx1ZTogMjAsIHN0ZXA6IDEsIGxhYmVsOiBtZGBQPHN1Yj5odGU8L3N1Yj4gPHNtYWxsPihtYmFyKTwvc21hbGw+YH0pLFxuXHRQbG93OiBJbnB1dHMucmFuZ2UoWzAsIDQwXSwge3ZhbHVlOiAwLCBzdGVwOiAxLCBsYWJlbDogbWRgUDxzdWI+YmFzc2U8L3N1Yj4gPHNtYWxsPihtYmFyKTwvc21hbGw+YH0pLFxuXHRUaGlnaDogSW5wdXRzLnJhbmdlKFsuNSwgMzBdLCB7dmFsdWU6IDQsIHN0ZXA6LjEsIGxhYmVsOiBtZGBUPHN1Yj5oYXV0PC9zdWI+IDxzbWFsbD4ocyk8L3NtYWxsPmB9KSxcblx0VGxvdzogSW5wdXRzLnJhbmdlKFsuMDEsIDFdLCB7dmFsdWU6IC41LCBzdGVwOi4wMSwgbGFiZWw6IG1kYFQ8c3ViPmJhczwvc3ViPiA8c21hbGw+KHMpPC9zbWFsbD5gfSksXG5cdFR2ZW50OiBJbnB1dHMucmFuZ2UoWzYsIDYwXSwge3ZhbHVlOiAyNCwgc3RlcDoxLCBsYWJlbDogbWRgRHVyw6llIHNpbS4gPHNtYWxsPihzKTwvc21hbGw+YH0pLFxufSlcblxudmVudCA9IG5ldyBzdi5BUFJWKHsuLi5mb3JtVmVudH0pO1xuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC00IiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiXG5cdGNyb3BwZWQgPSBkYXRhLmZpbHRlcihkPT57XG5cdFx0XHRyZXR1cm4gZC50aW1lID4gZXgubWlkUG9pbnQgLSAyKiBleC5UbG93ICYmIGQudGltZSA8IGV4Lm1pZFBvaW50ICsgMipleC5UbG93XG5cdFx0fVxuXHQpO1xuXG5cdFBsb3QucGxvdCh7XG5cdFx0d2lkdGg6IDQwMCxcblx0XHRoZWlnaHQ6IDMwMCxcblx0XHRncmlkOiB0cnVlLFxuXHRcdHg6IHtsYWJlbDogXCJUZW1wcyAocylcIn0sXG5cdFx0eToge2xhYmVsOiBcIkTDqWJpdCAobC9zKVwifSxcblx0XHRtYXJrczogW1xuXHRcdFx0UGxvdC5saW5lKGNyb3BwZWQsIHt4OiBcInRpbWVcIiwgeTogXCJGbHVuZ1wifSksXG5cdFx0XHRQbG90LmRvdChbZXguc3RhcnQsIGV4LmVuZF0sIHsgeDogXCJ0aW1lXCIsIHk6IFwiRmx1bmdcIiwgc3Ryb2tlOiBcInJlZFwiIH0pLFxuXHRcdF1cblx0fSk7XG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTUiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJpbXBvcnQge2V4YWxhdGlvbnMsIHBlYWtEaW0sIG1pbkRpbSwgc2lnUG9zVG9OZWcsIHNpZ05lZ1RvUG9zLCBkZXJpdn0gZnJvbSBcIkBwcm9ncnQvc2lnbmFsXCI7XG5cbnN2ID0gaW1wb3J0KFwiaHR0cHM6Ly9jZG4uanNkZWxpdnIubmV0L2doL3Byb2dydC9zaW12ZW50LmpzQDMuMy9zcmMvc2ltdmVudC5qc1wiKTtcblxuZGF0YSA9IHZlbnQudmVudGlsYXRlKGx1bmcpLnRpbWVEYXRhO1xuXG5leCA9IGV4YWxhdGlvbnMoZGF0YSkuc2xpY2UoLTEpWzBdO1xuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0UXVpZXQiLCJzb3VyY2UiOiJzaGlueUlucHV0KCdmb3JtTHVuZycpIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0UXVpZXQiLCJzb3VyY2UiOiJzaGlueUlucHV0KCdmb3JtVmVudCcpIn1dfQ==
 </script>
