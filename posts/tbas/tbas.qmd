@@ -2,8 +2,26 @@
 title: Ajustement du T<sub>bas</sub> en APRV
 echo: false
 image: thumbnail.png
-draft: true
+#draft: true
+bibliography: références.bib
+description: " Le protocole *Time Controled Adaptative Ventilation*
+requier de régler des temps expiratoire assez court pour que
+l'expiration prenne fin lorsque le débit expiratoire a atteint 75 % du
+débit expiratoire de pointe. \n\n
+
+Le simulateur suivant permet d'expérimenter l'influence de la
+compliance et des résistances du poumon sur le temps expiratoire à
+régler pour atteindre cet objectif.  "
 ---
+
+Le protocole *Time Controled Adaptative Ventilation* requier de régler
+des temps expiratoire assez court pour que l'expiration prenne fin
+lorsque le débit expiratoire a atteint 75 % du débit expiratoire de
+pointe [@nieman2018].
+
+Le simulateur suivant permet d'expérimenter l'influence de la
+compliance et des résistances du poumon sur le temps expiratoire à
+régler pour atteindre cet objectif.
 
 ```{ojs}
 //|classes: card card-body
@@ -94,3 +112,13 @@ data = vent.ventilate(lung).timeData;
 
 ex = exalations(data).slice(-1)[0];
 ```
+
+## Éléments du protocole TCAV
+
+- Mode Pression Contrôlée cyclé par le temps;
+- Temps inspiratoire ocupant ~ 90 % du cycle;
+- Pression haute suffisante pour recruter en maintenir la capacité
+	vitale;
+- Temps bas suffisament court pour terminer l'expiration à 75 % du
+	débit expiratoire de pointe (typiquement < 0,5 s);
+- Pression basse à 0;
