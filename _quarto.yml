@@ -9,7 +9,7 @@ website:
   navbar:
     background: primary
     title: false
-    logo: img/logo/nlogo-blanc.png
+    logo: img/logo/Nébuliseur2-simple.svg
     left:
       - index.qmd
       - billets.qmd
