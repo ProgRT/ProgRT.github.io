@@ -2,6 +2,7 @@ project:
   type: website
   resources:
     - awesomestyle.css
+    - js/vdrSignalAnalysis.js
 
 website:
   title: "Carnet de Nicolas"

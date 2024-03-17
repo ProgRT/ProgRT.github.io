@@ -157,8 +157,8 @@ protocolsPlots = {
 				y: "Pao",
 				stroke: cscale.apply("Percussionaire")
 			}),
-			Plot.line(dataCHUM, {x:
-				"time",
+			Plot.line(dataCHUM, {
+			x: "time",
 				y: "Pao",
 				stroke: cscale.apply('CHUM'),
 				strokeWidth: 2
@@ -172,7 +172,8 @@ protocolsPlots = {
 
 ```{ojs}
 sv = import("https://progrt.github.io/simvent.js/src/simvent.js");
-va = import('https://progrt.github.io/simvent.js/src/vdrSignalAnalysis.js');
+//va = import('https://progrt.github.io/simvent.js/src/vdrSignalAnalysis.js');
+va = import('../../js/vdrSignalAnalysis.js');
 
 drawPlage = function(data, start, end){
 	return Plot.rect(data, {
