@@ -30,3 +30,10 @@
   event: Club de lectures - Service d'inhalothérapie - CHUM
   file: navafiltration/slides.pdf
   thumbnail: navafiltration.png
+
+- date: 2022/07/20
+  title: "Doser l'aide inspiratoire"
+  subtitle: "Cibles et outils cliniques"
+  event: Semaine de l'inhalothérapie - Service d'inhalothérapie - CHUM
+  file: aide_inspiratoire/slides.html
+  thumbnail: navafiltration.png
