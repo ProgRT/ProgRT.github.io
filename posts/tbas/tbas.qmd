@@ -2,7 +2,8 @@
 title: Ajustement du T<sub>bas</sub> en APRV
 echo: false
 image: thumbnail.png
-#draft: true
+open-graph:
+  image: thumbnail.png
 bibliography: références.bib
 description: " Le protocole *Time Controled Adaptative Ventilation*
 requier de régler des temps expiratoire assez court pour que
