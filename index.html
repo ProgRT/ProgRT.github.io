@@ -104,6 +104,9 @@ ul.task-list li input[type="checkbox"] {
 <meta property="og:title" content="Projets – Carnet de Nicolas">
 <meta property="og:image" content="https://progrt.github.io/inhalotherapie.svg/thumbnail.png">
 <meta property="og:site_name" content="Carnet de Nicolas">
+<meta name="twitter:title" content="Projets – Carnet de Nicolas">
+<meta name="twitter:image" content="https://progrt.github.io/inhalotherapie.svg/thumbnail.png">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-fixed fullcontent">
@@ -344,7 +347,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("ssh:\/\/git@github\.com\/ProgRT\/progrt\.github\.io");
+      var filterRegex = new RegExp("https:\/\/progrt\.github\.io");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
