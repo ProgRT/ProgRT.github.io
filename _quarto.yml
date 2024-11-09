@@ -8,7 +8,6 @@ website:
   title: "Carnet de Nicolas"
   favicon: img/favicon/favicon.png
   site-url: https://progrt.github.io
-  twitter-card: true
   open-graph: true
   navbar:
     background: primary
