@@ -1,18 +1,19 @@
 [
   {
-    "listing": "/billets.html",
-    "items": [
-      "/posts/tbas/tbas.html",
-      "/posts/vdrmoyenne/vdrmoyen.html",
-      "/posts/bohr/christian_bohr.html"
-    ]
+    "listing": "/diapo.html",
+    "items": []
   },
   {
     "listing": "/index.html",
     "items": []
   },
   {
-    "listing": "/diapo.html",
-    "items": []
+    "listing": "/billets.html",
+    "items": [
+      "/posts/aide_inspiratoire/aide_inspiratoire.html",
+      "/posts/tbas/tbas.html",
+      "/posts/vdrmoyenne/vdrmoyen.html",
+      "/posts/bohr/christian_bohr.html"
+    ]
   }
 ]
