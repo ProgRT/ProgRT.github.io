@@ -15,3 +15,4 @@ d'activité diaphragmatique des patients ventilés mécaniquement.
 
 
 {{< include _tblCibles.md >}}
+{{< include _tblGoldStandards.md >}}
