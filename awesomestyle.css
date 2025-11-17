@@ -4,6 +4,13 @@
 	max-height: 45px;
 }
 
+.card {
+    margin-bottom: 1em;
+}
+
+.card h3 {
+    margin: 0px;
+}
 @media print {
 	body.nav-fixed {
 		padding-top: 0px;
