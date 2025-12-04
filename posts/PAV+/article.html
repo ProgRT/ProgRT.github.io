@@ -129,6 +129,7 @@ div.csl-indent {
 <link rel="stylesheet" href="../../awesomestyle.css">
 <meta property="og:title" content="Apprivoiser le mode PAV+ – Carnet de Nicolas">
 <meta property="og:description" content="">
+<meta property="og:image" content="https://progrt.github.io/posts/PAV+/_diapo-beamer/Pavlov.jpg">
 <meta property="og:site_name" content="Carnet de Nicolas">
 </head>
 
@@ -161,6 +162,10 @@ div.csl-indent {
     <a class="nav-link" href="../../diapo.html"> 
 <span class="menu-text">Diapositives</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://observablehq.com/collection/@progrt/calculatrices-respiratoires"> 
+<span class="menu-text">Calculatrices</span></a>
+  </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -172,26 +177,11 @@ div.csl-indent {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Sur cette page</h2>
-   
-  <ul>
-  <li><a href="#généralités" id="toc-généralités" class="nav-link active" data-scroll-target="#généralités">Généralités</a>
-  <ul class="collapse">
-  <li><a href="#description-technique" id="toc-description-technique" class="nav-link" data-scroll-target="#description-technique">Description technique</a></li>
-  </ul></li>
-  <li><a href="#mise-en-route" id="toc-mise-en-route" class="nav-link" data-scroll-target="#mise-en-route">Mise en route</a>
-  <ul class="collapse">
-  <li><a href="#paramètres-à-ajuster" id="toc-paramètres-à-ajuster" class="nav-link" data-scroll-target="#paramètres-à-ajuster">Paramètres à ajuster</a></li>
-  </ul></li>
-  <li><a href="#gestion-clinique" id="toc-gestion-clinique" class="nav-link" data-scroll-target="#gestion-clinique">Gestion clinique</a></li>
-  <li><a href="#quand-ça-ne-marche-pas" id="toc-quand-ça-ne-marche-pas" class="nav-link" data-scroll-target="#quand-ça-ne-marche-pas">Quand ça ne marche pas</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -212,7 +202,7 @@ div.csl-indent {
     <div>
     <div class="quarto-title-meta-heading">Date de publication</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">17 novembre 2025</p>
+      <p class="date">4 décembre 2025</p>
     </div>
   </div>
   
@@ -224,7 +214,13 @@ div.csl-indent {
 </header>
 
 
-<section id="généralités" class="level2">
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p><span class="quarto-title-meta-heading">Pièces jointes</span></p>
+<ul>
+<li><a href="./_diapo-beamer/diapo.pdf" class="bi bi-file-slides">diapositives.pdf</a></li>
+</ul>
+</div></div><section id="généralités" class="level2">
 <h2 class="anchored" data-anchor-id="généralités">Généralités</h2>
 <p>Le mode PAV+ constitue un mode ce ventilation spontanée continue (VSC) en pression contrôlée (PC) au même titre que le mode VS-AI <span class="citation" data-cites="chatburn2014">(<a href="#ref-chatburn2014" role="doc-biblioref">Chatburn, El-Khatib, et Mireles-Cabodevila 2014</a>)</span>. Il diffère de celui-ci par le type de contrôle de la pression. Alors qu’en VS-AI, la pression est fixe, elle est, dans le mode PAV+, plutôt asservie au travail respiratoire effectué par le patient. Cela place le mode PAV+ dans la même famille que le mode NAVA <span class="citation" data-cites="jonkman2020">(<a href="#ref-jonkman2020" role="doc-biblioref">Jonkman et al. 2020</a>)</span>, où la pression est asservie à l’activité électrique diaphragmatique mesurée au moyen d’un cathéter. On pourait aussi désigner ces deux modes comme étant des modes <em>proportionnels</em>, ceux-ci agissant comme un amplificateur du travail effectué par le patient.</p>
 <div id="tbl-modes" class="quarto-float quarto-figure quarto-figure-center anchored">
@@ -278,16 +274,16 @@ Table&nbsp;1: Classification des modes de ventilation spontanés
 </figure>
 </div>
 <p>Comme c’est le cas pour les autres modes de ventilation spontanée continue, le mode PAV+ ne vise pas le contrôle de la ventilation (celui-ci étant assuré par les centres respiratoires du patient) mais bien le maintien d’un niveau de travail respiratoire adéquat.</p>
-<div class="cell" data-layout-align="default">
+<div class="cell" data-file="_commande.dot" data-layout-align="default">
 <div class="cell-output-display">
 <div id="fig-retroaction" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-retroaction-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div>
-<svg width="672" height="480" viewbox="0.00 0.00 178.01 478.56" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style="; max-width: none; max-height: none">
+<svg width="672" height="480" viewbox="0.00 0.00 189.85 478.56" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style="; max-width: none; max-height: none">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 474.56)">
-<title>TD</title>
-<polygon fill="white" stroke="transparent" points="-4,4 -4,-474.56 174.01,-474.56 174.01,4 -4,4"></polygon>
+<title>LR</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-474.56 185.85,-474.56 185.85,4 -4,4"></polygon>
 <!-- Centre -->
 <g id="node1" class="node">
 <title>Centre</title>
@@ -297,8 +293,8 @@ Table&nbsp;1: Classification des modes de ventilation spontanés
 <!-- Commande -->
 <g id="node2" class="node">
 <title>Commande</title>
-<ellipse fill="none" stroke="black" cx="78.35" cy="-373.1" rx="61.81" ry="25.41"></ellipse>
-<text text-anchor="start" x="42.58" y="-375.5" font-family="Times,serif" font-size="14.00"> Commande </text>
+<ellipse fill="none" stroke="black" cx="78.35" cy="-373.1" rx="71.61" ry="25.41"></ellipse>
+<text text-anchor="start" x="35.58" y="-375.5" font-family="Times,serif" font-size="14.00"> Commande 📡</text>
 <text text-anchor="start" x="56.52" y="-361.5" font-family="Times,serif" font-size="14.00"> </text>
 <text text-anchor="start" x="60.02" y="-361.5" font-family="Times,serif" font-size="10.00">µV·s / m</text>
 <text text-anchor="start" x="96.69" y="-361.5" font-family="Times,serif" font-size="14.00"> </text>
@@ -312,8 +308,8 @@ Table&nbsp;1: Classification des modes de ventilation spontanés
 <!-- Couplage -->
 <g id="node3" class="node">
 <title>Couplage</title>
-<ellipse fill="none" stroke="black" cx="78.35" cy="-286.19" rx="66.66" ry="25.41"></ellipse>
-<text text-anchor="start" x="39.27" y="-288.59" font-family="Times,serif" font-size="14.00"> Couplage 💪 </text>
+<ellipse fill="none" stroke="black" cx="78.35" cy="-286.19" rx="64.21" ry="25.41"></ellipse>
+<text text-anchor="start" x="41.02" y="-288.59" font-family="Times,serif" font-size="14.00"> Couplage 💪</text>
 <text text-anchor="start" x="47.77" y="-274.59" font-family="Times,serif" font-size="14.00"> </text>
 <text text-anchor="start" x="51.27" y="-274.59" font-family="Times,serif" font-size="10.00">cmH₂O / µV</text>
 <text text-anchor="start" x="105.43" y="-274.59" font-family="Times,serif" font-size="14.00"> </text>
@@ -327,8 +323,8 @@ Table&nbsp;1: Classification des modes de ventilation spontanés
 <!-- Charge -->
 <g id="node4" class="node">
 <title>Charge</title>
-<ellipse fill="none" stroke="black" cx="78.35" cy="-199.28" rx="54.34" ry="25.41"></ellipse>
-<text text-anchor="start" x="54.64" y="-201.68" font-family="Times,serif" font-size="14.00"> Charge </text>
+<ellipse fill="none" stroke="black" cx="78.35" cy="-199.28" rx="64.8" ry="25.41"></ellipse>
+<text text-anchor="start" x="40.64" y="-201.68" font-family="Times,serif" font-size="14.00"> Charge &nbsp;🏋️</text>
 <text text-anchor="start" x="48.05" y="-187.68" font-family="Times,serif" font-size="14.00"> </text>
 <text text-anchor="start" x="51.55" y="-187.68" font-family="Times,serif" font-size="10.00">cmH₂O·s / l</text>
 <text text-anchor="start" x="105.16" y="-187.68" font-family="Times,serif" font-size="14.00"> </text>
@@ -342,8 +338,8 @@ Table&nbsp;1: Classification des modes de ventilation spontanés
 <!-- Ventilation -->
 <g id="node5" class="node">
 <title>Ventilation</title>
-<ellipse fill="none" stroke="black" cx="78.35" cy="-112.37" rx="60.6" ry="25.41"></ellipse>
-<text text-anchor="start" x="43.36" y="-114.77" font-family="Times,serif" font-size="14.00"> Ventilation </text>
+<ellipse fill="none" stroke="black" cx="78.35" cy="-112.37" rx="70.9" ry="25.41"></ellipse>
+<text text-anchor="start" x="36.36" y="-114.77" font-family="Times,serif" font-size="14.00"> Ventilation 🫁</text>
 <text text-anchor="start" x="68.18" y="-100.77" font-family="Times,serif" font-size="14.00"> </text>
 <text text-anchor="start" x="71.68" y="-100.77" font-family="Times,serif" font-size="10.00">l/m</text>
 <text text-anchor="start" x="85.02" y="-100.77" font-family="Times,serif" font-size="14.00"> </text>
@@ -357,8 +353,8 @@ Table&nbsp;1: Classification des modes de ventilation spontanés
 <!-- Capnie -->
 <g id="node6" class="node">
 <title>Capnie</title>
-<ellipse fill="none" stroke="black" cx="78.35" cy="-25.46" rx="44.11" ry="25.41"></ellipse>
-<text text-anchor="start" x="55.02" y="-27.86" font-family="Times,serif" font-size="14.00"> Capnie </text>
+<ellipse fill="none" stroke="black" cx="78.35" cy="-25.46" rx="54.41" ry="25.41"></ellipse>
+<text text-anchor="start" x="48.02" y="-27.86" font-family="Times,serif" font-size="14.00"> Capnie 🧪</text>
 <text text-anchor="start" x="60.96" y="-13.86" font-family="Times,serif" font-size="14.00"> </text>
 <text text-anchor="start" x="64.46" y="-13.86" font-family="Times,serif" font-size="10.00">mmHg</text>
 <text text-anchor="start" x="92.24" y="-13.86" font-family="Times,serif" font-size="14.00"> </text>
@@ -372,8 +368,8 @@ Table&nbsp;1: Classification des modes de ventilation spontanés
 <!-- Capnie&#45;&gt;Centre -->
 <g id="edge6" class="edge">
 <title>Capnie-&gt;Centre</title>
-<path fill="none" stroke="black" d="M108.86,-44.28C123.6,-54.68 139.89,-69.24 148.35,-86.91 191.49,-177.04 157.22,-211.77 154.35,-311.65 153.24,-350.32 167.68,-364.48 149.35,-398.56 142.43,-411.42 130.88,-422.03 119.08,-430.3"></path>
-<polygon fill="black" stroke="black" points="116.97,-427.5 110.51,-435.89 120.79,-433.36 116.97,-427.5"></polygon>
+<path fill="none" stroke="black" d="M115.44,-44.46C131.75,-54.5 149.24,-68.69 158.35,-86.91 210.19,-190.56 159.13,-231.76 159.35,-347.65 159.4,-370.27 170.11,-378.65 159.35,-398.56 151.75,-412.63 138.6,-423.56 125.09,-431.74"></path>
+<polygon fill="black" stroke="black" points="123.22,-428.78 116.21,-436.73 126.64,-434.88 123.22,-428.78"></polygon>
 </g>
 </g>
 </svg>
@@ -494,45 +490,45 @@ Calculée au moyen de la Pression motrice et du pourcentage d’assistance
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mrow><mi>m</mi><mi>u</mi><mi>s</mi></mrow></msub><mo>=</mo><mfrac><mn>10</mn><mn>0.4</mn></mfrac><mo>⋅</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>0.6</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">P_{mus} = \frac{10}{0.4}\cdot (0.6)</annotation></semantics></math></p>
 <p>Plusieurs recherches ont utilisés une Pmus entre 5 et 10 cmH₂O comme valeur de référence pour un travail respiratoire normal. <span class="citation" data-cites="albani2021a">Yang et al. (<a href="#ref-yang2023" role="doc-biblioref">2023</a>)</span></p>
 <div class="cell">
-<div class="sourceCode cell-code hidden" id="cb1" data-startfrom="186" data-source-offset="-79"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 185;"><span id="cb1-186"><a href="#cb1-186" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">Pmotrice</span>(Fsupport<span class="op">,</span> Pmus){</span>
-<span id="cb1-187"><a href="#cb1-187" aria-hidden="true" tabindex="-1"></a>    <span class="kw">let</span> Fpatient <span class="op">=</span> <span class="dv">1</span> <span class="op">-</span> Fsupport<span class="op">;</span></span>
-<span id="cb1-188"><a href="#cb1-188" aria-hidden="true" tabindex="-1"></a>    <span class="kw">let</span> Ptotal <span class="op">=</span> Pmus <span class="op">/</span> Fpatient<span class="op">;</span></span>
-<span id="cb1-189"><a href="#cb1-189" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> Ptotal <span class="op">*</span> Fsupport<span class="op">;</span></span>
-<span id="cb1-190"><a href="#cb1-190" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb1-191"><a href="#cb1-191" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-192"><a href="#cb1-192" aria-hidden="true" tabindex="-1"></a>datPmotrice <span class="op">=</span> d3<span class="op">.</span><span class="fu">ticks</span>(<span class="op">.</span><span class="bn">05</span><span class="op">,</span> <span class="op">.</span><span class="dv">95</span><span class="op">,</span> <span class="dv">90</span>)<span class="op">.</span><span class="fu">map</span>(f<span class="kw">=&gt;</span>{</span>
-<span id="cb1-193"><a href="#cb1-193" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> {</span>
-<span id="cb1-194"><a href="#cb1-194" aria-hidden="true" tabindex="-1"></a>    <span class="dt">Fsupport</span><span class="op">:</span>f<span class="op">,</span></span>
-<span id="cb1-195"><a href="#cb1-195" aria-hidden="true" tabindex="-1"></a>    <span class="dt">PmotriceMin</span><span class="op">:</span><span class="fu">Pmotrice</span>(f<span class="op">,</span> <span class="dv">5</span>)<span class="op">,</span></span>
-<span id="cb1-196"><a href="#cb1-196" aria-hidden="true" tabindex="-1"></a>    <span class="dt">PmotriceMax</span><span class="op">:</span> <span class="fu">Pmotrice</span>(f<span class="op">,</span> <span class="dv">10</span>)</span>
-<span id="cb1-197"><a href="#cb1-197" aria-hidden="true" tabindex="-1"></a>    }</span>
-<span id="cb1-198"><a href="#cb1-198" aria-hidden="true" tabindex="-1"></a>})</span>
-<span id="cb1-199"><a href="#cb1-199" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-200"><a href="#cb1-200" aria-hidden="true" tabindex="-1"></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
-<span id="cb1-201"><a href="#cb1-201" aria-hidden="true" tabindex="-1"></a>    <span class="dt">x</span><span class="op">:</span> {</span>
-<span id="cb1-202"><a href="#cb1-202" aria-hidden="true" tabindex="-1"></a>        <span class="dt">label</span><span class="op">:</span> <span class="st">"% support"</span><span class="op">,</span></span>
-<span id="cb1-203"><a href="#cb1-203" aria-hidden="true" tabindex="-1"></a>        <span class="dt">percent</span><span class="op">:</span> <span class="kw">true</span></span>
-<span id="cb1-204"><a href="#cb1-204" aria-hidden="true" tabindex="-1"></a>    }<span class="op">,</span></span>
-<span id="cb1-205"><a href="#cb1-205" aria-hidden="true" tabindex="-1"></a>    <span class="dt">y</span><span class="op">:</span> {</span>
-<span id="cb1-206"><a href="#cb1-206" aria-hidden="true" tabindex="-1"></a>        <span class="dt">domain</span><span class="op">:</span> [<span class="dv">0</span><span class="op">,</span> <span class="dv">120</span>]<span class="op">,</span></span>
-<span id="cb1-207"><a href="#cb1-207" aria-hidden="true" tabindex="-1"></a>        <span class="dt">label</span><span class="op">:</span> <span class="st">'Δ P vent (cmH₂O)'</span></span>
-<span id="cb1-208"><a href="#cb1-208" aria-hidden="true" tabindex="-1"></a>    }<span class="op">,</span></span>
-<span id="cb1-209"><a href="#cb1-209" aria-hidden="true" tabindex="-1"></a>    <span class="dt">grid</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
-<span id="cb1-210"><a href="#cb1-210" aria-hidden="true" tabindex="-1"></a>    <span class="dt">marks</span><span class="op">:</span> [</span>
-<span id="cb1-211"><a href="#cb1-211" aria-hidden="true" tabindex="-1"></a>        <span class="co">//Plot.line(datPmotrice, {x: 'Fsupport', y: 'PmotriceMax'}),</span></span>
-<span id="cb1-212"><a href="#cb1-212" aria-hidden="true" tabindex="-1"></a>        Plot<span class="op">.</span><span class="fu">area</span>(datPmotrice<span class="op">,</span> {</span>
-<span id="cb1-213"><a href="#cb1-213" aria-hidden="true" tabindex="-1"></a>            <span class="dt">x1</span><span class="op">:</span> <span class="st">'Fsupport'</span><span class="op">,</span></span>
-<span id="cb1-214"><a href="#cb1-214" aria-hidden="true" tabindex="-1"></a>            <span class="dt">y1</span><span class="op">:</span> <span class="st">'PmotriceMin'</span><span class="op">,</span></span>
-<span id="cb1-215"><a href="#cb1-215" aria-hidden="true" tabindex="-1"></a>            <span class="dt">y2</span><span class="op">:</span> <span class="st">'PmotriceMax'</span><span class="op">,</span></span>
-<span id="cb1-216"><a href="#cb1-216" aria-hidden="true" tabindex="-1"></a>            <span class="dt">fill</span><span class="op">:</span> <span class="st">'gainsboro'</span><span class="op">,</span></span>
-<span id="cb1-217"><a href="#cb1-217" aria-hidden="true" tabindex="-1"></a>            <span class="dt">tip</span><span class="op">:</span> {</span>
-<span id="cb1-218"><a href="#cb1-218" aria-hidden="true" tabindex="-1"></a>            <span class="dt">format</span><span class="op">:</span> {</span>
-<span id="cb1-219"><a href="#cb1-219" aria-hidden="true" tabindex="-1"></a>                <span class="dt">y</span><span class="op">:</span> d<span class="kw">=&gt;</span>d<span class="op">.</span><span class="fu">toFixed</span>(<span class="dv">0</span>)</span>
-<span id="cb1-220"><a href="#cb1-220" aria-hidden="true" tabindex="-1"></a>            }</span>
-<span id="cb1-221"><a href="#cb1-221" aria-hidden="true" tabindex="-1"></a>        }</span>
-<span id="cb1-222"><a href="#cb1-222" aria-hidden="true" tabindex="-1"></a>        })</span>
-<span id="cb1-223"><a href="#cb1-223" aria-hidden="true" tabindex="-1"></a>    ]</span>
-<span id="cb1-224"><a href="#cb1-224" aria-hidden="true" tabindex="-1"></a>})</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb1" data-startfrom="166" data-source-offset="-78"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 165;"><span id="cb1-166"><a href="#cb1-166" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">Pmotrice</span>(Fsupport<span class="op">,</span> Pmus){</span>
+<span id="cb1-167"><a href="#cb1-167" aria-hidden="true" tabindex="-1"></a>    <span class="kw">let</span> Fpatient <span class="op">=</span> <span class="dv">1</span> <span class="op">-</span> Fsupport<span class="op">;</span></span>
+<span id="cb1-168"><a href="#cb1-168" aria-hidden="true" tabindex="-1"></a>    <span class="kw">let</span> Ptotal <span class="op">=</span> Pmus <span class="op">/</span> Fpatient<span class="op">;</span></span>
+<span id="cb1-169"><a href="#cb1-169" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> Ptotal <span class="op">*</span> Fsupport<span class="op">;</span></span>
+<span id="cb1-170"><a href="#cb1-170" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-171"><a href="#cb1-171" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-172"><a href="#cb1-172" aria-hidden="true" tabindex="-1"></a>datPmotrice <span class="op">=</span> d3<span class="op">.</span><span class="fu">ticks</span>(<span class="op">.</span><span class="bn">05</span><span class="op">,</span> <span class="op">.</span><span class="dv">95</span><span class="op">,</span> <span class="dv">90</span>)<span class="op">.</span><span class="fu">map</span>(f<span class="kw">=&gt;</span>{</span>
+<span id="cb1-173"><a href="#cb1-173" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> {</span>
+<span id="cb1-174"><a href="#cb1-174" aria-hidden="true" tabindex="-1"></a>    <span class="dt">Fsupport</span><span class="op">:</span>f<span class="op">,</span></span>
+<span id="cb1-175"><a href="#cb1-175" aria-hidden="true" tabindex="-1"></a>    <span class="dt">PmotriceMin</span><span class="op">:</span><span class="fu">Pmotrice</span>(f<span class="op">,</span> <span class="dv">5</span>)<span class="op">,</span></span>
+<span id="cb1-176"><a href="#cb1-176" aria-hidden="true" tabindex="-1"></a>    <span class="dt">PmotriceMax</span><span class="op">:</span> <span class="fu">Pmotrice</span>(f<span class="op">,</span> <span class="dv">10</span>)</span>
+<span id="cb1-177"><a href="#cb1-177" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb1-178"><a href="#cb1-178" aria-hidden="true" tabindex="-1"></a>})</span>
+<span id="cb1-179"><a href="#cb1-179" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-180"><a href="#cb1-180" aria-hidden="true" tabindex="-1"></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
+<span id="cb1-181"><a href="#cb1-181" aria-hidden="true" tabindex="-1"></a>    <span class="dt">x</span><span class="op">:</span> {</span>
+<span id="cb1-182"><a href="#cb1-182" aria-hidden="true" tabindex="-1"></a>        <span class="dt">label</span><span class="op">:</span> <span class="st">"% support"</span><span class="op">,</span></span>
+<span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a>        <span class="dt">percent</span><span class="op">:</span> <span class="kw">true</span></span>
+<span id="cb1-184"><a href="#cb1-184" aria-hidden="true" tabindex="-1"></a>    }<span class="op">,</span></span>
+<span id="cb1-185"><a href="#cb1-185" aria-hidden="true" tabindex="-1"></a>    <span class="dt">y</span><span class="op">:</span> {</span>
+<span id="cb1-186"><a href="#cb1-186" aria-hidden="true" tabindex="-1"></a>        <span class="dt">domain</span><span class="op">:</span> [<span class="dv">0</span><span class="op">,</span> <span class="dv">120</span>]<span class="op">,</span></span>
+<span id="cb1-187"><a href="#cb1-187" aria-hidden="true" tabindex="-1"></a>        <span class="dt">label</span><span class="op">:</span> <span class="st">'Δ P vent (cmH₂O)'</span></span>
+<span id="cb1-188"><a href="#cb1-188" aria-hidden="true" tabindex="-1"></a>    }<span class="op">,</span></span>
+<span id="cb1-189"><a href="#cb1-189" aria-hidden="true" tabindex="-1"></a>    <span class="dt">grid</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
+<span id="cb1-190"><a href="#cb1-190" aria-hidden="true" tabindex="-1"></a>    <span class="dt">marks</span><span class="op">:</span> [</span>
+<span id="cb1-191"><a href="#cb1-191" aria-hidden="true" tabindex="-1"></a>        <span class="co">//Plot.line(datPmotrice, {x: 'Fsupport', y: 'PmotriceMax'}),</span></span>
+<span id="cb1-192"><a href="#cb1-192" aria-hidden="true" tabindex="-1"></a>        Plot<span class="op">.</span><span class="fu">area</span>(datPmotrice<span class="op">,</span> {</span>
+<span id="cb1-193"><a href="#cb1-193" aria-hidden="true" tabindex="-1"></a>            <span class="dt">x1</span><span class="op">:</span> <span class="st">'Fsupport'</span><span class="op">,</span></span>
+<span id="cb1-194"><a href="#cb1-194" aria-hidden="true" tabindex="-1"></a>            <span class="dt">y1</span><span class="op">:</span> <span class="st">'PmotriceMin'</span><span class="op">,</span></span>
+<span id="cb1-195"><a href="#cb1-195" aria-hidden="true" tabindex="-1"></a>            <span class="dt">y2</span><span class="op">:</span> <span class="st">'PmotriceMax'</span><span class="op">,</span></span>
+<span id="cb1-196"><a href="#cb1-196" aria-hidden="true" tabindex="-1"></a>            <span class="dt">fill</span><span class="op">:</span> <span class="st">'gainsboro'</span><span class="op">,</span></span>
+<span id="cb1-197"><a href="#cb1-197" aria-hidden="true" tabindex="-1"></a>            <span class="dt">tip</span><span class="op">:</span> {</span>
+<span id="cb1-198"><a href="#cb1-198" aria-hidden="true" tabindex="-1"></a>            <span class="dt">format</span><span class="op">:</span> {</span>
+<span id="cb1-199"><a href="#cb1-199" aria-hidden="true" tabindex="-1"></a>                <span class="dt">y</span><span class="op">:</span> d<span class="kw">=&gt;</span>d<span class="op">.</span><span class="fu">toFixed</span>(<span class="dv">0</span>)</span>
+<span id="cb1-200"><a href="#cb1-200" aria-hidden="true" tabindex="-1"></a>            }</span>
+<span id="cb1-201"><a href="#cb1-201" aria-hidden="true" tabindex="-1"></a>        }</span>
+<span id="cb1-202"><a href="#cb1-202" aria-hidden="true" tabindex="-1"></a>        })</span>
+<span id="cb1-203"><a href="#cb1-203" aria-hidden="true" tabindex="-1"></a>    ]</span>
+<span id="cb1-204"><a href="#cb1-204" aria-hidden="true" tabindex="-1"></a>})</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div id="fig-pmotrice" class="cell quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-pmotrice-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -650,7 +646,7 @@ Yang, Yan-Lin, Yang Liu, Ran Gao, De-Jing Song, Yi-Min Zhou, Ming-Yue Miao, Wei 
 </div>
 </div></section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Réutilisation</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr_ca">CC BY-SA 4.0</a></div></div></section></div></main> <!-- /main -->
 <script type="ojs-module-contents">
-eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6IlxuLy8gJCQgUF97bW90cmljZX0gPSBcXGZyYWN7UF97bXVzfX17KDEgLSBcXCVfe3N1cHBvcnR9KX0gXFxjZG90IFxcJV97c3VwcG9ydH0gJCRcblxuZnVuY3Rpb24gUG1vdHJpY2UoRnN1cHBvcnQsIFBtdXMpe1xuICAgIGxldCBGcGF0aWVudCA9IDEgLSBGc3VwcG9ydDtcbiAgICBsZXQgUHRvdGFsID0gUG11cyAvIEZwYXRpZW50O1xuICAgIHJldHVybiBQdG90YWwgKiBGc3VwcG9ydDtcbn1cblxuZGF0UG1vdHJpY2UgPSBkMy50aWNrcyguMDUsIC45NSwgOTApLm1hcChmPT57XG4gICAgcmV0dXJuIHtcbiAgICBGc3VwcG9ydDpmLFxuICAgIFBtb3RyaWNlTWluOlBtb3RyaWNlKGYsIDUpLFxuICAgIFBtb3RyaWNlTWF4OiBQbW90cmljZShmLCAxMClcbiAgICB9XG59KVxuXG5QbG90LnBsb3Qoe1xuICAgIHg6IHtcbiAgICAgICAgbGFiZWw6IFwiJeKAinN1cHBvcnRcIixcbiAgICAgICAgcGVyY2VudDogdHJ1ZVxuICAgIH0sXG4gICAgeToge1xuICAgICAgICBkb21haW46IFswLCAxMjBdLFxuICAgICAgICBsYWJlbDogJ86U4oCKUOKAinZlbnQgKGNtSOKCgk8pJ1xuICAgIH0sXG4gICAgZ3JpZDogdHJ1ZSxcbiAgICBtYXJrczogW1xuICAgICAgICAvL1Bsb3QubGluZShkYXRQbW90cmljZSwge3g6ICdGc3VwcG9ydCcsIHk6ICdQbW90cmljZU1heCd9KSxcbiAgICAgICAgUGxvdC5hcmVhKGRhdFBtb3RyaWNlLCB7XG4gICAgICAgICAgICB4MTogJ0ZzdXBwb3J0JyxcbiAgICAgICAgICAgIHkxOiAnUG1vdHJpY2VNaW4nLFxuICAgICAgICAgICAgeTI6ICdQbW90cmljZU1heCcsXG4gICAgICAgICAgICBmaWxsOiAnZ2FpbnNib3JvJyxcbiAgICAgICAgICAgIHRpcDoge1xuICAgICAgICAgICAgZm9ybWF0OiB7XG4gICAgICAgICAgICAgICAgeTogZD0+ZC50b0ZpeGVkKDApXG4gICAgICAgICAgICB9XG4gICAgICAgIH1cbiAgICAgICAgfSlcbiAgICBdXG59KVxuIn1dfQ==
+eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6Ii8vICQkIFBfe21vdHJpY2V9ID0gXFxmcmFje1Bfe211c319eygxIC0gXFwlX3tzdXBwb3J0fSl9IFxcY2RvdCBcXCVfe3N1cHBvcnR9ICQkXG5cbmZ1bmN0aW9uIFBtb3RyaWNlKEZzdXBwb3J0LCBQbXVzKXtcbiAgICBsZXQgRnBhdGllbnQgPSAxIC0gRnN1cHBvcnQ7XG4gICAgbGV0IFB0b3RhbCA9IFBtdXMgLyBGcGF0aWVudDtcbiAgICByZXR1cm4gUHRvdGFsICogRnN1cHBvcnQ7XG59XG5cbmRhdFBtb3RyaWNlID0gZDMudGlja3MoLjA1LCAuOTUsIDkwKS5tYXAoZj0+e1xuICAgIHJldHVybiB7XG4gICAgRnN1cHBvcnQ6ZixcbiAgICBQbW90cmljZU1pbjpQbW90cmljZShmLCA1KSxcbiAgICBQbW90cmljZU1heDogUG1vdHJpY2UoZiwgMTApXG4gICAgfVxufSlcblxuUGxvdC5wbG90KHtcbiAgICB4OiB7XG4gICAgICAgIGxhYmVsOiBcIiXigIpzdXBwb3J0XCIsXG4gICAgICAgIHBlcmNlbnQ6IHRydWVcbiAgICB9LFxuICAgIHk6IHtcbiAgICAgICAgZG9tYWluOiBbMCwgMTIwXSxcbiAgICAgICAgbGFiZWw6ICfOlOKAilDigIp2ZW50IChjbUjigoJPKSdcbiAgICB9LFxuICAgIGdyaWQ6IHRydWUsXG4gICAgbWFya3M6IFtcbiAgICAgICAgLy9QbG90LmxpbmUoZGF0UG1vdHJpY2UsIHt4OiAnRnN1cHBvcnQnLCB5OiAnUG1vdHJpY2VNYXgnfSksXG4gICAgICAgIFBsb3QuYXJlYShkYXRQbW90cmljZSwge1xuICAgICAgICAgICAgeDE6ICdGc3VwcG9ydCcsXG4gICAgICAgICAgICB5MTogJ1Btb3RyaWNlTWluJyxcbiAgICAgICAgICAgIHkyOiAnUG1vdHJpY2VNYXgnLFxuICAgICAgICAgICAgZmlsbDogJ2dhaW5zYm9ybycsXG4gICAgICAgICAgICB0aXA6IHtcbiAgICAgICAgICAgIGZvcm1hdDoge1xuICAgICAgICAgICAgICAgIHk6IGQ9PmQudG9GaXhlZCgwKVxuICAgICAgICAgICAgfVxuICAgICAgICB9XG4gICAgICAgIH0pXG4gICAgXVxufSlcblxuIn1dfQ==
 </script>
 <script type="module">
 if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
