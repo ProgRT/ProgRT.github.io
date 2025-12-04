@@ -280,13 +280,13 @@ Table&nbsp;1: Classification des modes de ventilation spontanés
 </figure>
 </div>
 <p>Comme c’est le cas pour les autres modes de ventilation spontanée continue, le mode PAV+ ne vise pas le contrôle de la ventilation (celui-ci étant assuré par les centres respiratoires du patient) mais bien le maintien d’un niveau de travail respiratoire adéquat.</p>
-<div class="cell" data-file="_commande.dot" data-layout-align="default">
+<div class="cell" data-fig-width="100%" data-file="_commande.dot" data-layout-align="default">
 <div class="cell-output-display">
 <div id="fig-retroaction" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-retroaction-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div>
-<svg width="672" height="480" viewbox="0.00 0.00 189.85 478.56" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style="; max-width: none; max-height: none">
+<svg width="NaN" height="480" viewbox="0.00 0.00 189.85 478.56" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style="; max-width: none; max-height: none">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 474.56)">
 <title>LR</title>
 <polygon fill="white" stroke="transparent" points="-4,4 -4,-474.56 185.85,-474.56 185.85,4 -4,4"></polygon>
@@ -391,9 +391,9 @@ Figure&nbsp;1: Boucle de rétroaction du contrôle respiratoire
 <section id="description-technique" class="level3">
 <h3 class="anchored" data-anchor-id="description-technique">Description technique</h3>
 <p>Lorsque le mode PAV+ est en fonction, le ventilateur calcule, chaque 5&nbsp;ms, le travail respiratoire au moyen de l’équation du mouvement de l’air.</p>
-<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mrow><mi>v</mi><mi>e</mi><mi>n</mi><mi>t</mi></mrow></msub><mo>+</mo><msub><mi>P</mi><mrow><mi>m</mi><mi>u</mi><mi>s</mi></mrow></msub><mo>=</mo><mi>Δ</mi><mi>V</mi><mo>⋅</mo><mi>E</mi><mo>+</mo><mover><mi>V</mi><mo accent="true">̇</mo></mover><mo>⋅</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">
+<p><span id="eq-mvt-air"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mrow><mi>v</mi><mi>e</mi><mi>n</mi><mi>t</mi></mrow></msub><mo>+</mo><msub><mi>P</mi><mrow><mi>m</mi><mi>u</mi><mi>s</mi></mrow></msub><mo>=</mo><mi>Δ</mi><mi>V</mi><mo>⋅</mo><mi>E</mi><mo>+</mo><mover><mi>V</mi><mo accent="true">̇</mo></mover><mo>⋅</mo><mi>R</mi><mspace width="2.0em"></mspace><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">
 P_{vent} + P_{mus} = \Delta V \cdot E + \dot{V} \cdot R
-</annotation></semantics></math></p>
+ \qquad(1)</annotation></semantics></math></span></p>
 </section>
 </section>
 <section id="mise-en-route" class="level2">
@@ -491,50 +491,52 @@ La plage considérée par normale par le manufacturier est de 0,3 à 0,7&nbsp;j/
 Calculée au moyen de la Pression motrice et du pourcentage d’assistance
 </dd>
 </dl>
-<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mrow><mi>m</mi><mi>u</mi><mi>s</mi></mrow></msub><mo>=</mo><mfrac><msub><mi>P</mi><mrow><mi>m</mi><mi>o</mi><mi>t</mi><mi>r</mi><mi>i</mi><mi>c</mi><mi>e</mi></mrow></msub><msub><mi>%</mi><mrow><mi>S</mi><mi>u</mi><mi>p</mi><mi>p</mi><mi>o</mi><mi>r</mi><mi>t</mi></mrow></msub></mfrac><mo>⋅</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><msub><mi>%</mi><mrow><mi>s</mi><mi>u</mi><mi>p</mi><mi>p</mi><mi>o</mi><mi>r</mi><mi>t</mi></mrow></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">P_{mus} = \frac{P_{motrice}}{\%_{Support}}\cdot (1 - \%_{support})</annotation></semantics></math></p>
+<p><span id="eq-pmus"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mrow><mi>m</mi><mi>u</mi><mi>s</mi></mrow></msub><mo>=</mo><mfrac><msub><mi>P</mi><mrow><mi>m</mi><mi>o</mi><mi>t</mi><mi>r</mi><mi>i</mi><mi>c</mi><mi>e</mi></mrow></msub><msub><mi>%</mi><mrow><mi>S</mi><mi>u</mi><mi>p</mi><mi>p</mi><mi>o</mi><mi>r</mi><mi>t</mi></mrow></msub></mfrac><mo>⋅</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><msub><mi>%</mi><mrow><mi>s</mi><mi>u</mi><mi>p</mi><mi>p</mi><mi>o</mi><mi>r</mi><mi>t</mi></mrow></msub><mo stretchy="true" form="postfix">)</mo></mrow><mspace width="2.0em"></mspace><mrow><mo stretchy="true" form="prefix">(</mo><mn>2</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">
+P_{mus} = \frac{P_{motrice}}{\%_{Support}}\cdot (1 - \%_{support})
+ \qquad(2)</annotation></semantics></math></span></p>
 <p>Par exemple, si on suppose une <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>P</mi><mrow><mi>m</mi><mi>o</mi><mi>t</mi><mi>r</mi><mi>i</mi><mi>c</mi><mi>e</mi></mrow></msub><annotation encoding="application/x-tex">P_{motrice}</annotation></semantics></math> de 10 cmH₂O et un <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>%</mi><mrow><mi>s</mi><mi>u</mi><mi>p</mi><mi>p</mi><mi>o</mi><mi>r</mi><mi>t</mi></mrow></msub><annotation encoding="application/x-tex">\%_{support}</annotation></semantics></math> de 40 %, on calculera:</p>
-<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mrow><mi>m</mi><mi>u</mi><mi>s</mi></mrow></msub><mo>=</mo><mfrac><mn>10</mn><mn>0.4</mn></mfrac><mo>⋅</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>0.6</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">P_{mus} = \frac{10}{0.4}\cdot (0.6)</annotation></semantics></math></p>
+<p><span id="eq-pmus-ex"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mrow><mi>m</mi><mi>u</mi><mi>s</mi></mrow></msub><mo>=</mo><mfrac><mn>10</mn><mn>0.4</mn></mfrac><mo>⋅</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>0.6</mn><mo stretchy="true" form="postfix">)</mo></mrow><mspace width="2.0em"></mspace><mrow><mo stretchy="true" form="prefix">(</mo><mn>3</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">P_{mus} = \frac{10}{0.4}\cdot (0.6) \qquad(3)</annotation></semantics></math></span></p>
 <p>Plusieurs recherches ont utilisés une Pmus entre 5 et 10 cmH₂O comme valeur de référence pour un travail respiratoire normal. <span class="citation" data-cites="albani2021a">Yang et al. (<a href="#ref-yang2023" role="doc-biblioref">2023</a>)</span></p>
 <div class="cell">
-<div class="sourceCode cell-code hidden" id="cb1" data-startfrom="170" data-source-offset="-78"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 169;"><span id="cb1-170"><a href="#cb1-170" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">Pmotrice</span>(Fsupport<span class="op">,</span> Pmus){</span>
-<span id="cb1-171"><a href="#cb1-171" aria-hidden="true" tabindex="-1"></a>    <span class="kw">let</span> Fpatient <span class="op">=</span> <span class="dv">1</span> <span class="op">-</span> Fsupport<span class="op">;</span></span>
-<span id="cb1-172"><a href="#cb1-172" aria-hidden="true" tabindex="-1"></a>    <span class="kw">let</span> Ptotal <span class="op">=</span> Pmus <span class="op">/</span> Fpatient<span class="op">;</span></span>
-<span id="cb1-173"><a href="#cb1-173" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> Ptotal <span class="op">*</span> Fsupport<span class="op">;</span></span>
-<span id="cb1-174"><a href="#cb1-174" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb1-175"><a href="#cb1-175" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-176"><a href="#cb1-176" aria-hidden="true" tabindex="-1"></a>datPmotrice <span class="op">=</span> d3<span class="op">.</span><span class="fu">ticks</span>(<span class="op">.</span><span class="bn">05</span><span class="op">,</span> <span class="op">.</span><span class="dv">95</span><span class="op">,</span> <span class="dv">90</span>)<span class="op">.</span><span class="fu">map</span>(f<span class="kw">=&gt;</span>{</span>
-<span id="cb1-177"><a href="#cb1-177" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> {</span>
-<span id="cb1-178"><a href="#cb1-178" aria-hidden="true" tabindex="-1"></a>    <span class="dt">Fsupport</span><span class="op">:</span>f<span class="op">,</span></span>
-<span id="cb1-179"><a href="#cb1-179" aria-hidden="true" tabindex="-1"></a>    <span class="dt">PmotriceMin</span><span class="op">:</span><span class="fu">Pmotrice</span>(f<span class="op">,</span> <span class="dv">5</span>)<span class="op">,</span></span>
-<span id="cb1-180"><a href="#cb1-180" aria-hidden="true" tabindex="-1"></a>    <span class="dt">PmotriceMax</span><span class="op">:</span> <span class="fu">Pmotrice</span>(f<span class="op">,</span> <span class="dv">10</span>)</span>
-<span id="cb1-181"><a href="#cb1-181" aria-hidden="true" tabindex="-1"></a>    }</span>
-<span id="cb1-182"><a href="#cb1-182" aria-hidden="true" tabindex="-1"></a>})</span>
-<span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-184"><a href="#cb1-184" aria-hidden="true" tabindex="-1"></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
-<span id="cb1-185"><a href="#cb1-185" aria-hidden="true" tabindex="-1"></a>    <span class="dt">x</span><span class="op">:</span> {</span>
-<span id="cb1-186"><a href="#cb1-186" aria-hidden="true" tabindex="-1"></a>        <span class="dt">label</span><span class="op">:</span> <span class="st">"% support"</span><span class="op">,</span></span>
-<span id="cb1-187"><a href="#cb1-187" aria-hidden="true" tabindex="-1"></a>        <span class="dt">percent</span><span class="op">:</span> <span class="kw">true</span></span>
-<span id="cb1-188"><a href="#cb1-188" aria-hidden="true" tabindex="-1"></a>    }<span class="op">,</span></span>
-<span id="cb1-189"><a href="#cb1-189" aria-hidden="true" tabindex="-1"></a>    <span class="dt">y</span><span class="op">:</span> {</span>
-<span id="cb1-190"><a href="#cb1-190" aria-hidden="true" tabindex="-1"></a>        <span class="dt">domain</span><span class="op">:</span> [<span class="dv">0</span><span class="op">,</span> <span class="dv">120</span>]<span class="op">,</span></span>
-<span id="cb1-191"><a href="#cb1-191" aria-hidden="true" tabindex="-1"></a>        <span class="dt">label</span><span class="op">:</span> <span class="st">'Δ P vent (cmH₂O)'</span></span>
-<span id="cb1-192"><a href="#cb1-192" aria-hidden="true" tabindex="-1"></a>    }<span class="op">,</span></span>
-<span id="cb1-193"><a href="#cb1-193" aria-hidden="true" tabindex="-1"></a>    <span class="dt">grid</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
-<span id="cb1-194"><a href="#cb1-194" aria-hidden="true" tabindex="-1"></a>    <span class="dt">marks</span><span class="op">:</span> [</span>
-<span id="cb1-195"><a href="#cb1-195" aria-hidden="true" tabindex="-1"></a>        <span class="co">//Plot.line(datPmotrice, {x: 'Fsupport', y: 'PmotriceMax'}),</span></span>
-<span id="cb1-196"><a href="#cb1-196" aria-hidden="true" tabindex="-1"></a>        Plot<span class="op">.</span><span class="fu">area</span>(datPmotrice<span class="op">,</span> {</span>
-<span id="cb1-197"><a href="#cb1-197" aria-hidden="true" tabindex="-1"></a>            <span class="dt">x1</span><span class="op">:</span> <span class="st">'Fsupport'</span><span class="op">,</span></span>
-<span id="cb1-198"><a href="#cb1-198" aria-hidden="true" tabindex="-1"></a>            <span class="dt">y1</span><span class="op">:</span> <span class="st">'PmotriceMin'</span><span class="op">,</span></span>
-<span id="cb1-199"><a href="#cb1-199" aria-hidden="true" tabindex="-1"></a>            <span class="dt">y2</span><span class="op">:</span> <span class="st">'PmotriceMax'</span><span class="op">,</span></span>
-<span id="cb1-200"><a href="#cb1-200" aria-hidden="true" tabindex="-1"></a>            <span class="dt">fill</span><span class="op">:</span> <span class="st">'gainsboro'</span><span class="op">,</span></span>
-<span id="cb1-201"><a href="#cb1-201" aria-hidden="true" tabindex="-1"></a>            <span class="dt">tip</span><span class="op">:</span> {</span>
-<span id="cb1-202"><a href="#cb1-202" aria-hidden="true" tabindex="-1"></a>            <span class="dt">format</span><span class="op">:</span> {</span>
-<span id="cb1-203"><a href="#cb1-203" aria-hidden="true" tabindex="-1"></a>                <span class="dt">y</span><span class="op">:</span> d<span class="kw">=&gt;</span>d<span class="op">.</span><span class="fu">toFixed</span>(<span class="dv">0</span>)</span>
-<span id="cb1-204"><a href="#cb1-204" aria-hidden="true" tabindex="-1"></a>            }</span>
-<span id="cb1-205"><a href="#cb1-205" aria-hidden="true" tabindex="-1"></a>        }</span>
-<span id="cb1-206"><a href="#cb1-206" aria-hidden="true" tabindex="-1"></a>        })</span>
-<span id="cb1-207"><a href="#cb1-207" aria-hidden="true" tabindex="-1"></a>    ]</span>
-<span id="cb1-208"><a href="#cb1-208" aria-hidden="true" tabindex="-1"></a>})</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb1" data-startfrom="173" data-source-offset="-78"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 172;"><span id="cb1-173"><a href="#cb1-173" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">Pmotrice</span>(Fsupport<span class="op">,</span> Pmus){</span>
+<span id="cb1-174"><a href="#cb1-174" aria-hidden="true" tabindex="-1"></a>    <span class="kw">let</span> Fpatient <span class="op">=</span> <span class="dv">1</span> <span class="op">-</span> Fsupport<span class="op">;</span></span>
+<span id="cb1-175"><a href="#cb1-175" aria-hidden="true" tabindex="-1"></a>    <span class="kw">let</span> Ptotal <span class="op">=</span> Pmus <span class="op">/</span> Fpatient<span class="op">;</span></span>
+<span id="cb1-176"><a href="#cb1-176" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> Ptotal <span class="op">*</span> Fsupport<span class="op">;</span></span>
+<span id="cb1-177"><a href="#cb1-177" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-178"><a href="#cb1-178" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-179"><a href="#cb1-179" aria-hidden="true" tabindex="-1"></a>datPmotrice <span class="op">=</span> d3<span class="op">.</span><span class="fu">ticks</span>(<span class="op">.</span><span class="bn">05</span><span class="op">,</span> <span class="op">.</span><span class="dv">95</span><span class="op">,</span> <span class="dv">90</span>)<span class="op">.</span><span class="fu">map</span>(f<span class="kw">=&gt;</span>{</span>
+<span id="cb1-180"><a href="#cb1-180" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> {</span>
+<span id="cb1-181"><a href="#cb1-181" aria-hidden="true" tabindex="-1"></a>    <span class="dt">Fsupport</span><span class="op">:</span>f<span class="op">,</span></span>
+<span id="cb1-182"><a href="#cb1-182" aria-hidden="true" tabindex="-1"></a>    <span class="dt">PmotriceMin</span><span class="op">:</span><span class="fu">Pmotrice</span>(f<span class="op">,</span> <span class="dv">5</span>)<span class="op">,</span></span>
+<span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a>    <span class="dt">PmotriceMax</span><span class="op">:</span> <span class="fu">Pmotrice</span>(f<span class="op">,</span> <span class="dv">10</span>)</span>
+<span id="cb1-184"><a href="#cb1-184" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb1-185"><a href="#cb1-185" aria-hidden="true" tabindex="-1"></a>})</span>
+<span id="cb1-186"><a href="#cb1-186" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-187"><a href="#cb1-187" aria-hidden="true" tabindex="-1"></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
+<span id="cb1-188"><a href="#cb1-188" aria-hidden="true" tabindex="-1"></a>    <span class="dt">x</span><span class="op">:</span> {</span>
+<span id="cb1-189"><a href="#cb1-189" aria-hidden="true" tabindex="-1"></a>        <span class="dt">label</span><span class="op">:</span> <span class="st">"% support"</span><span class="op">,</span></span>
+<span id="cb1-190"><a href="#cb1-190" aria-hidden="true" tabindex="-1"></a>        <span class="dt">percent</span><span class="op">:</span> <span class="kw">true</span></span>
+<span id="cb1-191"><a href="#cb1-191" aria-hidden="true" tabindex="-1"></a>    }<span class="op">,</span></span>
+<span id="cb1-192"><a href="#cb1-192" aria-hidden="true" tabindex="-1"></a>    <span class="dt">y</span><span class="op">:</span> {</span>
+<span id="cb1-193"><a href="#cb1-193" aria-hidden="true" tabindex="-1"></a>        <span class="dt">domain</span><span class="op">:</span> [<span class="dv">0</span><span class="op">,</span> <span class="dv">120</span>]<span class="op">,</span></span>
+<span id="cb1-194"><a href="#cb1-194" aria-hidden="true" tabindex="-1"></a>        <span class="dt">label</span><span class="op">:</span> <span class="st">'Δ P vent (cmH₂O)'</span></span>
+<span id="cb1-195"><a href="#cb1-195" aria-hidden="true" tabindex="-1"></a>    }<span class="op">,</span></span>
+<span id="cb1-196"><a href="#cb1-196" aria-hidden="true" tabindex="-1"></a>    <span class="dt">grid</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
+<span id="cb1-197"><a href="#cb1-197" aria-hidden="true" tabindex="-1"></a>    <span class="dt">marks</span><span class="op">:</span> [</span>
+<span id="cb1-198"><a href="#cb1-198" aria-hidden="true" tabindex="-1"></a>        <span class="co">//Plot.line(datPmotrice, {x: 'Fsupport', y: 'PmotriceMax'}),</span></span>
+<span id="cb1-199"><a href="#cb1-199" aria-hidden="true" tabindex="-1"></a>        Plot<span class="op">.</span><span class="fu">area</span>(datPmotrice<span class="op">,</span> {</span>
+<span id="cb1-200"><a href="#cb1-200" aria-hidden="true" tabindex="-1"></a>            <span class="dt">x1</span><span class="op">:</span> <span class="st">'Fsupport'</span><span class="op">,</span></span>
+<span id="cb1-201"><a href="#cb1-201" aria-hidden="true" tabindex="-1"></a>            <span class="dt">y1</span><span class="op">:</span> <span class="st">'PmotriceMin'</span><span class="op">,</span></span>
+<span id="cb1-202"><a href="#cb1-202" aria-hidden="true" tabindex="-1"></a>            <span class="dt">y2</span><span class="op">:</span> <span class="st">'PmotriceMax'</span><span class="op">,</span></span>
+<span id="cb1-203"><a href="#cb1-203" aria-hidden="true" tabindex="-1"></a>            <span class="dt">fill</span><span class="op">:</span> <span class="st">'gainsboro'</span><span class="op">,</span></span>
+<span id="cb1-204"><a href="#cb1-204" aria-hidden="true" tabindex="-1"></a>            <span class="dt">tip</span><span class="op">:</span> {</span>
+<span id="cb1-205"><a href="#cb1-205" aria-hidden="true" tabindex="-1"></a>            <span class="dt">format</span><span class="op">:</span> {</span>
+<span id="cb1-206"><a href="#cb1-206" aria-hidden="true" tabindex="-1"></a>                <span class="dt">y</span><span class="op">:</span> d<span class="kw">=&gt;</span>d<span class="op">.</span><span class="fu">toFixed</span>(<span class="dv">0</span>)</span>
+<span id="cb1-207"><a href="#cb1-207" aria-hidden="true" tabindex="-1"></a>            }</span>
+<span id="cb1-208"><a href="#cb1-208" aria-hidden="true" tabindex="-1"></a>        }</span>
+<span id="cb1-209"><a href="#cb1-209" aria-hidden="true" tabindex="-1"></a>        })</span>
+<span id="cb1-210"><a href="#cb1-210" aria-hidden="true" tabindex="-1"></a>    ]</span>
+<span id="cb1-211"><a href="#cb1-211" aria-hidden="true" tabindex="-1"></a>})</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div id="fig-pmotrice" class="cell quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-pmotrice-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
