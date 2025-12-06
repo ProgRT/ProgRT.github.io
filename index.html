@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Projets – Carnet de Nicolas</title>
+<title>Billets – Carnet de Nicolas</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -79,9 +79,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-url','listing-thumbnail','listing-description',{ data: ['index'] },{ data: ['categories'] }],
+      valueNames: ['listing-date','listing-title','listing-author','listing-subtitle','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-title","listing-url","listing-thumbnail","listing-description"],
+      searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -101,12 +101,14 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="awesomestyle.css">
-<meta property="og:title" content="Projets – Carnet de Nicolas">
-<meta property="og:image" content="https://progrt.github.io/inhalotherapie.svg/thumbnail.png">
+<link rel="alternate" type="application/rss+xml" title="Carnet de Nicolas" href="index.xml" data-external="1"><meta property="og:title" content="Billets – Carnet de Nicolas">
+<meta property="og:image" content="https://progrt.github.io/billets/tbas/thumbnail.png">
 <meta property="og:site_name" content="Carnet de Nicolas">
+<meta property="og:image:height" content="352">
+<meta property="og:image:width" content="451">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -125,11 +127,11 @@ ul.task-list li input[type="checkbox"] {
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link active" href="./index.html" aria-current="page"> 
-<span class="menu-text">Projets</span></a>
+<span class="menu-text">Billets</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./billets.html"> 
-<span class="menu-text">Billets</span></a>
+    <a class="nav-link" href="./projets.html"> 
+<span class="menu-text">Projets</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./diapo.html"> 
@@ -147,21 +149,21 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Projets</h1>
+<h1 class="title">Billets</h1>
 </div>
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page">
 
     
   
@@ -177,81 +179,150 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="quarto-listing quarto-listing-container-custom" id="listing-listing">
-<ul class="list quarto-listing-default">
-<div class="quarto-post image-right">
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1764997200000" data-listing-file-modified-sort="1764885238194" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1105">
 <div class="thumbnail">
-<p><a href="https://progrt.github.io/inhalotherapie.svg" class="listing-name"> <img src="https://progrt.github.io/inhalotherapie.svg/thumbnail.png"> </a></p>
+<p><a href="./billets/PAV+/article.html" class="no-external"></a></p><a href="./billets/PAV+/article.html" class="no-external">
+<p><img loading="lazy" src="./billets/PAV+/_diapo-beamer/Pavlov.jpg" class="thumbnail-image" style="height: 200px;"></p>
+</a><p><a href="./billets/PAV+/article.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="https://progrt.github.io/inhalotherapie.svg" class="listing-name">
 <h3 class="no-anchor listing-title">
-inhalotherapie.svg
+<a href="./billets/PAV+/article.html" class="no-external">Apprivoiser le mode PAV+</a>
 </h3>
-</a><p><a href="https://progrt.github.io/inhalotherapie.svg" class="listing-name">Ensemble d’icones au sujet des soins respiratoires. </a></p>
+<div class="listing-subtitle">
+<a href="./billets/PAV+/article.html" class="no-external"></a>
+</div>
+<div class="listing-description">
+<a href="./billets/PAV+/article.html" class="no-external">Le mode PAV+ est un mode de ventilation spontanée continue facile à utiliser qui adapte automatiquement l’aide fournie au patient à son travail respiratoire. Cet article vise à fournir quelques clés pour faciliter son adoption</a>
 </div>
 </div>
-<div class="quarto-post image-right">
+<div class="metadata">
+<a href="./billets/PAV+/article.html" class="no-external">
+<div class="listing-date">
+6 déc. 2025
+</div>
+<div class="listing-author">
+Nicolas Blais St-Laurent
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1731819600000" data-listing-file-modified-sort="1763408882157" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="66">
 <div class="thumbnail">
-<p><a href="https://progrt.github.io/simvent.js" class="listing-name"> <img src="https://progrt.github.io/simvent.js/thumbnail.png"> </a></p>
+<p><a href="./billets/aide_inspiratoire/aide_inspiratoire.html" class="no-external"></a></p><a href="./billets/aide_inspiratoire/aide_inspiratoire.html" class="no-external">
+<p class="card-img-top"><img src="billets/aide_inspiratoire/i/Pocc.svg" style="height: 200px;"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./billets/aide_inspiratoire/aide_inspiratoire.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="https://progrt.github.io/simvent.js" class="listing-name">
 <h3 class="no-anchor listing-title">
-simvent.js
+<a href="./billets/aide_inspiratoire/aide_inspiratoire.html" class="no-external">Doser l’aide inspiratoire</a>
 </h3>
-</a><p><a href="https://progrt.github.io/simvent.js" class="listing-name">Simulateur de ventilation mécanique. </a></p>
+<div class="listing-subtitle">
+<a href="./billets/aide_inspiratoire/aide_inspiratoire.html" class="no-external"></a>
+</div>
+<div class="listing-description">
+<a href="./billets/aide_inspiratoire/aide_inspiratoire.html" class="no-external">On reconnait de plus en plus l’importance de prévenir la dysfonction diaphragmatique induite par le ventilateur. Les données les plus récentes suggèrent qu’un niveau…<span class="citation" data-cites="goligher2018"></span></a>
 </div>
 </div>
-<div class="quarto-post image-right">
+<div class="metadata">
+<a href="./billets/aide_inspiratoire/aide_inspiratoire.html" class="no-external">
+<div class="listing-date">
+17 nov. 2024
+</div>
+<div class="listing-author">
+Nicolas Blais St-Laurent
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1706677200000" data-listing-file-modified-sort="1763409063758" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="634">
 <div class="thumbnail">
-<p><a href="https://progrt.github.io/P" class="listing-name"> <img src="https://progrt.github.io/P/thumbnail.png"> </a></p>
+<p><a href="./billets/tbas/tbas.html" class="no-external"></a></p><a href="./billets/tbas/tbas.html" class="no-external">
+<p><img loading="lazy" src="./billets/tbas/thumbnail.png" class="thumbnail-image" style="height: 200px;"></p>
+</a><p><a href="./billets/tbas/tbas.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="https://progrt.github.io/P" class="listing-name">
 <h3 class="no-anchor listing-title">
-P (comme dans poumon)
+<a href="./billets/tbas/tbas.html" class="no-external">Ajustement du T<sub>bas</sub> en APRV</a>
 </h3>
-</a><p><a href="https://progrt.github.io/P" class="listing-name">Art numérique. Annimation réalisé au moyen de la librairie p5js. </a></p>
+<div class="listing-subtitle">
+<a href="./billets/tbas/tbas.html" class="no-external"></a>
+</div>
+<div class="listing-description">
+<p><a href="./billets/tbas/tbas.html" class="no-external"> Le protocole <em>Time Controled Adaptative Ventilation</em> requier de régler des temps expiratoire assez court pour que l’expiration prenne fin lorsque le débit expiratoire a atteint 75 % du débit expiratoire de pointe.</a></p><a href="./billets/tbas/tbas.html" class="no-external">
+Le simulateur suivant permet d’expérimenter l’influence de la compliance et des résistances du poumon sur le temps expiratoire à régler pour atteindre cet objectif. </a>
 </div>
 </div>
-<div class="quarto-post image-right">
+<div class="metadata">
+<a href="./billets/tbas/tbas.html" class="no-external">
+<div class="listing-date">
+31 janv. 2024
+</div>
+<div class="listing-author">
+Nicolas Blais St-Laurent
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="3" data-listing-date-sort="1703826000000" data-listing-file-modified-sort="1754668006678" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="447">
 <div class="thumbnail">
-<p><a href="https://progrt.github.io/Servouscope" class="listing-name"> <img src="https://progrt.github.io/Servouscope/thumbnail.png"> </a></p>
+<p><a href="./billets/vdrmoyenne/vdrmoyen.html" class="no-external"></a></p><a href="./billets/vdrmoyenne/vdrmoyen.html" class="no-external">
+<p><img loading="lazy" src="./billets/vdrmoyenne/thumbnail.png" class="thumbnail-image" style="height: 200px;"></p>
+</a><p><a href="./billets/vdrmoyenne/vdrmoyen.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="https://progrt.github.io/Servouscope" class="listing-name">
 <h3 class="no-anchor listing-title">
-Servouscope
+<a href="./billets/vdrmoyenne/vdrmoyen.html" class="no-external">Pressions monitorées lors de la ventilation percussive</a>
 </h3>
-</a><p><a href="https://progrt.github.io/Servouscope" class="listing-name">Visualisateur pour données exportées par le ventilateur Servo-U ou le simulateur de poumon ASL 5000. </a></p>
+<div class="listing-subtitle">
+<a href="./billets/vdrmoyenne/vdrmoyen.html" class="no-external"></a>
+</div>
+<div class="listing-description">
+<a href="./billets/vdrmoyenne/vdrmoyen.html" class="no-external">Lors de la ventilation percussive, les variations de pressions mesurées dans le circuit du ventilateur sont en très grande partie dissipées en chaleur par les résistances des voies aériennes.</a>
 </div>
 </div>
-<div class="quarto-post image-right">
+<div class="metadata">
+<a href="./billets/vdrmoyenne/vdrmoyen.html" class="no-external">
+<div class="listing-date">
+29 déc. 2023
+</div>
+<div class="listing-author">
+Nicolas Blais St-Laurent
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="4" data-listing-date-sort="1696132800000" data-listing-file-modified-sort="1706719605739" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="574">
 <div class="thumbnail">
-<p><a href="https://progrt.github.io/preport" class="listing-name"> <img src="https://progrt.github.io/preport/thumbnail.png"> </a></p>
+<p><a href="./billets/bohr/christian_bohr.html" class="no-external"></a></p><a href="./billets/bohr/christian_bohr.html" class="no-external">
+<p class="card-img-top"><img src="billets/bohr/Christian_Bohr_u016.jpg" style="height: 200px;"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./billets/bohr/christian_bohr.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="https://progrt.github.io/preport" class="listing-name">
 <h3 class="no-anchor listing-title">
-The PEEP Reporter
+<a href="./billets/bohr/christian_bohr.html" class="no-external">Christian Bohr était dans les patates</a>
 </h3>
-</a><p><a href="https://progrt.github.io/preport" class="listing-name">Outil pour documenter une procédure de titration de la pression expiratoire positive. Permet de calculer le ratio R/I. </a></p>
+<div class="listing-subtitle">
+<a href="./billets/bohr/christian_bohr.html" class="no-external">Mais pas au sujet de l’espace mort</a>
+</div>
+<div class="listing-description">
+<a href="./billets/bohr/christian_bohr.html" class="no-external">Je dois presque tout ce que je sais au sujet du physiologiste danois Christian Bohr à un article écrit par un certain John B. <span class="citation" data-cites="west2019">West (2019)</span>.<sup>1</sup> La raison en étant que, comme la…</a>
 </div>
 </div>
-<div class="quarto-post image-right">
-<div class="thumbnail">
-<p><a href="https://progrt.github.io/surecr" class="listing-name"> <img src="https://progrt.github.io/surecr/thumbnail.png"> </a></p>
+<div class="metadata">
+<a href="./billets/bohr/christian_bohr.html" class="no-external">
+<div class="listing-date">
+1 oct. 2023
 </div>
-<div class="body">
-<a href="https://progrt.github.io/surecr" class="listing-name">
-<h3 class="no-anchor listing-title">
-Rapport Open Lung Tool
-</h3>
-</a><p><a href="https://progrt.github.io/surecr" class="listing-name">Outil pour documenter visualiser les données exportées à partir de l’outil Open Lung Tool (ventilateur Servo U). </a></p>
+<div class="listing-author">
+Nicolas Blais St-Laurent
+</div>
+</a>
 </div>
 </div>
-</ul>
+</div>
 <div class="listing-no-matching d-none">
 Aucun article correspondant
 </div>

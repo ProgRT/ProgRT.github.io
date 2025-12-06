@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Nicolas Blais St-Laurent">
 
-<title>tbl-classification – Carnet de Nicolas</title>
+<title>Projets – Carnet de Nicolas</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,23 +23,25 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<link href="../../img/favicon/favicon.png" rel="icon" type="image/png">
-<script src="../../site_libs/quarto-html/quarto.js"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-3a01e2046221230fdceeea94b1ec5d67.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-00e5184a9d3a047fde315d141c08306d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./img/favicon/favicon.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-3a01e2046221230fdceeea94b1ec5d67.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-00e5184a9d3a047fde315d141c08306d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,10 +69,40 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Recherche"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-url','listing-thumbnail','listing-description',{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: ["listing-title","listing-url","listing-thumbnail","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 
 
-<link rel="stylesheet" href="../../awesomestyle.css">
-<meta property="og:title" content="Carnet de Nicolas">
+<link rel="stylesheet" href="awesomestyle.css">
+<meta property="og:title" content="Projets – Carnet de Nicolas">
+<meta property="og:image" content="https://progrt.github.io/simvent.js/thumbnail.png">
 <meta property="og:site_name" content="Carnet de Nicolas">
 </head>
 
@@ -82,8 +113,8 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../img/logo/Nébuliseur2-simple.svg" alt="" class="navbar-logo">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./img/logo/Nébuliseur2-simple.svg" alt="" class="navbar-logo">
     </a>
   </div>
             <div id="quarto-search" class="" title="Recherche"></div>
@@ -93,16 +124,20 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../index.html"> 
-<span class="menu-text">Projets</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../billets.html"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Billets</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../diapo.html"> 
+    <a class="nav-link active" href="./projets.html" aria-current="page"> 
+<span class="menu-text">Projets</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./diapo.html"> 
 <span class="menu-text">Diapositives</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://observablehq.com/collection/@progrt/calculatrices-respiratoires"> 
+<span class="menu-text">Calculatrices</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -121,18 +156,13 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
+<h1 class="title">Projets</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Auteur</div>
-    <div class="quarto-title-meta-contents">
-             <p>Nicolas Blais St-Laurent, inh </p>
-          </div>
-  </div>
     
   
     
@@ -143,51 +173,89 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<table class="caption-top table">
-<colgroup>
-<col style="width: 8%">
-<col style="width: 27%">
-<col style="width: 23%">
-<col style="width: 21%">
-<col style="width: 19%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Mode</th>
-<th>Séquence respiratoire</th>
-<th>Variable contrôlée</th>
-<th>Type de contrôle</th>
-<th>Classification</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>VS-AI</td>
-<td>Spontanée continue</td>
-<td>Pression</td>
-<td>Fixe</td>
-<td>VSC.PC.s</td>
-</tr>
-<tr class="even">
-<td>PAV+</td>
-<td>Spontanée continue</td>
-<td>Pression</td>
-<td>Asservi</td>
-<td>VSC.PC.r</td>
-</tr>
-<tr class="odd">
-<td>NAVA</td>
-<td>Spontanée continue</td>
-<td>Pression</td>
-<td>Asservi</td>
-<td>VSC.PC.r</td>
-</tr>
-</tbody>
-</table>
 
 
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Réutilisation</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr">CC BY-SA 4.0</a></div></div></section></div></main> <!-- /main -->
+
+<div class="quarto-listing quarto-listing-container-custom" id="listing-listing">
+<ul class="list quarto-listing-default">
+<div class="quarto-post image-right">
+<div class="thumbnail">
+<p><a href="https://progrt.github.io/simvent.js" class="listing-name"> <img src="https://progrt.github.io/simvent.js/thumbnail.png"> </a></p>
+</div>
+<div class="body">
+<a href="https://progrt.github.io/simvent.js" class="listing-name">
+<h3 class="no-anchor listing-title">
+simvent.js
+</h3>
+</a><p><a href="https://progrt.github.io/simvent.js" class="listing-name">Simulateur de ventilation mécanique. </a></p>
+</div>
+</div>
+<div class="quarto-post image-right">
+<div class="thumbnail">
+<p><a href="https://progrt.github.io/Servouscope" class="listing-name"> <img src="https://progrt.github.io/Servouscope/thumbnail.png"> </a></p>
+</div>
+<div class="body">
+<a href="https://progrt.github.io/Servouscope" class="listing-name">
+<h3 class="no-anchor listing-title">
+Servouscope
+</h3>
+</a><p><a href="https://progrt.github.io/Servouscope" class="listing-name">Visualisateur pour données exportées par le ventilateur Servo-U ou le simulateur de poumon ASL 5000. </a></p>
+</div>
+</div>
+<div class="quarto-post image-right">
+<div class="thumbnail">
+<p><a href="https://progrt.github.io/inhalotherapie.svg" class="listing-name"> <img src="https://progrt.github.io/inhalotherapie.svg/thumbnail.png"> </a></p>
+</div>
+<div class="body">
+<a href="https://progrt.github.io/inhalotherapie.svg" class="listing-name">
+<h3 class="no-anchor listing-title">
+inhalotherapie.svg
+</h3>
+</a><p><a href="https://progrt.github.io/inhalotherapie.svg" class="listing-name">Ensemble d’icones au sujet des soins respiratoires. </a></p>
+</div>
+</div>
+<div class="quarto-post image-right">
+<div class="thumbnail">
+<p><a href="https://progrt.github.io/P" class="listing-name"> <img src="https://progrt.github.io/P/thumbnail.png"> </a></p>
+</div>
+<div class="body">
+<a href="https://progrt.github.io/P" class="listing-name">
+<h3 class="no-anchor listing-title">
+P (comme dans poumon)
+</h3>
+</a><p><a href="https://progrt.github.io/P" class="listing-name">Art numérique. Annimation réalisé au moyen de la librairie p5js. </a></p>
+</div>
+</div>
+<div class="quarto-post image-right">
+<div class="thumbnail">
+<p><a href="https://progrt.github.io/preport" class="listing-name"> <img src="https://progrt.github.io/preport/thumbnail.png"> </a></p>
+</div>
+<div class="body">
+<a href="https://progrt.github.io/preport" class="listing-name">
+<h3 class="no-anchor listing-title">
+The PEEP Reporter
+</h3>
+</a><p><a href="https://progrt.github.io/preport" class="listing-name">Outil pour documenter une procédure de titration de la pression expiratoire positive. Permet de calculer le ratio R/I. </a></p>
+</div>
+</div>
+<div class="quarto-post image-right">
+<div class="thumbnail">
+<p><a href="https://progrt.github.io/surecr" class="listing-name"> <img src="https://progrt.github.io/surecr/thumbnail.png"> </a></p>
+</div>
+<div class="body">
+<a href="https://progrt.github.io/surecr" class="listing-name">
+<h3 class="no-anchor listing-title">
+Rapport Open Lung Tool
+</h3>
+</a><p><a href="https://progrt.github.io/surecr" class="listing-name">Outil pour documenter visualiser les données exportées à partir de l’outil Open Lung Tool (ventilateur Servo U). </a></p>
+</div>
+</div>
+</ul>
+<div class="listing-no-matching d-none">
+Aucun article correspondant
+</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

@@ -1,20 +1,20 @@
 [
   {
+    "listing": "/index.html",
+    "items": [
+      "/billets/PAV+/article.html",
+      "/billets/aide_inspiratoire/aide_inspiratoire.html",
+      "/billets/tbas/tbas.html",
+      "/billets/vdrmoyenne/vdrmoyen.html",
+      "/billets/bohr/christian_bohr.html"
+    ]
+  },
+  {
     "listing": "/diapo.html",
     "items": []
   },
   {
-    "listing": "/index.html",
+    "listing": "/projets.html",
     "items": []
-  },
-  {
-    "listing": "/billets.html",
-    "items": [
-      "/posts/PAV+/article.html",
-      "/posts/aide_inspiratoire/aide_inspiratoire.html",
-      "/posts/tbas/tbas.html",
-      "/posts/vdrmoyenne/vdrmoyen.html",
-      "/posts/bohr/christian_bohr.html"
-    ]
   }
 ]

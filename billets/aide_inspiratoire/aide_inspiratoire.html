@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Nicolas Blais St-Laurent">
 
-<title>Billets – Carnet de Nicolas</title>
+<title>Doser l’aide inspiratoire – Carnet de Nicolas</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,28 +21,46 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./img/favicon/favicon.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-3a01e2046221230fdceeea94b1ec5d67.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-00e5184a9d3a047fde315d141c08306d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../img/favicon/favicon.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-3a01e2046221230fdceeea94b1ec5d67.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-00e5184a9d3a047fde315d141c08306d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,54 +88,24 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Recherche"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-subtitle','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 
 
-<link rel="stylesheet" href="awesomestyle.css">
-<link rel="alternate" type="application/rss+xml" title="Carnet de Nicolas" href="billets.xml" data-external="1"><meta property="og:title" content="Billets – Carnet de Nicolas">
-<meta property="og:image" content="https://progrt.github.io/posts/tbas/thumbnail.png">
+<link rel="stylesheet" href="../../awesomestyle.css">
+<link rel="stylesheet" href="custom.css">
+<meta property="og:title" content="Doser l’aide inspiratoire – Carnet de Nicolas">
+<meta property="og:description" content="">
 <meta property="og:site_name" content="Carnet de Nicolas">
-<meta property="og:image:height" content="352">
-<meta property="og:image:width" content="451">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./img/logo/Nébuliseur2-simple.svg" alt="" class="navbar-logo">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../img/logo/Nébuliseur2-simple.svg" alt="" class="navbar-logo">
     </a>
   </div>
             <div id="quarto-search" class="" title="Recherche"></div>
@@ -126,15 +115,15 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
-<span class="menu-text">Projets</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link active" href="./billets.html" aria-current="page"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Billets</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./diapo.html"> 
+    <a class="nav-link" href="../../projets.html"> 
+<span class="menu-text">Projets</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../diapo.html"> 
 <span class="menu-text">Diapositives</span></a>
   </li>  
   <li class="nav-item">
@@ -149,23 +138,35 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Billets</h1>
+<h1 class="title">Doser l’aide inspiratoire</h1>
 </div>
 
 
 
-<div class="quarto-title-meta column-page">
+<div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Auteur</div>
+    <div class="quarto-title-meta-contents">
+             <p>Nicolas Blais St-Laurent, inh </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Date de publication</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">17 novembre 2024</p>
+    </div>
+  </div>
   
     
   </div>
@@ -175,158 +176,163 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p>On reconnait de plus en plus l’importance de prévenir la dysfonction diaphragmatique induite par le ventilateur. Les données les plus récentes suggèrent qu’un niveau d’activité diaphragmatique excessivement faible ou excessivement élevé est un facteur déterminant dans le développement d’une dysfonction diaphragmatique chez les patients ventilés mécaniquement <span class="citation" data-cites="goligher2018">(<a href="#ref-goligher2018" role="doc-biblioref">Goligher et al. 2018</a>)</span>. Il est par conséquent nécessaire d’avoir accès à des indicateurs permettant d’évaluer le niveau d’activité diaphragmatique des patients ventilés mécaniquement.</p>
+<div id="tbl-valRef" class="column-body-outset quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-valRef-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: Valeurs de références des indicateurs cliniques de sur/sous-assistance.
+</figcaption>
+<div aria-describedby="tbl-valRef-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 16%">
+<col style="width: 20%">
+<col style="width: 37%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Paramètre</th>
+<th style="text-align: center;"></th>
+<th style="text-align: left;">Cible</th>
+<th style="text-align: left;">Référence</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Δ P<sub>occ</sub></td>
+<td style="text-align: center;"><img src="i/Pocc.svg" class="img-fluid figure-img"></td>
+<td style="text-align: left;">6 à 15 cm H₂O</td>
+<td style="text-align: left;"><span class="citation" data-cites="yang2023">Yang et al. (<a href="#ref-yang2023" role="doc-biblioref">2023</a>)</span>, <span class="citation" data-cites="devries2023">de Vries et al. (<a href="#ref-devries2023" role="doc-biblioref">2023</a>)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Ind. P<sub>mus</sub></td>
+<td style="text-align: center;"><img src="i/IPM.svg" class="img-fluid figure-img"></td>
+<td style="text-align: left;">0 à 2,5 cm H₂O</td>
+<td style="text-align: left;"><span class="citation" data-cites="yang2023">Yang et al. (<a href="#ref-yang2023" role="doc-biblioref">2023</a>)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">P<sub>0.1</sub></td>
+<td style="text-align: center;"><img src="i/P01.svg" class="img-fluid figure-img"></td>
+<td style="text-align: left;">1 à 2,5 cm H₂O</td>
+<td style="text-align: left;"><span class="citation" data-cites="yang2023">Yang et al. (<a href="#ref-yang2023" role="doc-biblioref">2023</a>)</span>, de Vries (2023), <span class="citation" data-cites="pletsch-assuncao2018">Pletsch-Assuncao et al. (<a href="#ref-pletsch-assuncao2018" role="doc-biblioref">2018</a>)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Efforts non récompensés</td>
+<td style="text-align: center;"><img src="i/ENR.svg" class="img-fluid figure-img"></td>
+<td style="text-align: left;">&lt; 10 %</td>
+<td style="text-align: left;"><span class="citation" data-cites="pletsch-assuncao2018">Pletsch-Assuncao et al. (<a href="#ref-pletsch-assuncao2018" role="doc-biblioref">2018</a>)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Ind. de débit</td>
+<td style="text-align: center;"><img src="i/ID.svg" class="img-fluid figure-img"></td>
+<td style="text-align: left;"><img src="i/ID20.svg" class="img-fluid figure-img"> <span>à</span> <img src="i/ID45.svg" class="img-fluid figure-img"> (2 à 4,5)</td>
+<td style="text-align: left;"><span class="citation" data-cites="albani2021">Albani, Pisani, et al. (<a href="#ref-albani2021" role="doc-biblioref">2021</a>)</span>, <span class="citation" data-cites="miao2022">Miao et al. (<a href="#ref-miao2022" role="doc-biblioref">2022</a>)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Fraction d’épaississement</td>
+<td style="text-align: center;"><img src="i/FE.svg" class="img-fluid figure-img"></td>
+<td style="text-align: left;">25 à 40 %</td>
+<td style="text-align: left;"><span class="citation" data-cites="goligher2015">Goligher et al. (<a href="#ref-goligher2015" role="doc-biblioref">2015</a>)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<div id="tbl-valGold" class="column-body-outset quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-valGold-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;2: Tests de références pour la détection de la sur/sous-assistance.
+</figcaption>
+<div aria-describedby="tbl-valGold-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 8%">
+<col style="width: 25%">
+<col style="width: 41%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Paramètre</th>
+<th></th>
+<th>Plage proposée</th>
+<th style="text-align: left;">Auteur</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">P<sub>musc</sub></td>
+<td><img src="i/Pmus.svg" height="60" class="figure-img"></td>
+<td>5 à 10 cm H₂O</td>
+<td style="text-align: left;"><span class="citation" data-cites="albani2021a">Albani, Fusina, et al. (<a href="#ref-albani2021a" role="doc-biblioref">2021</a>)</span>, <span class="citation" data-cites="miao2022">Miao et al. (<a href="#ref-miao2022" role="doc-biblioref">2022</a>)</span>, <span class="citation" data-cites="yang2023">Yang et al. (<a href="#ref-yang2023" role="doc-biblioref">2023</a>)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Trav. resp.</td>
+<td><img src="i/WOB.svg" height="60" class="figure-img"></td>
+<td>&gt; 0,3 J/L</td>
+<td style="text-align: left;"><span class="citation" data-cites="miao2022">Miao et al. (<a href="#ref-miao2022" role="doc-biblioref">2022</a>)</span>, <span class="citation" data-cites="pletsch-assuncao2018">Pletsch-Assuncao et al. (<a href="#ref-pletsch-assuncao2018" role="doc-biblioref">2018</a>)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">PPT<sub>es</sub>/m</td>
+<td><img src="i/PPT.svg" height="60" class="figure-img"></td>
+<td>50 à 200 cm H₂O·s/m</td>
+<td style="text-align: left;"><span class="citation" data-cites="miao2022">Miao et al. (<a href="#ref-miao2022" role="doc-biblioref">2022</a>)</span>, <span class="citation" data-cites="yang2023">Yang et al. (<a href="#ref-yang2023" role="doc-biblioref">2023</a>)</span>, <span class="citation" data-cites="pletsch-assuncao2018">Pletsch-Assuncao et al. (<a href="#ref-pletsch-assuncao2018" role="doc-biblioref">2018</a>)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Efforts non récompensés</td>
+<td><img src="i/ENR.svg" height="60" class="figure-img"></td>
+<td>&lt; 10 %</td>
+<td style="text-align: left;"><span class="citation" data-cites="miao2022">Miao et al. (<a href="#ref-miao2022" role="doc-biblioref">2022</a>)</span>, <span class="citation" data-cites="pletsch-assuncao2018">Pletsch-Assuncao et al. (<a href="#ref-pletsch-assuncao2018" role="doc-biblioref">2018</a>)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Fraction d’épaississement du diaphragme</td>
+<td><img src="i/FE.svg" height="60" class="figure-img"></td>
+<td>25 à 40 %</td>
+<td style="text-align: left;"><span class="citation" data-cites="goligher2015">Goligher et al. (<a href="#ref-goligher2015" role="doc-biblioref">2015</a>)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">P<sub>0.1 es</sub></td>
+<td><img src="i/P01es.svg" height="60" class="figure-img"></td>
+<td>&gt; 1,5 cm H₂O</td>
+<td style="text-align: left;"><span class="citation" data-cites="pletsch-assuncao2018">Pletsch-Assuncao et al. (<a href="#ref-pletsch-assuncao2018" role="doc-biblioref">2018</a>)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
 
 
 
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1764910800000" data-listing-file-modified-sort="1764885238194" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1105">
-<div class="thumbnail">
-<p><a href="./posts/PAV+/article.html" class="no-external"></a></p><a href="./posts/PAV+/article.html" class="no-external">
-<p><img loading="lazy" src="./posts/PAV+/_diapo-beamer/Pavlov.jpg" class="thumbnail-image" style="height: 200px;"></p>
-</a><p><a href="./posts/PAV+/article.html" class="no-external"></a></p>
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Les références</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-albani2021a" class="csl-entry" role="listitem">
+Albani, Filippo, Federica Fusina, Gianni Ciabatti, Luigi Pisani, Valeria Lippolis, Maria Elena Franceschetti, Alessia Giovannini, et al. 2021. <span>«&nbsp;Flow <span>Index</span> Accurately Identifies Breaths with Low or High Inspiratory Effort during Pressure Support Ventilation&nbsp;»</span>. <em>Critical Care</em> 25 (1): 427. <a href="https://doi.org/10.1186/s13054-021-03855-4">https://doi.org/10.1186/s13054-021-03855-4</a>.
 </div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/PAV+/article.html" class="no-external">Apprivoiser le mode PAV+</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/PAV+/article.html" class="no-external"></a>
+<div id="ref-albani2021" class="csl-entry" role="listitem">
+Albani, Filippo, Luigi Pisani, Gianni Ciabatti, Federica Fusina, Barbara Buizza, Anna Granato, Valeria Lippolis, et al. 2021. <span>«&nbsp;Flow <span>Index</span>: A Novel, Non-Invasive, Continuous, Quantitative Method to Evaluate Patient Inspiratory Effort During Pressure Support Ventilation&nbsp;»</span>. <em>Critical Care (London, England)</em> 25 (1): 196. <a href="https://doi.org/10.1186/s13054-021-03624-3">https://doi.org/10.1186/s13054-021-03624-3</a>.
 </div>
-<div class="listing-description">
-<a href="./posts/PAV+/article.html" class="no-external">Le mode PAV+ est un mode de ventilation spontanée continue facile à utiliser qui adapte automatiquement l’aide fournie au patient à son travail respiratoire. Cet article vise à fournir quelques clés pour faciliter son adoption</a>
+<div id="ref-devries2023" class="csl-entry" role="listitem">
+de Vries, Heder J., Pieter R. Tuinman, Annemijn H. Jonkman, Ling Liu, Haibo Qiu, Armand R. J. Girbes, YingRui Zhang, Angelique M. E. de Man, Harm-Jan de Grooth, et Leo Heunks. 2023. <span>«&nbsp;Performance of <span>Noninvasive Airway Occlusion Maneuvers</span> to <span>Assess Lung Stress</span> and <span>Diaphragm Effort</span> in <span>Mechanically Ventilated Critically Ill Patients</span>&nbsp;»</span>. <em>Anesthesiology</em> 138 (3): 274‑88. <a href="https://doi.org/10.1097/ALN.0000000000004467">https://doi.org/10.1097/ALN.0000000000004467</a>.
 </div>
+<div id="ref-goligher2018" class="csl-entry" role="listitem">
+Goligher, Ewan C., Martin Dres, Eddy Fan, Gordon D. Rubenfeld, Damon C. Scales, Margaret S. Herridge, Stefannie Vorona, et al. 2018. <span>«&nbsp;Mechanical <span>Ventilation</span>–Induced <span>Diaphragm Atrophy Strongly Impacts Clinical Outcomes</span>&nbsp;»</span>. <em>American Journal of Respiratory and Critical Care Medicine</em> 197 (2): 204‑13. <a href="https://doi.org/10.1164/rccm.201703-0536OC">https://doi.org/10.1164/rccm.201703-0536OC</a>.
 </div>
-<div class="metadata">
-<a href="./posts/PAV+/article.html" class="no-external">
-<div class="listing-date">
-5 déc. 2025
+<div id="ref-goligher2015" class="csl-entry" role="listitem">
+Goligher, Ewan C., Eddy Fan, Margaret S. Herridge, Alistair Murray, Stefannie Vorona, Debbie Brace, Nuttapol Rittayamai, et al. 2015. <span>«&nbsp;Evolution of <span>Diaphragm Thickness</span> during <span>Mechanical Ventilation</span>. <span>Impact</span> of <span>Inspiratory Effort</span>&nbsp;»</span>. <em>American Journal of Respiratory and Critical Care Medicine</em> 192 (9): 1080‑88. <a href="https://doi.org/10.1164/rccm.201503-0620OC">https://doi.org/10.1164/rccm.201503-0620OC</a>.
 </div>
-<div class="listing-author">
-Nicolas Blais St-Laurent
+<div id="ref-miao2022" class="csl-entry" role="listitem">
+Miao, Ming-Yue, Wei Chen, Yi-Min Zhou, Ran Gao, De-Jing Song, Shu-Peng Wang, Yan-Lin Yang, Linlin Zhang, et Jian-Xin Zhou. 2022. <span>«&nbsp;Validation of the Flow Index to Detect Low Inspiratory Effort during Pressure Support Ventilation&nbsp;»</span>. <em>Annals of Intensive Care</em> 12 (septembre): 89. <a href="https://doi.org/10.1186/s13613-022-01063-z">https://doi.org/10.1186/s13613-022-01063-z</a>.
 </div>
-</a>
+<div id="ref-pletsch-assuncao2018" class="csl-entry" role="listitem">
+Pletsch-Assuncao, Renata, Mayra Caleffi Pereira, Jeferson George Ferreira, Letícia Zumpano Cardenas, André Luis Pereira de Albuquerque, Carlos Roberto Ribeiro de Carvalho, et Pedro Caruso. 2018. <span>«&nbsp;Accuracy of <span>Invasive</span> and <span>Noninvasive Parameters</span> for <span>Diagnosing Ventilatory Overassistance During Pressure Support Ventilation</span>*&nbsp;»</span>. <em>Critical Care Medicine</em> 46 (3): 411. <a href="https://doi.org/10.1097/CCM.0000000000002871">https://doi.org/10.1097/CCM.0000000000002871</a>.
 </div>
+<div id="ref-yang2023" class="csl-entry" role="listitem">
+Yang, Yan-Lin, Yang Liu, Ran Gao, De-Jing Song, Yi-Min Zhou, Ming-Yue Miao, Wei Chen, et al. 2023. <span>«&nbsp;Use of Airway Pressure-Based Indices to Detect High and Low Inspiratory Effort during Pressure Support Ventilation: A Diagnostic Accuracy Study&nbsp;»</span>. <em>Annals of Intensive Care</em> 13 (novembre): 111. <a href="https://doi.org/10.1186/s13613-023-01209-7">https://doi.org/10.1186/s13613-023-01209-7</a>.
 </div>
-<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1731819600000" data-listing-file-modified-sort="1763408882157" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="66">
-<div class="thumbnail">
-<p><a href="./posts/aide_inspiratoire/aide_inspiratoire.html" class="no-external"></a></p><a href="./posts/aide_inspiratoire/aide_inspiratoire.html" class="no-external">
-<p class="card-img-top"><img src="posts/aide_inspiratoire/i/Pocc.svg" style="height: 200px;"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/aide_inspiratoire/aide_inspiratoire.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/aide_inspiratoire/aide_inspiratoire.html" class="no-external">Doser l’aide inspiratoire</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/aide_inspiratoire/aide_inspiratoire.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/aide_inspiratoire/aide_inspiratoire.html" class="no-external">On reconnait de plus en plus l’importance de prévenir la dysfonction diaphragmatique induite par le ventilateur. Les données les plus récentes suggèrent qu’un niveau…<span class="citation" data-cites="goligher2018"></span></a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/aide_inspiratoire/aide_inspiratoire.html" class="no-external">
-<div class="listing-date">
-17 nov. 2024
-</div>
-<div class="listing-author">
-Nicolas Blais St-Laurent
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1706677200000" data-listing-file-modified-sort="1763409063758" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="634">
-<div class="thumbnail">
-<p><a href="./posts/tbas/tbas.html" class="no-external"></a></p><a href="./posts/tbas/tbas.html" class="no-external">
-<p><img loading="lazy" src="./posts/tbas/thumbnail.png" class="thumbnail-image" style="height: 200px;"></p>
-</a><p><a href="./posts/tbas/tbas.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/tbas/tbas.html" class="no-external">Ajustement du T<sub>bas</sub> en APRV</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/tbas/tbas.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<p><a href="./posts/tbas/tbas.html" class="no-external"> Le protocole <em>Time Controled Adaptative Ventilation</em> requier de régler des temps expiratoire assez court pour que l’expiration prenne fin lorsque le débit expiratoire a atteint 75 % du débit expiratoire de pointe.</a></p><a href="./posts/tbas/tbas.html" class="no-external">
-Le simulateur suivant permet d’expérimenter l’influence de la compliance et des résistances du poumon sur le temps expiratoire à régler pour atteindre cet objectif. </a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/tbas/tbas.html" class="no-external">
-<div class="listing-date">
-31 janv. 2024
-</div>
-<div class="listing-author">
-Nicolas Blais St-Laurent
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-listing-date-sort="1703826000000" data-listing-file-modified-sort="1754668006678" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="447">
-<div class="thumbnail">
-<p><a href="./posts/vdrmoyenne/vdrmoyen.html" class="no-external"></a></p><a href="./posts/vdrmoyenne/vdrmoyen.html" class="no-external">
-<p><img loading="lazy" src="./posts/vdrmoyenne/thumbnail.png" class="thumbnail-image" style="height: 200px;"></p>
-</a><p><a href="./posts/vdrmoyenne/vdrmoyen.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/vdrmoyenne/vdrmoyen.html" class="no-external">Pressions monitorées lors de la ventilation percussive</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/vdrmoyenne/vdrmoyen.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/vdrmoyenne/vdrmoyen.html" class="no-external">Lors de la ventilation percussive, les variations de pressions mesurées dans le circuit du ventilateur sont en très grande partie dissipées en chaleur par les résistances des voies aériennes.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/vdrmoyenne/vdrmoyen.html" class="no-external">
-<div class="listing-date">
-29 déc. 2023
-</div>
-<div class="listing-author">
-Nicolas Blais St-Laurent
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-listing-date-sort="1696132800000" data-listing-file-modified-sort="1706719605739" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="574">
-<div class="thumbnail">
-<p><a href="./posts/bohr/christian_bohr.html" class="no-external"></a></p><a href="./posts/bohr/christian_bohr.html" class="no-external">
-<p class="card-img-top"><img src="posts/bohr/Christian_Bohr_u016.jpg" style="height: 200px;"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/bohr/christian_bohr.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/bohr/christian_bohr.html" class="no-external">Christian Bohr était dans les patates</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/bohr/christian_bohr.html" class="no-external">Mais pas au sujet de l’espace mort</a>
-</div>
-<div class="listing-description">
-<a href="./posts/bohr/christian_bohr.html" class="no-external">Je dois presque tout ce que je sais au sujet du physiologiste danois Christian Bohr à un article écrit par un certain John B. <span class="citation" data-cites="west2019">West (2019)</span>.<sup>1</sup> La raison en étant que, comme la…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/bohr/christian_bohr.html" class="no-external">
-<div class="listing-date">
-1 oct. 2023
-</div>
-<div class="listing-author">
-Nicolas Blais St-Laurent
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-Aucun article correspondant
-</div>
-</div></main> <!-- /main -->
+</div></section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Réutilisation</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr">CC BY-SA 4.0</a></div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
