@@ -10,7 +10,7 @@
 <atom:link href="https://progrt.github.io/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.6.30</generator>
-<lastBuildDate>Sun, 07 Dec 2025 05:00:00 GMT</lastBuildDate>
+<lastBuildDate>Tue, 16 Dec 2025 05:00:00 GMT</lastBuildDate>
 <item>
   <title>Apprivoiser le mode PAV+</title>
   <dc:creator>Nicolas Blais St-Laurent</dc:creator>
@@ -22,8 +22,9 @@
 
 
 <div class="no-row-height column-margin column-container"><div class="">
-<p><span class="quarto-title-meta-heading">Pièces jointes</span></p>
+<p><span class="quarto-title-meta-heading">Ressources supplémentaires</span></p>
 <ul>
+<li><a href="https://observablehq.com/d/3902c3b0909ab8e2?collection=@progrt/calculatrices-respiratoires" class="bi bi-calculator">Calculatrice P<small>mus</small></a></li>
 <li><a href="diapo.pdf" class="bi bi-file-slides">diapositives.pdf</a></li>
 </ul>
 </div></div><section id="généralités" class="level2">
@@ -308,7 +309,7 @@ P_{mus} = \frac{P_{motrice}}{\%_{Support}}\cdot (1 - \%_{support})
 <p><span id="eq-pmus-ex"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mrow><mi>m</mi><mi>u</mi><mi>s</mi></mrow></msub><mo>=</mo><mfrac><mn>10</mn><mn>0.4</mn></mfrac><mo>⋅</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>0.6</mn><mo stretchy="true" form="postfix">)</mo></mrow><mspace width="2.0em"></mspace><mrow><mo stretchy="true" form="prefix">(</mo><mn>3</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">P_{mus} = \frac{10}{0.4}\cdot (0.6) \qquad(3)</annotation></semantics></math></span></p>
 <p>Plusieurs recherches ont utilisés une Pmus entre 5 et 10 cmH₂O comme valeur de référence pour un travail respiratoire normal. <span class="citation" data-cites="albani2021a">Yang et al. (2023)</span></p>
 <div class="cell">
-<div class="sourceCode cell-code hidden" id="cb1" data-startfrom="172" data-source-offset="-78" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 171;"><span id="cb1-172"><span class="kw" style="color: #003B4F;
+<div class="sourceCode cell-code hidden" id="cb1" data-startfrom="174" data-source-offset="-78" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 173;"><span id="cb1-174"><span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">function</span> <span class="fu" style="color: #4758AB;
@@ -316,7 +317,7 @@ background-color: null;
 font-style: inherit;">Pmotrice</span>(Fsupport<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">,</span> Pmus){</span>
-<span id="cb1-173">    <span class="kw" style="color: #003B4F;
+<span id="cb1-175">    <span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">let</span> Fpatient <span class="op" style="color: #5E5E5E;
@@ -328,7 +329,7 @@ background-color: null;
 font-style: inherit;">-</span> Fsupport<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">;</span></span>
-<span id="cb1-174">    <span class="kw" style="color: #003B4F;
+<span id="cb1-176">    <span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">let</span> Ptotal <span class="op" style="color: #5E5E5E;
@@ -338,7 +339,7 @@ background-color: null;
 font-style: inherit;">/</span> Fpatient<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">;</span></span>
-<span id="cb1-175">    <span class="cf" style="color: #003B4F;
+<span id="cb1-177">    <span class="cf" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">return</span> Ptotal <span class="op" style="color: #5E5E5E;
@@ -346,9 +347,9 @@ background-color: null;
 font-style: inherit;">*</span> Fsupport<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">;</span></span>
-<span id="cb1-176">}</span>
-<span id="cb1-177"></span>
-<span id="cb1-178">datPmotrice <span class="op" style="color: #5E5E5E;
+<span id="cb1-178">}</span>
+<span id="cb1-179"></span>
+<span id="cb1-180">datPmotrice <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> d3<span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -376,18 +377,18 @@ font-style: inherit;">map</span>(f<span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">=&gt;</span>{</span>
-<span id="cb1-179">    <span class="cf" style="color: #003B4F;
+<span id="cb1-181">    <span class="cf" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">return</span> {</span>
-<span id="cb1-180">    <span class="dt" style="color: #AD0000;
+<span id="cb1-182">    <span class="dt" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">Fsupport</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">:</span>f<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">,</span></span>
-<span id="cb1-181">    <span class="dt" style="color: #AD0000;
+<span id="cb1-183">    <span class="dt" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">PmotriceMin</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -400,7 +401,7 @@ background-color: null;
 font-style: inherit;">5</span>)<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">,</span></span>
-<span id="cb1-182">    <span class="dt" style="color: #AD0000;
+<span id="cb1-184">    <span class="dt" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">PmotriceMax</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -411,20 +412,20 @@ background-color: null;
 font-style: inherit;">,</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">10</span>)</span>
-<span id="cb1-183">    }</span>
-<span id="cb1-184">})</span>
-<span id="cb1-185"></span>
-<span id="cb1-186">Plot<span class="op" style="color: #5E5E5E;
+<span id="cb1-185">    }</span>
+<span id="cb1-186">})</span>
+<span id="cb1-187"></span>
+<span id="cb1-188">Plot<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">plot</span>({</span>
-<span id="cb1-187">    <span class="dt" style="color: #AD0000;
+<span id="cb1-189">    <span class="dt" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">x</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">:</span> {</span>
-<span id="cb1-188">        <span class="dt" style="color: #AD0000;
+<span id="cb1-190">        <span class="dt" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">label</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -433,7 +434,7 @@ background-color: null;
 font-style: inherit;">"% support"</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">,</span></span>
-<span id="cb1-189">        <span class="dt" style="color: #AD0000;
+<span id="cb1-191">        <span class="dt" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">percent</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -441,15 +442,15 @@ font-style: inherit;">:</span> <span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">true</span></span>
-<span id="cb1-190">    }<span class="op" style="color: #5E5E5E;
+<span id="cb1-192">    }<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">,</span></span>
-<span id="cb1-191">    <span class="dt" style="color: #AD0000;
+<span id="cb1-193">    <span class="dt" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">y</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">:</span> {</span>
-<span id="cb1-192">        <span class="dt" style="color: #AD0000;
+<span id="cb1-194">        <span class="dt" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">domain</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -462,17 +463,17 @@ background-color: null;
 font-style: inherit;">120</span>]<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">,</span></span>
-<span id="cb1-193">        <span class="dt" style="color: #AD0000;
+<span id="cb1-195">        <span class="dt" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">label</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">:</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">'Δ P vent (cmH₂O)'</span></span>
-<span id="cb1-194">    }<span class="op" style="color: #5E5E5E;
+<span id="cb1-196">    }<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">,</span></span>
-<span id="cb1-195">    <span class="dt" style="color: #AD0000;
+<span id="cb1-197">    <span class="dt" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">grid</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -482,22 +483,22 @@ font-weight: bold;
 font-style: inherit;">true</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">,</span></span>
-<span id="cb1-196">    <span class="dt" style="color: #AD0000;
+<span id="cb1-198">    <span class="dt" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">marks</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">:</span> [</span>
-<span id="cb1-197">        <span class="co" style="color: #5E5E5E;
+<span id="cb1-199">        <span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">//Plot.line(datPmotrice, {x: 'Fsupport', y: 'PmotriceMax'}),</span></span>
-<span id="cb1-198">        Plot<span class="op" style="color: #5E5E5E;
+<span id="cb1-200">        Plot<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">area</span>(datPmotrice<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">,</span> {</span>
-<span id="cb1-199">            <span class="dt" style="color: #AD0000;
+<span id="cb1-201">            <span class="dt" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">x1</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -506,7 +507,7 @@ background-color: null;
 font-style: inherit;">'Fsupport'</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">,</span></span>
-<span id="cb1-200">            <span class="dt" style="color: #AD0000;
+<span id="cb1-202">            <span class="dt" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">y1</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -515,7 +516,7 @@ background-color: null;
 font-style: inherit;">'PmotriceMin'</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">,</span></span>
-<span id="cb1-201">            <span class="dt" style="color: #AD0000;
+<span id="cb1-203">            <span class="dt" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">y2</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -524,7 +525,7 @@ background-color: null;
 font-style: inherit;">'PmotriceMax'</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">,</span></span>
-<span id="cb1-202">            <span class="dt" style="color: #AD0000;
+<span id="cb1-204">            <span class="dt" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">fill</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -533,17 +534,17 @@ background-color: null;
 font-style: inherit;">'gainsboro'</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">,</span></span>
-<span id="cb1-203">            <span class="dt" style="color: #AD0000;
+<span id="cb1-205">            <span class="dt" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">tip</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">:</span> {</span>
-<span id="cb1-204">            <span class="dt" style="color: #AD0000;
+<span id="cb1-206">            <span class="dt" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">format</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">:</span> {</span>
-<span id="cb1-205">                <span class="dt" style="color: #AD0000;
+<span id="cb1-207">                <span class="dt" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">y</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -557,11 +558,11 @@ background-color: null;
 font-style: inherit;">toFixed</span>(<span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">0</span>)</span>
-<span id="cb1-206">            }</span>
-<span id="cb1-207">        }</span>
-<span id="cb1-208">        })</span>
-<span id="cb1-209">    ]</span>
-<span id="cb1-210">})</span></code></pre></div>
+<span id="cb1-208">            }</span>
+<span id="cb1-209">        }</span>
+<span id="cb1-210">        })</span>
+<span id="cb1-211">    ]</span>
+<span id="cb1-212">})</span></code></pre></div>
 <div id="fig-pmotrice" class="cell quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-pmotrice-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -679,7 +680,7 @@ Yang, Yan-Lin, Yang Liu, Ran Gao, De-Jing Song, Yi-Min Zhou, Ming-Yue Miao, Wei 
 </div>
 </div></section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Réutilisation</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr_ca">CC BY-SA 4.0</a></div></div></section></div> ]]></description>
   <guid>https://progrt.github.io/billets/PAV+/article.html</guid>
-  <pubDate>Sun, 07 Dec 2025 05:00:00 GMT</pubDate>
+  <pubDate>Tue, 16 Dec 2025 05:00:00 GMT</pubDate>
   <media:content url="https://progrt.github.io/billets/PAV+/img/Pavlov.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
