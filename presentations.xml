@@ -6,15 +6,15 @@
       version="2.0">
 <channel>
 <title>Carnet de Nicolas</title>
-<link>https://progrt.github.io/presentations.html</link>
-<atom:link href="https://progrt.github.io/presentations.xml" rel="self" type="application/rss+xml"/>
+<link>https://respiratoire.ca/presentations.html</link>
+<atom:link href="https://respiratoire.ca/presentations.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.8.26</generator>
 <lastBuildDate>Wed, 31 Dec 2025 05:00:00 GMT</lastBuildDate>
 <item>
   <title>Apprivoiser le mode PAV+</title>
   <dc:creator>Nicolas Blais St-Laurent</dc:creator>
-  <link>https://progrt.github.io/billets/PAV+/article.html</link>
+  <link>https://respiratoire.ca/billets/PAV+/article.html</link>
   <description><![CDATA[ 
 
 
@@ -259,22 +259,22 @@ Table&nbsp;2: Paramètres de départ spécifiques au mode PAV+. <em>À titre de 
 </thead>
 <tbody>
 <tr class="odd">
-<td><img src="https://progrt.github.io/billets/PAV+/i/taille.svg" class="img-fluid figure-img"></td>
+<td><img src="https://respiratoire.ca/billets/PAV+/i/taille.svg" class="img-fluid figure-img"></td>
 <td style="text-align: left;">Taille et sexe du pt</td>
 <td style="text-align: center;"><em>Obligatoire</em></td>
 </tr>
 <tr class="even">
-<td><img src="https://progrt.github.io/billets/PAV+/i/tube.svg" class="img-fluid figure-img"></td>
+<td><img src="https://respiratoire.ca/billets/PAV+/i/tube.svg" class="img-fluid figure-img"></td>
 <td style="text-align: left;">Type et diamètre de l’interface</td>
 <td style="text-align: center;"><em>Obligatoire</em></td>
 </tr>
 <tr class="odd">
-<td><img src="https://progrt.github.io/billets/PAV+/i/assistance.svg" class="img-fluid figure-img"></td>
+<td><img src="https://respiratoire.ca/billets/PAV+/i/assistance.svg" class="img-fluid figure-img"></td>
 <td style="text-align: left;">% support</td>
 <td style="text-align: center;">50 %</td>
 </tr>
 <tr class="even">
-<td><img src="https://progrt.github.io/billets/PAV+/i/fin_de_cycle.svg" class="img-fluid figure-img"></td>
+<td><img src="https://respiratoire.ca/billets/PAV+/i/fin_de_cycle.svg" class="img-fluid figure-img"></td>
 <td style="text-align: left;">Sensibilité expiratoire</td>
 <td style="text-align: center;">10 l/m</td>
 </tr>
@@ -680,63 +680,63 @@ Yang, Yan-Lin, Yang Liu, Ran Gao, De-Jing Song, Yi-Min Zhou, Ming-Yue Miao, Wei 
 </div>
 </div></section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Réutilisation</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr_ca">CC BY-SA 4.0</a></div></div></section></div> ]]></description>
   <category>Présentation</category>
-  <guid>https://progrt.github.io/billets/PAV+/article.html</guid>
+  <guid>https://respiratoire.ca/billets/PAV+/article.html</guid>
   <pubDate>Wed, 31 Dec 2025 05:00:00 GMT</pubDate>
-  <media:content url="https://progrt.github.io/billets/PAV+/img/Pavlov.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://respiratoire.ca/billets/PAV+/img/Pavlov.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Doser l&#39;aide inspiratoire</title>
-  <link>https://progrt.github.io/</link>
+  <link>https://respiratoire.ca/</link>
   <description></description>
   <category>Présentation</category>
-  <guid>https://progrt.github.io/</guid>
+  <guid>https://respiratoire.ca/</guid>
   <pubDate>Thu, 24 Oct 2024 04:00:00 GMT</pubDate>
-  <media:content url="https://progrt.github.io/img/diapo/aide_inspiratoire.png" medium="image" type="image/png" height="81" width="144"/>
+  <media:content url="https://respiratoire.ca/img/diapo/aide_inspiratoire.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
   <title>Zones d&#39;ombre du NAVA</title>
-  <link>https://progrt.github.io/</link>
+  <link>https://respiratoire.ca/</link>
   <description></description>
   <category>Présentation</category>
-  <guid>https://progrt.github.io/</guid>
+  <guid>https://respiratoire.ca/</guid>
   <pubDate>Wed, 20 Jul 2022 04:00:00 GMT</pubDate>
-  <media:content url="https://progrt.github.io/img/diapo/navafiltration.png" medium="image" type="image/png" height="81" width="144"/>
+  <media:content url="https://respiratoire.ca/img/diapo/navafiltration.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
   <title>Ventilation: quand le coeur s&#39;en mêle</title>
-  <link>https://progrt.github.io/</link>
+  <link>https://respiratoire.ca/</link>
   <description></description>
   <category>Présentation</category>
-  <guid>https://progrt.github.io/</guid>
+  <guid>https://respiratoire.ca/</guid>
   <pubDate>Mon, 09 May 2022 04:00:00 GMT</pubDate>
-  <media:content url="https://progrt.github.io/img/diapo/vqcm.png" medium="image" type="image/png" height="81" width="144"/>
+  <media:content url="https://respiratoire.ca/img/diapo/vqcm.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
   <title>Mode ventilatoire NAVA</title>
-  <link>https://progrt.github.io/</link>
+  <link>https://respiratoire.ca/</link>
   <description></description>
   <category>Présentation</category>
-  <guid>https://progrt.github.io/</guid>
+  <guid>https://respiratoire.ca/</guid>
   <pubDate>Tue, 01 Mar 2022 05:00:00 GMT</pubDate>
-  <media:content url="https://progrt.github.io/img/diapo/presnava.png" medium="image" type="image/png" height="81" width="144"/>
+  <media:content url="https://respiratoire.ca/img/diapo/presnava.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
   <title>Faux-positifs et faux-négatifs</title>
-  <link>https://progrt.github.io/</link>
+  <link>https://respiratoire.ca/</link>
   <description></description>
   <category>Présentation</category>
-  <guid>https://progrt.github.io/</guid>
+  <guid>https://respiratoire.ca/</guid>
   <pubDate>Wed, 27 Oct 2021 04:00:00 GMT</pubDate>
-  <media:content url="https://progrt.github.io/img/diapo/fnfp.png" medium="image" type="image/png" height="81" width="144"/>
+  <media:content url="https://respiratoire.ca/img/diapo/fnfp.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
   <title>Le ventilateur VDR-4</title>
-  <link>https://progrt.github.io/</link>
+  <link>https://respiratoire.ca/</link>
   <description></description>
   <category>Présentation</category>
-  <guid>https://progrt.github.io/</guid>
+  <guid>https://respiratoire.ca/</guid>
   <pubDate>Sun, 01 Sep 2019 04:00:00 GMT</pubDate>
-  <media:content url="https://progrt.github.io/img/diapo/VDR4101.png" medium="image" type="image/png" height="81" width="144"/>
+  <media:content url="https://respiratoire.ca/img/diapo/VDR4101.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 </channel>
 </rss>
