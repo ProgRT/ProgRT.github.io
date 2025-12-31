@@ -1,1 +1,1 @@
-Sitemap: https://respiratoire.ca/sitemap.xml
+Sitemap: https://progrt.github.io/sitemap.xml

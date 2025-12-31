@@ -6,53 +6,53 @@
       version="2.0">
 <channel>
 <title>Carnet de Nicolas</title>
-<link>https://respiratoire.ca/</link>
-<atom:link href="https://respiratoire.ca/index.xml" rel="self" type="application/rss+xml"/>
+<link>https://progrt.github.io/</link>
+<atom:link href="https://progrt.github.io/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.8.26</generator>
 <lastBuildDate>Wed, 31 Dec 2025 05:00:00 GMT</lastBuildDate>
 <item>
   <title>Apprivoiser le mode PAV+</title>
   <dc:creator>Nicolas Blais St-Laurent</dc:creator>
-  <link>https://respiratoire.ca/billets/PAV+/article.html</link>
+  <link>https://progrt.github.io/billets/PAV+/article.html</link>
   <description><![CDATA[ <span class="quarto-title-meta-heading">Ressources supplémentaires</span> ]]></description>
   <category>Présentation</category>
-  <guid>https://respiratoire.ca/billets/PAV+/article.html</guid>
+  <guid>https://progrt.github.io/billets/PAV+/article.html</guid>
   <pubDate>Wed, 31 Dec 2025 05:00:00 GMT</pubDate>
-  <media:content url="https://respiratoire.ca/billets/PAV+/img/Pavlov.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://progrt.github.io/billets/PAV+/img/Pavlov.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Doser l’aide inspiratoire</title>
   <dc:creator>Nicolas Blais St-Laurent</dc:creator>
-  <link>https://respiratoire.ca/billets/aide_inspiratoire/aide_inspiratoire.html</link>
+  <link>https://progrt.github.io/billets/aide_inspiratoire/aide_inspiratoire.html</link>
   <description><![CDATA[ On reconnait de plus en plus l’importance de prévenir la dysfonction diaphragmatique induite par le ventilateur. Les données les plus récentes suggèrent qu’un niveau d’activité diaphragmatique excessivement faible ou excessivement élevé est un facteur déterminant dans le développement d’une dysfonction diaphragmatique chez les patients ventilés mécaniquement <span class="citation" data-cites="goligher2018">(Goligher et al. 2018)</span>. Il est par conséquent nécessaire d’avoir accès à des indicateurs permettant d’évaluer le niveau d’activité diaphragmatique des patients ventilés mécaniquement. ]]></description>
-  <guid>https://respiratoire.ca/billets/aide_inspiratoire/aide_inspiratoire.html</guid>
+  <guid>https://progrt.github.io/billets/aide_inspiratoire/aide_inspiratoire.html</guid>
   <pubDate>Sun, 17 Nov 2024 05:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Ajustement du Tbas en APRV</title>
   <dc:creator>Nicolas Blais St-Laurent</dc:creator>
-  <link>https://respiratoire.ca/billets/tbas/tbas.html</link>
+  <link>https://progrt.github.io/billets/tbas/tbas.html</link>
   <description><![CDATA[ Le protocole Time Controled Adaptative Ventilation requier de régler des temps expiratoire assez court pour que l’expiration prenne fin lorsque le débit expiratoire a atteint 75 % du débit expiratoire de pointe. Le simulateur suivant permet d’expérimenter l’influence de la compliance et des résistances du poumon sur le temps expiratoire à régler pour atteindre cet objectif. ]]></description>
-  <guid>https://respiratoire.ca/billets/tbas/tbas.html</guid>
+  <guid>https://progrt.github.io/billets/tbas/tbas.html</guid>
   <pubDate>Wed, 31 Jan 2024 05:00:00 GMT</pubDate>
-  <media:content url="https://respiratoire.ca/billets/tbas/thumbnail.png" medium="image" type="image/png" height="112" width="144"/>
+  <media:content url="https://progrt.github.io/billets/tbas/thumbnail.png" medium="image" type="image/png" height="112" width="144"/>
 </item>
 <item>
   <title>Pressions monitorées lors de la ventilation percussive</title>
   <dc:creator>Nicolas Blais St-Laurent</dc:creator>
-  <link>https://respiratoire.ca/billets/vdrmoyenne/vdrmoyen.html</link>
+  <link>https://progrt.github.io/billets/vdrmoyenne/vdrmoyen.html</link>
   <description><![CDATA[ Lors de la ventilation percussive, les variations de pressions mesurées dans le circuit du ventilateur sont en très grande partie dissipées en chaleur par les résistances des voies aériennes. ]]></description>
-  <guid>https://respiratoire.ca/billets/vdrmoyenne/vdrmoyen.html</guid>
+  <guid>https://progrt.github.io/billets/vdrmoyenne/vdrmoyen.html</guid>
   <pubDate>Fri, 29 Dec 2023 05:00:00 GMT</pubDate>
-  <media:content url="https://respiratoire.ca/billets/vdrmoyenne/thumbnail.png" medium="image" type="image/png" height="89" width="144"/>
+  <media:content url="https://progrt.github.io/billets/vdrmoyenne/thumbnail.png" medium="image" type="image/png" height="89" width="144"/>
 </item>
 <item>
   <title>Christian Bohr était dans les patates</title>
   <dc:creator>Nicolas Blais St-Laurent</dc:creator>
-  <link>https://respiratoire.ca/billets/bohr/christian_bohr.html</link>
+  <link>https://progrt.github.io/billets/bohr/christian_bohr.html</link>
   <description><![CDATA[ Je dois presque tout ce que je sais au sujet du physiologiste danois Christian Bohr à un article écrit par un certain John B. <span class="citation" data-cites="west2019">West (2019)</span>.<sup>1</sup> La raison en étant que, comme la majorité des gens faisant référence à Bohr, je ne maîtrise pas l’allemand, langue dans laquelle s’exprimait celui-ci. Et que Bohr est, à ce qu’on dit, passablement ardu à lire – même quand on maîtrise l’allemand. ]]></description>
-  <guid>https://respiratoire.ca/billets/bohr/christian_bohr.html</guid>
+  <guid>https://progrt.github.io/billets/bohr/christian_bohr.html</guid>
   <pubDate>Sun, 01 Oct 2023 04:00:00 GMT</pubDate>
 </item>
 </channel>
