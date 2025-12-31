@@ -1,1 +1,1 @@
-Sitemap: respiratoire.ca/sitemap.xml
+Sitemap: https://respiratoire.ca/sitemap.xml
