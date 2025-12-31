@@ -1,5 +1,13 @@
 [
   {
+    "listing": "/projets.html",
+    "items": []
+  },
+  {
+    "listing": "/diapo.html",
+    "items": []
+  },
+  {
     "listing": "/index.html",
     "items": [
       "/billets/PAV+/article.html",
@@ -10,11 +18,9 @@
     ]
   },
   {
-    "listing": "/diapo.html",
-    "items": []
-  },
-  {
-    "listing": "/projets.html",
-    "items": []
+    "listing": "/presentations.html",
+    "items": [
+      "/billets/PAV+/article.html"
+    ]
   }
 ]

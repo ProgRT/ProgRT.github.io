@@ -81,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-subtitle','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-subtitle','listing-date','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
       searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description"],
     };
@@ -104,7 +104,7 @@ ul.task-list li input[type="checkbox"] {
 
 <link rel="stylesheet" href="awesomestyle.css">
 <link rel="alternate" type="application/rss+xml" title="Carnet de Nicolas" href="index.xml" data-external="1"><meta property="og:title" content="Billets – Carnet de Nicolas">
-<meta property="og:image" content="https://progrt.github.io/billets/tbas/thumbnail.png">
+<meta property="og:image" content="respiratoire.ca/billets/tbas/thumbnail.png">
 <meta property="og:site_name" content="Carnet de Nicolas">
 <meta property="og:image:height" content="352">
 <meta property="og:image:width" content="451">
@@ -137,8 +137,8 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Projets</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./diapo.html"> 
-<span class="menu-text">Diapositives</span></a>
+    <a class="nav-link" href="./presentations.html"> 
+<span class="menu-text">Présentations</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="https://observablehq.com/collection/@progrt/calculatrices-respiratoires"> 
@@ -147,6 +147,7 @@ ul.task-list li input[type="checkbox"] {
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
+    <a href="./index.xml" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-rss"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -184,7 +185,7 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1766811600000" data-listing-file-modified-sort="1765476008481" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1108">
+<div class="quarto-post image-right" data-index="0" data-categories="UHIlQzMlQTlzZW50YXRpb24=" data-listing-date-sort="1767157200000" data-listing-file-modified-sort="1767194932924" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1108">
 <div class="thumbnail"><a href="./billets/PAV+/article.html" class="no-external">
 
 <img loading="lazy" src="./billets/PAV+/img/Pavlov.jpg" class="thumbnail-image" style="height: 200px;">
@@ -204,10 +205,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="metadata">
 <a href="./billets/PAV+/article.html" class="no-external">
 <div class="listing-date">
-27 déc. 2025
-</div>
-<div class="listing-author">
-Nicolas Blais St-Laurent
+31 déc. 2025
 </div>
 </a>
 </div>
@@ -233,9 +231,6 @@ On reconnait de plus en plus l’importance de prévenir la dysfonction diaphrag
 <a href="./billets/aide_inspiratoire/aide_inspiratoire.html" class="no-external">
 <div class="listing-date">
 17 nov. 2024
-</div>
-<div class="listing-author">
-Nicolas Blais St-Laurent
 </div>
 </a>
 </div>
@@ -263,9 +258,6 @@ Nicolas Blais St-Laurent
 <div class="listing-date">
 31 janv. 2024
 </div>
-<div class="listing-author">
-Nicolas Blais St-Laurent
-</div>
 </a>
 </div>
 </div>
@@ -291,9 +283,6 @@ Nicolas Blais St-Laurent
 <div class="listing-date">
 29 déc. 2023
 </div>
-<div class="listing-author">
-Nicolas Blais St-Laurent
-</div>
 </a>
 </div>
 </div>
@@ -318,9 +307,6 @@ Je dois presque tout ce que je sais au sujet du physiologiste danois Christian B
 <a href="./billets/bohr/christian_bohr.html" class="no-external">
 <div class="listing-date">
 1 oct. 2023
-</div>
-<div class="listing-author">
-Nicolas Blais St-Laurent
 </div>
 </a>
 </div>
@@ -401,7 +387,7 @@ Nicolas Blais St-Laurent
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/progrt\.github\.io");
+        var filterRegex = new RegExp("respiratoire\.ca");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

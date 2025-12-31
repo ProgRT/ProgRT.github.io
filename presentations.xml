@@ -1,0 +1,742 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Carnet de Nicolas</title>
+<link>respiratoire.ca/presentations.html</link>
+<atom:link href="respiratoire.ca/presentations.xml" rel="self" type="application/rss+xml"/>
+<description></description>
+<generator>quarto-1.8.26</generator>
+<lastBuildDate>Wed, 31 Dec 2025 05:00:00 GMT</lastBuildDate>
+<item>
+  <title>Apprivoiser le mode PAV+</title>
+  <dc:creator>Nicolas Blais St-Laurent</dc:creator>
+  <link>respiratoire.ca/billets/PAV+/article.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p><span class="quarto-title-meta-heading">Ressources supplémentaires</span></p>
+<ul>
+<li><a href="https://observablehq.com/d/3902c3b0909ab8e2?collection=@progrt/calculatrices-respiratoires" class="bi bi-calculator">Calculatrice P<small>mus</small></a></li>
+<li><a href="diapo.pdf" class="bi bi-file-slides">diapositives.pdf</a></li>
+</ul>
+</div></div><section id="généralités" class="level2">
+<h2 class="anchored" data-anchor-id="généralités">Généralités</h2>
+<p>Le mode PAV+ constitue un mode ce ventilation spontanée continue (VSC) en pression contrôlée (PC) au même titre que le mode VS-AI <span class="citation" data-cites="chatburn2014">(Chatburn, El-Khatib, et Mireles-Cabodevila 2014)</span>. Il diffère de celui-ci par le type de contrôle de la pression. Alors qu’en VS-AI, la pression est fixe, elle est, dans le mode PAV+, plutôt asservie au travail respiratoire effectué par le patient. Cela place le mode PAV+ dans la même famille que le mode NAVA <span class="citation" data-cites="jonkman2020">(Jonkman et al. 2020)</span>, où la pression est asservie à l’activité électrique diaphragmatique mesurée au moyen d’un cathéter. On pourait aussi désigner ces deux modes comme étant des modes <em>proportionnels</em>, ceux-ci agissant comme un amplificateur du travail effectué par le patient.</p>
+<div id="tbl-modes" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-modes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: Classification des modes de ventilation spontanés
+</figcaption>
+<div aria-describedby="tbl-modes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 8%">
+<col style="width: 27%">
+<col style="width: 23%">
+<col style="width: 21%">
+<col style="width: 19%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Mode</th>
+<th>Séquence respiratoire</th>
+<th>Variable contrôlée</th>
+<th>Type de contrôle</th>
+<th>Classification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>VS-AI</td>
+<td>Spontanée continue</td>
+<td>Pression</td>
+<td>Fixe</td>
+<td>VSC.PC.s</td>
+</tr>
+<tr class="even">
+<td>PAV+</td>
+<td>Spontanée continue</td>
+<td>Pression</td>
+<td>Asservi</td>
+<td>VSC.PC.r</td>
+</tr>
+<tr class="odd">
+<td>NAVA</td>
+<td>Spontanée continue</td>
+<td>Pression</td>
+<td>Asservi</td>
+<td>VSC.PC.r</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>Comme c’est le cas pour les autres modes de ventilation spontanée continue, le mode PAV+ ne vise pas le contrôle de la ventilation (celui-ci étant assuré par les centres respiratoires du patient) mais bien le maintien d’un niveau de travail respiratoire adéquat.</p>
+<div class="cell" data-fig-width="100%" data-file="_quarto-includes/_commande.dot" data-layout-align="default">
+<div class="cell-output-display">
+<div id="fig-retroaction" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-retroaction-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div>
+<svg width="NaN" height="480" viewbox="0.00 0.00 189.85 478.56" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style="; max-width: none; max-height: none">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 474.56)">
+<title>LR</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-474.56 185.85,-474.56 185.85,4 -4,4"></polygon>
+<!-- Centre -->
+<g id="node1" class="node">
+<title>Centre</title>
+<ellipse fill="none" stroke="black" cx="78.35" cy="-452.56" rx="78.2" ry="18"></ellipse>
+<text text-anchor="start" x="29.56" y="-448.36" font-family="Times,serif" font-size="14.00"> Centres resp. 🧠 </text>
+</g>
+<!-- Commande -->
+<g id="node2" class="node">
+<title>Commande</title>
+<ellipse fill="none" stroke="black" cx="78.35" cy="-373.1" rx="71.61" ry="25.41"></ellipse>
+<text text-anchor="start" x="35.58" y="-375.5" font-family="Times,serif" font-size="14.00"> Commande 📡</text>
+<text text-anchor="start" x="56.52" y="-361.5" font-family="Times,serif" font-size="14.00"> </text>
+<text text-anchor="start" x="60.02" y="-361.5" font-family="Times,serif" font-size="10.00">µV·s / m</text>
+<text text-anchor="start" x="96.69" y="-361.5" font-family="Times,serif" font-size="14.00"> </text>
+</g>
+<!-- Centre&#45;&gt;Commande -->
+<g id="edge1" class="edge">
+<title>Centre-&gt;Commande</title>
+<path fill="none" stroke="black" d="M78.35,-434.37C78.35,-426.81 78.35,-417.64 78.35,-408.77"></path>
+<polygon fill="black" stroke="black" points="81.85,-408.59 78.35,-398.59 74.85,-408.59 81.85,-408.59"></polygon>
+</g>
+<!-- Couplage -->
+<g id="node3" class="node">
+<title>Couplage</title>
+<ellipse fill="none" stroke="black" cx="78.35" cy="-286.19" rx="64.21" ry="25.41"></ellipse>
+<text text-anchor="start" x="41.02" y="-288.59" font-family="Times,serif" font-size="14.00"> Couplage 💪</text>
+<text text-anchor="start" x="47.77" y="-274.59" font-family="Times,serif" font-size="14.00"> </text>
+<text text-anchor="start" x="51.27" y="-274.59" font-family="Times,serif" font-size="10.00">cmH₂O / µV</text>
+<text text-anchor="start" x="105.43" y="-274.59" font-family="Times,serif" font-size="14.00"> </text>
+</g>
+<!-- Commande&#45;&gt;Couplage -->
+<g id="edge2" class="edge">
+<title>Commande-&gt;Couplage</title>
+<path fill="none" stroke="black" d="M78.35,-347.54C78.35,-339.53 78.35,-330.48 78.35,-321.88"></path>
+<polygon fill="black" stroke="black" points="81.85,-321.7 78.35,-311.7 74.85,-321.7 81.85,-321.7"></polygon>
+</g>
+<!-- Charge -->
+<g id="node4" class="node">
+<title>Charge</title>
+<ellipse fill="none" stroke="black" cx="78.35" cy="-199.28" rx="64.8" ry="25.41"></ellipse>
+<text text-anchor="start" x="40.64" y="-201.68" font-family="Times,serif" font-size="14.00"> Charge &nbsp;🏋️</text>
+<text text-anchor="start" x="48.05" y="-187.68" font-family="Times,serif" font-size="14.00"> </text>
+<text text-anchor="start" x="51.55" y="-187.68" font-family="Times,serif" font-size="10.00">cmH₂O·s / l</text>
+<text text-anchor="start" x="105.16" y="-187.68" font-family="Times,serif" font-size="14.00"> </text>
+</g>
+<!-- Couplage&#45;&gt;Charge -->
+<g id="edge3" class="edge">
+<title>Couplage-&gt;Charge</title>
+<path fill="none" stroke="black" d="M78.35,-260.63C78.35,-252.62 78.35,-243.57 78.35,-234.97"></path>
+<polygon fill="black" stroke="black" points="81.85,-234.78 78.35,-224.78 74.85,-234.78 81.85,-234.78"></polygon>
+</g>
+<!-- Ventilation -->
+<g id="node5" class="node">
+<title>Ventilation</title>
+<ellipse fill="none" stroke="black" cx="78.35" cy="-112.37" rx="70.9" ry="25.41"></ellipse>
+<text text-anchor="start" x="36.36" y="-114.77" font-family="Times,serif" font-size="14.00"> Ventilation 🫁</text>
+<text text-anchor="start" x="68.18" y="-100.77" font-family="Times,serif" font-size="14.00"> </text>
+<text text-anchor="start" x="71.68" y="-100.77" font-family="Times,serif" font-size="10.00">l/m</text>
+<text text-anchor="start" x="85.02" y="-100.77" font-family="Times,serif" font-size="14.00"> </text>
+</g>
+<!-- Charge&#45;&gt;Ventilation -->
+<g id="edge4" class="edge">
+<title>Charge-&gt;Ventilation</title>
+<path fill="none" stroke="black" d="M78.35,-173.72C78.35,-165.71 78.35,-156.66 78.35,-148.05"></path>
+<polygon fill="black" stroke="black" points="81.85,-147.87 78.35,-137.87 74.85,-147.87 81.85,-147.87"></polygon>
+</g>
+<!-- Capnie -->
+<g id="node6" class="node">
+<title>Capnie</title>
+<ellipse fill="none" stroke="black" cx="78.35" cy="-25.46" rx="54.41" ry="25.41"></ellipse>
+<text text-anchor="start" x="48.02" y="-27.86" font-family="Times,serif" font-size="14.00"> Capnie 🧪</text>
+<text text-anchor="start" x="60.96" y="-13.86" font-family="Times,serif" font-size="14.00"> </text>
+<text text-anchor="start" x="64.46" y="-13.86" font-family="Times,serif" font-size="10.00">mmHg</text>
+<text text-anchor="start" x="92.24" y="-13.86" font-family="Times,serif" font-size="14.00"> </text>
+</g>
+<!-- Ventilation&#45;&gt;Capnie -->
+<g id="edge5" class="edge">
+<title>Ventilation-&gt;Capnie</title>
+<path fill="none" stroke="black" d="M78.35,-86.81C78.35,-78.8 78.35,-69.75 78.35,-61.14"></path>
+<polygon fill="black" stroke="black" points="81.85,-60.96 78.35,-50.96 74.85,-60.96 81.85,-60.96"></polygon>
+</g>
+<!-- Capnie&#45;&gt;Centre -->
+<g id="edge6" class="edge">
+<title>Capnie-&gt;Centre</title>
+<path fill="none" stroke="black" d="M115.44,-44.46C131.75,-54.5 149.24,-68.69 158.35,-86.91 210.19,-190.56 159.13,-231.76 159.35,-347.65 159.4,-370.27 170.11,-378.65 159.35,-398.56 151.75,-412.63 138.6,-423.56 125.09,-431.74"></path>
+<polygon fill="black" stroke="black" points="123.22,-428.78 116.21,-436.73 126.64,-434.88 123.22,-428.78"></polygon>
+</g>
+</g>
+</svg>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-retroaction-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Boucle de rétroaction du contrôle respiratoire
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<section id="description-technique" class="level3">
+<h3 class="anchored" data-anchor-id="description-technique">Description technique</h3>
+<p>Lorsque le mode PAV+ est en fonction, le ventilateur calcule, chaque 5&nbsp;ms, le travail respiratoire au moyen de l’équation du mouvement de l’air.</p>
+<p><span id="eq-mvt-air"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mrow><mi>v</mi><mi>e</mi><mi>n</mi><mi>t</mi></mrow></msub><mo>+</mo><msub><mi>P</mi><mrow><mi>m</mi><mi>u</mi><mi>s</mi></mrow></msub><mo>=</mo><mi>Δ</mi><mi>V</mi><mo>⋅</mo><mi>E</mi><mo>+</mo><mover><mi>V</mi><mo accent="true">̇</mo></mover><mo>⋅</mo><mi>R</mi><mspace width="2.0em"></mspace><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">
+P_{vent} + P_{mus} = \Delta V \cdot E + \dot{V} \cdot R
+ \qquad(1)</annotation></semantics></math></span></p>
+</section>
+</section>
+<section id="mise-en-route" class="level2">
+<h2 class="anchored" data-anchor-id="mise-en-route">Mise en route</h2>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Astuce</span>Travailler avec le PB-980
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Le PB-980 est, à notre avis, un très bon ventilateur de soins intensifs. Il offre beaucoup d’information et de contrôle au clinicien qui l’oppère mais est peu convivial en comparaison des autres ventilateurs de sa génération. Les points suivants sont à condiérer pour apprendre à apprécier le PB-980:</p>
+<ul>
+<li><em>Le PB-980 est allergique aux bouchons.</em> Que l’appareil soit en fonction ou en pause/veille, l’obstruction du circuit par un bouchon sera interprétée par l’appareil comme la connection d’un patient et l’appareil essaiera de ventiler ce patient. La <em>seule</em> situation où un bouchon est permis est lorsque requis par la procédure d’autotest réduir (ATR).</li>
+<li><em>Ne pas démarer l’appareil avant d’avoir branché</em> les gazs médicaux et l’alimentation électrique. Cela vous évitera de désagréables alarmes.</li>
+<li><em>Le volume sonore</em> des alarmes, hautement agressant dans sa configuration par défault, <em>peux être ajusté</em> (bouton situé sous l’écran). Vous protègerez ainsi votre audition et vos relation avec le reste du personnel des soins intensifs.</li>
+<li>Le test préutilisation s’appelle ATR (pour autotest réduit). Il doit être effectué avant le démarage de la ventilation, entre autre pour que le ventilateur puisse mesurer la compliance du circuit de ventilation et corriger les volumes mesurés en conséquence.</li>
+</ul>
+</div>
+</div>
+<section id="paramètres-à-ajuster" class="level3">
+<h3 class="anchored" data-anchor-id="paramètres-à-ajuster">Paramètres à ajuster</h3>
+<dl>
+<dt>Sexe et taille du patient</dt>
+<dd>
+Servent à calculer le poids prédit du patient. Le poids prédit sert à fixer des limites de sécurité sur différents paramètres utilisés pour les calculs de l’algorithme <span class="citation" data-cites="covidien2020">(Covidien 2020)</span>.
+</dd>
+<dt>Type et taille de l’interface patient</dt>
+<dd>
+Sert à calculer le travail respiratoire relié à celle-ci <span class="citation" data-cites="covidien2020">(Covidien 2020)</span>.
+</dd>
+<dt>% support</dt>
+<dd>
+Il s’agit du pourcentage du travail respiratoire total qui sera assuré par le ventilateur.
+</dd>
+<dt>Sensibilité expiratoire (l/m)</dt>
+<dd>
+Contrairement au mode VS-AI conventionnel, la sensibilité expiratoire se règle en débit absolut (l/m). Dans notre expérience, sa valeur n’est pas d’une grande importance, les fins de cycle prématurées ou tardives étant plutôt rares dû au fonctionnement du mode PAV+. Elle pourra être ajustée en fonction de l’analyse des courbes de débit et de pression.
+</dd>
+</dl>
+<div id="tbl-param_depart" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-param_depart-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;2: Paramètres de départ spécifiques au mode PAV+. <em>À titre de suggestion seulement</em>.
+</figcaption>
+<div aria-describedby="tbl-param_depart-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 12%">
+<col style="width: 56%">
+<col style="width: 31%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th style="text-align: left;">Paramètre</th>
+<th style="text-align: center;">Valeur de départ</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><img src="respiratoire.ca/billets/PAV+/i/taille.svg" class="img-fluid figure-img"></td>
+<td style="text-align: left;">Taille et sexe du pt</td>
+<td style="text-align: center;"><em>Obligatoire</em></td>
+</tr>
+<tr class="even">
+<td><img src="respiratoire.ca/billets/PAV+/i/tube.svg" class="img-fluid figure-img"></td>
+<td style="text-align: left;">Type et diamètre de l’interface</td>
+<td style="text-align: center;"><em>Obligatoire</em></td>
+</tr>
+<tr class="odd">
+<td><img src="respiratoire.ca/billets/PAV+/i/assistance.svg" class="img-fluid figure-img"></td>
+<td style="text-align: left;">% support</td>
+<td style="text-align: center;">50 %</td>
+</tr>
+<tr class="even">
+<td><img src="respiratoire.ca/billets/PAV+/i/fin_de_cycle.svg" class="img-fluid figure-img"></td>
+<td style="text-align: left;">Sensibilité expiratoire</td>
+<td style="text-align: center;">10 l/m</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</section>
+</section>
+<section id="gestion-clinique" class="level2">
+<h2 class="anchored" data-anchor-id="gestion-clinique">Gestion clinique</h2>
+<p>Comme pour n’importe quel autre mode spontané, on pourrait résumer la gestion clinique du mode PAV+ à :</p>
+<blockquote class="blockquote">
+<p>Augmenter le niveau de support lorsque le travail respiratoire du patient semble trop important et diminuer le niveau de support lorsque le travail respiratoire du patient semble faible.</p>
+</blockquote>
+<p>Les indicateurs de travail respiratoire disponibles en VS-AI (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Δ</mi><msub><mi>P</mi><mrow><mi>o</mi><mi>c</mi><mi>c</mi><mi>l</mi><mi>u</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub></mrow><annotation encoding="application/x-tex">\Delta P_{occlusion}</annotation></semantics></math>, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>P</mi><mrow><mn>0</mn><mo>,</mo><mn>1</mn></mrow></msub><annotation encoding="application/x-tex">P_{0,1}</annotation></semantics></math>, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mi>r</mi></mrow><annotation encoding="application/x-tex">Fr</annotation></semantics></math>) conservent la même valeur. Le mode PAV+ vous donne en plus accès à deux indicateurs supplémentaires:</p>
+<dl>
+<dt>Travail respiratoire (j/L)</dt>
+<dd>
+La plage considérée par normale par le manufacturier est de 0,3 à 0,7&nbsp;j/L. <span class="citation" data-cites="covidien2020">(Covidien 2020)</span>
+</dd>
+<dt>Pression générée par les muscles respiratoires (Pmus)</dt>
+<dd>
+Calculée au moyen de la Pression motrice et du pourcentage d’assistance
+</dd>
+</dl>
+<p><span id="eq-pmus"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mrow><mi>m</mi><mi>u</mi><mi>s</mi></mrow></msub><mo>=</mo><mfrac><msub><mi>P</mi><mrow><mi>m</mi><mi>o</mi><mi>t</mi><mi>r</mi><mi>i</mi><mi>c</mi><mi>e</mi></mrow></msub><msub><mi>%</mi><mrow><mi>S</mi><mi>u</mi><mi>p</mi><mi>p</mi><mi>o</mi><mi>r</mi><mi>t</mi></mrow></msub></mfrac><mo>⋅</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><msub><mi>%</mi><mrow><mi>s</mi><mi>u</mi><mi>p</mi><mi>p</mi><mi>o</mi><mi>r</mi><mi>t</mi></mrow></msub><mo stretchy="true" form="postfix">)</mo></mrow><mspace width="2.0em"></mspace><mrow><mo stretchy="true" form="prefix">(</mo><mn>2</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">
+P_{mus} = \frac{P_{motrice}}{\%_{Support}}\cdot (1 - \%_{support})
+ \qquad(2)</annotation></semantics></math></span></p>
+<p>Par exemple, si on suppose une <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>P</mi><mrow><mi>m</mi><mi>o</mi><mi>t</mi><mi>r</mi><mi>i</mi><mi>c</mi><mi>e</mi></mrow></msub><annotation encoding="application/x-tex">P_{motrice}</annotation></semantics></math> de 10 cmH₂O et un <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>%</mi><mrow><mi>s</mi><mi>u</mi><mi>p</mi><mi>p</mi><mi>o</mi><mi>r</mi><mi>t</mi></mrow></msub><annotation encoding="application/x-tex">\%_{support}</annotation></semantics></math> de 40 %, on calculera:</p>
+<p><span id="eq-pmus-ex"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mrow><mi>m</mi><mi>u</mi><mi>s</mi></mrow></msub><mo>=</mo><mfrac><mn>10</mn><mn>0.4</mn></mfrac><mo>⋅</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>0.6</mn><mo stretchy="true" form="postfix">)</mo></mrow><mspace width="2.0em"></mspace><mrow><mo stretchy="true" form="prefix">(</mo><mn>3</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">P_{mus} = \frac{10}{0.4}\cdot (0.6) \qquad(3)</annotation></semantics></math></span></p>
+<p>Plusieurs recherches ont utilisés une Pmus entre 5 et 10 cmH₂O comme valeur de référence pour un travail respiratoire normal. <span class="citation" data-cites="albani2021a">Yang et al. (2023)</span></p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="176" data-source-offset="-78" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 175;"><span id="cb1-176"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">function</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">Pmotrice</span>(Fsupport<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span> Pmus){</span>
+<span id="cb1-177">    <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">let</span> Fpatient <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span> Fsupport<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span>
+<span id="cb1-178">    <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">let</span> Ptotal <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> Pmus <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span> Fpatient<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span>
+<span id="cb1-179">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> Ptotal <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> Fsupport<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span>
+<span id="cb1-180">}</span>
+<span id="cb1-181"></span>
+<span id="cb1-182">datPmotrice <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> d3<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">ticks</span>(<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span><span class="bn" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">05</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">95</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">90</span>)<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">map</span>(f<span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">=&gt;</span>{</span>
+<span id="cb1-183">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> {</span>
+<span id="cb1-184">    <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">Fsupport</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span>f<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb1-185">    <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">PmotriceMin</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">Pmotrice</span>(f<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">5</span>)<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb1-186">    <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">PmotriceMax</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">Pmotrice</span>(f<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">10</span>)</span>
+<span id="cb1-187">    }</span>
+<span id="cb1-188">})</span>
+<span id="cb1-189"></span>
+<span id="cb1-190">Plot<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">plot</span>({</span>
+<span id="cb1-191">    <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">x</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span> {</span>
+<span id="cb1-192">        <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">label</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"% support"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb1-193">        <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">percent</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">true</span></span>
+<span id="cb1-194">    }<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb1-195">    <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">y</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span> {</span>
+<span id="cb1-196">        <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">domain</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span> [<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">120</span>]<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb1-197">        <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">label</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Δ P vent (cmH₂O)'</span></span>
+<span id="cb1-198">    }<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb1-199">    <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">grid</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">true</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb1-200">    <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">marks</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span> [</span>
+<span id="cb1-201">        <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">//Plot.line(datPmotrice, {x: 'Fsupport', y: 'PmotriceMax'}),</span></span>
+<span id="cb1-202">        Plot<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">area</span>(datPmotrice<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span> {</span>
+<span id="cb1-203">            <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">x1</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Fsupport'</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb1-204">            <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">y1</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'PmotriceMin'</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb1-205">            <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">y2</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'PmotriceMax'</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb1-206">            <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">fill</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'gainsboro'</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb1-207">            <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">tip</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span> {</span>
+<span id="cb1-208">            <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">format</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span> {</span>
+<span id="cb1-209">                <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">y</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span> d<span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">=&gt;</span>d<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">toFixed</span>(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>)</span>
+<span id="cb1-210">            }</span>
+<span id="cb1-211">        }</span>
+<span id="cb1-212">        })</span>
+<span id="cb1-213">    ]</span>
+<span id="cb1-214">})</span></code></pre></div></div>
+<div id="fig-pmotrice" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-pmotrice-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output cell-output-display">
+<div id="fig-pmotrice-1" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-pmotrice-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div id="ojs-cell-1-1" data-nodetype="declaration">
+
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-pmotrice-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(a)
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div id="fig-pmotrice-2" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-pmotrice-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div id="ojs-cell-1-2" data-nodetype="declaration">
+
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-pmotrice-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(b)
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div id="fig-pmotrice-3" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-pmotrice-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div id="ojs-cell-1-3" data-nodetype="expression">
+
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-pmotrice-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(c)
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-pmotrice-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Pression administrée par le ventilateur correspondant à une P mus entre 5 et 10 cmH₂O
+</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section id="quand-ça-ne-marche-pas" class="level2">
+<h2 class="anchored" data-anchor-id="quand-ça-ne-marche-pas">Quand ça ne marche pas</h2>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Astuce</span>À vérifier quand ça ne marce pas
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul class="task-list">
+<li><label><input type="checkbox">Commande respiratoire (faible ou élevée) ?</label></li>
+<li><label><input type="checkbox">Présence d’autodéclenchement ?</label></li>
+<li><label><input type="checkbox">Variabilité respiratoire ?</label></li>
+<li><label><input type="checkbox">Présence de fuites ?</label></li>
+</ul>
+</div>
+</div>
+<dl>
+<dt>Commande respiratoire</dt>
+<dd>
+S’interroger sur le niveau de la commande respiratoire du patient. Est-elle faible ou élevée ? Le mode VSC.PC.s permet de générer des volumes courants normaux chez un patient avec une commande respiratoire faible (parfois même absente). Il n’est pas souhaitable d’assister le patient <em>au-delà</em> de sa commande respiratoire. D’une part, la surassistance contribue à abaisser encore plus la commande respiratoire. D’autre part, une commande respiratoire basse est associée à la dysfonction diaphragmatique induite par le ventilateur et à la prolongation du sevrage respiratoire <span class="citation" data-cites="goligher2018">(Goligher et al. 2018)</span>.
+</dd>
+<dt>Autodéclenchement</dt>
+<dd>
+L’autodéclenchement est souvent associé à une faible commande respiratoire. Il peut à la fois en être le résultat et y contribuer. Une fréquence respiratoire spontanée faible et de petits volumes courants sont un terrain propice à l’autodéclenchement, qui se produit typiquement vers la fin de l’expiration ou lorsque celle-ci est complétée. Par ailleurs, l’autodéclenchement contribue à abaisser le niveau de commande respiratoire en augmentant la ventilation par minute au delà de la de la demande du patient.
+</dd>
+<dt>Variabilité respiratoire</dt>
+<dd>
+On a souvent tendance à considérer à tors les respirations irrégulières comme problématiques. La variabilité du patron respiratoire est en fait quelque-chose de normal et souhaitable. Il faut garder en tête que le patient en insuffisance respiratoire a tendance à garder un fréquence respiratoire et un volume courant constant parce que c’est cette combinaison volume · fréquence qui optimise son travail respiratoire et qu’il à peu de marge de manœuvre à ce sujet. Le patient dont le patron respiratoire fluctue en fonction de ses besoins et de la situation est un patient qui à de la marge de manœuvre au niveau de sa capacité respiratoire.
+</dd>
+<dt>Fuites</dt>
+<dd>
+La présence de fuites fausse le calcul du travail despiratoire du patient qui est basé sur les variation de volume et de pression dans le circuit respiratoire.
+</dd>
+</dl>
+
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Les références</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
+<div id="ref-albani2021a" class="csl-entry">
+Albani, Filippo, Federica Fusina, Gianni Ciabatti, Luigi Pisani, Valeria Lippolis, Maria Elena Franceschetti, Alessia Giovannini, et al. 2021. <span>«&nbsp;Flow <span>Index</span> Accurately Identifies Breaths with Low or High Inspiratory Effort during Pressure Support Ventilation&nbsp;»</span>. <em>Critical Care</em> 25 (1): 427. <a href="https://doi.org/10.1186/s13054-021-03855-4">https://doi.org/10.1186/s13054-021-03855-4</a>.
+</div>
+<div id="ref-chatburn2014" class="csl-entry">
+Chatburn, R. L., M. El-Khatib, et E. Mireles-Cabodevila. 2014. <span>«&nbsp;A <span>Taxonomy</span> for <span>Mechanical Ventilation</span>: 10 <span>Fundamental Maxims</span>&nbsp;»</span>. <em>Respiratory Care</em> 59 (11): 1747‑63. <a href="https://doi.org/10.4187/respcare.03057">https://doi.org/10.4187/respcare.03057</a>.
+</div>
+<div id="ref-covidien2020" class="csl-entry">
+Covidien. 2020. <span>«&nbsp;Operator’s <span>Manual</span> - <span>Puritan Bennett</span> 980 <span>Series Ventilator</span>&nbsp;»</span>.
+</div>
+<div id="ref-goligher2018" class="csl-entry">
+Goligher, Ewan C., Martin Dres, Eddy Fan, Gordon D. Rubenfeld, Damon C. Scales, Margaret S. Herridge, Stefannie Vorona, et al. 2018. <span>«&nbsp;Mechanical <span>Ventilation</span>–Induced <span>Diaphragm Atrophy Strongly Impacts Clinical Outcomes</span>&nbsp;»</span>. <em>American Journal of Respiratory and Critical Care Medicine</em> 197 (2): 204‑13. <a href="https://doi.org/10.1164/rccm.201703-0536OC">https://doi.org/10.1164/rccm.201703-0536OC</a>.
+</div>
+<div id="ref-jonkman2020" class="csl-entry">
+Jonkman, Annemijn H., Michela Rauseo, Guillaume Carteaux, Irene Telias, Michael C. Sklar, Leo Heunks, et Laurent J. Brochard. 2020. <span>«&nbsp;Proportional Modes of Ventilation: Technology to Assist Physiology&nbsp;»</span>. <em>Intensive Care Medicine</em> 46 (12): 2301‑13. <a href="https://doi.org/10.1007/s00134-020-06206-z">https://doi.org/10.1007/s00134-020-06206-z</a>.
+</div>
+<div id="ref-yang2023" class="csl-entry">
+Yang, Yan-Lin, Yang Liu, Ran Gao, De-Jing Song, Yi-Min Zhou, Ming-Yue Miao, Wei Chen, et al. 2023. <span>«&nbsp;Use of Airway Pressure-Based Indices to Detect High and Low Inspiratory Effort during Pressure Support Ventilation: A Diagnostic Accuracy Study&nbsp;»</span>. <em>Annals of Intensive Care</em> 13 (novembre): 111. <a href="https://doi.org/10.1186/s13613-023-01209-7">https://doi.org/10.1186/s13613-023-01209-7</a>.
+</div>
+</div></section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Réutilisation</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr_ca">CC BY-SA 4.0</a></div></div></section></div> ]]></description>
+  <category>Présentation</category>
+  <guid>respiratoire.ca/billets/PAV+/article.html</guid>
+  <pubDate>Wed, 31 Dec 2025 05:00:00 GMT</pubDate>
+  <media:content url="respiratoire.ca/billets/PAV+/img/Pavlov.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Doser l&#39;aide inspiratoire</title>
+  <link>respiratoire.ca/</link>
+  <description></description>
+  <category>Présentation</category>
+  <guid>respiratoire.ca/</guid>
+  <pubDate>Thu, 24 Oct 2024 04:00:00 GMT</pubDate>
+  <media:content url="respiratoire.ca/img/diapo/aide_inspiratoire.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
+<item>
+  <title>Zones d&#39;ombre du NAVA</title>
+  <link>respiratoire.ca/</link>
+  <description></description>
+  <category>Présentation</category>
+  <guid>respiratoire.ca/</guid>
+  <pubDate>Wed, 20 Jul 2022 04:00:00 GMT</pubDate>
+  <media:content url="respiratoire.ca/img/diapo/navafiltration.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
+<item>
+  <title>Ventilation: quand le coeur s&#39;en mêle</title>
+  <link>respiratoire.ca/</link>
+  <description></description>
+  <category>Présentation</category>
+  <guid>respiratoire.ca/</guid>
+  <pubDate>Mon, 09 May 2022 04:00:00 GMT</pubDate>
+  <media:content url="respiratoire.ca/img/diapo/vqcm.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
+<item>
+  <title>Mode ventilatoire NAVA</title>
+  <link>respiratoire.ca/</link>
+  <description></description>
+  <category>Présentation</category>
+  <guid>respiratoire.ca/</guid>
+  <pubDate>Tue, 01 Mar 2022 05:00:00 GMT</pubDate>
+  <media:content url="respiratoire.ca/img/diapo/presnava.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
+<item>
+  <title>Faux-positifs et faux-négatifs</title>
+  <link>respiratoire.ca/</link>
+  <description></description>
+  <category>Présentation</category>
+  <guid>respiratoire.ca/</guid>
+  <pubDate>Wed, 27 Oct 2021 04:00:00 GMT</pubDate>
+  <media:content url="respiratoire.ca/img/diapo/fnfp.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
+<item>
+  <title>Le ventilateur VDR-4</title>
+  <link>respiratoire.ca/</link>
+  <description></description>
+  <category>Présentation</category>
+  <guid>respiratoire.ca/</guid>
+  <pubDate>Sun, 01 Sep 2019 04:00:00 GMT</pubDate>
+  <media:content url="respiratoire.ca/img/diapo/VDR4101.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
+</channel>
+</rss>

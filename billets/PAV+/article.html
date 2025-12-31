@@ -133,7 +133,7 @@ div.csl-indent {
 <link rel="stylesheet" href="custom.css">
 <meta property="og:title" content="Apprivoiser le mode PAV+ – Carnet de Nicolas">
 <meta property="og:description" content="Le mode PAV+ est un mode de ventilation spontanée continue facile à utiliser qui adapte automatiquement l’aide fournie au patient à son travail respiratoire. Cet article vise à fournir quelques clés pour faciliter son adoption">
-<meta property="og:image" content="https://progrt.github.io/billets/PAV+/img/Pavlov.jpg">
+<meta property="og:image" content="respiratoire.ca/billets/PAV+/img/Pavlov.jpg">
 <meta property="og:site_name" content="Carnet de Nicolas">
 </head>
 
@@ -164,8 +164,8 @@ div.csl-indent {
 <span class="menu-text">Projets</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../diapo.html"> 
-<span class="menu-text">Diapositives</span></a>
+    <a class="nav-link" href="../../presentations.html"> 
+<span class="menu-text">Présentations</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="https://observablehq.com/collection/@progrt/calculatrices-respiratoires"> 
@@ -174,6 +174,7 @@ div.csl-indent {
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
+    <a href="../../index.xml" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-rss"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -191,7 +192,10 @@ div.csl-indent {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Apprivoiser le mode PAV+</h1>
-</div>
+  <div class="quarto-categories">
+    <div class="quarto-category">Présentation</div>
+  </div>
+  </div>
 
 
 
@@ -207,7 +211,7 @@ div.csl-indent {
     <div>
     <div class="quarto-title-meta-heading">Date de publication</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">27 décembre 2025</p>
+      <p class="date">31 décembre 2025</p>
     </div>
   </div>
   
@@ -514,45 +518,45 @@ P_{mus} = \frac{P_{motrice}}{\%_{Support}}\cdot (1 - \%_{support})
 <p><span id="eq-pmus-ex"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mrow><mi>m</mi><mi>u</mi><mi>s</mi></mrow></msub><mo>=</mo><mfrac><mn>10</mn><mn>0.4</mn></mfrac><mo>⋅</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>0.6</mn><mo stretchy="true" form="postfix">)</mo></mrow><mspace width="2.0em"></mspace><mrow><mo stretchy="true" form="prefix">(</mo><mn>3</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">P_{mus} = \frac{10}{0.4}\cdot (0.6) \qquad(3)</annotation></semantics></math></span></p>
 <p>Plusieurs recherches ont utilisés une Pmus entre 5 et 10 cmH₂O comme valeur de référence pour un travail respiratoire normal. <span class="citation" data-cites="albani2021a">Yang et al. (<a href="#ref-yang2023" role="doc-biblioref">2023</a>)</span></p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="174" data-source-offset="-78"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 173;"><span id="cb1-174"><a href="#cb1-174" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">Pmotrice</span>(Fsupport<span class="op">,</span> Pmus){</span>
-<span id="cb1-175"><a href="#cb1-175" aria-hidden="true" tabindex="-1"></a>    <span class="kw">let</span> Fpatient <span class="op">=</span> <span class="dv">1</span> <span class="op">-</span> Fsupport<span class="op">;</span></span>
-<span id="cb1-176"><a href="#cb1-176" aria-hidden="true" tabindex="-1"></a>    <span class="kw">let</span> Ptotal <span class="op">=</span> Pmus <span class="op">/</span> Fpatient<span class="op">;</span></span>
-<span id="cb1-177"><a href="#cb1-177" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> Ptotal <span class="op">*</span> Fsupport<span class="op">;</span></span>
-<span id="cb1-178"><a href="#cb1-178" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb1-179"><a href="#cb1-179" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-180"><a href="#cb1-180" aria-hidden="true" tabindex="-1"></a>datPmotrice <span class="op">=</span> d3<span class="op">.</span><span class="fu">ticks</span>(<span class="op">.</span><span class="bn">05</span><span class="op">,</span> <span class="op">.</span><span class="dv">95</span><span class="op">,</span> <span class="dv">90</span>)<span class="op">.</span><span class="fu">map</span>(f<span class="kw">=&gt;</span>{</span>
-<span id="cb1-181"><a href="#cb1-181" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> {</span>
-<span id="cb1-182"><a href="#cb1-182" aria-hidden="true" tabindex="-1"></a>    <span class="dt">Fsupport</span><span class="op">:</span>f<span class="op">,</span></span>
-<span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a>    <span class="dt">PmotriceMin</span><span class="op">:</span><span class="fu">Pmotrice</span>(f<span class="op">,</span> <span class="dv">5</span>)<span class="op">,</span></span>
-<span id="cb1-184"><a href="#cb1-184" aria-hidden="true" tabindex="-1"></a>    <span class="dt">PmotriceMax</span><span class="op">:</span> <span class="fu">Pmotrice</span>(f<span class="op">,</span> <span class="dv">10</span>)</span>
-<span id="cb1-185"><a href="#cb1-185" aria-hidden="true" tabindex="-1"></a>    }</span>
-<span id="cb1-186"><a href="#cb1-186" aria-hidden="true" tabindex="-1"></a>})</span>
-<span id="cb1-187"><a href="#cb1-187" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-188"><a href="#cb1-188" aria-hidden="true" tabindex="-1"></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
-<span id="cb1-189"><a href="#cb1-189" aria-hidden="true" tabindex="-1"></a>    <span class="dt">x</span><span class="op">:</span> {</span>
-<span id="cb1-190"><a href="#cb1-190" aria-hidden="true" tabindex="-1"></a>        <span class="dt">label</span><span class="op">:</span> <span class="st">"% support"</span><span class="op">,</span></span>
-<span id="cb1-191"><a href="#cb1-191" aria-hidden="true" tabindex="-1"></a>        <span class="dt">percent</span><span class="op">:</span> <span class="kw">true</span></span>
-<span id="cb1-192"><a href="#cb1-192" aria-hidden="true" tabindex="-1"></a>    }<span class="op">,</span></span>
-<span id="cb1-193"><a href="#cb1-193" aria-hidden="true" tabindex="-1"></a>    <span class="dt">y</span><span class="op">:</span> {</span>
-<span id="cb1-194"><a href="#cb1-194" aria-hidden="true" tabindex="-1"></a>        <span class="dt">domain</span><span class="op">:</span> [<span class="dv">0</span><span class="op">,</span> <span class="dv">120</span>]<span class="op">,</span></span>
-<span id="cb1-195"><a href="#cb1-195" aria-hidden="true" tabindex="-1"></a>        <span class="dt">label</span><span class="op">:</span> <span class="st">'Δ P vent (cmH₂O)'</span></span>
-<span id="cb1-196"><a href="#cb1-196" aria-hidden="true" tabindex="-1"></a>    }<span class="op">,</span></span>
-<span id="cb1-197"><a href="#cb1-197" aria-hidden="true" tabindex="-1"></a>    <span class="dt">grid</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
-<span id="cb1-198"><a href="#cb1-198" aria-hidden="true" tabindex="-1"></a>    <span class="dt">marks</span><span class="op">:</span> [</span>
-<span id="cb1-199"><a href="#cb1-199" aria-hidden="true" tabindex="-1"></a>        <span class="co">//Plot.line(datPmotrice, {x: 'Fsupport', y: 'PmotriceMax'}),</span></span>
-<span id="cb1-200"><a href="#cb1-200" aria-hidden="true" tabindex="-1"></a>        Plot<span class="op">.</span><span class="fu">area</span>(datPmotrice<span class="op">,</span> {</span>
-<span id="cb1-201"><a href="#cb1-201" aria-hidden="true" tabindex="-1"></a>            <span class="dt">x1</span><span class="op">:</span> <span class="st">'Fsupport'</span><span class="op">,</span></span>
-<span id="cb1-202"><a href="#cb1-202" aria-hidden="true" tabindex="-1"></a>            <span class="dt">y1</span><span class="op">:</span> <span class="st">'PmotriceMin'</span><span class="op">,</span></span>
-<span id="cb1-203"><a href="#cb1-203" aria-hidden="true" tabindex="-1"></a>            <span class="dt">y2</span><span class="op">:</span> <span class="st">'PmotriceMax'</span><span class="op">,</span></span>
-<span id="cb1-204"><a href="#cb1-204" aria-hidden="true" tabindex="-1"></a>            <span class="dt">fill</span><span class="op">:</span> <span class="st">'gainsboro'</span><span class="op">,</span></span>
-<span id="cb1-205"><a href="#cb1-205" aria-hidden="true" tabindex="-1"></a>            <span class="dt">tip</span><span class="op">:</span> {</span>
-<span id="cb1-206"><a href="#cb1-206" aria-hidden="true" tabindex="-1"></a>            <span class="dt">format</span><span class="op">:</span> {</span>
-<span id="cb1-207"><a href="#cb1-207" aria-hidden="true" tabindex="-1"></a>                <span class="dt">y</span><span class="op">:</span> d<span class="kw">=&gt;</span>d<span class="op">.</span><span class="fu">toFixed</span>(<span class="dv">0</span>)</span>
-<span id="cb1-208"><a href="#cb1-208" aria-hidden="true" tabindex="-1"></a>            }</span>
-<span id="cb1-209"><a href="#cb1-209" aria-hidden="true" tabindex="-1"></a>        }</span>
-<span id="cb1-210"><a href="#cb1-210" aria-hidden="true" tabindex="-1"></a>        })</span>
-<span id="cb1-211"><a href="#cb1-211" aria-hidden="true" tabindex="-1"></a>    ]</span>
-<span id="cb1-212"><a href="#cb1-212" aria-hidden="true" tabindex="-1"></a>})</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="176" data-source-offset="-78"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 175;"><span id="cb1-176"><a href="#cb1-176" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">Pmotrice</span>(Fsupport<span class="op">,</span> Pmus){</span>
+<span id="cb1-177"><a href="#cb1-177" aria-hidden="true" tabindex="-1"></a>    <span class="kw">let</span> Fpatient <span class="op">=</span> <span class="dv">1</span> <span class="op">-</span> Fsupport<span class="op">;</span></span>
+<span id="cb1-178"><a href="#cb1-178" aria-hidden="true" tabindex="-1"></a>    <span class="kw">let</span> Ptotal <span class="op">=</span> Pmus <span class="op">/</span> Fpatient<span class="op">;</span></span>
+<span id="cb1-179"><a href="#cb1-179" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> Ptotal <span class="op">*</span> Fsupport<span class="op">;</span></span>
+<span id="cb1-180"><a href="#cb1-180" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-181"><a href="#cb1-181" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-182"><a href="#cb1-182" aria-hidden="true" tabindex="-1"></a>datPmotrice <span class="op">=</span> d3<span class="op">.</span><span class="fu">ticks</span>(<span class="op">.</span><span class="bn">05</span><span class="op">,</span> <span class="op">.</span><span class="dv">95</span><span class="op">,</span> <span class="dv">90</span>)<span class="op">.</span><span class="fu">map</span>(f<span class="kw">=&gt;</span>{</span>
+<span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> {</span>
+<span id="cb1-184"><a href="#cb1-184" aria-hidden="true" tabindex="-1"></a>    <span class="dt">Fsupport</span><span class="op">:</span>f<span class="op">,</span></span>
+<span id="cb1-185"><a href="#cb1-185" aria-hidden="true" tabindex="-1"></a>    <span class="dt">PmotriceMin</span><span class="op">:</span><span class="fu">Pmotrice</span>(f<span class="op">,</span> <span class="dv">5</span>)<span class="op">,</span></span>
+<span id="cb1-186"><a href="#cb1-186" aria-hidden="true" tabindex="-1"></a>    <span class="dt">PmotriceMax</span><span class="op">:</span> <span class="fu">Pmotrice</span>(f<span class="op">,</span> <span class="dv">10</span>)</span>
+<span id="cb1-187"><a href="#cb1-187" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb1-188"><a href="#cb1-188" aria-hidden="true" tabindex="-1"></a>})</span>
+<span id="cb1-189"><a href="#cb1-189" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-190"><a href="#cb1-190" aria-hidden="true" tabindex="-1"></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
+<span id="cb1-191"><a href="#cb1-191" aria-hidden="true" tabindex="-1"></a>    <span class="dt">x</span><span class="op">:</span> {</span>
+<span id="cb1-192"><a href="#cb1-192" aria-hidden="true" tabindex="-1"></a>        <span class="dt">label</span><span class="op">:</span> <span class="st">"% support"</span><span class="op">,</span></span>
+<span id="cb1-193"><a href="#cb1-193" aria-hidden="true" tabindex="-1"></a>        <span class="dt">percent</span><span class="op">:</span> <span class="kw">true</span></span>
+<span id="cb1-194"><a href="#cb1-194" aria-hidden="true" tabindex="-1"></a>    }<span class="op">,</span></span>
+<span id="cb1-195"><a href="#cb1-195" aria-hidden="true" tabindex="-1"></a>    <span class="dt">y</span><span class="op">:</span> {</span>
+<span id="cb1-196"><a href="#cb1-196" aria-hidden="true" tabindex="-1"></a>        <span class="dt">domain</span><span class="op">:</span> [<span class="dv">0</span><span class="op">,</span> <span class="dv">120</span>]<span class="op">,</span></span>
+<span id="cb1-197"><a href="#cb1-197" aria-hidden="true" tabindex="-1"></a>        <span class="dt">label</span><span class="op">:</span> <span class="st">'Δ P vent (cmH₂O)'</span></span>
+<span id="cb1-198"><a href="#cb1-198" aria-hidden="true" tabindex="-1"></a>    }<span class="op">,</span></span>
+<span id="cb1-199"><a href="#cb1-199" aria-hidden="true" tabindex="-1"></a>    <span class="dt">grid</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
+<span id="cb1-200"><a href="#cb1-200" aria-hidden="true" tabindex="-1"></a>    <span class="dt">marks</span><span class="op">:</span> [</span>
+<span id="cb1-201"><a href="#cb1-201" aria-hidden="true" tabindex="-1"></a>        <span class="co">//Plot.line(datPmotrice, {x: 'Fsupport', y: 'PmotriceMax'}),</span></span>
+<span id="cb1-202"><a href="#cb1-202" aria-hidden="true" tabindex="-1"></a>        Plot<span class="op">.</span><span class="fu">area</span>(datPmotrice<span class="op">,</span> {</span>
+<span id="cb1-203"><a href="#cb1-203" aria-hidden="true" tabindex="-1"></a>            <span class="dt">x1</span><span class="op">:</span> <span class="st">'Fsupport'</span><span class="op">,</span></span>
+<span id="cb1-204"><a href="#cb1-204" aria-hidden="true" tabindex="-1"></a>            <span class="dt">y1</span><span class="op">:</span> <span class="st">'PmotriceMin'</span><span class="op">,</span></span>
+<span id="cb1-205"><a href="#cb1-205" aria-hidden="true" tabindex="-1"></a>            <span class="dt">y2</span><span class="op">:</span> <span class="st">'PmotriceMax'</span><span class="op">,</span></span>
+<span id="cb1-206"><a href="#cb1-206" aria-hidden="true" tabindex="-1"></a>            <span class="dt">fill</span><span class="op">:</span> <span class="st">'gainsboro'</span><span class="op">,</span></span>
+<span id="cb1-207"><a href="#cb1-207" aria-hidden="true" tabindex="-1"></a>            <span class="dt">tip</span><span class="op">:</span> {</span>
+<span id="cb1-208"><a href="#cb1-208" aria-hidden="true" tabindex="-1"></a>            <span class="dt">format</span><span class="op">:</span> {</span>
+<span id="cb1-209"><a href="#cb1-209" aria-hidden="true" tabindex="-1"></a>                <span class="dt">y</span><span class="op">:</span> d<span class="kw">=&gt;</span>d<span class="op">.</span><span class="fu">toFixed</span>(<span class="dv">0</span>)</span>
+<span id="cb1-210"><a href="#cb1-210" aria-hidden="true" tabindex="-1"></a>            }</span>
+<span id="cb1-211"><a href="#cb1-211" aria-hidden="true" tabindex="-1"></a>        }</span>
+<span id="cb1-212"><a href="#cb1-212" aria-hidden="true" tabindex="-1"></a>        })</span>
+<span id="cb1-213"><a href="#cb1-213" aria-hidden="true" tabindex="-1"></a>    ]</span>
+<span id="cb1-214"><a href="#cb1-214" aria-hidden="true" tabindex="-1"></a>})</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
 <div id="fig-pmotrice" class="cell quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-pmotrice-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -753,7 +757,7 @@ window._ojs.runtime.interpretFromScriptTags();
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/progrt\.github\.io");
+        var filterRegex = new RegExp("respiratoire\.ca");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
