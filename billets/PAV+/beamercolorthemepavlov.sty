@@ -1,0 +1,71 @@
+% Palette de couleurs claire librement inspirée des normes graphiques d'un
+% grand hôpital montréalais
+
+\usepackage{paletteqhum}
+\mode<presentation>
+
+%%%%%%%%%%%%%%%%%%%%
+% Couleurs de base %
+%%%%%%%%%%%%%%%%%%%%
+
+\setbeamercolor{normal text}{bg=white, fg=black}
+\setbeamercolor{structure}{fg=bleufonceqhum}
+%\setbeamercolor{structure}{fg=bleuclairqhum}
+
+%%%%%%%%%%%%%%%%%%%%
+% Page titre       %
+%%%%%%%%%%%%%%%%%%%%
+
+
+\bgfade{left=0, right=85}
+\setbeamercolor{title page}{bg=white, fg=grisqhum!50!black}
+%\setbeamercolor{title page}{bg=grisqhum!30!black, fg=white}
+%\setbeamercolor{title}{fg=black}
+\setbeamercolor{author}{fg=title page.fg}
+\setbeamercolor{subtitle}{fg=title page.fg!70}
+\setbeamercolor{date}{fg=title page.fg}
+\setbeamercolor{institute}{fg=title page.fg}
+%\setbeamercolor{title thin line}{fg=marineqhum}
+\setbeamercolor{title thin line}{fg=title page.fg}
+%\setbeamercolor{title thin line}{fg=title page.fg}
+
+
+%%%%%%%%%%%%%%%%%%%%
+%     Blocks       %
+%%%%%%%%%%%%%%%%%%%%
+
+\setbeamercolor{block title}{use=structure,bg=white,fg=structure.fg}
+\setbeamercolor{block title alerted}{use=alerted text,bg=white,fg=alerted text.fg!75!black}
+\setbeamercolor{block title example}{use=example text,bg=white,fg=example text.fg!75!black}
+
+%\setbeamercolor{block body}{parent=normal text,use=block title,bg=block title.bg!10!bg}
+\setbeamercolor{block body}{parent=normal text}
+%\setbeamercolor{block body alerted}{parent=normal text,use=block title alerted,bg=block title alerted.bg!10!bg}
+\setbeamercolor{block body alerted}{parent=normal text}
+%\setbeamercolor{block body example}{parent=normal text,use=block title example,bg=block title example.bg!10!bg}
+\setbeamercolor{block body example}{parent=normal text}
+
+
+\mode
+<all>
+
+%%%%%%%%%%%%%%
+% Graphiques %
+%%%%%%%%%%%%%%
+
+\@ifpackageloaded{pgfplots}{
+    \pgfplotsset{
+        cycle list={
+            {bleufonceqhum},
+            {turquoiseqhum},
+            {bleuclairqhum}
+        },
+        every axis/.append style={
+            black!70
+        },
+        every axis grid/.append style={
+            gray
+        },
+        }
+}{}
+

@@ -1,7 +1,17 @@
 ---
-title: "Projets"
+title: "Billets"
 listing:
-  template: templates/projets.ejs
-  contents: 
-    - data/projets.yml
+  contents: billets
+  sort: "date desc"
+  type: default
+  categories: false
+  sort-ui: false
+  filter-ui: false
+  image-height: 200px
+  feed:
+    type: partial
+  fields: [title, subtitle, date, image, description]
+page-layout: full
 ---
+
+

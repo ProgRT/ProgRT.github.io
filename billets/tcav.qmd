@@ -1,0 +1,134 @@
+---
+title: Ventilation adaptative contrôlée par le temps
+author: ''
+toc: true
+draft: true
+---
+
+\def\vpte{\dot{V}_{pte}}
+\def\vfin{\dot{V}_{fin}}
+\def\vfm{\frac{\vfin}{\vpte}}
+
+Adapté de @habashi
+
+<style>
+
+main>section {
+    border-radius: 10px;
+    margin-bottom: 1em;
+    padding: 10px;
+    box-shadow: 3px 3px 7px 0px silver;
+    border: 1px solid gray;
+}
+
+main>section>h2 {
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: 0px;
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+
+#quarto-content section:first-of-type h2:first-of-type {
+    margin-top: 0px;
+}
+
+</style>
+
+## Buts {style='background: mistyrose;'}
+
+### Pathologie pulmonaire restrictive aigue (recrutable)
+
+- Augmenter(recruter) et maintenir le volume plumonaire ($P_{haute}$
+  et $T_{haut}$).
+-Diminuer le travail respiratoire élastique au moyen de la PPC ($P_{haute}$
+  et $T_{haut}$).
+- Compensation de tube réglée à 100 % pour compenser complètement la
+  résistance des voies respiratoires artificielles et diminuer le
+  travail respiratoire résistif.
+- Minimiser le nombre de relâches de pression pour...
+
+## Réglages adulte {style='background: lavender;'}
+
+### Nouvellement intubé
+
+- $P_{haute}$ à la pression de plateau désirée (typiquement 20 à 35
+  cmH₂O).<br/>
+  Notes: 1) Une $P_{haute}$ > 35 cmH₂0 pourais être requise en cas de
+  compliance thoracique diminuée (ex. obésité). 2) L'utilisation de
+  circuits respiratoire à faible compliance est recommandée lorsque la
+  $P_{haute}$ dépasse 25 cmH₂O.
+- $P_{basse}$: 0 cmH₂O.
+- $T_{haut}$: 4-6 sec.
+- $T_{bas}$: 4-6 sec.
+
+<!-- ### Réglages pégiatriques -->
+<!-- ### Réglages nouveau-nés -->
+
+## Oxygénation {style='background: lightskyblue'}
+
+- S'assurer que $0,5 < \frac{\vfin}{\vpte} < 0,75$
+- Si mauvaise oxygénation et $\frac{\vfin}{\vpte} \geq 0,5$, diminuer $T_{bas}$ ad  $\frac{\vfin}{\vpte} = 0,5$
+- Augmenter $P_{haute}$ ou  $T_{haut}$ et $P_{haute}$ 
+- Évaluer l'hémodynamie
+
+## Ventilation {style='background: palegreen'}
+
+- Diminuer la sédation;
+- Optimiser le volume pulmonaire télé-expiratoire ($\vfm$ = .5 à .75);
+- Si l'oxygénation le permet, prolonger T<sub>bas</sub> ad $\vfm = 0,5$;
+- Augmenter $P_{haute}$ ou $P_{haute}$ et $T_{haut}$ simultanément;
+- Diminuer $T_{haut}$ et augmenter $P_{haute}$ simultanément;
+
+## Sevrage {style='background: lemonchiffon'}
+
+-
+
+## Précautions {style='background: coral'}
+
+- L'ajustement du $T_{bas}$ diffère en fonction de la pathologie et
+  des volumes pulmonaires et de la taille du tube endotrachéal ou
+  canule de trachéostomie. Les valeurs de $T_{bas}$ mentionnées
+  représentent des valeurs typiques et non absolues. Voir la section
+  *Buts, pathologie obstructive et restrictive*.
+- Si le $T_{haut}$ est diminué pour augmenter la ventilation minute,
+  la pression alvéolaire moyenne et la surface d'échange sera réduite.
+  A plus forte raison si la $P_{haute}$ n'est pas augmentée
+  simultanément. La $PCO_2$ pourrait par conséquent augmenter de façon
+  paradoxale. Il pourais être nécessaire de diminuer le $T_{bas}$
+  étant le temps de vidange du poumon diminuera en mème temps que son
+  volume.
+- Le $T_{bas}$ ne devrais pas être allongé uniquement pour chasser
+  plus de $CO_2$. Cela risquerais de porvoque la fermeture des voies
+  aériennes. De plus, le $T_{bas}$ ne devrais pas être considéré comme
+  un temps expiratoire étant donné que l'inspiration et l'expiration
+  est permise tout au long du cycle de ventilation.
+
+## Ajustement du $T_{bas}$ - Rationnel
+
+Le protocole *Time controled adaptative ventilaton* (TCAV) mandate que
+le débit en fin d'expiration ($\vfin$) équivale à 50 à 75 % du débit
+expiratoire de pointe ($\vpte$).
+
+$0,5 < \frac{\vfin}{\vpte} < 0,75$
+
+La logique derrière cette directive est la suivante. En considérant
+que le débit expiratoire est proportionnelle à la différence entre la
+pression alvéolaire et la pression dans le circuit,
+
+$\dot{V}_{exp} = \frac{P_{alv} - P_{circ}}{R}$
+
+et que, dans un contexte de ventilation en pression positive, la pression alvéolaire est proportionelle à la différence entre
+le volume pulmonaire actuel et sa capacité résiduelle fonctionnelle
+(V - CRF),
+
+$P_{alv} = (V - CRF) \cdot E$
+
+on en déduit que la variation du débit expiratoire est proportionnelle
+à la variation du volume pulmonaire.
+
+Maintenir le débit expiratoire entre 50 et 75 % du débit expiratoire
+de pointe constitue par conséquent un moyen de s'assurer que la
+déformation (*strain*) dynamique du poumon n'équivalle pas à plus de
+50 % de sa déformation totale.
+

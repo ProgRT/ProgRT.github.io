@@ -1,0 +1,19 @@
+\newcommand{\annotatedelta}[2]{
+    \begin{tikzpicture}[
+        annotation/.style={
+            red,
+            thick,
+            ->,
+            shorten >=3pt,
+            shorten <=3pt
+        }
+    ]
+
+    \draw [annotation]
+    (#1-2.east)
+    to node[below] {$\times #2$}
+    (#1-3.west)
+    ;
+
+    \end{tikzpicture}
+}

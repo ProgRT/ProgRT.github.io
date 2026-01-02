@@ -1,0 +1,20 @@
+---
+title: "Présentations"
+listing:
+  contents:
+    - billets
+    - data/presentations.yml
+  fields: [title, subtitle, date, image, description]
+  include:
+    categories: "Présentation"
+  sort: "date desc"
+  type: default
+  categories: false
+  sort-ui: false
+  filter-ui: false
+  image-height: 200px
+  feed: true
+page-layout: full
+---
+
+

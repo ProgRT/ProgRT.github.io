@@ -1,0 +1,7 @@
+---
+title: "Projets"
+listing:
+  template: templates/projets.ejs
+  contents: 
+    - data/projets.yml
+---

@@ -1,0 +1,41 @@
+// $$ P_{motrice} = \frac{P_{mus}}{(1 - \%_{support})} \cdot \%_{support} $$
+
+function Pmotrice(Fsupport, Pmus){
+    let Fpatient = 1 - Fsupport;
+    let Ptotal = Pmus / Fpatient;
+    return Ptotal * Fsupport;
+}
+
+datPmotrice = d3.ticks(.05, .95, 90).map(f=>{
+    return {
+    Fsupport:f,
+    PmotriceMin:Pmotrice(f, 5),
+    PmotriceMax: Pmotrice(f, 10)
+    }
+})
+
+Plot.plot({
+    x: {
+        label: "% support",
+        percent: true
+    },
+    y: {
+        domain: [0, 120],
+        label: 'Δ P vent (cmH₂O)'
+    },
+    grid: true,
+    marks: [
+        //Plot.line(datPmotrice, {x: 'Fsupport', y: 'PmotriceMax'}),
+        Plot.area(datPmotrice, {
+            x1: 'Fsupport',
+            y1: 'PmotriceMin',
+            y2: 'PmotriceMax',
+            fill: 'gainsboro',
+            tip: {
+            format: {
+                y: d=>d.toFixed(0)
+            }
+        }
+        })
+    ]
+})

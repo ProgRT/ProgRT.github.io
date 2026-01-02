@@ -1,0 +1,19 @@
+\newcommand{\annotatefactor}[2]{
+    \begin{tikzpicture}[
+        annotation/.style={
+            red,
+            thick,
+            ->,
+            shorten >=3pt,
+            shorten <=3pt
+        }
+    ]
+
+    \draw [annotation]
+    (2-#1.east)
+    to[bend left=45] node[right] {$\times #2$}
+    (4-#1.east)
+    ;
+
+    \end{tikzpicture}
+}

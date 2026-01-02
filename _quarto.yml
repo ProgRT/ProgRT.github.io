@@ -7,7 +7,8 @@ project:
 website:
   title: "Carnet de Nicolas"
   favicon: img/favicon/favicon.png
-  site-url: https://progrt.github.io
+#  site-url: https://progrt.github.io/
+  site-url: https://respiratoire.ca/
   open-graph: true
   navbar:
     background: primary
@@ -15,8 +16,14 @@ website:
     logo: img/logo/Nébuliseur2-simple.svg
     left:
       - index.qmd
-      - billets.qmd
-      - diapo.qmd
+      - projets.qmd
+      - presentations.qmd
+      - text: Calculatrices
+        href: https://observablehq.com/collection/@progrt/calculatrices-respiratoires
+    tools:
+      - icon: rss
+        title: Flux RSS
+        href: index.xml
 
 format:
   html:

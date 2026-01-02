@@ -1,0 +1,26 @@
+---
+title: Doser l'aide inspiratoire
+date: 2024/11/17
+bibliography: bibliographie.bib
+css: custom.css
+description: " On reconnait de plus en plus l'importance de prévenir la dysfonction
+  diaphragmatique induite par le ventilateur. Les données les plus récentes
+  suggèrent qu'une activité diaphragmatique excessive ou insuffisante élevé est
+  un facteur déterminant dans le développement d'une dysfonction diaphragmatique
+  chez les patients ventilés mécaniquement. L'ajustement de l'aide inspiratoire
+  doit par conséquent se faire en visant le maintien d'une activité diaphragmatique
+  adéquate."
+---
+
+On reconnait de plus en plus l'importance de prévenir la dysfonction
+diaphragmatique induite par le ventilateur. Les données les plus
+récentes suggèrent qu'un niveau d'activité diaphragmatique
+excessivement faible ou excessivement élevé est un facteur déterminant
+dans le développement d'une dysfonction diaphragmatique chez les
+patients ventilés mécaniquement [@goligher2018]. Il est par conséquent nécessaire
+d'avoir accès à des indicateurs permettant d'évaluer le niveau
+d'activité diaphragmatique des patients ventilés mécaniquement.
+
+
+{{< include _tblCibles.md >}}
+{{< include _tblGoldStandards.md >}}

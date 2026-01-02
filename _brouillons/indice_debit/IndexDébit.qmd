@@ -1,0 +1,67 @@
+---
+title: L'index de débit
+#bibliography: bibliographie.bib
+draft: true
+fig-height: 5
+fig-width: 5
+execute:
+  echo: false
+format:
+  html:
+    fig-format: svg
+    other-links:
+      - text: 1718176075155.txt
+        href: 1718176075155.txt
+        icon: filetype-txt
+project:
+  resources:
+    - 1718176075155.txt
+language:
+  fr:
+    other-links-title: Fichiers
+---
+
+{{< include _utils.qmd >}}
+
+De la même manière que l'indice de stress décrit la forme de la
+portion inspiratoire de la courbe pression temps d'un patient ventilé
+avec un débit constant, l'*indice de débit* décrit la forme de la
+portion inspiratoire de la courbe débit temps d'un patient en
+ventilation spontanée. Celui-ci se calcule en ajustant une fonction
+exponentielle à la portion décélérante de la courbe de débit
+inspiratoire. L'indice de débit correspond à l'indice ce cette
+fonction exponentielle.
+
+$$
+\dot{V} = a + b \cdot Temps^I
+$$
+
+Un indice de débit bas correspond à une décélération précoce du débit
+comme typique d'une ventilation en pression contrôlée sans
+contribution du patient. Une indice de débit élevé indique quant à lui
+un débit inspiratoire préservé au cours de l'inspiration par la
+contribution des muscles inspiratoires du patient.
+
+Alors que l'indice de stress nous informe sur l'évolution de la
+compliance au cours d'une insuflation, l'indice de débit nous informe
+lui du degré de participation du patient à la génération du débit
+inspiratoire [@Albani2021].
+
+## Exemples
+
+```{r}
+#| layout-ncol: 3
+#| column: page
+
+d <- servou::load_servou_data("1718176075155.txt");
+#c <- servou::cycles(d)[2:8]
+
+#for(i in c(1,3,2)){
+#	f <- servou::fitDecel(c[[i]])
+#	servou::fitPlot(f)
+#}
+```
+
+## Validations
+
+Il à été démontré que...

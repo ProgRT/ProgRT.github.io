@@ -1,0 +1,230 @@
+\documentclass[aspectratio=169]{beamer}
+\usepackage[french]{babel}
+\usepackage[
+	backend=biber,
+	style=numeric,
+	url=false,
+	isbn=false
+]{biblatex}
+
+
+%%%%%%%%%%%%%%
+% Librairies %
+%%%%%%%%%%%%%%
+
+\usepackage{hyperref, nicematrix, rsymbols, booktabs, tikz, qrcode}
+\usepackage[subpreambles=true, mode=build]{standalone}
+\usetikzlibrary{math}
+
+%%%%%%%%%
+% Style %
+%%%%%%%%%
+
+\usetheme[progress, sectiontoc]{montreal}
+\usecolortheme{pavlov}
+\setbeamertemplate{title page}[nologo compact][left]
+
+\renewcommand{\arraystretch}{1.8}
+\renewcommand*{\bibfont}{\footnotesize}
+
+%%%%%%%%%%%%%
+% Utilitées %
+%%%%%%%%%%%%%
+
+\input{_macro/icone}
+\input{_macro/annotatefactor}
+\input{_macro/annotatedelta}
+
+\def\vs{{\em vs}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Meta-information. Kind of ...
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{Apprivoiser le mode PAV+}
+%\author{Nicolas Blais St-Laurent, {\small inh}}
+\institute{\nchum}
+\titlebg{img/Pavlov}
+\addbibresource{./references.bib}
+
+%%%%%%%%%%%%%%%%
+\begin{document}
+%%%%%%%%%%%%%%%%
+
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%
+\section{Généralités}
+%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Classification des modes spontanés}
+    \centering
+    \includestandalone{tbl/tbl-classification}
+\end{frame}
+
+\begin{frame}{Boucle de rétroaction du contrôle respiratoire}
+    \centering
+    \includestandalone{fig/fig-graph}
+\end{frame}
+
+
+\begin{frame}{Le mode PAV+}
+    \begin{block}{Équation du mouvent de l'air}
+        $$\Delta P_{tot} = \Delta V_{(L)} \cdot E_{(\frac{cmH_2O}{L})} + \dot{V}_{(L/s)} \cdot R_{(\frac{cmH_2O}{L/s})}$$
+    \end{block}
+
+    \begin{block}{Calcul de l'assistance}
+        $$ \Delta P_{vent} = \Delta P_{tot} \cdot \%_{support} $$
+    \end{block}
+\end{frame}
+
+
+\begin{frame}{PAV+ \vs\ VS-AI}
+    \renewcommand{\arraystretch}{1.2}
+
+    \begin{block}{VS-AI (AI = 10 \cmh)}
+
+        \begin{NiceTabular}{l c c}
+        & Commande élevée & Commande faible \\ 
+        \hline
+        \Pmus & 10 & 5 \\
+        \Pvent & 10 & 10 \\
+        \Ptot & 20 & 15 \\
+        \hline
+        \CodeAfter
+        \uncover<2>{
+            \annotatefactor{2}{2}
+            \annotatefactor{3}{3}
+        }
+        \uncover<3->{
+            \annotatedelta{2}{0,5}
+            \annotatedelta{4}{0,75}
+        }
+        \end{NiceTabular}
+    \end{block}
+
+    \begin{block}{PAV+ (\Psupport = 50~\%)}
+
+        \begin{NiceTabular}{l c c}
+        & Commande élevée & Commande faible \\ 
+        \hline
+        \Pmus & 10 & 5 \\
+        \Pvent & 10 & 5 \\
+        \Ptot & 20 & 10 \\
+        \hline
+
+        \CodeAfter
+        \uncover<4>{
+            \annotatefactor{2}{2}
+            \annotatefactor{3}{2}
+        }
+        \uncover<5->{
+            \annotatedelta{2}{0,5}
+            \annotatedelta{4}{0,5}
+        }
+        \end{NiceTabular}
+    \end{block}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Mise en route}
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Travailler avec le PB-980}
+    \begin{columns}[c]
+        \begin{column}{0.5\textwidth}
+            \begin{itemize}
+                \item Pas de bouchons
+                \item Tout brancher
+                \item Baisser le volume
+                \item Faire un ATR
+                \item Programmer à l'arrivée
+                \item Les courbes et valeurs numériques peuvent être changées
+            \end{itemize}
+        \end{column}
+
+        \begin{column}{0.5\textwidth}
+            \centering
+            \includegraphics[height=0.8\textheight]{img/980}
+        \end{column}
+   \end{columns}
+\end{frame}
+
+\begin{frame}{Paramètres de départ}
+    \centering
+    \includestandalone[mode=tex]{tbl/tbl-parametres}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Gestion clinique}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Indicateurs de travail}
+    \centering
+    \includestandalone{tbl/tbl-indicateurs}
+\end{frame}
+
+\begin{frame}{Calculer la \Pmus}
+    \begin{equation}
+        \Delta P_{tot} = \frac{\Delta P_{vent}}{\%_{assist}}
+    \end{equation}
+
+    \begin{equation}
+        \Delta P_{mus} = \frac{\Delta P_{vent}}{\%_{assist}} \cdot (1-\%_{assist}%)
+    \end{equation}
+\end{frame}
+
+
+\begin{frame}{\Pmus\ 5 à 10 cmH₂O}
+    \centering
+    \includestandalone[mode=tex]{fig/graphpmus}
+\end{frame}
+
+\begin{frame}{\Pmus\ \vs\ \Pvent}
+    \centering
+    \resizebox{!}{0.83\textheight}{
+        \includestandalone[mode=tex]{tbl/tbl-ampl-pgf}
+    }
+\end{frame}
+
+
+\begin{frame}{Quand ça ne marche pas}
+    \begin{itemize}
+        \item Fuite
+        \item Commande respiratoire
+        \item Autodéclenchement
+        \item Variabilité respiratoire
+        \item Suramplification
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{\Psupport\ \vs\ amplification}
+\tikzmath{
+    for \assist in {.1, .2, .333333, .5, .666666, .75, .9, .95} {
+        \ampl{\assist} = 1/(1-\assist);
+    };
+}
+
+    \resizebox{\textwidth}{!}{
+        \begin{tikzpicture}[]
+            \def\factor{20};
+            \draw [thick](1.3,.5) -- (\factor*.98,.5);
+            \foreach \assist in {.1, .2, .333333, .5, .666666, .75, .9, .95} {
+                \draw [thick] (\assist*\factor, .25) -- (\assist*\factor, .75);
+                \node at(\assist * \factor, 0) {\pgfmathprintnumber[verbatim ,fixed, skip 0.]{\assist}};
+                    \node at(\assist * \factor, 1) {x \pgfmathprintnumber[verbatim]{\ampl{\assist}}};
+            };
+        \end{tikzpicture}
+    }
+\end{frame}
+
+%\begin{frame}{Merci pour votre attention}
+%    Revoir cette présentation (et pous encore!): \qrcode[hyperlink]{https://progrt.github.io}
+%\end{frame}
+
+\begin{frame}[allowframebreaks]{Bibliographie}
+   \printbibliography
+\end{frame}
+
+\end{document}

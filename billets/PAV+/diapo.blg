@@ -1,0 +1,15 @@
+[0] Config.pm:328> INFO - This is Biber 2.21
+[0] Config.pm:331> INFO - Logfile is 'diapo.blg'
+[142] biber:342> INFO - === mar déc 16, 2025, 22:57:10
+[163] Biber.pm:421> INFO - Reading 'diapo.bcf'
+[256] Biber.pm:1002> INFO - Found 9 citekeys in bib section 0
+[275] Biber.pm:4487> INFO - Processing section 0
+[290] Biber.pm:4678> INFO - Looking for bibtex file './references.bib' for section 0
+[294] bibtex.pm:1713> INFO - LaTeX decoding ...
+[344] bibtex.pm:1519> INFO - Found BibTeX data source './references.bib'
+[685] UCollate.pm:68> INFO - Overriding locale 'fr-FR' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[685] UCollate.pm:68> INFO - Overriding locale 'fr-FR' defaults 'variable = shifted' with 'variable = non-ignorable'
+[685] Biber.pm:4307> INFO - Sorting list 'nty/global//global/global/global' of type 'entry' with template 'nty' and locale 'fr-FR'
+[685] Biber.pm:4313> INFO - No sort tailoring available for locale 'fr-FR'
+[717] bbl.pm:676> INFO - Writing 'diapo.bbl' with encoding 'UTF-8'
+[736] bbl.pm:779> INFO - Output to diapo.bbl

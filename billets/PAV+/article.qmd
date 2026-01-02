@@ -1,0 +1,225 @@
+---
+title: Apprivoiser le mode PAV+
+date: today
+image: img/Pavlov.jpg
+lang: fr-ca
+bibliography: references.bib
+echo: false
+draft: false
+format: 
+    html: default
+css: custom.css
+resources:
+    - diapo.pdf
+links:
+    - text: diapo.pdf
+      icon: file-slides
+      href: diapo.pdf
+description: "Le mode PAV+ est un mode de ventilation spontanée continue
+facile à utiliser qui adapte automatiquement l'aide fournie au patient
+à son travail respiratoire. Cet article vise à fournir quelques clés
+pour faciliter son adoption."
+categories:
+    - Présentation
+---
+
+::: {.column-margin}
+[Ressources supplémentaires]{.quarto-title-meta-heading}
+
+- [Calculatrice P<small>mus</small>](https://observablehq.com/d/3902c3b0909ab8e2?collection=@progrt/calculatrices-respiratoires){.bi .bi-calculator}
+- [diapositives.pdf](diapo.pdf){.bi .bi-file-slides}
+
+:::
+
+## Généralités
+
+Le mode PAV+ constitue un mode ce ventilation spontanée continue
+(VSC) en pression contrôlée (PC) au même titre que le mode VS-AI
+[@chatburn2014]. Il diffère de celui-ci
+par le type de contrôle de la pression. Alors qu'en VS-AI, la
+pression est fixe, elle est, dans le mode PAV+, plutôt asservie
+au travail respiratoire effectué par le patient. Cela place le
+mode PAV+ dans la même famille que le mode NAVA [@jonkman2020], où la pression
+est asservie à l'activité électrique diaphragmatique mesurée au
+moyen d'un cathéter. On pourait aussi désigner ces deux modes
+comme étant des modes *proportionnels*, ceux-ci agissant comme un
+amplificateur du travail effectué par le patient.
+
+{{< include _quarto-includes/_tbl-classification.md >}}
+
+: Classification des modes de ventilation spontanés {#tbl-modes}
+
+Comme c'est le cas pour les autres modes de ventilation spontanée
+continue, le mode PAV+ ne vise pas le contrôle de la ventilation
+(celui-ci étant assuré par les centres respiratoires du patient)
+mais bien le maintien d'un niveau de travail respiratoire
+adéquat.
+
+```{dot}
+//| fig-cap: Boucle de rétroaction du contrôle respiratoire
+//| label: fig-retroaction
+//| fig-width: 100%
+//| file: _quarto-includes/_commande.dot
+```
+
+### Description technique
+
+Lorsque le mode PAV+ est en fonction, le ventilateur calcule,
+chaque 5 ms,  le travail respiratoire au moyen de l'équation du
+mouvement de l'air. 
+
+$$
+P_{vent} + P_{mus} = \Delta V \cdot E + \dot{V} \cdot R
+$$ {#eq-mvt-air}
+
+## Mise en route
+
+::: {.callout-tip}
+
+### Travailler avec le PB-980
+
+Le PB-980 est, à notre avis, un très bon ventilateur de soins
+intensifs. Il offre beaucoup d'information et de contrôle au
+clinicien qui l'oppère mais est peu convivial en comparaison des
+autres ventilateurs de sa génération. Les points suivants sont à
+condiérer pour apprendre à apprécier le PB-980: 
+
+- *Le PB-980 est allergique aux bouchons.* Que l'appareil soit en
+  fonction ou en pause/veille, l'obstruction du circuit par un
+  bouchon sera interprétée par l'appareil comme la connection
+  d'un patient et l'appareil essaiera de ventiler ce patient. La
+  *seule* situation où un bouchon est permis est lorsque requis
+  par la procédure d'autotest réduir (ATR).
+- *Ne pas démarer l'appareil avant d'avoir branché* les gazs
+  médicaux et l'alimentation électrique. Cela vous évitera de
+  désagréables alarmes.
+- *Le volume sonore* des alarmes, hautement agressant dans sa
+  configuration par défault, *peux être ajusté* (bouton situé sous
+  l'écran). Vous protègerez ainsi votre audition et vos relation
+  avec le reste du personnel des soins intensifs.
+- Le test préutilisation s'appelle ATR (pour autotest réduit). Il
+  doit être effectué avant le démarage de la ventilation, entre
+  autre pour que le ventilateur puisse mesurer la compliance du
+  circuit de ventilation et corriger les volumes mesurés en
+  conséquence.
+
+:::
+
+### Paramètres à ajuster
+
+Sexe et taille du patient
+: Servent à calculer le poids prédit du patient. Le poids prédit
+  sert à fixer des limites de sécurité sur différents paramètres
+  utilisés pour les calculs de l'algorithme [@covidien2020].
+
+Type et taille de l'interface patient
+: Sert à calculer le travail respiratoire relié à celle-ci
+  [@covidien2020].
+
+% support
+: Il s'agit du pourcentage du travail respiratoire total qui sera 
+  assuré par le ventilateur.
+
+Sensibilité expiratoire (l/m)
+: Contrairement au mode VS-AI conventionnel, la sensibilité 
+  expiratoire se règle en débit absolut (l/m). Dans notre
+  expérience, sa valeur n'est pas d'une grande importance,
+  les fins de cycle prématurées ou tardives étant plutôt
+  rares dû au fonctionnement du mode PAV+. Elle pourra être
+  ajustée en fonction de l'analyse des courbes de débit et
+  de pression.
+
+{{< include _quarto-includes/_tbl-params.md >}}
+
+: Paramètres de départ spécifiques au mode PAV+. *À titre 
+  de suggestion seulement*. {#tbl-param_depart}
+
+## Gestion clinique
+
+Comme pour n'importe quel autre mode spontané, on pourrait résumer la
+gestion clinique du mode PAV+ à :
+
+> Augmenter le niveau de support lorsque le travail respiratoire du
+> patient semble trop important et diminuer le niveau de support lorsque
+> le travail respiratoire du patient semble faible.
+
+Les indicateurs de travail respiratoire disponibles en VS-AI ($\Delta P_{occlusion}$, $P_{0,1}$, $Fr$) conservent
+la même valeur. Le mode PAV+ vous donne en plus accès à deux indicateurs
+supplémentaires:
+
+Travail respiratoire (j/L)
+: La plage considérée par normale par le manufacturier est de 0,3
+à 0,7 j/L. [@covidien2020]
+
+Pression générée par les muscles respiratoires (Pmus)
+: Calculée au moyen de la Pression motrice et du pourcentage
+  d'assistance
+
+$$
+P_{mus} = \frac{P_{motrice}}{\%_{Support}}\cdot (1 - \%_{support})
+$$ {#eq-pmus}
+  
+  Par exemple, si on suppose une $P_{motrice}$ de 10 cmH₂O et un
+  $\%_{support}$ de 40 %, on calculera:
+
+  $$P_{mus} = \frac{10}{0.4}\cdot (0.6)$$ {#eq-pmus-ex}
+
+  Plusieurs recherches ont utilisés une Pmus entre 5 et 10
+  cmH₂O comme valeur de référence pour un travail respiratoire
+  normal. [@albani2021a, @miao2023, @yang2023]
+
+```{ojs}
+//| fig-cap: 'Pression administrée par le ventilateur correspondant à une P mus entre 5 et 10 cmH₂O'
+//| label: fig-Pmotrice
+{{< include _quarto-includes/_fig-Pmotrice.ojs >}}
+```
+
+## Quand ça ne marche pas
+
+::: {.callout-tip}
+
+## À vérifier quand ça ne marce pas
+
+- [ ] Commande respiratoire (faible ou élevée) ?
+- [ ] Présence d'autodéclenchement ?
+- [ ] Variabilité respiratoire ?
+- [ ] Présence de fuites  ?
+:::
+
+Commande respiratoire
+: S'interroger sur le niveau de la commande respiratoire du patient.
+  Est-elle faible ou élevée ? Le mode VSC.PC.s permet de générer des
+  volumes courants normaux chez un patient avec une commande
+  respiratoire faible (parfois même absente). Il n'est pas souhaitable
+  d'assister le patient *au-delà* de sa commande respiratoire. D'une
+  part, la surassistance contribue à abaisser encore plus la commande
+  respiratoire. D'autre part, une commande respiratoire basse est
+  associée à la dysfonction diaphragmatique induite par le ventilateur
+  et à la prolongation du sevrage respiratoire [@goligher2018].
+
+Autodéclenchement
+: L'autodéclenchement est souvent associé à une faible commande
+  respiratoire. Il peut à la fois en être le résultat et y contribuer.
+  Une fréquence respiratoire spontanée faible et de petits volumes
+  courants sont un terrain propice à l'autodéclenchement, qui se produit
+  typiquement vers la fin de l'expiration ou lorsque celle-ci est
+  complétée. Par ailleurs, l'autodéclenchement contribue à abaisser le
+  niveau de commande respiratoire en augmentant la ventilation par
+  minute au delà de la de la demande du patient.
+
+Variabilité respiratoire
+: On a souvent tendance à considérer à tors les respirations
+  irrégulières comme problématiques. La variabilité du patron
+  respiratoire est en fait quelque-chose de normal et souhaitable. Il
+  faut garder en tête que le patient en insuffisance respiratoire a
+  tendance à garder un fréquence respiratoire et un volume courant
+  constant parce que c'est cette combinaison volume · fréquence qui
+  optimise son travail respiratoire et qu'il à peu de marge de manœuvre
+  à ce sujet. Le patient dont le patron respiratoire fluctue en fonction
+  de ses besoins et de la situation est un patient qui à de la marge de
+  manœuvre au niveau de sa capacité respiratoire.
+
+Fuites
+: La présence de fuites fausse le calcul du travail despiratoire du
+  patient qui est basé sur les variation de volume et de pression dans le
+  circuit respiratoire.

@@ -1,20 +1,20 @@
-- title: inhalotherapie.svg
-  url: https://progrt.github.io/inhalotherapie.svg
-  thumbnail: inhalotherapie.svg.png
-  description: "Ensemble d'icones au sujet des soins respiratoires."
 - title: simvent.js
   url: https://progrt.github.io/simvent.js
   thumbnail: simvent.js.png
   description: "Simulateur de ventilation mécanique."
-- title: P (comme dans poumon)
-  thumbnail: pcommedans.png
-  url: https://progrt.github.io/P
-  description: "Art numérique. Annimation réalisé au moyen de la librairie p5js."
 - title: Servouscope
   thumbnail: Servouscope.png
   url: https://progrt.github.io/Servouscope
   description: "Visualisateur pour données exportées par le ventilateur
     Servo-U ou le simulateur de poumon ASL 5000."
+- title: inhalotherapie.svg
+  url: https://progrt.github.io/inhalotherapie.svg
+  thumbnail: inhalotherapie.svg.png
+  description: "Ensemble d'icones au sujet des soins respiratoires."
+- title: P (comme dans poumon)
+  thumbnail: pcommedans.png
+  url: https://progrt.github.io/P
+  description: "Art numérique. Annimation réalisé au moyen de la librairie p5js."
 - title: The PEEP Reporter
   thumbnail: preport.png
   url: https://progrt.github.io/preport

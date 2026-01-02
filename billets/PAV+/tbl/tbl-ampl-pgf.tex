@@ -1,0 +1,66 @@
+\documentclass[tikz]{standalone}
+\usepackage{paletteqhum}
+\usetikzlibrary{math}
+\renewcommand{\familydefault}{\sfdefault}
+
+\def\ymax{30}
+
+\tikzset{
+    axis title/.style={
+        font=\bf
+    }
+}
+
+\begin{document}
+\begin{tikzpicture}[
+]
+
+    %%%%%%%%%%%%
+    % Y labels %
+    %%%%%%%%%%%%
+
+    \node[axis title, rotate=90] at(-.75, 0.25 * \ymax) {P\textsubscript{vent}};
+    \node[axis title] at(9, -.75) {Assistance};
+
+    \foreach \y[evaluate=\y as \Pvent using \y] in {1, 2, ..., \ymax}{
+        \node [axis title] at(0, 0.5*\y) {\Pvent};
+    }
+    
+    %%%%%%%%%%
+    % Matrix %
+    %%%%%%%%%%
+
+    \pgfkeys{/pgf/number format/.cd,fixed,precision=2}
+    \foreach \x[evaluate=\x as \Assist using \x*.05] in {1, 2, ..., 18}{
+
+        %%%%%%%%%%%%
+        % x labels %
+        %%%%%%%%%%%%
+
+        \node [axis title] at(\x, 0) {\pgfmathprintnumber[verbatim, skip 0.]{\Assist}};
+        \pgfkeys{/pgf/number format/.cd,fixed,precision=0}
+
+        \foreach \y[evaluate=\y as \Pvent using \y] in {1, 2, ..., \ymax}{
+            \pgfmathsetmacro{\Pmus}{(\Pvent/\Assist)*(1-\Assist)}
+
+            \tikzmath{
+                let \c = white;
+                if \Pmus > 20 then { let \c = grisqhum!20!white; };
+                if \Pmus > 100 then { let \c = grisqhum!50!white; };
+                if \Pmus < 10.5 then { let \c = vertqhum!40!white; };
+                if \Pmus < 4.5 then { let \c = white; };
+            }
+
+            \node [
+                fill=\c,
+                draw=gray!50!,
+                minimum width=1cm,
+                minimum height=5mm
+            ] at(\x,0.5*\y ) {
+                \pgfmathprintnumber{\Pmus}
+            };
+        }
+    }
+
+\end{tikzpicture}
+\end{document}

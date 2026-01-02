@@ -1,0 +1,39 @@
+\documentclass[tikz]{standalone}
+
+\usepackage{rsymbols, emoji}
+\usetikzlibrary{graphs, graphdrawing}
+\usegdlibrary{layered}
+
+\begin{document}
+\begin{tikzpicture}
+
+\graph [
+    layered layout,
+    grow=right,
+    greedy cycle removal,
+    edges={
+        rounded corners,
+        shorten <=1pt,
+        shorten >=1pt
+    },
+    nodes={
+        align=center,
+        draw,
+        fill=white,
+        rounded corners
+    }
+]{
+    CR          [as={Centre resp.\emoji{brain}}];
+    COM         [as={Commande\\ {\tiny µV·s/m} \emoji{satellite-antenna}}];
+    Couplage    [as={Couplage \emoji{flexed-biceps}\\ \tiny{cmH₂O/µV}}];
+    Charge      [as={Charge \emoji{weight-lifting}\\ \tiny{cmH₂O·s/L}}];
+    Ventilation [as={Ventilation\\ {\tiny L/m} \emoji{lungs}}];
+    Capnie      [as={PaCO₂ \emoji{test-tube}\\ \tiny{mmHg}}];
+    
+    CR ->[bend right] COM -> Couplage -> Charge;
+    Charge -> Ventilation ->[bend right] Capnie;
+    Capnie ->[bend right=20] CR;
+};
+
+\end{tikzpicture}
+\end{document}

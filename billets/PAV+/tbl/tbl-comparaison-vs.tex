@@ -1,0 +1,27 @@
+\documentclass{standalone}
+\usepackage{nicematrix, tikz, rsymbols}
+
+\input{../macro/annotatefactor}
+\input{../macro/annotatedelta}
+
+\begin{document}
+
+\begin{NiceTabular}{l c c}
+& Commande élevée & Commande faible \\ 
+\hline
+\Pmus & 10 & 5 \\
+\Pvent & 10 & 10 \\
+\Ptot & 20 & 15 \\
+\hline
+\CodeAfter
+\uncover<2-3>{
+    \annotatefactor{2}{2}
+    \annotatefactor{3}{3}
+}
+\uncover<4->{
+    \annotatedelta{2}{0,5}
+    \annotatedelta{4}{0,75}
+}
+\end{NiceTabular}
+
+\end{document}

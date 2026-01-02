@@ -1,0 +1,20 @@
+```{r}
+#| echo: false
+vPlot <- function(x, y, ...) {
+	plot(x, y,
+	     type='l',
+	     xlab='Temps (s)',
+	     ylab='Débit (l/m)',
+			 xaxs="i",
+			 ...
+	     );
+}
+
+dPreview <- function(dataset) {
+	vPlot(dataset$Durée, dataset$DÉBIT)
+}
+
+dSlice <- function(dataset, start, end) {
+	dataset[dataset$Durée > start  & dataset$Durée < end,];
+}
+```

@@ -1,0 +1,28 @@
+digraph LR {
+    Centre [
+    //    shape="rectangle"
+        label= < Centres resp. 🧠 >
+    ]
+    Commande [
+        label=< Commande 📡<br/> <font point-size="10">µV·s / m</font> >
+    ]
+    Couplage [
+        label=< Couplage 💪<br/> <font point-size="10">cmH₂O / µV</font> >
+    ]
+    Charge [
+        label=< Charge  🏋️<br/> <font point-size="10">cmH₂O·s / l</font> >
+    ]
+    Ventilation [
+        label=< Ventilation 🫁<br/> <font point-size="10">l/m</font> >
+    ]
+    Capnie [
+        label=< Capnie 🧪<br/> <font point-size="10">mmHg</font> >
+    ]
+
+    Centre -> Commande
+    Commande -> Couplage
+    Couplage -> Charge
+    Charge -> Ventilation 
+    Ventilation -> Capnie
+    Capnie -> Centre [constraint=false];
+}

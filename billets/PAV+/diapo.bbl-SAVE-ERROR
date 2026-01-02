@@ -1,0 +1,942 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global/global}
+    \entry{albani2021a}{article}{}{}
+      \name{author}{12}{}{%
+        {{hash=76daf8b0f20644c7a79c3915409a39ac}{%
+           family={Albani},
+           familyi={A\bibinitperiod},
+           given={Filippo},
+           giveni={F\bibinitperiod}}}%
+        {{hash=08346abdca69ad4b116c8c797318ec93}{%
+           family={Fusina},
+           familyi={F\bibinitperiod},
+           given={Federica},
+           giveni={F\bibinitperiod}}}%
+        {{hash=a1fbd93a8f124305066f3c1b2e688d58}{%
+           family={Ciabatti},
+           familyi={C\bibinitperiod},
+           given={Gianni},
+           giveni={G\bibinitperiod}}}%
+        {{hash=d70f4537a5e24bdef52b07d65177c95d}{%
+           family={Pisani},
+           familyi={P\bibinitperiod},
+           given={Luigi},
+           giveni={L\bibinitperiod}}}%
+        {{hash=531f3bbc5451591590f9b3e4517847a5}{%
+           family={Lippolis},
+           familyi={L\bibinitperiod},
+           given={Valeria},
+           giveni={V\bibinitperiod}}}%
+        {{hash=43ab46d212bc16db3bc0767735b08f54}{%
+           family={Franceschetti},
+           familyi={F\bibinitperiod},
+           given={Maria\bibnamedelima Elena},
+           giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=ddb5d06453d99dcc3973ef9a4fff5aa1}{%
+           family={Giovannini},
+           familyi={G\bibinitperiod},
+           given={Alessia},
+           giveni={A\bibinitperiod}}}%
+        {{useprefix=true,hash=d1f9016d64b2ed758b1ecb59dcca4632}{%
+           family={Mussi},
+           familyi={M\bibinitperiod},
+           given={Rossella},
+           giveni={R\bibinitperiod},
+           prefix={di},
+           prefixi={d\bibinitperiod}}}%
+        {{hash=150b18ea394cb24f0c27aa1d5b3ae8f8}{%
+           family={Murgolo},
+           familyi={M\bibinitperiod},
+           given={Francesco},
+           giveni={F\bibinitperiod}}}%
+        {{hash=0bc93a1050ca6ed09b3f6b9d73f842f8}{%
+           family={Rosano},
+           familyi={R\bibinitperiod},
+           given={Antonio},
+           giveni={A\bibinitperiod}}}%
+        {{hash=c1de16ef5e9385c03ae601f6b12c73d8}{%
+           family={Grasso},
+           familyi={G\bibinitperiod},
+           given={Salvatore},
+           giveni={S\bibinitperiod}}}%
+        {{hash=70e213aa985423c3b2253fdc3b24b19f}{%
+           family={Natalini},
+           familyi={N\bibinitperiod},
+           given={Giuseppe},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{1ff5fc8adb385eca9e552341d8476d94}
+      \strng{fullhash}{9730fe0199a92f88f8fffa7a5e7ba263}
+      \strng{fullhashraw}{9730fe0199a92f88f8fffa7a5e7ba263}
+      \strng{bibnamehash}{1ff5fc8adb385eca9e552341d8476d94}
+      \strng{authorbibnamehash}{1ff5fc8adb385eca9e552341d8476d94}
+      \strng{authornamehash}{1ff5fc8adb385eca9e552341d8476d94}
+      \strng{authorfullhash}{9730fe0199a92f88f8fffa7a5e7ba263}
+      \strng{authorfullhashraw}{9730fe0199a92f88f8fffa7a5e7ba263}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Flow Index, a numerical expression of the shape of the inspiratory flow-time waveform recorded during pressure support ventilation, is associated with patient inspiratory effort. The aim of this study was to assess the accuracy of Flow Index in detecting high or low inspiratory effort during pressure support ventilation and to establish cutoff values for the Flow index to identify these conditions. The secondary aim was to compare the performance of Flow index,of breathing pattern parameters and of airway occlusion pressure (P0.1) in detecting high or low inspiratory effort during pressure support ventilation.}
+      \field{day}{15}
+      \field{issn}{1364-8535}
+      \field{journaltitle}{Critical Care}
+      \field{month}{12}
+      \field{number}{1}
+      \field{shortjournal}{Critical Care}
+      \field{title}{Flow {{Index}} Accurately Identifies Breaths with Low or High Inspiratory Effort during Pressure Support Ventilation}
+      \field{urlday}{18}
+      \field{urlmonth}{7}
+      \field{urlyear}{2024}
+      \field{volume}{25}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{427}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1186/s13054-021-03855-4
+      \endverb
+      \verb{file}
+      \verb /home/nicolas/Zotero/storage/BRZCBWMB/Albani et al. - 2021 - Flow Index accurately identifies breaths with low .pdf;/home/nicolas/Zotero/storage/JXUM97GL/s13054-021-03855-4.html
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1186/s13054-021-03855-4
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1186/s13054-021-03855-4
+      \endverb
+      \keyw{Artificial respiration,Inspiratory effort,Intensive care units,Patient-ventilator interaction,Positive-pressure respiration}
+    \endentry
+    \entry{alberti1995}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=64dae8c5648096409a2cd1c4c2ccedf9}{%
+           family={Alberti},
+           familyi={A\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=d5d42090f3a894dcbaef98abfc525c9e}{%
+           family={Gallo},
+           familyi={G\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+        {{hash=7dfbb934e9a1aba63596eb4f6151bbc2}{%
+           family={Fongaro},
+           familyi={F\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=d6151fb1e2e5d07a98563868a8639c7e}{%
+           family={Valenti},
+           familyi={V\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=161a28db2496421f437aa4390748e14d}{%
+           family={Rossi},
+           familyi={R\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{86a9310f19bea02d4c49478eb5c7865b}
+      \strng{fullhash}{1c0967c5e75346a362b31f53cfadb862}
+      \strng{fullhashraw}{1c0967c5e75346a362b31f53cfadb862}
+      \strng{bibnamehash}{86a9310f19bea02d4c49478eb5c7865b}
+      \strng{authorbibnamehash}{86a9310f19bea02d4c49478eb5c7865b}
+      \strng{authornamehash}{86a9310f19bea02d4c49478eb5c7865b}
+      \strng{authorfullhash}{1c0967c5e75346a362b31f53cfadb862}
+      \strng{authorfullhashraw}{1c0967c5e75346a362b31f53cfadb862}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{OBJECTIVE: The purpose of this study was to investigate whether changes in breathing pattern, neuromuscular drive (P0.1), and the work involved in breathing might help to set the individual appropriate level of pressure support ventilation (PSV) in patients with acute respiratory failure (ARF) requiring ventilatory assistance. DESIGN: A prospective, interventional study. SETTING: An 8-bed multidisciplinary intensive care unit (ICU). PATIENTS: Ten patients with ARF due to adult respiratory distress syndrome (ARDS), sepsis or airway infection were included in the study. Chronic obstructive pulmonary disease (COPD) patients with acute exacerbation were excluded. None of these patients was in the weaning process. INTERVENTIONS: We found a level of pressure support able to generate a condition of near-relaxation in each patient, as evidenced by work of breathing (WOB) values close to 0 J/1. This level was called PS 100 and baseline physiological measurements, namely, breathing pattern, P0.1 and WOB were obtained. Pressure support was then reduced to 85\%, 70\%, and 50\% of the initial value and the same set of measurements was obtained. MEASUREMENTS AND RESULTS: Flow (V) was measured by a flow sensor (Varflex) positioned between the Y-piece of the breathing circuit and the endotracheal tube. Tidal volume was obtained by numerical integration of the flow signal. Airway pressure (P(aw)) was sampled through a catheter attached to the flow sensor. Esophageal pressure (Pes) was measured with a nasogastric tube incorporating an esophageal balloon. The esophageal balloon and flow and pressure sensors were connected to a portable monitor (CP 100 Bicore) that provided real-time display of flow, volume, P(aw) and Pes tracings and loops of Pes/V, P(aw)/V and V/V relationships. The breathing pattern was analyzed from the flow signal. Patient work of breathing (WOB) was calculated by integration of the area of the Pes/V loop. Respiratory drive (P0.1) was measured at the esophageal pressure change during the first 100 ms of a breath, by the quasi-occlusion technique. When pressure support was reduced, we found that the respiration rate significantly increased from PS 100 to PS 85, but varied negligibly with lower pressure support levels. Tidal volume behaved in a similar way, decreasing significantly from PS 100 to PS 85, but hardly changing at PS 70 and PS 50. In contrast, WOB and P0.1 increased progressively with decreasing pressure support levels. The changes in WOB were significant at each stage in the trial, whereas P0.1 increased significantly from PS 100 at other stages. Linear regression analysis revealed a highly positive, significant correlation between WOB and P0.1 at decreasing PSV levels (r = 0.87), whereas the correlation between WOB and ventilatory frequency was less significant (r = 0.53). No other correlation was found. CONCLUSIONS: During pressure support ventilation, P0.1 may be a more sensitive parameter than the assessment of breathing pattern in setting the optimal level of pressure support in individual patients. Although P0.1 was measured with an esophageal balloon in the present study, non-invasive techniques can also be used.}
+      \field{eprinttype}{pubmed}
+      \field{issn}{0342-4642}
+      \field{journaltitle}{Intensive Care Medicine}
+      \field{langid}{english}
+      \field{month}{7}
+      \field{number}{7}
+      \field{shortjournal}{Intensive Care Med}
+      \field{title}{P0.1 Is a Useful Parameter in Setting the Level of Pressure Support Ventilation}
+      \field{volume}{21}
+      \field{year}{1995}
+      \field{dateera}{ce}
+      \field{pages}{547\bibrangedash 553}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1007/BF01700158
+      \endverb
+      \verb{eprint}
+      \verb 7593895
+      \endverb
+      \verb{file}
+      \verb /home/nicolas/Zotero/storage/7DHP5ITV/Alberti et al. - 1995 - P0.1 is a useful parameter in setting the level of pressure support ventilation.pdf
+      \endverb
+      \keyw{Adolescent,Aged,Airway Resistance,Drive,Esophagus,Female,Humans,Male,Manometry,Middle Aged,Monitoring Physiologic,Positive-Pressure Respiration,Pressure,Prospective Studies,Respiratory Distress Syndrome,Sensitivity and Specificity,Tidal Volume,Work of Breathing}
+    \endentry
+    \entry{bosma2025}{article}{}{}
+      \name{author}{47}{}{%
+        {{hash=384863e599ecaa7b2d83718ff7c27d5e}{%
+           family={Bosma},
+           familyi={B\bibinitperiod},
+           given={Karen\bibnamedelima J.},
+           giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=4e2988da33753aa32cedcd94137ddcac}{%
+           family={Burns},
+           familyi={B\bibinitperiod},
+           given={Karen\bibnamedelima E.A.},
+           giveni={K\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=640f1275149f8076ca6e11585cfb7455}{%
+           family={Martin},
+           familyi={M\bibinitperiod},
+           given={Claudio\bibnamedelima M.},
+           giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=239dcd40fddbd940b413dd951b3a4959}{%
+           family={Skrobik},
+           familyi={S\bibinitperiod},
+           given={Yoanna},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=1b50b289d5cad68d1103d6bdea411740}{%
+           family={Mancebo\bibnamedelima Cortés},
+           familyi={M\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={Jordi},
+           giveni={J\bibinitperiod}}}%
+        {{hash=5ad6ca2f44b14bf88769f7bb98824f8f}{%
+           family={Mulligan},
+           familyi={M\bibinitperiod},
+           given={Sorcha},
+           giveni={S\bibinitperiod}}}%
+        {{hash=947890f2fad7c3293568e78b6886827d}{%
+           family={Lafreniere-Roula},
+           familyi={L\bibinithyphendelim R\bibinitperiod},
+           given={Myriam},
+           giveni={M\bibinitperiod}}}%
+        {{hash=4c3192adbdff9b5c22d4301e87e1abf7}{%
+           family={Thorpe},
+           familyi={T\bibinitperiod},
+           given={Kevin\bibnamedelima E.},
+           giveni={K\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=3174dd603b373f592157a5235e6d08fe}{%
+           family={Suárez\bibnamedelima Montero},
+           familyi={S\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={Juan\bibnamedelima Carlos},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=01d0d915ed4b44ad9750d5c9f77e039c}{%
+           family={Morán\bibnamedelima Chorro},
+           familyi={M\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={Indalecio},
+           giveni={I\bibinitperiod}}}%
+        {{hash=37ecd0a8eed6a0b0ad08566461360194}{%
+           family={Rodríguez-Farré},
+           familyi={R\bibinithyphendelim F\bibinitperiod},
+           given={Núria},
+           giveni={N\bibinitperiod}}}%
+        {{hash=887e305ddb90c66f9e1e4120aa98554b}{%
+           family={Butler},
+           familyi={B\bibinitperiod},
+           given={Ron},
+           giveni={R\bibinitperiod}}}%
+        {{hash=e37332b292801023eb40cd499f2f6aa0}{%
+           family={Bentall},
+           familyi={B\bibinitperiod},
+           given={Tracey},
+           giveni={T\bibinitperiod}}}%
+        {{hash=c2fff121a3db6dff37084e2aa8cd4cea}{%
+           family={Beduneau},
+           familyi={B\bibinitperiod},
+           given={Gaëtan},
+           giveni={G\bibinitperiod}}}%
+        {{hash=e15659f7f2b39b62c0025e1d9d2749c0}{%
+           family={Enguerrand},
+           familyi={E\bibinitperiod},
+           given={Pauline},
+           giveni={P\bibinitperiod}}}%
+        {{hash=eb505b00f8620290a896d23e88a51ddd}{%
+           family={Santos},
+           familyi={S\bibinitperiod},
+           given={Marlene},
+           giveni={M\bibinitperiod}}}%
+        {{hash=dcdd64f519cb53e7031050e58b23129b}{%
+           family={Piraino},
+           familyi={P\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=e0dadf63072ae9538705e8220b6a1559}{%
+           family={Spadaro},
+           familyi={S\bibinitperiod},
+           given={Savino},
+           giveni={S\bibinitperiod}}}%
+        {{hash=284a974e3a5728a6483fd03766bfa613}{%
+           family={Montanaro},
+           familyi={M\bibinitperiod},
+           given={Federica},
+           giveni={F\bibinitperiod}}}%
+        {{hash=b9aa4a5db1612063fdae1120913ba6e5}{%
+           family={Basmaji},
+           familyi={B\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+        {{hash=91e7a114c279ed9ad597f6c3b27a4b0c}{%
+           family={Campbell},
+           familyi={C\bibinitperiod},
+           given={Eileen},
+           giveni={E\bibinitperiod}}}%
+        {{hash=9b2eb7aa3580b62a5c4d6f897a917a96}{%
+           family={Mercat},
+           familyi={M\bibinitperiod},
+           given={Alain},
+           giveni={A\bibinitperiod}}}%
+        {{hash=ecd504d3da299798071c0f101d3d6790}{%
+           family={Beloncle},
+           familyi={B\bibinitperiod},
+           given={François\bibnamedelima M.},
+           giveni={F\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=5b615ffa3af4c7896c073e95c938b0af}{%
+           family={Carteaux},
+           familyi={C\bibinitperiod},
+           given={Guillaume},
+           giveni={G\bibinitperiod}}}%
+        {{hash=18536bbee6982eba80281c471d819877}{%
+           family={Maraffi},
+           familyi={M\bibinitperiod},
+           given={Tommaso},
+           giveni={T\bibinitperiod}}}%
+        {{hash=763a3a17788f15ca72604dad3e4493bf}{%
+           family={Charbonney},
+           familyi={C\bibinitperiod},
+           given={Emmanuel},
+           giveni={E\bibinitperiod}}}%
+        {{hash=71f260530fba37bf7fefb44c0d67217d}{%
+           family={Lecronier},
+           familyi={L\bibinitperiod},
+           given={Marie},
+           giveni={M\bibinitperiod}}}%
+        {{hash=b0bf3953729e291d7ffb7e36477f3c49}{%
+           family={Dres},
+           familyi={D\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=6d9eb84e1a9cfc0061dc97bf22f93779}{%
+           family={Arabi},
+           familyi={A\bibinitperiod},
+           given={Yaseen\bibnamedelima M.},
+           giveni={Y\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=d041aaa545694a469030776114af0bb6}{%
+           family={Amaral},
+           familyi={A\bibinitperiod},
+           given={Andre\bibnamedelimb Carlos\bibnamedelima K.B.},
+           giveni={A\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=3ad7046f7be1d3bb33bb27457addd9fa}{%
+           family={Marinoff},
+           familyi={M\bibinitperiod},
+           given={Nicole},
+           giveni={N\bibinitperiod}}}%
+        {{hash=6da485accaaee319de3e36cc70af4dbc}{%
+           family={Adhikari},
+           familyi={A\bibinitperiod},
+           given={Neill\bibnamedelima K.J.},
+           giveni={N\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=667a36552d04ed79511987561b30b54f}{%
+           family={Geagea},
+           familyi={G\bibinitperiod},
+           given={Anna},
+           giveni={A\bibinitperiod}}}%
+        {{hash=c7056c8dd3eb733a914b5ab08e3dd15c}{%
+           family={Shin},
+           familyi={S\bibinitperiod},
+           given={Phil},
+           giveni={P\bibinitperiod}}}%
+        {{hash=f39b499711d4b71f441cb26fcdb00242}{%
+           family={Vaporidi},
+           familyi={V\bibinitperiod},
+           given={Katerina},
+           giveni={K\bibinitperiod}}}%
+        {{hash=bba089b5a35968ca9958e8ce0ae548ba}{%
+           family={Kondili},
+           familyi={K\bibinitperiod},
+           given={Eumorfia},
+           giveni={E\bibinitperiod}}}%
+        {{hash=f220b8a8597e78edec86465a3be6933a}{%
+           family={Shahin},
+           familyi={S\bibinitperiod},
+           given={Jason},
+           giveni={J\bibinitperiod}}}%
+        {{hash=1e02d3de46373e07ff7083b3ca188608}{%
+           family={Campisi},
+           familyi={C\bibinitperiod},
+           given={Josie},
+           giveni={J\bibinitperiod}}}%
+        {{hash=061993c9d8afb69991078a72c666878e}{%
+           family={Rodriguez},
+           familyi={R\bibinitperiod},
+           given={Pablo\bibnamedelima O.},
+           giveni={P\bibinitperiod\bibinitdelim O\bibinitperiod}}}%
+        {{hash=38e75dc62476c984064a73a6e391d7c7}{%
+           family={Setten},
+           familyi={S\bibinitperiod},
+           given={Mariano},
+           giveni={M\bibinitperiod}}}%
+        {{hash=5635ac93ec96a57078805a92ed5828cf}{%
+           family={Goligher},
+           familyi={G\bibinitperiod},
+           given={Ewan\bibnamedelima C.},
+           giveni={E\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=4ee820533357d703b6274d49ee43331c}{%
+           family={Ferguson},
+           familyi={F\bibinitperiod},
+           given={Niall\bibnamedelima D.},
+           giveni={N\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=483e8cd3be42df7cc709acaf94eb801b}{%
+           family={Fanelli},
+           familyi={F\bibinitperiod},
+           given={Vito},
+           giveni={V\bibinitperiod}}}%
+        {{hash=192d1cdb7b2e6732259265653b598165}{%
+           family={Ferreyra},
+           familyi={F\bibinitperiod},
+           given={Gabriela},
+           giveni={G\bibinitperiod}}}%
+        {{hash=cc115d1b203b8243a65238f096ac6d5e}{%
+           family={Lellouche},
+           familyi={L\bibinitperiod},
+           given={Francois},
+           giveni={F\bibinitperiod}}}%
+        {{hash=6a3ed2a964047b64e98bc710b8ac7f07}{%
+           family={Sibley},
+           familyi={S\bibinitperiod},
+           given={Stephanie},
+           giveni={S\bibinitperiod}}}%
+        {{hash=5f34fc234498252a6ff69f85b6ff250e}{%
+           family={Brochard},
+           familyi={B\bibinitperiod},
+           given={Laurent},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{ec48889a8261f7cbb962d3499018166c}
+      \strng{fullhash}{07ed3ce231ab6e0d8eb5585e68443e9d}
+      \strng{fullhashraw}{07ed3ce231ab6e0d8eb5585e68443e9d}
+      \strng{bibnamehash}{ec48889a8261f7cbb962d3499018166c}
+      \strng{authorbibnamehash}{ec48889a8261f7cbb962d3499018166c}
+      \strng{authornamehash}{ec48889a8261f7cbb962d3499018166c}
+      \strng{authorfullhash}{07ed3ce231ab6e0d8eb5585e68443e9d}
+      \strng{authorfullhashraw}{07ed3ce231ab6e0d8eb5585e68443e9d}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{BACKGROUND In critically ill patients, acceleration of liberation from mechanical ventilation is important in order to reduce the risk of complications and to improve long-term outcomes. Whether the use of proportional-assist ventilation with load-adjustable gain factors (PAV+) results in a shorter time to successful liberation from mechanical ventilation than pressure-support ventilation (PSV) is unclear. METHODS In this international clinical trial, we randomly assigned adult patients who had been receiving mechanical ventilation for at least 24 hours and were able to undergo partial ventilatory support with PSV but were not yet ready for liberation from ventilation to undergo PAV+ (which targeted normal work of breathing) or PSV (which targeted a normal respiratory rate and tidal volume). The primary outcome was the time from randomization to successful liberation from mechanical ventilation. RESULTS Across 23 centers in seven countries, 722 patients were enrolled, and 573 underwent randomization and were included in the analysis. The median time to successful liberation from mechanical ventilation was 7.3 days (95\% confidence interval [CI], 6.2 to 9.7) in the PAV+ group and 6.8 days (95\% CI, 5.4 to 8.8) in the PSV group (P = 0.58). The median number of ventilator-free days, the incidence of reintubation and tracheostomy, and the incidence of death by day 90 (29.6\% in the PAV+ group and 26.6\% in the PSV group), all of which were secondary outcomes, were similar in the two groups. With respect to sedative drugs, the mean (±SD) difference in the midazolam-equivalent dose at day 28 relative to the baseline dose was −1.51±3.28 mg per kilogram of body weight in the PAV+ group and 0.04±0.97 mg per kilogram in the PSV group. Serious adverse events occurred in 31 patients (10.8\%) in the PAV+ group and in 28 patients (9.8\%) in the PSV group (P = 0.79). CONCLUSIONS The time to liberation from mechanical ventilation did not differ significantly between the group that underwent PAV+ and the group that underwent PSV. (Funded by the Canadian Institutes of Health Research and others; PROMIZING ClinicalTrials.gov number, NCT02447692.)}
+      \field{day}{18}
+      \field{issn}{0028-4793, 1533-4406}
+      \field{journaltitle}{New England Journal of Medicine}
+      \field{langid}{english}
+      \field{month}{9}
+      \field{number}{11}
+      \field{shortjournal}{N Engl J Med}
+      \field{title}{Proportional-{{Assist Ventilation}} for {{Minimizing}} the {{Duration}} of {{Mechanical Ventilation}}}
+      \field{urlday}{7}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{volume}{393}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1088\bibrangedash 1103}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1056/NEJMoa2505708
+      \endverb
+      \verb{file}
+      \verb /home/nicolas/Zotero/storage/BNLYN38Y/Bosma et al. - 2025 - Proportional-Assist Ventilation for Minimizing the Duration of Mechanical Ventilation.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://www.nejm.org/doi/10.1056/NEJMoa2505708
+      \endverb
+      \verb{url}
+      \verb http://www.nejm.org/doi/10.1056/NEJMoa2505708
+      \endverb
+    \endentry
+    \entry{covidien2020}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=7079b171f3910e2eaff74969041eff59}{%
+           family={Covidien},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{7079b171f3910e2eaff74969041eff59}
+      \strng{fullhash}{7079b171f3910e2eaff74969041eff59}
+      \strng{fullhashraw}{7079b171f3910e2eaff74969041eff59}
+      \strng{bibnamehash}{7079b171f3910e2eaff74969041eff59}
+      \strng{authorbibnamehash}{7079b171f3910e2eaff74969041eff59}
+      \strng{authornamehash}{7079b171f3910e2eaff74969041eff59}
+      \strng{authorfullhash}{7079b171f3910e2eaff74969041eff59}
+      \strng{authorfullhashraw}{7079b171f3910e2eaff74969041eff59}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Operator's {{Manual}} - {{Puritan Bennett}} 980 {{Series Ventilator}}}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \verb{file}
+      \verb /home/nicolas/Zotero/storage/AUK5543L/PT00169285A00_FR_OM_PB980.pdf
+      \endverb
+    \endentry
+    \entry{devries2023}{article}{}{}
+      \name{author}{10}{}{%
+        {{useprefix=true,hash=2c3e176341cde64c976e3d5de359a241}{%
+           family={Vries},
+           familyi={V\bibinitperiod},
+           given={Heder\bibnamedelima J.},
+           giveni={H\bibinitperiod\bibinitdelim J\bibinitperiod},
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+        {{hash=8184629c6f60b00f7ae99399fa32bab8}{%
+           family={Tuinman},
+           familyi={T\bibinitperiod},
+           given={Pieter\bibnamedelima R.},
+           giveni={P\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=fc599b755e2f0651798b8dd2855d7776}{%
+           family={Jonkman},
+           familyi={J\bibinitperiod},
+           given={Annemijn\bibnamedelima H.},
+           giveni={A\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=1c17a20c4acfa6f32b73321fc505433b}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Ling},
+           giveni={L\bibinitperiod}}}%
+        {{hash=c854a6dd40cfe40d1e96fa1de65e4a34}{%
+           family={Qiu},
+           familyi={Q\bibinitperiod},
+           given={Haibo},
+           giveni={H\bibinitperiod}}}%
+        {{hash=11872f9671e4c3bae299c995d4d124b3}{%
+           family={Girbes},
+           familyi={G\bibinitperiod},
+           given={Armand\bibnamedelimb R.\bibnamedelimi J.},
+           giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=f955a15debab681bf21e617476852d77}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={YingRui},
+           giveni={Y\bibinitperiod}}}%
+        {{useprefix=true,hash=f7cfa776112bf2e6141a635760ab3835}{%
+           family={Man},
+           familyi={M\bibinitperiod},
+           given={Angelique\bibnamedelimb M.\bibnamedelimi E.},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim E\bibinitperiod},
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+        {{useprefix=true,hash=72a65b5cbd05cee4dc1b3eb45eb9e80e}{%
+           family={Grooth},
+           familyi={G\bibinitperiod},
+           given={Harm-Jan},
+           giveni={H\bibinithyphendelim J\bibinitperiod},
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+        {{hash=26a389a3c89acc54cd65039b3c647449}{%
+           family={Heunks},
+           familyi={H\bibinitperiod},
+           given={Leo},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{c68aae5d5c7436733c9eb66b4e710095}
+      \strng{fullhash}{ae17e9d55f8e844424a6de2161ff6ab3}
+      \strng{fullhashraw}{ae17e9d55f8e844424a6de2161ff6ab3}
+      \strng{bibnamehash}{c68aae5d5c7436733c9eb66b4e710095}
+      \strng{authorbibnamehash}{c68aae5d5c7436733c9eb66b4e710095}
+      \strng{authornamehash}{c68aae5d5c7436733c9eb66b4e710095}
+      \strng{authorfullhash}{ae17e9d55f8e844424a6de2161ff6ab3}
+      \strng{authorfullhashraw}{ae17e9d55f8e844424a6de2161ff6ab3}
+      \field{sortinit}{d}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Monitoring and controlling lung stress and diaphragm effort has been hypothesized to limit lung injury and diaphragm injury. The occluded inspiratory airway pressure (Pocc) and the airway occlusion pressure at 100 ms (P0.1) have been used as noninvasive methods to assess lung stress and respiratory muscle effort, but comparative performance of these measures and their correlation to diaphragm effort is unknown. The authors hypothesized that Pocc and P0.1 correlate with diaphragm effort and lung stress and would have strong discriminative performance in identifying extremes of lung stress and diaphragm effort.Change in transdiaphragmatic pressure and transpulmonary pressure was obtained with double-balloon nasogastric catheters in critically ill patients (n = 38). Pocc and P0.1 were measured every 1 to 3 h. Correlations between Pocc and P0.1 with change in transdiaphragmatic pressure and transpulmonary pressure were computed from patients from the first cohort. Accuracy of Pocc and P0.1 to identify patients with extremes of lung stress (change in transpulmonary pressure \&gt; 20 cm H2O) and diaphragm effort (change in transdiaphragmatic pressure \&lt; 3 cm H2O and \&gt;12 cm H2O) in the preceding hour was assessed with area under receiver operating characteristic curves. Cutoffs were validated in patients from the second cohort (n = 13).Pocc and P0.1 correlate with change in transpulmonary pressure (R2 = 0.62 and 0.51, respectively) and change in transdiaphragmatic pressure (R2 = 0.53 and 0.22, respectively). Area under receiver operating characteristic curves to detect high lung stress is 0.90 (0.86 to 0.94) for Pocc and 0.88 (0.84 to 0.92) for P0.1. Area under receiver operating characteristic curves to detect low diaphragm effort is 0.97 (0.87 to 1.00) for Pocc and 0.93 (0.81 to 0.99) for P0.1. Area under receiver operating characteristic curves to detect high diaphragm effort is 0.86 (0.81 to 0.91) for Pocc and 0.73 (0.66 to 0.79) for P0.1. Performance was similar in the external dataset.Pocc and P0.1 correlate with lung stress and diaphragm effort in the preceding hour. Diagnostic performance of Pocc and P0.1 to detect extremes in these parameters is reasonable to excellent. Pocc is more accurate in detecting high diaphragm effort.Recent research suggests that optimization of diaphragmatic effort and avoidance of excessive lung stress may facilitate liberation from mechanical ventilation in critically ill patientsLow diaphragmatic effort has been associated with rapid development of disuse atrophy, and excessive effort may result in muscle injury, increased lung stress, and pendelluft (displaced ventilation from recruited to nonrecruited lung regions)Monitoring transdiaphragmatic and transpulmonary pressures may facilitate accurate assessment of diaphragmatic effort and lung stress, respectively, but requires esophageal and gastric manometry, an overly complex process for routine clinical practiceA secondary analysis of two previous studies evaluated the ability of two transient inspiratory airway occlusion maneuvers (Pocc, the total drop in airway pressure during an occlusion, and P0.1, the drop in the first 100\,ms) obtained from the mechanical ventilator to predict either diaphragm effort or lung stressNeither P0.1 nor Pocc should be used to predict exact values for diaphragm effort or lung distending pressureHowever, both maneuvers can reliably identify patients with low or high extremes in diaphragm effort and lung stress, where Pocc outperforms P0.1 based on the areas under the receiver operating characteristic curves}
+      \field{day}{1}
+      \field{issn}{0003-3022}
+      \field{journaltitle}{Anesthesiology}
+      \field{month}{3}
+      \field{number}{3}
+      \field{shortjournal}{Anesthesiology}
+      \field{title}{Performance of {{Noninvasive Airway Occlusion Maneuvers}} to {{Assess Lung Stress}} and {{Diaphragm Effort}} in {{Mechanically Ventilated Critically Ill Patients}}}
+      \field{urlday}{24}
+      \field{urlmonth}{9}
+      \field{urlyear}{2024}
+      \field{volume}{138}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{274\bibrangedash 288}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1097/ALN.0000000000004467
+      \endverb
+      \verb{file}
+      \verb /home/nicolas/Zotero/storage/5IPBWYDD/de Vries et al. - 2023 - Performance of Noninvasive Airway Occlusion Maneuvers to Assess Lung Stress and Diaphragm Effort in.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1097/ALN.0000000000004467
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1097/ALN.0000000000004467
+      \endverb
+      \keyw{Critical Illness,Diaphragm,Humans,Lung,Respiration Artificial,Respiratory Muscles}
+    \endentry
+    \entry{katayama2023}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=f623859b67c53fdee641651df6605b3a}{%
+           family={Katayama},
+           familyi={K\bibinitperiod},
+           given={Shinshu},
+           giveni={S\bibinitperiod}}}%
+        {{hash=2b63d2d6a62bfbb27f0d59b243bd6468}{%
+           family={Tonai},
+           familyi={T\bibinitperiod},
+           given={Ken},
+           giveni={K\bibinitperiod}}}%
+        {{hash=942a8636caec27a25049753c6f57f9c1}{%
+           family={Nunomiya},
+           familyi={N\bibinitperiod},
+           given={Shin},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{8080b4c5f39258b546be18fdc0c914c8}
+      \strng{fullhash}{8080b4c5f39258b546be18fdc0c914c8}
+      \strng{fullhashraw}{8080b4c5f39258b546be18fdc0c914c8}
+      \strng{bibnamehash}{8080b4c5f39258b546be18fdc0c914c8}
+      \strng{authorbibnamehash}{8080b4c5f39258b546be18fdc0c914c8}
+      \strng{authornamehash}{8080b4c5f39258b546be18fdc0c914c8}
+      \strng{authorfullhash}{8080b4c5f39258b546be18fdc0c914c8}
+      \strng{authorfullhashraw}{8080b4c5f39258b546be18fdc0c914c8}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{BACKGROUND: Most ventilators measure airway occlusion pressure (occlusion P0.1) by occluding the breathing circuit; however, some ventilators can predict P0.1 for each breath without occlusion. Nevertheless, few studies have verified the accuracy of continuous P0.1 measurement. The aim of this study was to evaluate the accuracy of continuous P0.1 measurement compared with that of occlusion methods for various ventilators using a lung simulator. METHODS: A total of 42 breathing patterns were validated using a lung simulator in combination with 7 different inspiratory muscular pressures and 3 different rise rates to simulate normal and obstructed lungs. PB980 and Dräger V500 ventilators were used to obtain occlusion P0.1 measurements. The occlusion maneuver was performed on the ventilator, and a corresponding reference P0.1 was recorded from the ASL5000 breathing simulator simultaneously. Hamilton-C6, Hamilton-G5, and Servo-U ventilators were used to obtain sustained P0.1 measurements (continuous P0.1). The reference P0.1 measured with the simulator was analyzed by using a Bland-Altman plot. RESULTS: The 2 lung mechanical models capable of measuring occlusion P0.1 yielded values equivalent to reference P0.1 (bias and precision values were 0.51 and 1.06, respectively, for the Dräger V500, and were 0.54 and 0.91, respectively, for the PB980). Continuous P0.1 for the Hamilton-C6 was underestimated in both the normal and obstructive models (bias and precision values were -2.13 and 1.91, respectively), whereas continuous P0.1 for the Servo-U was underestimated only in the obstructive model (bias and precision values were -0.86 and 1.76, respectively). Continuous P0.1 for the Hamilton-G5 was mostly similar to but less accurate than occlusion P0.1 (bias and precision values were 1.62 and 2.06, respectively). CONCLUSIONS: The accuracy of continuous P0.1 measurements varies based on the characteristics of the ventilator and should be interpreted by considering the characteristics of each system. Moreover, measurements obtained with an occluded circuit could be desirable for determining the true P0.1.}
+      \field{eprinttype}{pubmed}
+      \field{issn}{1943-3654}
+      \field{journaltitle}{Respiratory Care}
+      \field{langid}{english}
+      \field{month}{10}
+      \field{number}{10}
+      \field{shortjournal}{Respir Care}
+      \field{shorttitle}{Bias and {{Precision}} of {{Continuous P0}}.1 {{Measurement}} by {{Various Ventilators}}}
+      \field{title}{Bias and {{Precision}} of {{Continuous P0}}.1 {{Measurement}} by {{Various Ventilators}}: {{A Simulation Study}}}
+      \field{volume}{68}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{pages}{1393\bibrangedash 1399}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.4187/respcare.10755
+      \endverb
+      \verb{eprint}
+      \verb 37221083
+      \endverb
+      \verb{file}
+      \verb /home/nicolas/Zotero/storage/U3HL8LGU/Katayama et al. - 2023 - Bias and Precision of Continuous P0.1 Measurement by Various Ventilators A Simulation Study.pdf
+      \endverb
+      \keyw{airway occlusion pressure,bench test,Computer Simulation,Equipment Design,Humans,Lung,lung simulator,mechanical ventilation,P0.1; respiratory drive,Respiration Artificial,ventilator circuit,Ventilators Mechanical,work of breathing}
+    \endentry
+    \entry{miao2022}{article}{}{}
+      \name{author}{9}{}{%
+        {{hash=f34fb4098d80a1ede2d2589d9c23b23c}{%
+           family={Miao},
+           familyi={M\bibinitperiod},
+           given={Ming-Yue},
+           giveni={M\bibinithyphendelim Y\bibinitperiod}}}%
+        {{hash=06debc36f6b61a405e8f0da1c7ccd6ca}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Wei},
+           giveni={W\bibinitperiod}}}%
+        {{hash=35fba5dbfe16b1153b2392c038c39b6d}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Yi-Min},
+           giveni={Y\bibinithyphendelim M\bibinitperiod}}}%
+        {{hash=05bab662b4b5fb084eb0b191acbb651e}{%
+           family={Gao},
+           familyi={G\bibinitperiod},
+           given={Ran},
+           giveni={R\bibinitperiod}}}%
+        {{hash=e3de4974412a0cfde62e321882495fc6}{%
+           family={Song},
+           familyi={S\bibinitperiod},
+           given={De-Jing},
+           giveni={D\bibinithyphendelim J\bibinitperiod}}}%
+        {{hash=463e351651e16bf1993dfd8585499630}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Shu-Peng},
+           giveni={S\bibinithyphendelim P\bibinitperiod}}}%
+        {{hash=fc62f88071bfb0855cd2bac5d685c9f8}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Yan-Lin},
+           giveni={Y\bibinithyphendelim L\bibinitperiod}}}%
+        {{hash=13d7f55eeb497949ff689c445bce04a2}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Linlin},
+           giveni={L\bibinitperiod}}}%
+        {{hash=62c8d630418bd31b0c52029889e98a3f}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Jian-Xin},
+           giveni={J\bibinithyphendelim X\bibinitperiod}}}%
+      }
+      \strng{namehash}{80e37c0c74aa418b1d117798d13b4faf}
+      \strng{fullhash}{3cf9864d84b04cd0650a8c686b2c48a9}
+      \strng{fullhashraw}{3cf9864d84b04cd0650a8c686b2c48a9}
+      \strng{bibnamehash}{80e37c0c74aa418b1d117798d13b4faf}
+      \strng{authorbibnamehash}{80e37c0c74aa418b1d117798d13b4faf}
+      \strng{authornamehash}{80e37c0c74aa418b1d117798d13b4faf}
+      \strng{authorfullhash}{3cf9864d84b04cd0650a8c686b2c48a9}
+      \strng{authorfullhashraw}{3cf9864d84b04cd0650a8c686b2c48a9}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Background Bedside assessment of low levels of inspiratory effort, which are probably insufficient to prevent muscle atrophy, is challenging. The flow index, which is derived from the analysis of the inspiratory portion of the flow–time waveform, has been recently introduced as a non-invasive parameter to evaluate the inspiratory effort. The primary objective of the present study was to provide an external validation of the flow index to detect low inspiratory effort. Methods Datasets containing flow, airway pressure, and esophageal pressure (Pes)–time waveforms were obtained from a previously published study in 100 acute brain-injured patients undergoing pressure support ventilation. Waveforms data were analyzed offline. A low inspiratory effort was defined by one of the following criteria, work of breathing (WOB) less than 0.3~J/L, Pes–time product (PTPes) per minute less than 50~cmH2O•s/min, or inspiratory muscle pressure (Pmus) less than 5~cmH2O, adding “or occurrence of ineffective effort more than 10\%” for all criteria. The flow index was calculated according to previously reported method. The association of flow index with Pes-derived parameters of effort was investigated. The diagnostic accuracy of the flow index to detect low effort was analyzed. Results Moderate correlations were found between flow index and WOB, Pmus, and PTPes per breath and per minute (Pearson’s correlation coefficients ranged from 0.546 to 0.634, P\,{$<$}\,0.001). The incidence of low inspiratory effort was 62\%, 51\%, and 55\% using the definition of WOB, PTPes per minute, and Pmus, respectively. The area under the receiver operating characteristic curve for flow index to diagnose low effort was 0.88, 0.81, and 0.88, for the three respective definition. By using the cutoff value of flow index less than 2.1, the diagnostic performance for the three definitions showed sensitivity of 0.95–0.96, specificity of 0.57–0.71, positive predictive value of 0.70–0.84, and negative predictive value of 0.90–0.93. Conclusions The flow index is associated with Pes-based inspiratory effort measurements. Flow index can be used as a valid instrument to screen low inspiratory effort with a high probability to exclude cases without the condition.}
+      \field{day}{26}
+      \field{eprinttype}{pubmed}
+      \field{issn}{2110-5820}
+      \field{journaltitle}{Annals of Intensive Care}
+      \field{month}{9}
+      \field{shortjournal}{Ann Intensive Care}
+      \field{title}{Validation of the Flow Index to Detect Low Inspiratory Effort during Pressure Support Ventilation}
+      \field{urlday}{18}
+      \field{urlmonth}{7}
+      \field{urlyear}{2024}
+      \field{volume}{12}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{89}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1186/s13613-022-01063-z
+      \endverb
+      \verb{eprint}
+      \verb 36161543
+      \endverb
+      \verb{file}
+      \verb /home/nicolas/Zotero/storage/V4WFFW4D/Miao et al. - 2022 - Validation of the flow index to detect low inspira.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9510081/
+      \endverb
+      \verb{url}
+      \verb https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9510081/
+      \endverb
+    \endentry
+    \entry{pletsch-assuncao2018}{article}{}{}
+      \name{author}{7}{}{%
+        {{hash=297df0c453f7b58b7a3570ab16a2d0c4}{%
+           family={Pletsch-Assuncao},
+           familyi={P\bibinithyphendelim A\bibinitperiod},
+           given={Renata},
+           giveni={R\bibinitperiod}}}%
+        {{hash=525ce88ff41d6a1eaeb2b60602083d8e}{%
+           family={Caleffi\bibnamedelima Pereira},
+           familyi={C\bibinitperiod\bibinitdelim P\bibinitperiod},
+           given={Mayra},
+           giveni={M\bibinitperiod}}}%
+        {{hash=476596420be9e11943599df0fdb80d02}{%
+           family={Ferreira},
+           familyi={F\bibinitperiod},
+           given={Jeferson\bibnamedelima George},
+           giveni={J\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=eb36eb70ee8855712723dffa3b337729}{%
+           family={Cardenas},
+           familyi={C\bibinitperiod},
+           given={Letícia\bibnamedelima Zumpano},
+           giveni={L\bibinitperiod\bibinitdelim Z\bibinitperiod}}}%
+        {{useprefix=true,hash=fc098e5d444927c728275ac50bf89558}{%
+           family={Albuquerque},
+           familyi={A\bibinitperiod},
+           given={André\bibnamedelimb Luis\bibnamedelima Pereira},
+           giveni={A\bibinitperiod\bibinitdelim L\bibinitperiod\bibinitdelim P\bibinitperiod},
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+        {{useprefix=true,hash=1a26cd03d8d4dd60710db68fa346cfce}{%
+           family={Carvalho},
+           familyi={C\bibinitperiod},
+           given={Carlos\bibnamedelimb Roberto\bibnamedelima Ribeiro},
+           giveni={C\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim R\bibinitperiod},
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+        {{hash=6da1b93a917c34b5294d180a64e50fd1}{%
+           family={Caruso},
+           familyi={C\bibinitperiod},
+           given={Pedro},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{7962a8d948ceb1a333df401edac425fc}
+      \strng{fullhash}{19b5722b5c39fd58e9b9c81ba46ac8fa}
+      \strng{fullhashraw}{19b5722b5c39fd58e9b9c81ba46ac8fa}
+      \strng{bibnamehash}{7962a8d948ceb1a333df401edac425fc}
+      \strng{authorbibnamehash}{7962a8d948ceb1a333df401edac425fc}
+      \strng{authornamehash}{7962a8d948ceb1a333df401edac425fc}
+      \strng{authorfullhash}{19b5722b5c39fd58e9b9c81ba46ac8fa}
+      \strng{authorfullhashraw}{19b5722b5c39fd58e9b9c81ba46ac8fa}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Objective:~ Evaluate the accuracy of criteria for diagnosing pressure overassistance during pressure support ventilation. Design:~ Prospective clinical study. Setting:~ Medical-surgical ICU. Patients:~ Adults under mechanical ventilation for 48 hours or more using pressure support ventilation and without any sedative for 6 hours or more. Overassistance was defined as the occurrence of work of breathing less than 0.3 J/L or 10\% or more of ineffective inspiratory effort. Two alternative overassistance definitions were based on the occurrence of inspiratory esophageal pressure-time product of less than 50 cm H2O s/min or esophageal occlusion pressure of less than 1.5 cm H2O. Interventions:~ The pressure support was set to 20 cm H2O and decreased in 3-cm H2O steps down to 2 cm H2O. Measurements and Main Results:~ The following parameters were evaluated to diagnose overassistance: respiratory rate, tidal volume, minute ventilation, peripheral arterial oxygen saturation, rapid shallow breathing index, heart rate, mean arterial pressure, change in esophageal pressure during inspiration, and esophageal and airway occlusion pressure. In all definitions, the respiratory rate had the greatest accuracy for diagnosing overassistance (receiver operating characteristic area = 0.92; 0.91 and 0.76 for work of breathing, pressure-time product and esophageal occlusion pressure in definition, respectively) and always with a cutoff of 17 incursions per minute. In all definitions, a respiratory rate of less than or equal to 12 confirmed overassistance (100\% specificity), whereas a respiratory rate of greater than or equal to 30 excluded overassistance (100\% sensitivity). Conclusion:~ A respiratory rate of 17 breaths/min is the parameter with the greatest accuracy for diagnosing overassistance. Respiratory rates of less than or equal to 12 or greater than or equal to 30 are useful clinical references to confirm or exclude pressure support overassistance.}
+      \field{issn}{0090-3493}
+      \field{journaltitle}{Critical Care Medicine}
+      \field{langid}{american}
+      \field{month}{3}
+      \field{number}{3}
+      \field{title}{Accuracy of {{Invasive}} and {{Noninvasive Parameters}} for {{Diagnosing Ventilatory Overassistance During Pressure Support Ventilation}}*}
+      \field{urlday}{18}
+      \field{urlmonth}{7}
+      \field{urlyear}{2024}
+      \field{volume}{46}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{411}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1097/CCM.0000000000002871
+      \endverb
+      \verb{file}
+      \verb /home/nicolas/Zotero/storage/DVHGJKAU/Accuracy_of_Invasive_and_Noninvasive_Parameters.epub;/home/nicolas/Zotero/storage/EE4XBCW3/accuracy_of_invasive_and_noninvasive_parameters.9.pdf;/home/nicolas/Zotero/storage/RPX3TGZZ/accuracy_of_invasive_and_noninvasive_parameters.9.html
+      \endverb
+      \verb{urlraw}
+      \verb https://journals.lww.com/ccmjournal/abstract/2018/03000/accuracy_of_invasive_and_noninvasive_parameters.9.aspx
+      \endverb
+      \verb{url}
+      \verb https://journals.lww.com/ccmjournal/abstract/2018/03000/accuracy_of_invasive_and_noninvasive_parameters.9.aspx
+      \endverb
+    \endentry
+    \entry{yang2023}{article}{}{}
+      \name{author}{11}{}{%
+        {{hash=fc62f88071bfb0855cd2bac5d685c9f8}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Yan-Lin},
+           giveni={Y\bibinithyphendelim L\bibinitperiod}}}%
+        {{hash=621013bf54d3546375ad71f17f020b5b}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Yang},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=05bab662b4b5fb084eb0b191acbb651e}{%
+           family={Gao},
+           familyi={G\bibinitperiod},
+           given={Ran},
+           giveni={R\bibinitperiod}}}%
+        {{hash=e3de4974412a0cfde62e321882495fc6}{%
+           family={Song},
+           familyi={S\bibinitperiod},
+           given={De-Jing},
+           giveni={D\bibinithyphendelim J\bibinitperiod}}}%
+        {{hash=35fba5dbfe16b1153b2392c038c39b6d}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Yi-Min},
+           giveni={Y\bibinithyphendelim M\bibinitperiod}}}%
+        {{hash=f34fb4098d80a1ede2d2589d9c23b23c}{%
+           family={Miao},
+           familyi={M\bibinitperiod},
+           given={Ming-Yue},
+           giveni={M\bibinithyphendelim Y\bibinitperiod}}}%
+        {{hash=06debc36f6b61a405e8f0da1c7ccd6ca}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Wei},
+           giveni={W\bibinitperiod}}}%
+        {{hash=463e351651e16bf1993dfd8585499630}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Shu-Peng},
+           giveni={S\bibinithyphendelim P\bibinitperiod}}}%
+        {{hash=9ad3cf309b303e98946948327b5fb70d}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Yue-Fu},
+           giveni={Y\bibinithyphendelim F\bibinitperiod}}}%
+        {{hash=13d7f55eeb497949ff689c445bce04a2}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Linlin},
+           giveni={L\bibinitperiod}}}%
+        {{hash=62c8d630418bd31b0c52029889e98a3f}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Jian-Xin},
+           giveni={J\bibinithyphendelim X\bibinitperiod}}}%
+      }
+      \strng{namehash}{a2c243bfc87c7c76f2871cc7cccd56ac}
+      \strng{fullhash}{f3b1780b04e699ed2be39f16e986a691}
+      \strng{fullhashraw}{f3b1780b04e699ed2be39f16e986a691}
+      \strng{bibnamehash}{a2c243bfc87c7c76f2871cc7cccd56ac}
+      \strng{authorbibnamehash}{a2c243bfc87c7c76f2871cc7cccd56ac}
+      \strng{authornamehash}{a2c243bfc87c7c76f2871cc7cccd56ac}
+      \strng{authorfullhash}{f3b1780b04e699ed2be39f16e986a691}
+      \strng{authorfullhashraw}{f3b1780b04e699ed2be39f16e986a691}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Background Assessment of the patient’s respiratory effort is essential during assisted ventilation. We aimed to evaluate the accuracy of airway pressure (Paw)-based indices to detect potential injurious inspiratory effort during pressure support (PS) ventilation. Methods In this prospective diagnostic accuracy study conducted in four ICUs in two academic hospitals, 28 adult acute respiratory failure patients undergoing PS ventilation were enrolled. A downward PS titration was conducted from 20 cmH2O to 2 cmH2O at a 2 cmH2O interval. By performing an end-expiratory airway occlusion maneuver, the negative Paw generated during the first 100~ms (P0.1) and the maximal negative swing of Paw (∆Pocc) were measured. After an end-inspiratory airway occlusion, Paw reached a plateau, and the magnitude of change in plateau from peak Paw was measured as pressure muscle index (PMI). Esophageal pressure was monitored and inspiratory muscle pressure (Pmus) and Pmus–time product per minute (PTPmus/min) were used as the reference standard for the patient’s effort. High and low effort was defined as Pmus\,{$>$}\,10 and\,{$<$}\,5 cmH2O, or PTPmus/min\,{$>$}\,200 and\,{$<$}\,50 cmH2O s min−1, respectively. Results A total of 246 levels of PS were tested. The low inspiratory effort was diagnosed in 145 (59.0\%) and 136 (55.3\%) PS levels using respective Pmus and PTPmus/min criterion. The receiver operating characteristic area of the three Paw-based indices by the respective two criteria ranged from 0.87 to 0.95, and balanced sensitivity (0.83–0.96), specificity (0.74–0.88), and positive (0.80–0.91) and negative predictive values (0.78–0.94) were obtained. The high effort was diagnosed in 34 (13.8\%) and 17 (6.9\%) support levels using Pmus and PTPmus/min criterion, respectively. High receiver operating characteristic areas of the three Paw-based indices by the two criteria were found (0.93–0.95). A high sensitivity (0.80–1.00) and negative predictive value (0.97–1.00) were found with a low positive predictive value (0.23–0.64). Conclusions By performing simple airway occlusion maneuvers, the Paw-based indices could be reliably used to detect low inspiratory efforts. Non-invasive and easily accessible characteristics support their potential bedside use for avoiding over-assistance. More evaluation of their performance is required in cohorts with high effort. Supplementary Information The online version contains supplementary material available at 10.1186/s13613-023-01209-7.}
+      \field{day}{13}
+      \field{eprinttype}{pubmed}
+      \field{issn}{2110-5820}
+      \field{journaltitle}{Annals of Intensive Care}
+      \field{month}{11}
+      \field{shortjournal}{Ann Intensive Care}
+      \field{shorttitle}{Use of Airway Pressure-Based Indices to Detect High and Low Inspiratory Effort during Pressure Support Ventilation}
+      \field{title}{Use of Airway Pressure-Based Indices to Detect High and Low Inspiratory Effort during Pressure Support Ventilation: A Diagnostic Accuracy Study}
+      \field{urlday}{28}
+      \field{urlmonth}{8}
+      \field{urlyear}{2024}
+      \field{volume}{13}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{111}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1186/s13613-023-01209-7
+      \endverb
+      \verb{eprint}
+      \verb 37955842
+      \endverb
+      \verb{file}
+      \verb /home/nicolas/Zotero/storage/5GMQU8B9/Yang et al. - 2023 - Use of airway pressure-based indices to detect high and low inspiratory effort during pressure suppo.pdf;/home/nicolas/Zotero/storage/QXKB96C2/13613_2023_1209_MOESM1_ESM.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10643759/
+      \endverb
+      \verb{url}
+      \verb https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10643759/
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
