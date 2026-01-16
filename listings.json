@@ -1,5 +1,9 @@
 [
   {
+    "listing": "/diapo.html",
+    "items": []
+  },
+  {
     "listing": "/presentations.html",
     "items": [
       "/billets/PAV+/article.html"
@@ -14,10 +18,6 @@
       "/billets/vdrmoyenne/vdrmoyen.html",
       "/billets/bohr/christian_bohr.html"
     ]
-  },
-  {
-    "listing": "/diapo.html",
-    "items": []
   },
   {
     "listing": "/projets.html",
