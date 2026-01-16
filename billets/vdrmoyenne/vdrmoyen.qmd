@@ -174,7 +174,7 @@ protocolsPlots = {
 ```
 
 ```{ojs}
-sv = import("https://progrt.github.io/simvent.js/src/simvent.js");
+sv = import("https://cdn.jsdelivr.net/gh/progrt/simvent.js@3.3/src/simvent.js");
 //va = import('https://progrt.github.io/simvent.js/src/vdrSignalAnalysis.js');
 va = import('../../js/vdrSignalAnalysis.js');
 

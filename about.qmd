@@ -1,0 +1,26 @@
+---
+title: Nicolas Blais St-Laurent
+about:
+  template: jolla
+  links:
+    - icon: email
+      text: email
+      href: mailto:nicolas.blais.stlaurent@gmail.com
+---
+
+Je suis inhalothérapeute depuis `{ojs} Experience` ans, à l'emploi du Centre hospitalier de
+l'Université de Montréal depuis `{ojs} Anciennete` ans.
+
+Je suis pasionné de ventilation mécanique avec un intérèt
+particulier pour les interactions patient - ventilateur.
+
+```{ojs}
+//| echo: false
+
+DebutCariere = new Date('2004-06-01');
+EmbaucheCHUM = new Date('2006-05-01');
+Maintenant = new Date();
+
+Experience = Maintenant.getFullYear() - DebutCariere.getFullYear();
+Anciennete = Maintenant.getFullYear() - EmbaucheCHUM.getFullYear();
+```

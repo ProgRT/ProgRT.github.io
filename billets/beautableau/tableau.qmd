@@ -1,0 +1,30 @@
+---
+title: Débit total d'un système Venturi
+code-fold: true
+draft: true
+---
+
+```{R}
+DebitTotal <- function(DebitO2, FiO2) {
+  DebitO2/((FiO2 - .21)/.79)
+}
+
+createFlowMatrix <- function(DebitO2, FiO2){
+
+  m <- outer(DebitO2, FiO2, DebitTotal)
+  m <- round(m)
+  m[m > 100] <- "-"
+  colnames(m) <- FiO2
+  rownames(m) <- DebitO2
+
+  m
+}
+
+FiO2 <- c(.24, .28, .31, .35, .4, .5)
+knitr::kable(
+  createFlowMatrix(DebitO2=1:15, FiO2),
+  digits=0,
+  row.names=TRUE,
+  align="ccccccc"
+)
+```
