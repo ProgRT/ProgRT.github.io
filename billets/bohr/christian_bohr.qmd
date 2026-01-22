@@ -11,10 +11,10 @@ bibliography: bibliographie.bib
 lang: fr
 format:
   html: default
-  pdf:
-    header-includes: |
-      \usepackage{newunicodechar}
-      \newunicodechar{₂}{\textsubscript{2}}
+#  pdf:
+#    header-includes: |
+#      \usepackage{newunicodechar}
+#      \newunicodechar{₂}{\textsubscript{2}}
 ---
 
 Je dois presque tout ce que je sais au sujet du physiologiste danois
