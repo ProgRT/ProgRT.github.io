@@ -4,17 +4,28 @@
     "href": "calculatrices.html",
     "title": "Calculatrices respiratoires",
     "section": "",
-    "text": "Contenu sanguin en oxygène\n\n\n\n\n\n\n\n\n12 févr. 2024\n\n\n\n\n\n\n\n\n\n\n\n\nDilution Air - Oxygène\n\n\n\n\n\n\n\n\n12 avr. 2020\n\n\n\n\n\n\n\n\n\n\n\n\nEspace mort\n\n\nCalcul de l’espace mort à partir du VcCO₂\n\n\n\n\n\n22 juil. 2023\n\n\n\n\n\n\n\n\n\n\n\n\nEspace mort prédit\n\n\nÀ partir des données anthropo-démographiques\n\n\n\n\n\n11 sept. 2023\n\n\n\n\n\n\n\n\n\n\n\n\nFréquence respiratoire requise\n\n\nEn fonctoin du pH souhaité\n\n\n\n\n\n28 juil. 2025\n\n\n\n\n\n\n\n\n\n\n\n\nPoids prédit\n\n\n\n\n\n\n\n\n12 déc. 2022\n\n\n\n\n\n\n\n\n\n\n\n\nRatio ventilatoire\n\n\nÉvaluation de l’espace mort et stratification des SDRA\n\n\n\n\n\n14 déc. 2022\n\n\n\n\n\n\n\n\n\n\n\n\nTest d’occlusion\n\n\nValidation du positionnement d’un ballon oesophagien\n\n\n\n\n\n28 nov. 2025\n\n\n\n\n\n\n\n\n\n\n\n\nTravail respiratoire en PAV+\n\n\nCalcul de la PmusP_{mus} et du travail respiratoire en joules par minute\n\n\n\n\n\n3 oct. 2025\n\n\n\n\n\n\n\n\n\n\n\n\nÉquation de Handerson-Hasselbalch\n\n\n\n\n\n\n\n\n22 déc. 2022\n\n\n\n\n\nAucun article correspondant"
+    "text": "Contenu sanguin en oxygène\n\n\n\n\n\n\n\n\n12 févr. 2024\n\n\n\n\n\n\n\n\n\n\n\n\nDilution Air - Oxygène\n\n\n\n\n\n\n\n\n12 avr. 2020\n\n\n\n\n\n\n\n\n\n\n\n\nEspace mort\n\n\nCalcul de l’espace mort à partir du VcCO₂\n\n\n\n\n\n22 juil. 2023\n\n\n\n\n\n\n\n\n\n\n\n\nEspace mort prédit\n\n\nÀ partir des données anthropo-démographiques\n\n\n\n\n\n11 sept. 2023\n\n\n\n\n\n\n\n\n\n\n\n\nFréquence respiratoire requise\n\n\nEn fonctoin du pH souhaité\n\n\n\n\n\n28 juil. 2025\n\n\n\n\n\n\n\n\n\n\n\n\nPoids prédit\n\n\n\n\n\n\n\n\n12 déc. 2022\n\n\n\n\n\n\n\n\n\n\n\n\nRatio ventilatoire\n\n\nÉvaluation de l’espace mort et stratification des SDRA\n\n\n\n\n\n14 déc. 2022\n\n\n\n\n\n\n\n\n\n\n\n\nSuper calculatrice respiratoire\n\n\nPrédiction du poids, de la ventilation par minute, de l’espace mort et calcul du ratio ventilatoire\n\n\n\n\n\n31 janv. 2026\n\n\n\n\n\n\n\n\n\n\n\n\nTest d’occlusion\n\n\nValidation du positionnement d’un ballon oesophagien\n\n\n\n\n\n28 nov. 2025\n\n\n\n\n\n\n\n\n\n\n\n\nTravail respiratoire en PAV+\n\n\nCalcul de la PmusP_{mus} et du travail respiratoire en joules par minute\n\n\n\n\n\n3 oct. 2025\n\n\n\n\n\n\n\n\n\n\n\n\nÉquation de Handerson-Hasselbalch\n\n\n\n\n\n\n\n\n22 déc. 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAucun article correspondant"
   },
   {
-    "objectID": "calculatrices/travail.html",
-    "href": "calculatrices/travail.html",
-    "title": "Travail respiratoire en PAV+",
+    "objectID": "calculatrices/test.html",
+    "href": "calculatrices/test.html",
+    "title": "Carnet de Nicolas",
     "section": "",
-    "text": "Calcul",
+    "text": "l = import('./malibrairie.js');\nl.saluer()",
     "crumbs": [
       "Calculatrices",
-      "Travail respiratoire en PAV+"
+      "Test"
+    ]
+  },
+  {
+    "objectID": "calculatrices/handerson-hasselbalch.html",
+    "href": "calculatrices/handerson-hasselbalch.html",
+    "title": "Équation de Handerson-Hasselbalch",
+    "section": "",
+    "text": "pHPCO2PCO_2HCO3−HCO_3^-Cadre de référence\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLa forme générale de l’équation de Henderson–Hasselbalch est :\npH=pKa+log10([Base][Acid])pH=pK_a + log_{10}\\big(\\frac{[Base]}{[Acid]}\\big)\nDans le plasma sanguin, the pH peut être calculé par :\npH=6.1+log10[HCO3−]0.03×PaCO2pH=6.1 + log_{10}\\frac{[HCO3^-]}{0.03 \\times P_aCO_2}\nL’équation peut être résolue pour la PaCO₂:\nPaCO2=[HCO3−]10(pH−6.1)×0.03P_aCO_2 = \\frac{[HCO3^-]}{10^{(pH - 6.1)} \\times 0.03}\nAinsi que pour les ions bicarbonate:\n[HCO3]=PCO2×10pH−pKa×0.03[HCO_3] = P_{CO_2} \\times 10^{pH - pKa} \\times 0.03\nRéférence: Wikipedia - Henderson–Hasselbalch equation",
+    "crumbs": [
+      "Calculatrices",
+      "Équation de Handerson-Hasselbalch"
     ]
   },
   {
@@ -122,14 +133,14 @@
     "href": "index.html",
     "title": "Billets",
     "section": "",
-    "text": "Apprivoiser le mode PAV+\n\n\n\n\n\nLe mode PAV+ est un mode de ventilation spontanée continue facile à utiliser qui adapte automatiquement l’aide fournie au patient à son travail respiratoire. Cet article vise à fournir quelques clés pour faciliter son adoption.\n\n\n\n\n\n31 janv. 2026\n\n\n\n\n\n\n\n\n\n\n\n\nDoser l’aide inspiratoire\n\n\n\n\n\nOn reconnait de plus en plus l’importance de prévenir la dysfonction diaphragmatique induite par le ventilateur. Les données les plus récentes suggèrent qu’une activité diaphragmatique excessive ou insuffisante élevé est un facteur déterminant dans le développement d’une dysfonction diaphragmatique chez les patients ventilés mécaniquement. L’ajustement de l’aide inspiratoire doit par conséquent se faire en visant le maintien d’une activité diaphragmatique adéquate.\n\n\n\n\n\n17 nov. 2024\n\n\n\n\n\n\n\n\n\n\n\n\nAjustement du Tbas en APRV\n\n\n\n\n\nLe protocole Time Controled Adaptative Ventilation requier de régler des temps expiratoire assez court pour que l’expiration prenne fin lorsque le débit expiratoire a atteint 75 % du débit expiratoire de pointe.\nLe simulateur suivant permet d’expérimenter l’influence de la compliance et des résistances du poumon sur le temps expiratoire à régler pour atteindre cet objectif.\n\n\n\n\n\n31 janv. 2024\n\n\n\n\n\n\n\n\n\n\n\n\nPressions monitorées lors de la ventilation percussive\n\n\n\n\n\nLors de la ventilation percussive, les variations de pressions mesurées dans le circuit du ventilateur sont en très grande partie dissipées en chaleur par les résistances des voies aériennes. Les pressions moyennes pourraient sembler une mesure plus représentative des variation de pression subies par le poumon. Mais elles ne sont pas non plus dépourvues de limitations.\n\n\n\n\n\n29 déc. 2023\n\n\n\n\n\n\n\n\n\n\n\n\nChristian Bohr était dans les patates\n\n\nMais pas au sujet de l’espace mort\n\n\nLe physiologiste danais Christian Bohr est connu pour sa formule – encore utilisée à ce jour – permettant de calculer l’espace mort du système respiratoire. Mais il n’a pas visé aussi juste pour tout les aspects de la physiologie respiratoire.\n\n\n\n\n\n1 oct. 2023\n\n\n\n\n\nAucun article correspondant"
+    "text": "Apprivoiser le mode PAV+\n\n\n\n\n\nLe mode PAV+ est un mode de ventilation spontanée continue facile à utiliser qui adapte automatiquement l’aide fournie au patient à son travail respiratoire. Cet article vise à fournir quelques clés pour faciliter son adoption.\n\n\n\n\n\n2 févr. 2026\n\n\n\n\n\n\n\n\n\n\n\n\nDoser l’aide inspiratoire\n\n\n\n\n\nOn reconnait de plus en plus l’importance de prévenir la dysfonction diaphragmatique induite par le ventilateur. Les données les plus récentes suggèrent qu’une activité diaphragmatique excessive ou insuffisante élevé est un facteur déterminant dans le développement d’une dysfonction diaphragmatique chez les patients ventilés mécaniquement. L’ajustement de l’aide inspiratoire doit par conséquent se faire en visant le maintien d’une activité diaphragmatique adéquate.\n\n\n\n\n\n17 nov. 2024\n\n\n\n\n\n\n\n\n\n\n\n\nAjustement du Tbas en APRV\n\n\n\n\n\nLe protocole Time Controled Adaptative Ventilation requier de régler des temps expiratoire assez court pour que l’expiration prenne fin lorsque le débit expiratoire a atteint 75 % du débit expiratoire de pointe.\nLe simulateur suivant permet d’expérimenter l’influence de la compliance et des résistances du poumon sur le temps expiratoire à régler pour atteindre cet objectif.\n\n\n\n\n\n31 janv. 2024\n\n\n\n\n\n\n\n\n\n\n\n\nPressions monitorées lors de la ventilation percussive\n\n\n\n\n\nLors de la ventilation percussive, les variations de pressions mesurées dans le circuit du ventilateur sont en très grande partie dissipées en chaleur par les résistances des voies aériennes. Les pressions moyennes pourraient sembler une mesure plus représentative des variation de pression subies par le poumon. Mais elles ne sont pas non plus dépourvues de limitations.\n\n\n\n\n\n29 déc. 2023\n\n\n\n\n\n\n\n\n\n\n\n\nChristian Bohr était dans les patates\n\n\nMais pas au sujet de l’espace mort\n\n\nLe physiologiste danais Christian Bohr est connu pour sa formule – encore utilisée à ce jour – permettant de calculer l’espace mort du système respiratoire. Mais il n’a pas visé aussi juste pour tout les aspects de la physiologie respiratoire.\n\n\n\n\n\n1 oct. 2023\n\n\n\n\n\nAucun article correspondant"
   },
   {
     "objectID": "presentations.html",
     "href": "presentations.html",
     "title": "Présentations",
     "section": "",
-    "text": "Apprivoiser le mode PAV+\n\n\n\n\n\nLe mode PAV+ est un mode de ventilation spontanée continue facile à utiliser qui adapte automatiquement l’aide fournie au patient à son travail respiratoire. Cet article vise à fournir quelques clés pour faciliter son adoption.\n\n\n\n\n\n31 janv. 2026\n\n\n\n\n\n\n\n\n\n\n\n\nDoser l’aide inspiratoire\n\n\nCibles et outils cliniques\n\n\n\n\n\n\n\n24 oct. 2024\n\n\n\n\n\n\n\n\n\n\n\n\nZones d’ombre du NAVA\n\n\nEnjeux reliés à la filtration du signal EMGdi\n\n\n\n\n\n\n\n20 juil. 2022\n\n\n\n\n\n\n\n\n\n\n\n\nVentilation: quand le coeur s’en mêle\n\n\n\n\n\n\n\n\n\n\n9 mai 2022\n\n\n\n\n\n\n\n\n\n\n\n\nMode ventilatoire NAVA\n\n\n\n\n\n\n\n\n\n\n1 mars 2022\n\n\n\n\n\n\n\n\n\n\n\n\nFaux-positifs et faux-négatifs\n\n\nFailles de l’algorythme de déclenchement inspiratoire\n\n\n\n\n\n\n\n27 oct. 2021\n\n\n\n\n\n\n\n\n\n\n\n\nLe ventilateur VDR-4\n\n\nVentilation convective-diffusive\n\n\n\n\n\n\n\n1 sept. 2019\n\n\n\n\n\nAucun article correspondant"
+    "text": "Apprivoiser le mode PAV+\n\n\n\n\n\nLe mode PAV+ est un mode de ventilation spontanée continue facile à utiliser qui adapte automatiquement l’aide fournie au patient à son travail respiratoire. Cet article vise à fournir quelques clés pour faciliter son adoption.\n\n\n\n\n\n2 févr. 2026\n\n\n\n\n\nAucun article correspondant"
   },
   {
     "objectID": "diapo.html",
@@ -207,6 +218,17 @@
     ]
   },
   {
+    "objectID": "calculatrices/travail.html",
+    "href": "calculatrices/travail.html",
+    "title": "Travail respiratoire en PAV+",
+    "section": "",
+    "text": "Calcul",
+    "crumbs": [
+      "Calculatrices",
+      "Travail respiratoire en PAV+"
+    ]
+  },
+  {
     "objectID": "calculatrices/ratio_ventilatoire.html",
     "href": "calculatrices/ratio_ventilatoire.html",
     "title": "Ratio ventilatoire",
@@ -218,14 +240,14 @@
     ]
   },
   {
-    "objectID": "calculatrices/handerson-hasselbalch.html",
-    "href": "calculatrices/handerson-hasselbalch.html",
-    "title": "Équation de Handerson-Hasselbalch",
+    "objectID": "calculatrices/super_calculatrice.html",
+    "href": "calculatrices/super_calculatrice.html",
+    "title": "Super calculatrice respiratoire",
     "section": "",
-    "text": "pHPCO2PCO_2HCO3−HCO_3^-Cadre de référence\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLa forme générale de l’équation de Henderson–Hasselbalch est :\npH=pKa+log10([Base][Acid])pH=pK_a + log_{10}\\big(\\frac{[Base]}{[Acid]}\\big)\nDans le plasma sanguin, the pH peut être calculé par :\npH=6.1+log10[HCO3−]0.03×PaCO2pH=6.1 + log_{10}\\frac{[HCO3^-]}{0.03 \\times P_aCO_2}\nL’équation peut être résolue pour la PaCO₂:\nPaCO2=[HCO3−]10(pH−6.1)×0.03P_aCO_2 = \\frac{[HCO3^-]}{10^{(pH - 6.1)} \\times 0.03}\nAinsi que pour les ions bicarbonate:\n[HCO3]=PCO2×10pH−pKa×0.03[HCO_3] = P_{CO_2} \\times 10^{pH - pKa} \\times 0.03\nRéférence: Wikipedia - Henderson–Hasselbalch equation",
+    "text": "Poids et ventilation prédite\n\nimport { resultSpan } from \"@progrt/utilitaires\"\n\nfunction pbwDevine(cm, sexe = \"M\") {\n  let a = { M: 50, F: 45.5 };\n  return a[sexe] + 0.9 * (cm - 152);\n}\n\nviewof sexe =  Inputs.radio([\"M\", \"F\"], { label: \"Sexe\", value: null });\nviewof taille = Inputs.number({label: 'Taille (cm)', value: null});\n\npbw = pbwDevine(taille, sexe);\nresultSpan(pbw, 0, 'Poids prédit', 'kg');\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nventPredite = 0.1 * pbw;\nresultSpan(ventPredite, 1, 'Ventilation prédite', 'l/m');\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nfunction vtbl(pbw, t=d3.ticks(4, 8, 4)){\n    let factors = d3.ticks(4, 8, 4);\n    let vts = factors.map(f=&gt; Math.round(pbw*f));\n\n    const tbl = html`&lt;table class='table'&gt;\n    &lt;tr&gt;\n    ${factors.map(f=&gt;`&lt;th&gt;${f} ml/kg&lt;/th&gt;`)}\n    &lt;/tr&gt;\n    &lt;tr&gt;\n    ${vts.map(v=&gt;`&lt;td&gt;${Math.round(1000 * ventPredite/v)} x ${v} ml&lt;/td&gt;`)}\n    &lt;/tr&gt;\n    &lt;/table&gt;`;\n    return tbl;\n}\n\nisNaN(pbw) ? html`` : vtbl(pbw);\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEspace mort prédit\n\nfunction cpt(taille, poids, age, sexe){\n  const f = {\n    M: {a: -4.73, b: .0776, c: -0.019, d: 0},\n    F: {a: -6.35, b: .0738, c: 0, d: -0.016}\n  };\n  if(taille && poids && age && sexe){\n    \n    let {a, b, c, d} = f[sexe];\n    return a + b * taille + c * poids + d * age;\n  }\n\n}\n\nfunction VDphys(CPT, Vc, age) {\n  return -65.2 + 11.6 * CPT + 0.173 * Vc + 1.33 * age;\n} \nfunction VDaw(CPT, Vc) {\n  return 4.9 + 11.3 * CPT + 0.062 * Vc;\n}\nviewof poids =  Inputs.number({label: \"Poids (kg)\", value: null });\n\nviewof age = Inputs.number({label: 'Âge (Années)', value: null});\n\nviewof vc = Inputs.number({label: 'Volume courant (ml)', value: null});\n\ncptPredite = cpt(taille, poids, age, sexe);\nresultSpan(cptPredite, 3, 'CPT prédite', 'l');\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nresultSpan(VDphys(cptPredite, vc, age), 0, 'EM&lt;sub&gt;phys&lt;/sub&gt; prédit', 'ml', vc);\n\n\n\n\n\n\n\nresultSpan(VDaw(cptPredite, vc), 0, 'EM&lt;sub&gt;anat&lt;/sub&gt; prédit', 'ml', vc);\n\n\n\n\n\n\n\n\n\n\nRatio ventilatoire\n\nfunction ratioVent (ventMinute, PCO2, pbw) {\n  const PCO2pred = 37.5;\n  return (ventMinute * PCO2)/(.1 * pbw * PCO2pred);\n}\n\nviewof vact =  Inputs.number({label: \"Ventilation actuelle (l/m)\", value: null });\nviewof pact = Inputs.number({label: 'PCO₂ actuelle (mmHg)', value: null});\n\nresultSpan(ratioVent(vact, pact, pbw), 2, 'Ratio rentilatoire')",
     "crumbs": [
       "Calculatrices",
-      "Équation de Handerson-Hasselbalch"
+      "Super calculatrice respiratoire"
     ]
   }
 ]
