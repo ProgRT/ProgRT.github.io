@@ -39,5 +39,12 @@
    }
 
 .quarto-listing-default .quarto-post .metadata {
-  flex-basis: 10%;
+  flex-basis: 15%;
+}
+
+.sidebar-item {
+	line-height: 1.5em;
+}
+body.nav-sidebar #title-block-header {
+	margin-block-end: 1rem;
 }
