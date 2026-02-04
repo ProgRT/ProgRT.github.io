@@ -22,6 +22,7 @@
 		display: none;
 	}
 }
+
 /* --- Code corrigé pour Quarto Standard --- */
 
 /* 1. CIBLER LE LIEN SPÉCIFIQUE
@@ -37,3 +38,6 @@
    	content: "\f1e0";
    }
 
+.quarto-listing-default .quarto-post .metadata {
+  flex-basis: 10%;
+}

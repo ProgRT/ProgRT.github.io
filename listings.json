@@ -1,13 +1,7 @@
 [
   {
-    "listing": "/diapo.html",
+    "listing": "/projets.html",
     "items": []
-  },
-  {
-    "listing": "/presentations.html",
-    "items": [
-      "/billets/PAV+/article.html"
-    ]
   },
   {
     "listing": "/index.html",
@@ -20,7 +14,13 @@
     ]
   },
   {
-    "listing": "/projets.html",
+    "listing": "/presentations.html",
+    "items": [
+      "/billets/PAV+/article.html"
+    ]
+  },
+  {
+    "listing": "/diapo.html",
     "items": []
   },
   {
@@ -29,15 +29,11 @@
       "/calculatrices/contenu_sanguin.html",
       "/calculatrices/dilution_air_O2.html",
       "/calculatrices/espace_mort.html",
-      "/calculatrices/espace_mort_predit.html",
       "/calculatrices/frequence.html",
-      "/calculatrices/poids_predit.html",
-      "/calculatrices/ratio_ventilatoire.html",
       "/calculatrices/super_calculatrice.html",
       "/calculatrices/occlusion.html",
       "/calculatrices/travail.html",
-      "/calculatrices/handerson-hasselbalch.html",
-      "/calculatrices/test.html"
+      "/calculatrices/handerson-hasselbalch.html"
     ]
   }
 ]

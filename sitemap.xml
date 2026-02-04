@@ -1,95 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://respiratoire.ca/calculatrices/super_calculatrice.html</loc>
-    <lastmod>2026-02-03T14:37:15.367Z</lastmod>
+    <loc>https://respiratoire.ca/calculatrices/occlusion.html</loc>
+    <lastmod>2026-02-04T16:26:27.554Z</lastmod>
   </url>
   <url>
-    <loc>https://respiratoire.ca/calculatrices/test.html</loc>
-    <lastmod>2026-02-02T15:30:25.904Z</lastmod>
+    <loc>https://respiratoire.ca/calculatrices/super_calculatrice.html</loc>
+    <lastmod>2026-02-04T14:21:57.127Z</lastmod>
+  </url>
+  <url>
+    <loc>https://respiratoire.ca/calculatrices/dilution_air_O2.html</loc>
+    <lastmod>2026-02-04T13:34:53.690Z</lastmod>
+  </url>
+  <url>
+    <loc>https://respiratoire.ca/calculatrices/contenu_sanguin.html</loc>
+    <lastmod>2026-02-04T13:30:51.741Z</lastmod>
   </url>
   <url>
     <loc>https://respiratoire.ca/calculatrices/handerson-hasselbalch.html</loc>
     <lastmod>2026-01-31T03:25:35.820Z</lastmod>
   </url>
   <url>
-    <loc>https://respiratoire.ca/calculatrices/poids_predit.html</loc>
-    <lastmod>2026-01-31T03:14:20.943Z</lastmod>
-  </url>
-  <url>
-    <loc>https://respiratoire.ca/calculatrices/espace_mort.html</loc>
-    <lastmod>2026-01-31T03:06:02.356Z</lastmod>
-  </url>
-  <url>
-    <loc>https://respiratoire.ca/calculatrices/contenu_sanguin.html</loc>
-    <lastmod>2026-01-31T02:53:26.016Z</lastmod>
-  </url>
-  <url>
-    <loc>https://respiratoire.ca/calculatrices/occlusion.html</loc>
-    <lastmod>2026-01-31T02:38:15.553Z</lastmod>
-  </url>
-  <url>
-    <loc>https://respiratoire.ca/billets/bohr/christian_bohr.html</loc>
-    <lastmod>2026-01-16T19:56:29.429Z</lastmod>
-  </url>
-  <url>
-    <loc>https://respiratoire.ca/billets/tbas/tbas.html</loc>
-    <lastmod>2025-11-17T19:51:03.758Z</lastmod>
-  </url>
-  <url>
-    <loc>https://respiratoire.ca/diapo.html</loc>
-    <lastmod>2024-01-10T02:13:34.372Z</lastmod>
-  </url>
-  <url>
-    <loc>https://respiratoire.ca/presentations.html</loc>
-    <lastmod>2025-12-31T17:42:23.032Z</lastmod>
-  </url>
-  <url>
-    <loc>https://respiratoire.ca/index.html</loc>
-    <lastmod>2025-12-31T18:12:23.335Z</lastmod>
-  </url>
-  <url>
-    <loc>https://respiratoire.ca/projets.html</loc>
-    <lastmod>2024-01-10T02:13:34.375Z</lastmod>
-  </url>
-  <url>
-    <loc>https://respiratoire.ca/billets/aide_inspiratoire/aide_inspiratoire.html</loc>
-    <lastmod>2026-01-01T23:21:13.621Z</lastmod>
-  </url>
-  <url>
-    <loc>https://respiratoire.ca/billets/vdrmoyenne/vdrmoyen.html</loc>
-    <lastmod>2026-01-16T17:45:58.541Z</lastmod>
+    <loc>https://respiratoire.ca/about.html</loc>
+    <lastmod>2025-12-24T22:00:43.943Z</lastmod>
   </url>
   <url>
     <loc>https://respiratoire.ca/billets/PAV+/article.html</loc>
     <lastmod>2026-01-22T01:29:58.048Z</lastmod>
   </url>
   <url>
-    <loc>https://respiratoire.ca/about.html</loc>
-    <lastmod>2025-12-24T22:00:43.943Z</lastmod>
+    <loc>https://respiratoire.ca/billets/vdrmoyenne/vdrmoyen.html</loc>
+    <lastmod>2026-01-16T17:45:58.541Z</lastmod>
+  </url>
+  <url>
+    <loc>https://respiratoire.ca/billets/aide_inspiratoire/aide_inspiratoire.html</loc>
+    <lastmod>2026-01-01T23:21:13.621Z</lastmod>
+  </url>
+  <url>
+    <loc>https://respiratoire.ca/projets.html</loc>
+    <lastmod>2024-01-10T02:13:34.375Z</lastmod>
+  </url>
+  <url>
+    <loc>https://respiratoire.ca/index.html</loc>
+    <lastmod>2025-12-31T18:12:23.335Z</lastmod>
+  </url>
+  <url>
+    <loc>https://respiratoire.ca/presentations.html</loc>
+    <lastmod>2025-12-31T17:42:23.032Z</lastmod>
+  </url>
+  <url>
+    <loc>https://respiratoire.ca/diapo.html</loc>
+    <lastmod>2024-01-10T02:13:34.372Z</lastmod>
+  </url>
+  <url>
+    <loc>https://respiratoire.ca/billets/tbas/tbas.html</loc>
+    <lastmod>2025-11-17T19:51:03.758Z</lastmod>
+  </url>
+  <url>
+    <loc>https://respiratoire.ca/billets/bohr/christian_bohr.html</loc>
+    <lastmod>2026-01-16T19:56:29.429Z</lastmod>
   </url>
   <url>
     <loc>https://respiratoire.ca/calculatrices/frequence.html</loc>
     <lastmod>2026-01-31T02:50:58.104Z</lastmod>
   </url>
   <url>
-    <loc>https://respiratoire.ca/calculatrices/dilution_air_O2.html</loc>
-    <lastmod>2026-01-31T03:02:52.994Z</lastmod>
+    <loc>https://respiratoire.ca/calculatrices/index.html</loc>
+    <lastmod>2026-02-04T13:31:30.791Z</lastmod>
   </url>
   <url>
-    <loc>https://respiratoire.ca/calculatrices/espace_mort_predit.html</loc>
-    <lastmod>2026-01-31T03:09:51.310Z</lastmod>
+    <loc>https://respiratoire.ca/calculatrices/espace_mort.html</loc>
+    <lastmod>2026-02-04T13:35:46.016Z</lastmod>
   </url>
   <url>
     <loc>https://respiratoire.ca/calculatrices/travail.html</loc>
-    <lastmod>2026-01-31T03:21:10.423Z</lastmod>
-  </url>
-  <url>
-    <loc>https://respiratoire.ca/calculatrices/ratio_ventilatoire.html</loc>
-    <lastmod>2026-02-01T15:51:44.335Z</lastmod>
-  </url>
-  <url>
-    <loc>https://respiratoire.ca/calculatrices/index.html</loc>
-    <lastmod>2026-02-03T01:54:09.827Z</lastmod>
+    <lastmod>2026-02-04T15:37:38.958Z</lastmod>
   </url>
 </urlset>

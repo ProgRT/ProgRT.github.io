@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="Prédiction du poids, de la ventilation par minute, de l’espace mort et calcul du ratio ventilatoire">
 
-<title>Super calculatrice respiratoire – Carnet de Nicolas</title>
+<title>Poids prédit … et plus – Carnet de Nicolas</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -107,7 +108,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <link rel="stylesheet" href="../awesomestyle.css">
-<meta property="og:title" content="Super calculatrice respiratoire – Carnet de Nicolas">
+<link rel="stylesheet" href="calculatrices.css">
+<meta property="og:title" content="Poids prédit … et plus – Carnet de Nicolas">
 <meta property="og:description" content="Prédiction du poids, de la ventilation par minute, de l’espace mort et calcul du ratio ventilatoire">
 <meta property="og:site_name" content="Carnet de Nicolas">
 </head>
@@ -162,7 +164,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Basculer la barre latérale" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../calculatrices/index.html">Calculatrices</a></li><li class="breadcrumb-item"><a href="../calculatrices/super_calculatrice.html">Super calculatrice respiratoire</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../calculatrices/index.html">Calculatrices</a></li><li class="breadcrumb-item"><a href="../calculatrices/super_calculatrice.html">Poids prédit … et plus</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Basculer la barre latérale" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -203,12 +205,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../calculatrices/espace_mort_predit.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Espace mort prédit</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../calculatrices/frequence.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Fréquence respiratoire requise</span></a>
   </div>
@@ -227,26 +223,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../calculatrices/poids_predit.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Poids prédit</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../calculatrices/ratio_ventilatoire.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Ratio ventilatoire</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../calculatrices/super_calculatrice.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Super calculatrice respiratoire</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../calculatrices/test.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Test</span></a>
+ <span class="menu-text">Poids prédit … et plus</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -266,12 +244,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../calculatrices/index.html">Calculatrices</a></li><li class="breadcrumb-item"><a href="../calculatrices/super_calculatrice.html">Super calculatrice respiratoire</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../calculatrices/index.html">Calculatrices</a></li><li class="breadcrumb-item"><a href="../calculatrices/super_calculatrice.html">Poids prédit … et plus</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Super calculatrice respiratoire</h1>
-<p class="subtitle lead">Prédiction du poids, de la ventilation par minute, de l’espace mort et calcul du ratio ventilatoire</p>
+<h1 class="title">Poids prédit … et plus</h1>
 </div>
 
+<div>
+  <div class="description">
+    Prédiction du poids, de la ventilation par minute, de l’espace mort et calcul du ratio ventilatoire
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
@@ -295,19 +277,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="poids-et-ventilation-prédite" class="level3">
 <h3 class="anchored" data-anchor-id="poids-et-ventilation-prédite">Poids et ventilation prédite</h3>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="12" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 11;"><span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> { resultSpan } <span class="im">from</span> <span class="st">"@progrt/utilitaires"</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">pbwDevine</span>(cm<span class="op">,</span> sexe <span class="op">=</span> <span class="st">"M"</span>) {</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>  <span class="kw">let</span> a <span class="op">=</span> { <span class="dt">M</span><span class="op">:</span> <span class="dv">50</span><span class="op">,</span> <span class="dt">F</span><span class="op">:</span> <span class="fl">45.5</span> }<span class="op">;</span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>  <span class="kw">let</span> p <span class="op">=</span>  a[sexe] <span class="op">+</span> <span class="fl">0.9</span> <span class="op">*</span> (cm <span class="op">-</span> <span class="dv">152</span>)<span class="op">;</span></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">max</span>(p<span class="op">,</span> <span class="dv">0</span>)<span class="op">;</span></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>viewof sexe <span class="op">=</span>  Inputs<span class="op">.</span><span class="fu">radio</span>([<span class="st">"M"</span><span class="op">,</span> <span class="st">"F"</span>]<span class="op">,</span> { <span class="dt">label</span><span class="op">:</span> <span class="st">"Sexe"</span><span class="op">,</span> <span class="dt">value</span><span class="op">:</span> <span class="kw">null</span> })<span class="op">;</span></span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>viewof taille <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">number</span>({<span class="dt">label</span><span class="op">:</span> <span class="st">'Taille (cm)'</span><span class="op">,</span> <span class="dt">value</span><span class="op">:</span> <span class="kw">null</span>})<span class="op">;</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="15" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 14;"><span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> { resultSpan } <span class="im">from</span> <span class="st">"@progrt/utilitaires"</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">pbwDevine</span>(cm<span class="op">,</span> sexe <span class="op">=</span> <span class="st">"M"</span>) {</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>  <span class="kw">let</span> a <span class="op">=</span> { <span class="dt">M</span><span class="op">:</span> <span class="dv">50</span><span class="op">,</span> <span class="dt">F</span><span class="op">:</span> <span class="fl">45.5</span> }<span class="op">;</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>  <span class="kw">let</span> p <span class="op">=</span>  a[sexe] <span class="op">+</span> <span class="fl">0.9</span> <span class="op">*</span> (cm <span class="op">-</span> <span class="dv">152</span>)<span class="op">;</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">max</span>(p<span class="op">,</span> <span class="dv">0</span>)<span class="op">;</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>}</span>
 <span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>pbw <span class="op">=</span> <span class="fu">pbwDevine</span>(taille<span class="op">,</span> sexe)<span class="op">;</span></span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="fu">resultSpan</span>(pbw<span class="op">,</span> <span class="dv">0</span><span class="op">,</span> <span class="st">'Poids prédit'</span><span class="op">,</span> <span class="st">'kg'</span>)<span class="op">;</span></span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>viewof sexe <span class="op">=</span>  Inputs<span class="op">.</span><span class="fu">radio</span>([<span class="st">"M"</span><span class="op">,</span> <span class="st">"F"</span>]<span class="op">,</span> { <span class="dt">label</span><span class="op">:</span> <span class="st">"Sexe"</span><span class="op">,</span> <span class="dt">value</span><span class="op">:</span> <span class="kw">null</span> })<span class="op">;</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>viewof taille <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">number</span>({<span class="dt">label</span><span class="op">:</span> <span class="st">'Taille (cm)'</span><span class="op">,</span> <span class="dt">value</span><span class="op">:</span> <span class="kw">null</span>})<span class="op">;</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>pbw <span class="op">=</span> <span class="fu">pbwDevine</span>(taille<span class="op">,</span> sexe)<span class="op">;</span></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="fu">resultSpan</span>(pbw<span class="op">,</span> <span class="dv">0</span><span class="op">,</span> <span class="st">'Poids prédit'</span><span class="op">,</span> <span class="st">'kg'</span>)<span class="op">;</span></span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <div id="ojs-cell-1-1" data-nodetype="declaration">
@@ -350,8 +332,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="26" data-source-offset="-400"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 25;"><span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>ventPredite <span class="op">=</span> <span class="fl">0.1</span> <span class="op">*</span> pbw<span class="op">;</span></span>
-<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a><span class="fu">resultSpan</span>(ventPredite<span class="op">,</span> <span class="dv">1</span><span class="op">,</span> <span class="st">'Ventilation prédite'</span><span class="op">,</span> <span class="st">'l/m'</span>)<span class="op">;</span></span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="29" data-source-offset="-400"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 28;"><span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>ventPredite <span class="op">=</span> <span class="fl">0.1</span> <span class="op">*</span> pbw<span class="op">;</span></span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a><span class="fu">resultSpan</span>(ventPredite<span class="op">,</span> <span class="dv">1</span><span class="op">,</span> <span class="st">'Ventilation prédite'</span><span class="op">,</span> <span class="st">'l/m'</span>)<span class="op">;</span></span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <div id="ojs-cell-1-7" data-nodetype="declaration">
@@ -366,22 +348,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb3" data-startfrom="29" data-source-offset="-484"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 28;"><span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">vtbl</span>(pbw<span class="op">,</span> t<span class="op">=</span>d3<span class="op">.</span><span class="fu">ticks</span>(<span class="dv">4</span><span class="op">,</span> <span class="dv">8</span><span class="op">,</span> <span class="dv">4</span>)){</span>
-<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a>    <span class="kw">let</span> factors <span class="op">=</span> d3<span class="op">.</span><span class="fu">ticks</span>(<span class="dv">4</span><span class="op">,</span> <span class="dv">8</span><span class="op">,</span> <span class="dv">4</span>)<span class="op">;</span></span>
-<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a>    <span class="kw">let</span> vts <span class="op">=</span> factors<span class="op">.</span><span class="fu">map</span>(f<span class="kw">=&gt;</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">round</span>(pbw<span class="op">*</span>f))<span class="op">;</span></span>
-<span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-33"><a href="#cb3-33" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> tbl <span class="op">=</span> <span class="fu">html</span><span class="vs">`&lt;table class='table'&gt;</span></span>
-<span id="cb3-34"><a href="#cb3-34" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;tr&gt;</span></span>
-<span id="cb3-35"><a href="#cb3-35" aria-hidden="true" tabindex="-1"></a><span class="vs">    </span><span class="sc">${</span>factors<span class="op">.</span><span class="fu">map</span>(f<span class="kw">=&gt;</span><span class="vs">`&lt;th&gt;</span><span class="sc">${</span>f<span class="sc">}</span><span class="vs"> ml/kg&lt;/th&gt;`</span>)<span class="sc">}</span></span>
-<span id="cb3-36"><a href="#cb3-36" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;/tr&gt;</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb3" data-startfrom="32" data-source-offset="-484"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 31;"><span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">vtbl</span>(pbw<span class="op">,</span> t<span class="op">=</span>d3<span class="op">.</span><span class="fu">ticks</span>(<span class="dv">4</span><span class="op">,</span> <span class="dv">8</span><span class="op">,</span> <span class="dv">4</span>)){</span>
+<span id="cb3-33"><a href="#cb3-33" aria-hidden="true" tabindex="-1"></a>    <span class="kw">let</span> factors <span class="op">=</span> d3<span class="op">.</span><span class="fu">ticks</span>(<span class="dv">4</span><span class="op">,</span> <span class="dv">8</span><span class="op">,</span> <span class="dv">4</span>)<span class="op">;</span></span>
+<span id="cb3-34"><a href="#cb3-34" aria-hidden="true" tabindex="-1"></a>    <span class="kw">let</span> vts <span class="op">=</span> factors<span class="op">.</span><span class="fu">map</span>(f<span class="kw">=&gt;</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">round</span>(pbw<span class="op">*</span>f))<span class="op">;</span></span>
+<span id="cb3-35"><a href="#cb3-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-36"><a href="#cb3-36" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> tbl <span class="op">=</span> <span class="fu">html</span><span class="vs">`&lt;table class='table'&gt;</span></span>
 <span id="cb3-37"><a href="#cb3-37" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;tr&gt;</span></span>
-<span id="cb3-38"><a href="#cb3-38" aria-hidden="true" tabindex="-1"></a><span class="vs">    </span><span class="sc">${</span>vts<span class="op">.</span><span class="fu">map</span>(v<span class="kw">=&gt;</span><span class="vs">`&lt;td&gt;</span><span class="sc">${</span><span class="bu">Math</span><span class="op">.</span><span class="fu">round</span>(<span class="dv">1000</span> <span class="op">*</span> ventPredite<span class="op">/</span>v)<span class="sc">}</span><span class="vs"> x </span><span class="sc">${</span>v<span class="sc">}</span><span class="vs"> ml&lt;/td&gt;`</span>)<span class="sc">}</span></span>
+<span id="cb3-38"><a href="#cb3-38" aria-hidden="true" tabindex="-1"></a><span class="vs">    </span><span class="sc">${</span>factors<span class="op">.</span><span class="fu">map</span>(f<span class="kw">=&gt;</span><span class="vs">`&lt;th&gt;</span><span class="sc">${</span>f<span class="sc">}</span><span class="vs"> ml/kg&lt;/th&gt;`</span>)<span class="sc">}</span></span>
 <span id="cb3-39"><a href="#cb3-39" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;/tr&gt;</span></span>
-<span id="cb3-40"><a href="#cb3-40" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;/table&gt;`</span><span class="op">;</span></span>
-<span id="cb3-41"><a href="#cb3-41" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> tbl<span class="op">;</span></span>
-<span id="cb3-42"><a href="#cb3-42" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb3-43"><a href="#cb3-43" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-44"><a href="#cb3-44" aria-hidden="true" tabindex="-1"></a><span class="pp">isNaN</span>(pbw) <span class="op">||</span> pbw <span class="op">&lt;=</span> <span class="dv">0</span> <span class="op">?</span> <span class="fu">html</span><span class="vs">``</span> <span class="op">:</span> <span class="fu">vtbl</span>(pbw)<span class="op">;</span></span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb3-40"><a href="#cb3-40" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;tr&gt;</span></span>
+<span id="cb3-41"><a href="#cb3-41" aria-hidden="true" tabindex="-1"></a><span class="vs">    </span><span class="sc">${</span>vts<span class="op">.</span><span class="fu">map</span>(v<span class="kw">=&gt;</span><span class="vs">`&lt;td&gt;</span><span class="sc">${</span><span class="bu">Math</span><span class="op">.</span><span class="fu">round</span>(<span class="dv">1000</span> <span class="op">*</span> ventPredite<span class="op">/</span>v)<span class="sc">}</span><span class="vs"> x </span><span class="sc">${</span>v<span class="sc">}</span><span class="vs"> ml&lt;/td&gt;`</span>)<span class="sc">}</span></span>
+<span id="cb3-42"><a href="#cb3-42" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;/tr&gt;</span></span>
+<span id="cb3-43"><a href="#cb3-43" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;/table&gt;`</span><span class="op">;</span></span>
+<span id="cb3-44"><a href="#cb3-44" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> tbl<span class="op">;</span></span>
+<span id="cb3-45"><a href="#cb3-45" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb3-46"><a href="#cb3-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-47"><a href="#cb3-47" aria-hidden="true" tabindex="-1"></a><span class="pp">isNaN</span>(pbw) <span class="op">||</span> pbw <span class="op">&lt;=</span> <span class="dv">0</span> <span class="op">?</span> <span class="fu">html</span><span class="vs">``</span> <span class="op">:</span> <span class="fu">vtbl</span>(pbw)<span class="op">;</span></span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <div id="ojs-cell-1-9" data-nodetype="declaration">
@@ -401,33 +383,33 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="espace-mort-prédit" class="level3">
 <h3 class="anchored" data-anchor-id="espace-mort-prédit">Espace mort prédit</h3>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb4" data-startfrom="52" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 51;"><span id="cb4-52"><a href="#cb4-52" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">cpt</span>(taille<span class="op">,</span> poids<span class="op">,</span> age<span class="op">,</span> sexe){</span>
-<span id="cb4-53"><a href="#cb4-53" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> f <span class="op">=</span> {</span>
-<span id="cb4-54"><a href="#cb4-54" aria-hidden="true" tabindex="-1"></a>    <span class="dt">M</span><span class="op">:</span> {<span class="dt">a</span><span class="op">:</span> <span class="op">-</span><span class="fl">4.73</span><span class="op">,</span> <span class="dt">b</span><span class="op">:</span> <span class="op">.</span><span class="bn">0776</span><span class="op">,</span> <span class="dt">c</span><span class="op">:</span> <span class="op">-</span><span class="fl">0.019</span><span class="op">,</span> <span class="dt">d</span><span class="op">:</span> <span class="dv">0</span>}<span class="op">,</span></span>
-<span id="cb4-55"><a href="#cb4-55" aria-hidden="true" tabindex="-1"></a>    <span class="dt">F</span><span class="op">:</span> {<span class="dt">a</span><span class="op">:</span> <span class="op">-</span><span class="fl">6.35</span><span class="op">,</span> <span class="dt">b</span><span class="op">:</span> <span class="op">.</span><span class="dv">0738</span><span class="op">,</span> <span class="dt">c</span><span class="op">:</span> <span class="dv">0</span><span class="op">,</span> <span class="dt">d</span><span class="op">:</span> <span class="op">-</span><span class="fl">0.016</span>}</span>
-<span id="cb4-56"><a href="#cb4-56" aria-hidden="true" tabindex="-1"></a>  }<span class="op">;</span></span>
-<span id="cb4-57"><a href="#cb4-57" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span>(taille <span class="op">&amp;&amp;</span> poids <span class="op">&amp;&amp;</span> age <span class="op">&amp;&amp;</span> sexe){</span>
-<span id="cb4-58"><a href="#cb4-58" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb4-59"><a href="#cb4-59" aria-hidden="true" tabindex="-1"></a>    <span class="kw">let</span> {a<span class="op">,</span> b<span class="op">,</span> c<span class="op">,</span> d} <span class="op">=</span> f[sexe]<span class="op">;</span></span>
-<span id="cb4-60"><a href="#cb4-60" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> a <span class="op">+</span> b <span class="op">*</span> taille <span class="op">+</span> c <span class="op">*</span> poids <span class="op">+</span> d <span class="op">*</span> age<span class="op">;</span></span>
-<span id="cb4-61"><a href="#cb4-61" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb4-62"><a href="#cb4-62" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-63"><a href="#cb4-63" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb4-64"><a href="#cb4-64" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-65"><a href="#cb4-65" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">VDphys</span>(CPT<span class="op">,</span> Vc<span class="op">,</span> age) {</span>
-<span id="cb4-66"><a href="#cb4-66" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> <span class="op">-</span><span class="fl">65.2</span> <span class="op">+</span> <span class="fl">11.6</span> <span class="op">*</span> CPT <span class="op">+</span> <span class="fl">0.173</span> <span class="op">*</span> Vc <span class="op">+</span> <span class="fl">1.33</span> <span class="op">*</span> age<span class="op">;</span></span>
-<span id="cb4-67"><a href="#cb4-67" aria-hidden="true" tabindex="-1"></a>} </span>
-<span id="cb4-68"><a href="#cb4-68" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">VDaw</span>(CPT<span class="op">,</span> Vc) {</span>
-<span id="cb4-69"><a href="#cb4-69" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> <span class="fl">4.9</span> <span class="op">+</span> <span class="fl">11.3</span> <span class="op">*</span> CPT <span class="op">+</span> <span class="fl">0.062</span> <span class="op">*</span> Vc<span class="op">;</span></span>
-<span id="cb4-70"><a href="#cb4-70" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb4-71"><a href="#cb4-71" aria-hidden="true" tabindex="-1"></a>viewof poids <span class="op">=</span>  Inputs<span class="op">.</span><span class="fu">number</span>({<span class="dt">label</span><span class="op">:</span> <span class="st">"Poids (kg)"</span><span class="op">,</span> <span class="dt">value</span><span class="op">:</span> <span class="kw">null</span> })<span class="op">;</span></span>
-<span id="cb4-72"><a href="#cb4-72" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-73"><a href="#cb4-73" aria-hidden="true" tabindex="-1"></a>viewof age <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">number</span>({<span class="dt">label</span><span class="op">:</span> <span class="st">'Âge (Années)'</span><span class="op">,</span> <span class="dt">value</span><span class="op">:</span> <span class="kw">null</span>})<span class="op">;</span></span>
-<span id="cb4-74"><a href="#cb4-74" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-75"><a href="#cb4-75" aria-hidden="true" tabindex="-1"></a>viewof vc <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">number</span>({<span class="dt">label</span><span class="op">:</span> <span class="st">'Volume courant (ml)'</span><span class="op">,</span> <span class="dt">value</span><span class="op">:</span> <span class="kw">null</span>})<span class="op">;</span></span>
-<span id="cb4-76"><a href="#cb4-76" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-77"><a href="#cb4-77" aria-hidden="true" tabindex="-1"></a>cptPredite <span class="op">=</span> <span class="fu">cpt</span>(taille<span class="op">,</span> poids<span class="op">,</span> age<span class="op">,</span> sexe)<span class="op">;</span></span>
-<span id="cb4-78"><a href="#cb4-78" aria-hidden="true" tabindex="-1"></a><span class="fu">resultSpan</span>(cptPredite<span class="op">,</span> <span class="dv">3</span><span class="op">,</span> <span class="st">'CPT prédite'</span><span class="op">,</span> <span class="st">'l'</span>)<span class="op">;</span></span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb4" data-startfrom="55" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 54;"><span id="cb4-55"><a href="#cb4-55" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">cpt</span>(taille<span class="op">,</span> poids<span class="op">,</span> age<span class="op">,</span> sexe){</span>
+<span id="cb4-56"><a href="#cb4-56" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> f <span class="op">=</span> {</span>
+<span id="cb4-57"><a href="#cb4-57" aria-hidden="true" tabindex="-1"></a>    <span class="dt">M</span><span class="op">:</span> {<span class="dt">a</span><span class="op">:</span> <span class="op">-</span><span class="fl">4.73</span><span class="op">,</span> <span class="dt">b</span><span class="op">:</span> <span class="op">.</span><span class="bn">0776</span><span class="op">,</span> <span class="dt">c</span><span class="op">:</span> <span class="op">-</span><span class="fl">0.019</span><span class="op">,</span> <span class="dt">d</span><span class="op">:</span> <span class="dv">0</span>}<span class="op">,</span></span>
+<span id="cb4-58"><a href="#cb4-58" aria-hidden="true" tabindex="-1"></a>    <span class="dt">F</span><span class="op">:</span> {<span class="dt">a</span><span class="op">:</span> <span class="op">-</span><span class="fl">6.35</span><span class="op">,</span> <span class="dt">b</span><span class="op">:</span> <span class="op">.</span><span class="dv">0738</span><span class="op">,</span> <span class="dt">c</span><span class="op">:</span> <span class="dv">0</span><span class="op">,</span> <span class="dt">d</span><span class="op">:</span> <span class="op">-</span><span class="fl">0.016</span>}</span>
+<span id="cb4-59"><a href="#cb4-59" aria-hidden="true" tabindex="-1"></a>  }<span class="op">;</span></span>
+<span id="cb4-60"><a href="#cb4-60" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span>(taille <span class="op">&amp;&amp;</span> poids <span class="op">&amp;&amp;</span> age <span class="op">&amp;&amp;</span> sexe){</span>
+<span id="cb4-61"><a href="#cb4-61" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb4-62"><a href="#cb4-62" aria-hidden="true" tabindex="-1"></a>    <span class="kw">let</span> {a<span class="op">,</span> b<span class="op">,</span> c<span class="op">,</span> d} <span class="op">=</span> f[sexe]<span class="op">;</span></span>
+<span id="cb4-63"><a href="#cb4-63" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> a <span class="op">+</span> b <span class="op">*</span> taille <span class="op">+</span> c <span class="op">*</span> poids <span class="op">+</span> d <span class="op">*</span> age<span class="op">;</span></span>
+<span id="cb4-64"><a href="#cb4-64" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb4-65"><a href="#cb4-65" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-66"><a href="#cb4-66" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb4-67"><a href="#cb4-67" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-68"><a href="#cb4-68" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">VDphys</span>(CPT<span class="op">,</span> Vc<span class="op">,</span> age) {</span>
+<span id="cb4-69"><a href="#cb4-69" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> <span class="op">-</span><span class="fl">65.2</span> <span class="op">+</span> <span class="fl">11.6</span> <span class="op">*</span> CPT <span class="op">+</span> <span class="fl">0.173</span> <span class="op">*</span> Vc <span class="op">+</span> <span class="fl">1.33</span> <span class="op">*</span> age<span class="op">;</span></span>
+<span id="cb4-70"><a href="#cb4-70" aria-hidden="true" tabindex="-1"></a>} </span>
+<span id="cb4-71"><a href="#cb4-71" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">VDaw</span>(CPT<span class="op">,</span> Vc) {</span>
+<span id="cb4-72"><a href="#cb4-72" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> <span class="fl">4.9</span> <span class="op">+</span> <span class="fl">11.3</span> <span class="op">*</span> CPT <span class="op">+</span> <span class="fl">0.062</span> <span class="op">*</span> Vc<span class="op">;</span></span>
+<span id="cb4-73"><a href="#cb4-73" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb4-74"><a href="#cb4-74" aria-hidden="true" tabindex="-1"></a>viewof poids <span class="op">=</span>  Inputs<span class="op">.</span><span class="fu">number</span>({<span class="dt">label</span><span class="op">:</span> <span class="st">"Poids (kg)"</span><span class="op">,</span> <span class="dt">value</span><span class="op">:</span> <span class="kw">null</span> })<span class="op">;</span></span>
+<span id="cb4-75"><a href="#cb4-75" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-76"><a href="#cb4-76" aria-hidden="true" tabindex="-1"></a>viewof age <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">number</span>({<span class="dt">label</span><span class="op">:</span> <span class="st">'Âge (Années)'</span><span class="op">,</span> <span class="dt">value</span><span class="op">:</span> <span class="kw">null</span>})<span class="op">;</span></span>
+<span id="cb4-77"><a href="#cb4-77" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-78"><a href="#cb4-78" aria-hidden="true" tabindex="-1"></a>viewof vc <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">number</span>({<span class="dt">label</span><span class="op">:</span> <span class="st">'Volume courant (ml)'</span><span class="op">,</span> <span class="dt">value</span><span class="op">:</span> <span class="kw">null</span>})<span class="op">;</span></span>
+<span id="cb4-79"><a href="#cb4-79" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-80"><a href="#cb4-80" aria-hidden="true" tabindex="-1"></a>cptPredite <span class="op">=</span> <span class="fu">cpt</span>(taille<span class="op">,</span> poids<span class="op">,</span> age<span class="op">,</span> sexe)<span class="op">;</span></span>
+<span id="cb4-81"><a href="#cb4-81" aria-hidden="true" tabindex="-1"></a><span class="fu">resultSpan</span>(cptPredite<span class="op">,</span> <span class="dv">3</span><span class="op">,</span> <span class="st">'CPT prédite'</span><span class="op">,</span> <span class="st">'l'</span>)<span class="op">;</span></span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <div id="ojs-cell-2-1" data-nodetype="declaration">
@@ -484,7 +466,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb5" data-startfrom="80" data-source-offset="-740"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 79;"><span id="cb5-80"><a href="#cb5-80" aria-hidden="true" tabindex="-1"></a><span class="fu">resultSpan</span>(<span class="fu">VDphys</span>(cptPredite<span class="op">,</span> vc<span class="op">,</span> age)<span class="op">,</span> <span class="dv">0</span><span class="op">,</span> <span class="st">'EM&lt;sub&gt;phys&lt;/sub&gt; prédit'</span><span class="op">,</span> <span class="st">'ml'</span><span class="op">,</span> vc)<span class="op">;</span></span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb5" data-startfrom="83" data-source-offset="-740"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 82;"><span id="cb5-83"><a href="#cb5-83" aria-hidden="true" tabindex="-1"></a><span class="fu">resultSpan</span>(<span class="fu">VDphys</span>(cptPredite<span class="op">,</span> vc<span class="op">,</span> age)<span class="op">,</span> <span class="dv">0</span><span class="op">,</span> <span class="st">'EM&lt;sub&gt;phys&lt;/sub&gt; prédit'</span><span class="op">,</span> <span class="st">'ml'</span><span class="op">,</span> vc)<span class="op">;</span></span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <div id="ojs-cell-2-9" data-nodetype="expression">
@@ -492,7 +474,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb6" data-startfrom="81" data-source-offset="-822"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 80;"><span id="cb6-81"><a href="#cb6-81" aria-hidden="true" tabindex="-1"></a><span class="fu">resultSpan</span>(<span class="fu">VDaw</span>(cptPredite<span class="op">,</span> vc)<span class="op">,</span> <span class="dv">0</span><span class="op">,</span> <span class="st">'EM&lt;sub&gt;anat&lt;/sub&gt; prédit'</span><span class="op">,</span> <span class="st">'ml'</span><span class="op">,</span> vc)<span class="op">;</span></span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb6" data-startfrom="84" data-source-offset="-822"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 83;"><span id="cb6-84"><a href="#cb6-84" aria-hidden="true" tabindex="-1"></a><span class="fu">resultSpan</span>(<span class="fu">VDaw</span>(cptPredite<span class="op">,</span> vc)<span class="op">,</span> <span class="dv">0</span><span class="op">,</span> <span class="st">'EM&lt;sub&gt;anat&lt;/sub&gt; prédit'</span><span class="op">,</span> <span class="st">'ml'</span><span class="op">,</span> vc)<span class="op">;</span></span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <div id="ojs-cell-2-10" data-nodetype="expression">
@@ -505,15 +487,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="ratio-ventilatoire" class="level3">
 <h3 class="anchored" data-anchor-id="ratio-ventilatoire">Ratio ventilatoire</h3>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb7" data-startfrom="92" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 91;"><span id="cb7-92"><a href="#cb7-92" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">ratioVent</span> (ventMinute<span class="op">,</span> PCO2<span class="op">,</span> pbw) {</span>
-<span id="cb7-93"><a href="#cb7-93" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> PCO2pred <span class="op">=</span> <span class="fl">37.5</span><span class="op">;</span></span>
-<span id="cb7-94"><a href="#cb7-94" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> (ventMinute <span class="op">*</span> PCO2)<span class="op">/</span>(<span class="op">.</span><span class="dv">1</span> <span class="op">*</span> pbw <span class="op">*</span> PCO2pred)<span class="op">;</span></span>
-<span id="cb7-95"><a href="#cb7-95" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb7-96"><a href="#cb7-96" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-97"><a href="#cb7-97" aria-hidden="true" tabindex="-1"></a>viewof vact <span class="op">=</span>  Inputs<span class="op">.</span><span class="fu">number</span>({<span class="dt">label</span><span class="op">:</span> <span class="st">"Ventilation actuelle (l/m)"</span><span class="op">,</span> <span class="dt">value</span><span class="op">:</span> <span class="kw">null</span> })<span class="op">;</span></span>
-<span id="cb7-98"><a href="#cb7-98" aria-hidden="true" tabindex="-1"></a>viewof pact <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">number</span>({<span class="dt">label</span><span class="op">:</span> <span class="st">'PCO₂ actuelle (mmHg)'</span><span class="op">,</span> <span class="dt">value</span><span class="op">:</span> <span class="kw">null</span>})<span class="op">;</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb7" data-startfrom="95" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 94;"><span id="cb7-95"><a href="#cb7-95" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">ratioVent</span> (ventMinute<span class="op">,</span> PCO2<span class="op">,</span> pbw) {</span>
+<span id="cb7-96"><a href="#cb7-96" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> PCO2pred <span class="op">=</span> <span class="fl">37.5</span><span class="op">;</span></span>
+<span id="cb7-97"><a href="#cb7-97" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> (ventMinute <span class="op">*</span> PCO2)<span class="op">/</span>(<span class="op">.</span><span class="dv">1</span> <span class="op">*</span> pbw <span class="op">*</span> PCO2pred)<span class="op">;</span></span>
+<span id="cb7-98"><a href="#cb7-98" aria-hidden="true" tabindex="-1"></a>}</span>
 <span id="cb7-99"><a href="#cb7-99" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-100"><a href="#cb7-100" aria-hidden="true" tabindex="-1"></a><span class="fu">resultSpan</span>(<span class="fu">ratioVent</span>(vact<span class="op">,</span> pact<span class="op">,</span> pbw)<span class="op">,</span> <span class="dv">2</span><span class="op">,</span> <span class="st">'Ratio rentilatoire'</span>)</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb7-100"><a href="#cb7-100" aria-hidden="true" tabindex="-1"></a>viewof vact <span class="op">=</span>  Inputs<span class="op">.</span><span class="fu">number</span>({<span class="dt">label</span><span class="op">:</span> <span class="st">"Ventilation actuelle (l/m)"</span><span class="op">,</span> <span class="dt">value</span><span class="op">:</span> <span class="kw">null</span> })<span class="op">;</span></span>
+<span id="cb7-101"><a href="#cb7-101" aria-hidden="true" tabindex="-1"></a>viewof pact <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">number</span>({<span class="dt">label</span><span class="op">:</span> <span class="st">'PCO₂ actuelle (mmHg)'</span><span class="op">,</span> <span class="dt">value</span><span class="op">:</span> <span class="kw">null</span>})<span class="op">;</span></span>
+<span id="cb7-102"><a href="#cb7-102" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-103"><a href="#cb7-103" aria-hidden="true" tabindex="-1"></a><span class="fu">resultSpan</span>(<span class="fu">ratioVent</span>(vact<span class="op">,</span> pact<span class="op">,</span> pbw)<span class="op">,</span> <span class="dv">2</span><span class="op">,</span> <span class="st">'Ratio rentilatoire'</span>)</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <div id="ojs-cell-3-1" data-nodetype="declaration">
@@ -543,16 +525,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<style>
-  input {
-    border-radius: 5px;
-    height: 2em;
-  }
-  input[type='number']{
-    max-width: 6em;
-    text-align: right;
-  }
-</style>
 
 
 </section>

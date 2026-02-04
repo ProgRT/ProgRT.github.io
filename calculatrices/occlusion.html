@@ -20,6 +20,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -67,9 +102,12 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Recherche"
   }
 }</script>
+<script type="module" src="../site_libs/quarto-ojs/quarto-ojs-runtime.js"></script>
+<link href="../site_libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="../awesomestyle.css">
+<link rel="stylesheet" href="calculatrices.css">
 <meta property="og:title" content="Test d’occlusion – Carnet de Nicolas">
 <meta property="og:description" content="Validation du positionnement d’un ballon oesophagien">
 <meta property="og:site_name" content="Carnet de Nicolas">
@@ -166,12 +204,6 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../calculatrices/espace_mort_predit.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Espace mort prédit</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../calculatrices/frequence.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Fréquence respiratoire requise</span></a>
   </div>
@@ -190,26 +222,8 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../calculatrices/poids_predit.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Poids prédit</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../calculatrices/ratio_ventilatoire.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Ratio ventilatoire</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../calculatrices/super_calculatrice.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Super calculatrice respiratoire</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../calculatrices/test.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Test</span></a>
+ <span class="menu-text">Poids prédit … et plus</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -259,8 +273,65 @@ ul.task-list li input[type="checkbox"] {
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Calcul</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Cadre de référence</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<iframe width="100%" height="350" frameborder="0" src="https://observablehq.com/embed/88d4b71349a08b29@134?cells=viewof+PcircHaute%2Cviewof+PoesHaute%2Cviewof+PcircBasse%2Cviewof+PoesBasse%2Cresult">
-</iframe>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="16" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 15;"><span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>viewof PcircHaute <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">number</span>({ <span class="dt">label</span><span class="op">:</span> <span class="fu">tex</span><span class="vs">`P_{circ} </span><span class="er">\u</span><span class="vs">parrow `</span> })</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>viewof PoesHaute <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">number</span>({ <span class="dt">label</span><span class="op">:</span> <span class="fu">tex</span><span class="vs">`P_{oes} </span><span class="er">\u</span><span class="vs">parrow`</span> })</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>viewof PcircBasse <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">number</span>({ <span class="dt">label</span><span class="op">:</span> <span class="fu">tex</span><span class="vs">`P_{circ} </span><span class="sc">\d</span><span class="vs">ownarrow`</span> })</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>viewof PoesBasse <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">number</span>({ <span class="dt">label</span><span class="op">:</span> <span class="fu">tex</span><span class="vs">`P_{oes} </span><span class="sc">\d</span><span class="vs">ownarrow`</span> })</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> {</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>  <span class="kw">let</span> dpcirc <span class="op">=</span> PcircHaute <span class="op">-</span> PcircBasse<span class="op">;</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>  <span class="kw">let</span> dpoes <span class="op">=</span> PoesHaute <span class="op">-</span> PoesBasse<span class="op">;</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>  <span class="kw">let</span> ratio <span class="op">=</span> dpoes <span class="op">/</span> dpcirc<span class="op">;</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>  <span class="kw">let</span> rdisp <span class="op">=</span> ratio<span class="op">.</span><span class="fu">toFixed</span>(<span class="dv">2</span>)<span class="op">;</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>  <span class="kw">let</span> bg <span class="op">=</span> <span class="st">"white"</span><span class="op">;</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (ratio <span class="op">&gt;=</span> <span class="fl">0.8</span> <span class="op">&amp;&amp;</span> ratio <span class="op">&lt;=</span> <span class="fl">1.2</span>) bg <span class="op">=</span> <span class="st">"PaleGreen"</span><span class="op">;</span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (ratio <span class="op">&lt;</span> <span class="fl">0.8</span> <span class="op">||</span> ratio <span class="op">&gt;</span> <span class="fl">1.2</span>) bg <span class="op">=</span> <span class="st">"LightCoral"</span><span class="op">;</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>  <span class="kw">let</span> f <span class="op">=</span> tex<span class="op">.</span><span class="fu">block</span><span class="vs">`</span><span class="sc">\f</span><span class="vs">rac{</span><span class="sc">\D</span><span class="vs">elta P_{oes}}{</span><span class="sc">\D</span><span class="vs">elta P_{circ}} = </span><span class="sc">\f</span><span class="vs">rac{</span><span class="sc">${</span>dpoes<span class="sc">}</span><span class="vs">}{</span><span class="sc">${</span>dpcirc<span class="sc">}</span><span class="vs">} = </span><span class="sc">${</span>rdisp<span class="sc">}</span><span class="vs">`</span><span class="op">;</span></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>  f<span class="op">.</span><span class="at">style</span><span class="op">.</span><span class="at">background</span> <span class="op">=</span> bg<span class="op">;</span></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>  f<span class="op">.</span><span class="at">style</span><span class="op">.</span><span class="at">padding</span> <span class="op">=</span> <span class="st">"15px"</span><span class="op">;</span></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>  f<span class="op">.</span><span class="at">style</span><span class="op">.</span><span class="at">border</span> <span class="op">=</span> <span class="st">"1px solid"</span><span class="op">;</span></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>  f<span class="op">.</span><span class="at">style</span><span class="op">.</span><span class="at">borderRadius</span> <span class="op">=</span> <span class="st">"8px"</span><span class="op">;</span></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> f<span class="op">;</span></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-3" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-4" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-5" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+</div>
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 <p>Le test d’occlusion constitue la tecnique de référence pour valider le positionnement adéquat d’un ballon oesophagien.</p>
@@ -272,6 +343,17 @@ ul.task-list li input[type="checkbox"] {
 
 
 </main> <!-- /main -->
+<script type="ojs-module-contents">
+eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6InZpZXdvZiBQY2lyY0hhdXRlID0gSW5wdXRzLm51bWJlcih7IGxhYmVsOiB0ZXhgUF97Y2lyY30gXFx1cGFycm93IGAgfSlcbnZpZXdvZiBQb2VzSGF1dGUgPSBJbnB1dHMubnVtYmVyKHsgbGFiZWw6IHRleGBQX3tvZXN9IFxcdXBhcnJvd2AgfSlcbnZpZXdvZiBQY2lyY0Jhc3NlID0gSW5wdXRzLm51bWJlcih7IGxhYmVsOiB0ZXhgUF97Y2lyY30gXFxkb3duYXJyb3dgIH0pXG52aWV3b2YgUG9lc0Jhc3NlID0gSW5wdXRzLm51bWJlcih7IGxhYmVsOiB0ZXhgUF97b2VzfSBcXGRvd25hcnJvd2AgfSlcblxucmVzdWx0ID0ge1xuICBsZXQgZHBjaXJjID0gUGNpcmNIYXV0ZSAtIFBjaXJjQmFzc2U7XG4gIGxldCBkcG9lcyA9IFBvZXNIYXV0ZSAtIFBvZXNCYXNzZTtcbiAgbGV0IHJhdGlvID0gZHBvZXMgLyBkcGNpcmM7XG4gIGxldCByZGlzcCA9IHJhdGlvLnRvRml4ZWQoMik7XG5cbiAgbGV0IGJnID0gXCJ3aGl0ZVwiO1xuICBpZiAocmF0aW8gPj0gMC44ICYmIHJhdGlvIDw9IDEuMikgYmcgPSBcIlBhbGVHcmVlblwiO1xuICBpZiAocmF0aW8gPCAwLjggfHwgcmF0aW8gPiAxLjIpIGJnID0gXCJMaWdodENvcmFsXCI7XG5cbiAgbGV0IGYgPSB0ZXguYmxvY2tgXFxmcmFje1xcRGVsdGEgUF97b2VzfX17XFxEZWx0YSBQX3tjaXJjfX0gPSBcXGZyYWN7JHtkcG9lc319eyR7ZHBjaXJjfX0gPSAke3JkaXNwfWA7XG4gIGYuc3R5bGUuYmFja2dyb3VuZCA9IGJnO1xuICBmLnN0eWxlLnBhZGRpbmcgPSBcIjE1cHhcIjtcbiAgZi5zdHlsZS5ib3JkZXIgPSBcIjFweCBzb2xpZFwiO1xuICBmLnN0eWxlLmJvcmRlclJhZGl1cyA9IFwiOHB4XCI7XG4gIHJldHVybiBmO1xufVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0UXVpZXQiLCJzb3VyY2UiOiJzaGlueUlucHV0KCdQY2lyY0hhdXRlJykifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXRRdWlldCIsInNvdXJjZSI6InNoaW55SW5wdXQoJ1BvZXNIYXV0ZScpIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0UXVpZXQiLCJzb3VyY2UiOiJzaGlueUlucHV0KCdQY2lyY0Jhc3NlJykifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXRRdWlldCIsInNvdXJjZSI6InNoaW55SW5wdXQoJ1BvZXNCYXNzZScpIn1dfQ==
+</script>
+<script type="module">
+if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
+window._ojs.paths.runtimeToDoc = "../../calculatrices";
+window._ojs.paths.runtimeToRoot = "../..";
+window._ojs.paths.docToRoot = "..";
+window._ojs.selfContained = false;
+window._ojs.runtime.interpretFromScriptTags();
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

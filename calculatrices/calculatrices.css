@@ -1,0 +1,10 @@
+input {
+  border-radius: 5px;
+  height: 2em;
+  margin: 15xp;
+}
+
+input[type='number']{
+  max-width: 6em;
+  text-align: right;
+}
