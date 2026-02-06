@@ -13,8 +13,14 @@
     ]
   },
   {
-    "listing": "/projets.html",
+    "listing": "/diapo.html",
     "items": []
+  },
+  {
+    "listing": "/presentations.html",
+    "items": [
+      "/billets/PAV+/article.html"
+    ]
   },
   {
     "listing": "/index.html",
@@ -27,13 +33,7 @@
     ]
   },
   {
-    "listing": "/presentations.html",
-    "items": [
-      "/billets/PAV+/article.html"
-    ]
-  },
-  {
-    "listing": "/diapo.html",
+    "listing": "/projets.html",
     "items": []
   }
 ]
