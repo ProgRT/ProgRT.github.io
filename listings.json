@@ -1,5 +1,18 @@
 [
   {
+    "listing": "/calculatrices/index.html",
+    "items": [
+      "/calculatrices/contenu_sanguin.html",
+      "/calculatrices/dilution_air_O2.html",
+      "/calculatrices/espace_mort.html",
+      "/calculatrices/frequence.html",
+      "/calculatrices/super_calculatrice.html",
+      "/calculatrices/occlusion.html",
+      "/calculatrices/travail.html",
+      "/calculatrices/handerson-hasselbalch.html"
+    ]
+  },
+  {
     "listing": "/projets.html",
     "items": []
   },
@@ -22,18 +35,5 @@
   {
     "listing": "/diapo.html",
     "items": []
-  },
-  {
-    "listing": "/calculatrices/index.html",
-    "items": [
-      "/calculatrices/contenu_sanguin.html",
-      "/calculatrices/dilution_air_O2.html",
-      "/calculatrices/espace_mort.html",
-      "/calculatrices/frequence.html",
-      "/calculatrices/super_calculatrice.html",
-      "/calculatrices/occlusion.html",
-      "/calculatrices/travail.html",
-      "/calculatrices/handerson-hasselbalch.html"
-    ]
   }
 ]

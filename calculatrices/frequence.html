@@ -21,6 +21,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -68,9 +103,12 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Recherche"
   }
 }</script>
+<script type="module" src="../site_libs/quarto-ojs/quarto-ojs-runtime.js"></script>
+<link href="../site_libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="../awesomestyle.css">
+<link rel="stylesheet" href="calculatrices.css">
 <meta property="og:title" content="Fréquence respiratoire requise – Carnet de Nicolas">
 <meta property="og:description" content="Calculer la fréquence respiratoire requise en fonction d’un pH souhaité.">
 <meta property="og:site_name" content="Carnet de Nicolas">
@@ -209,7 +247,6 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../calculatrices/index.html">Calculatrices</a></li><li class="breadcrumb-item"><a href="../calculatrices/frequence.html">Fréquence respiratoire requise</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">Fréquence respiratoire requise</h1>
-<p class="subtitle lead">En fonctoin du pH souhaité</p>
 </div>
 
 <div>
@@ -241,8 +278,114 @@ ul.task-list li input[type="checkbox"] {
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Calcul</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Cadre de référence</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<iframe width="100%" height="367" frameborder="0" src="https://observablehq.com/embed/8ff108bd58670fc9?cells=viewof+pH_actuel%2Cviewof+PCO2_actuelle%2CHCO3_actuel%2Cviewof+fr%C3%A9quence_actuelle%2Cviewof+pH_cible%2Cviewof+PCO2_requise%2Cfr%C3%A9quence_requise">
-</iframe>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="19" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 18;"><span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>hh <span class="op">=</span> <span class="im">import</span>(<span class="st">'/calculatrices/handerson-hasselbalch.js'</span>)</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>ui <span class="op">=</span> <span class="im">import</span>(<span class="st">'/calculatrices/ui.js'</span>)</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="27" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 26;"><span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>viewof pHact <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">number</span>({<span class="dt">label</span><span class="op">:</span> <span class="st">'pH'</span>})</span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>viewof PCO2act <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">number</span>({<span class="dt">label</span><span class="op">:</span> <span class="st">'PaCO₂'</span>})</span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>HCO3 <span class="op">=</span> hh<span class="op">.</span><span class="fu">HCO3</span>(pHact<span class="op">,</span> PCO2act)<span class="op">;</span></span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>ui<span class="op">.</span><span class="fu">r</span>(HCO3<span class="op">,</span> <span class="dv">0</span><span class="op">,</span> <span class="st">'HCO&lt;sub&gt;3&lt;/sub&gt;&lt;sup&gt;-&lt;/sup&gt;'</span>)</span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>viewof Fact <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">number</span>({<span class="dt">label</span><span class="op">:</span> <span class="st">'Fréq. (/min)'</span>})</span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>viewof pHreq <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">number</span>({<span class="dt">label</span><span class="op">:</span> <span class="st">'pH'</span>})</span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>PCO2req <span class="op">=</span> hh<span class="op">.</span><span class="fu">PCO2</span>(pHreq<span class="op">,</span> HCO3)<span class="op">;</span></span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>ui<span class="op">.</span><span class="fu">r</span>(PCO2req<span class="op">,</span> <span class="dv">0</span><span class="op">,</span> <span class="st">'PCO₂ requise'</span><span class="op">,</span> <span class="st">'mmHg'</span>)</span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>Freq <span class="op">=</span> Fact <span class="op">*</span> PCO2act <span class="op">/</span> PCO2req<span class="op">;</span></span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>ui<span class="op">.</span><span class="fu">r</span>(Freq<span class="op">,</span> <span class="dv">0</span><span class="op">,</span> <span class="st">'Fréq.'</span><span class="op">,</span> <span class="st">'/min'</span>)</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<section id="actuel" class="level3 cell quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<h3 class="anchored" data-anchor-id="actuel">Actuel</h3>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-2-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-2-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-2-3" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-2-4" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-2-5" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+</section>
+<section id="souhaité" class="level3 cell quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<h3 class="anchored" data-anchor-id="souhaité">Souhaité</h3>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-3-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-3-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-3-3" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-3-4" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-3-5" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 <p>Lorsqu’un patient des ventilé mécaniquement, il est fréquent de chercher la modification de fréquence respiratoire requise pour atteindre une cible de pH.</p>
@@ -259,6 +402,17 @@ ul.task-list li input[type="checkbox"] {
 
 
 </main> <!-- /main -->
+<script type="ojs-module-contents">
+eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6ImhoID0gaW1wb3J0KCcvY2FsY3VsYXRyaWNlcy9oYW5kZXJzb24taGFzc2VsYmFsY2guanMnKVxudWkgPSBpbXBvcnQoJy9jYWxjdWxhdHJpY2VzL3VpLmpzJylcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMiIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6InZpZXdvZiBwSGFjdCA9IElucHV0cy5udW1iZXIoe2xhYmVsOiAncEgnfSlcbnZpZXdvZiBQQ08yYWN0ID0gSW5wdXRzLm51bWJlcih7bGFiZWw6ICdQYUNP4oKCJ30pXG5IQ08zID0gaGguSENPMyhwSGFjdCwgUENPMmFjdCk7XG51aS5yKEhDTzMsIDAsICdIQ088c3ViPjM8L3N1Yj48c3VwPi08L3N1cD4nKVxudmlld29mIEZhY3QgPSBJbnB1dHMubnVtYmVyKHtsYWJlbDogJ0Zyw6lxLiAoL21pbiknfSlcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMyIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6InZpZXdvZiBwSHJlcSA9IElucHV0cy5udW1iZXIoe2xhYmVsOiAncEgnfSlcblBDTzJyZXEgPSBoaC5QQ08yKHBIcmVxLCBIQ08zKTtcbnVpLnIoUENPMnJlcSwgMCwgJ1BDT+KCgiByZXF1aXNlJywgJ21tSGcnKVxuRnJlcSA9IEZhY3QgKiBQQ08yYWN0IC8gUENPMnJlcTtcbnVpLnIoRnJlcSwgMCwgJ0Zyw6lxLicsICcvbWluJylcblxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0UXVpZXQiLCJzb3VyY2UiOiJzaGlueUlucHV0KCdwSGFjdCcpIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0UXVpZXQiLCJzb3VyY2UiOiJzaGlueUlucHV0KCdQQ08yYWN0JykifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXRRdWlldCIsInNvdXJjZSI6InNoaW55SW5wdXQoJ0ZhY3QnKSJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldFF1aWV0Iiwic291cmNlIjoic2hpbnlJbnB1dCgncEhyZXEnKSJ9XX0=
+</script>
+<script type="module">
+if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
+window._ojs.paths.runtimeToDoc = "../../calculatrices";
+window._ojs.paths.runtimeToRoot = "../..";
+window._ojs.paths.docToRoot = "..";
+window._ojs.selfContained = false;
+window._ojs.runtime.interpretFromScriptTags();
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
