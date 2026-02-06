@@ -1,0 +1,29 @@
+---
+title: Adaptative support ventilation
+draft: true
+---
+
+
+```{R}
+Vminute <- 8;
+Freq <- seq(4, 40);
+
+plot(Freq, Vminute/Freq, xlab='Fréquence (/min)', ylab='Vc (l)', type='l')
+grid()
+```
+
+<input type='number'/>
+
+```{ojs}
+  Inputs.number();
+```
+
+<style>
+  input {
+    border-radius: 5px;
+    height: 2em;
+  }
+  input[type='number']{
+    max-width: 6em;
+  }
+</style>

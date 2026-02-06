@@ -1,0 +1,50 @@
+---
+title: Test d'occlusion
+subtitle: Validation du positionnement d'un ballon oesophagien
+date: 2025/11/28
+css: calculatrices.css
+resources:
+  - calculatrices.css
+echo: false
+---
+
+:::{.panel-tabset }
+
+## Calcul
+
+```{ojs}
+viewof PcircHaute = Inputs.number({ label: tex`P_{circ} \uparrow ` })
+viewof PoesHaute = Inputs.number({ label: tex`P_{oes} \uparrow` })
+viewof PcircBasse = Inputs.number({ label: tex`P_{circ} \downarrow` })
+viewof PoesBasse = Inputs.number({ label: tex`P_{oes} \downarrow` })
+
+result = {
+  let dpcirc = PcircHaute - PcircBasse;
+  let dpoes = PoesHaute - PoesBasse;
+  let ratio = dpoes / dpcirc;
+  let rdisp = ratio.toFixed(2);
+
+  let bg = "white";
+  if (ratio >= 0.8 && ratio <= 1.2) bg = "PaleGreen";
+  if (ratio < 0.8 || ratio > 1.2) bg = "LightCoral";
+
+  let f = tex.block`\frac{\Delta P_{oes}}{\Delta P_{circ}} = \frac{${dpoes}}{${dpcirc}} = ${rdisp}`;
+  f.style.background = bg;
+  f.style.padding = "15px";
+  f.style.border = "1px solid";
+  f.style.borderRadius = "8px";
+  return f;
+}
+```
+## Cadre de référence
+
+Le test d'occlusion constitue la tecnique de référence pour valider le
+positionnement adéquat d'un ballon oesophagien.
+
+Dans un contexte de ventilation médanique invasive, il s'effectue en
+tipyquement en procédant à une occlusion expiratoire (comme on le ferai
+pour mesurer la PEP totale) et à comprimer le thorax pendant cette
+occlusion. On peux allors calculer le ration des variation de pression
+dans l'oesophage et dans le circuit respiratoire $\frac{\Delta P_{oes}}{\Delta P_{circ}}$.
+
+:::

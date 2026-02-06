@@ -22,3 +22,29 @@
 		display: none;
 	}
 }
+
+/* --- Code corrigé pour Quarto Standard --- */
+
+/* 1. CIBLER LE LIEN SPÉCIFIQUE
+   On cherche n'importe quel lien (a) dans les résultats de recherche
+   qui contient le nom de votre dossier */
+#quarto-search-results a[href*="/votre-sous-dossier/"] {
+    /* Optionnel : style pour le lien global si besoin */
+}
+
+/* 2. CACHER L'ANCIENNE ICÔNE (souvent une balise <i> ou <svg>)
+   On cible la balise <i> qui est un descendant direct du lien ciblé au-dessus */
+   .search-result-doc a[href*="calculatrices/"] i::before{
+   	content: "\f1e0";
+   }
+
+.quarto-listing-default .quarto-post .metadata {
+  flex-basis: 15%;
+}
+
+.sidebar-item {
+	line-height: 1.5em;
+}
+body.nav-sidebar #title-block-header {
+	margin-block-end: 1rem;
+}

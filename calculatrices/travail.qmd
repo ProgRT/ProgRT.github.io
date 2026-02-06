@@ -1,0 +1,56 @@
+---
+title: Travail respiratoire en PAV+
+description: Calcul de la Pmus et du travail respiratoire en joules par minute
+date: 2025/10/03
+css: calculatrices.css
+resources:
+  - calculatrices.css
+echo: false
+---
+
+:::{.panel-tabset}
+
+## Calcul
+
+```{ojs}
+import { resultSpan } from "@progrt/utilitaires"
+
+viewof fsup = Inputs.number([.05, .95], {label:'%support', value: .5, step: .05  });
+
+pok = [5, 10].map(d=>{return Math.round(fsup * d/(1-fsup))});
+
+html`<table class='table'>
+<tr>
+<th>P<sub>mus</sub>
+${[5, 10].map(d=>`<td>${d}</td>`)}
+</tr>
+<tr>
+<th>Δ P<sub>vent</sub>
+${pok.map(d=>`<td>${d}</td>`)}
+</tr>
+</table>
+`
+
+viewof PEP = Inputs.number({label: 'PEP (cmH₂O)', value: null});
+viewof Pcrete = Inputs.number({label: tex`P_{crête}`, value: null});
+
+dpvent = Pcrete - PEP;
+pmus =  (dpvent/fsup) * (1-fsup);
+resultSpan(dpvent + pmus, 0, 'Δ P<sub>tot</sub>', 'cmH₂O')
+resultSpan(dpvent, 0, 'Δ P<sub>vent</sub>', 'cmH₂O')
+resultSpan(pmus, 0, 'P<sub>mus</sub>', 'cmH₂O')
+
+
+```
+### Travail respiratoire
+
+```{ojs}
+viewof wobtot = Inputs.number([0,15], {label: 'WOB tot (j/l)', step: 0.1, value: null})
+wobpt = wobtot * (1-fsup);
+resultSpan(wobpt, 1, 'WOB pt', 'j/l')
+viewof ventilation= Inputs.number([0,25], {label: 'Ventilation (l/m)', step: 0.1, value: null})
+wobptminute = wobpt * ventilation;
+resultSpan(wobptminute, 1, 'WOB pt', 'j/m')
+```
+
+:::

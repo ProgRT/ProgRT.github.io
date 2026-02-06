@@ -1,0 +1,57 @@
+---
+title: Fréquence respiratoire requise
+description: Calculer la fréquence respiratoire requise en fonction d'un pH souhaité.
+date: 2025/07/28
+echo: false
+resources:
+  - handerson-hasselbalch.js
+  - ui.js
+css:
+  - calculatrices.css 
+---
+
+:::{.panel-tabset}
+
+
+## Calcul
+
+```{ojs}
+hh = import('/calculatrices/handerson-hasselbalch.js')
+ui = import('/calculatrices/ui.js')
+```
+:::{layout-ncol=2}
+
+### Actuel
+
+```{ojs}
+viewof pHact = Inputs.number({label: 'pH'})
+viewof PCO2act = Inputs.number({label: 'PaCO₂'})
+HCO3 = hh.HCO3(pHact, PCO2act);
+ui.r(HCO3, 0, 'HCO<sub>3</sub><sup>-</sup>')
+viewof Fact = Inputs.number({label: 'Fréq. (/min)'})
+```
+
+
+### Souhaité
+
+```{ojs}
+viewof pHreq = Inputs.number({label: 'pH'})
+PCO2req = hh.PCO2(pHreq, HCO3);
+ui.r(PCO2req, 0, 'PCO₂ requise', 'mmHg')
+Freq = Fact * PCO2act / PCO2req;
+ui.r(Freq, 0, 'Fréq.', '/min')
+
+```
+:::
+
+## Cadre de référence
+
+Lorsqu'un patient des ventilé mécaniquement, il est fréquent de chercher la modification de fréquence respiratoire requise pour atteindre une cible de pH.
+
+Cette donnée peut facilement être calculée sachant que :
+
+1. Le pH est fonction de la concentration des ions bicarbonate (HCO3-) et le la PCO₂ (équation de Handerson-Hasselbalch);
+2. La PCO₂ est proportionnelle à la ventilation alvéolaire;
+3. Le ratio ventilation avléolaire sur ventilation totale demeure constant lors d'un changement de fréquence;
+
+:::

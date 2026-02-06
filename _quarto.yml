@@ -3,12 +3,23 @@ project:
   resources:
     - awesomestyle.css
     - js/vdrSignalAnalysis.js
+    - calculatrices/malibrairie.js
 
 website:
   title: "Carnet de Nicolas"
   favicon: img/favicon/favicon.png
   site-url: https://respiratoire.ca/
   open-graph: true
+  search:
+    show-item-context: true
+    keyboard-shortcut: ["?"]
+  sidebar:
+    - id: "calculatrices"
+      title: "Calculatrices"
+      style: "floating"
+      contents:
+        - section: Calculatrices
+          contents: "calculatrices/*.qmd"
   navbar:
     background: primary
     title: false
@@ -20,9 +31,8 @@ website:
         href: projets.qmd
       - icon: projector
         href: presentations.qmd
-      - text: Calculatrices
-        icon: calculator
-        href: https://observablehq.com/collection/@progrt/calculatrices-respiratoires
+      - icon: calculator
+        href: calculatrices/index.qmd
     tools:
       - icon: rss
         title: Flux RSS

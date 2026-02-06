@@ -1,0 +1,9 @@
+input {
+  border-radius: 5px;
+  height: 2em;
+}
+
+input[type='number']{
+  max-width: 6em;
+  text-align: right;
+}

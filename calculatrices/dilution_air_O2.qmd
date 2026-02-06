@@ -1,0 +1,30 @@
+---
+title: Dilution Air - Oxygène
+description: Calcul des débit d'air et d'oxygène en fonction d'une
+  concentration d'oxygène donnée
+date: 2020/04/12
+---
+
+:::{.panel-tabset}
+
+## Débit d'O₂
+
+<iframe width="100%" height="219" frameborder="0"
+  src="https://observablehq.com/embed/94d5d28b1408e309@187?cells=viewof+form1%2Cviewof+VO2%2Cviewof+Vair"></iframe>
+
+## $F_iO_2$
+
+<iframe width="100%" height="221" frameborder="0"
+  src="https://observablehq.com/embed/94d5d28b1408e309@187?cells=viewof+form%2Cviewof+Vtotal%2Cviewof+fio2"></iframe>
+
+## Cadre de référence
+
+\def\fox{FiO_2}
+\def\vair{V_{air}}
+\def\vox{V_{ox}}
+\def\vtot{(\vair + \vox)}
+
+$$ \fox=\frac{0.21 \cdot \vair + \vox}{\dot{V}_{total}}$$
+
+$$\dot{V}_{O_2} = \dot{V}_{total} \cdot \frac{FiO_2 - 0,21}{0,79}$$
+:::

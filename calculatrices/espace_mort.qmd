@@ -1,0 +1,14 @@
+---
+title: Espace mort
+description: Calcul de l'espace mort à partir du VcCO₂
+date: 2023/07/22
+---
+
+:::{.panel-tabset}
+
+## Calcul
+
+<iframe width="100%" height="339" frameborder="0"
+  src="https://observablehq.com/embed/e012bd0b631bc59c?cells=viewof+form%2CFECO2%2Cviewof+PECO2%2Cviewof+VdVt%2CVd"></iframe>
+
+:::

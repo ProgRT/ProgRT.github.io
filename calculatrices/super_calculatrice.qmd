@@ -1,0 +1,104 @@
+---
+title: Poids prédit ... et plus 
+description: Prédiction du poids, de la ventilation par minute,
+  de l'espace mort et calcul du ratio ventilatoire
+date: 2026/01/31
+css: calculatrices.css
+resources:
+  - calculatrices.css
+---
+
+### Poids et ventilation prédite
+
+```{ojs}
+// | echo: false
+import { resultSpan } from "@progrt/utilitaires"
+
+function pbwDevine(cm, sexe = "M") {
+  let a = { M: 50, F: 45.5 };
+  let p =  a[sexe] + 0.9 * (cm - 152);
+  return Math.max(p, 0);
+}
+
+viewof sexe =  Inputs.radio(["M", "F"], { label: "Sexe", value: null });
+viewof taille = Inputs.number({label: 'Taille (cm)', value: null});
+
+pbw = pbwDevine(taille, sexe);
+resultSpan(pbw, 0, 'Poids prédit', 'kg');
+
+ventPredite = 0.1 * pbw;
+resultSpan(ventPredite, 1, 'Ventilation prédite', 'l/m');
+
+function vtbl(pbw, t=d3.ticks(4, 8, 4)){
+    let factors = d3.ticks(4, 8, 4);
+    let vts = factors.map(f=> Math.round(pbw*f));
+
+    const tbl = html`<table class='table'>
+    <tr>
+    ${factors.map(f=>`<th>${f} ml/kg</th>`)}
+    </tr>
+    <tr>
+    ${vts.map(v=>`<td>${Math.round(1000 * ventPredite/v)} x ${v} ml</td>`)}
+    </tr>
+    </table>`;
+    return tbl;
+}
+
+isNaN(pbw) || pbw <= 0 ? html`` : vtbl(pbw);
+```
+
+### Espace mort prédit
+
+
+```{ojs}
+//|echo: false
+function cpt(taille, poids, age, sexe){
+  const f = {
+    M: {a: -4.73, b: .0776, c: -0.019, d: 0},
+    F: {a: -6.35, b: .0738, c: 0, d: -0.016}
+  };
+  if(taille && poids && age && sexe){
+    
+    let {a, b, c, d} = f[sexe];
+    return a + b * taille + c * poids + d * age;
+  }
+
+}
+
+function VDphys(CPT, Vc, age) {
+  return -65.2 + 11.6 * CPT + 0.173 * Vc + 1.33 * age;
+} 
+function VDaw(CPT, Vc) {
+  return 4.9 + 11.3 * CPT + 0.062 * Vc;
+}
+viewof poids =  Inputs.number({label: "Poids (kg)", value: null });
+
+viewof age = Inputs.number({label: 'Âge (Années)', value: null});
+
+viewof vc = Inputs.number({label: 'Volume courant (ml)', value: null});
+
+cptPredite = cpt(taille, poids, age, sexe);
+resultSpan(cptPredite, 3, 'CPT prédite', 'l');
+
+resultSpan(VDphys(cptPredite, vc, age), 0, 'EM<sub>phys</sub> prédit', 'ml', vc);
+resultSpan(VDaw(cptPredite, vc), 0, 'EM<sub>anat</sub> prédit', 'ml', vc);
+
+//ventPredite = 0.1 * pbw;
+//resultSpan(ventPredite, 1, 'Ventilation prédite', 'l/m');
+
+```
+
+### Ratio ventilatoire
+
+```{ojs}
+//|echo: false
+function ratioVent (ventMinute, PCO2, pbw) {
+  const PCO2pred = 37.5;
+  return (ventMinute * PCO2)/(.1 * pbw * PCO2pred);
+}
+
+viewof vact =  Inputs.number({label: "Ventilation actuelle (l/m)", value: null });
+viewof pact = Inputs.number({label: 'PCO₂ actuelle (mmHg)', value: null});
+
+resultSpan(ratioVent(vact, pact, pbw), 2, 'Ratio rentilatoire')
+```

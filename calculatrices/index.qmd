@@ -1,0 +1,17 @@
+---
+title: "Calculatrices respiratoires"
+listing:
+  contents: ./
+  sort: "title asc"
+  type: default
+  categories: false
+  sort-ui: false
+  filter-ui: false
+  image-height: 0px
+  feed:
+    type: partial
+  fields: [title, description, date]
+page-layout: full
+---
+
+

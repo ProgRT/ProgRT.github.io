@@ -1,0 +1,10 @@
+---
+title: Contenu sanguin en oxygène
+description: Calcul de la quantité d'oxygène disoute et liée à l'hémoglobine
+date: 2024/02/12
+---
+
+$$C_{O_2} = 1,34_{(ml/g)}\cdot Hb_{(g/l)}*S_{O_2}+,031_{(ml/l/mmHg)}\cdot P_{O_2}$$
+
+<iframe width="100%" height="340" frameborder="0"
+  src="https://observablehq.com/embed/cc730e23479f1f14@83?cells=viewof+formCaO2%2Cviewof+solu_O2%2Cviewof+O2_dissout%2Cviewof+O2_li%C3%A9%2Cviewof+cao2"></iframe>
