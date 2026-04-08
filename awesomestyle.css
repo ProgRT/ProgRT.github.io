@@ -4,6 +4,9 @@
 	max-height: 45px;
 }
 
+.navbar-expand-lg {
+	max-width: 100vw;
+}
 .card {
     margin-bottom: 1em;
 }

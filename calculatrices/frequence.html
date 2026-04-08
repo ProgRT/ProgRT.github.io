@@ -155,7 +155,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
-    <a href="../index.xml" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-rss"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -279,8 +278,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="19" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 18;"><span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>hh <span class="op">=</span> <span class="im">import</span>(<span class="st">'/calculatrices/handerson-hasselbalch.js'</span>)</span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>ui <span class="op">=</span> <span class="im">import</span>(<span class="st">'/calculatrices/ui.js'</span>)</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="19" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 18;"><span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> { resultSpan } <span class="im">from</span> <span class="st">"@progrt/utilitaires"</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>hh <span class="op">=</span> <span class="im">import</span>(<span class="st">'/calculatrices/handerson-hasselbalch.js'</span>)</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>ui <span class="op">=</span> <span class="im">import</span>(<span class="st">'/calculatrices/ui.js'</span>)</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <div id="ojs-cell-1-1" data-nodetype="declaration">
@@ -295,17 +296,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-3" data-nodetype="declaration">
+
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="27" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 26;"><span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>viewof pHact <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">number</span>({<span class="dt">label</span><span class="op">:</span> <span class="st">'pH'</span>})</span>
-<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>viewof PCO2act <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">number</span>({<span class="dt">label</span><span class="op">:</span> <span class="st">'PaCO₂'</span>})</span>
-<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>HCO3 <span class="op">=</span> hh<span class="op">.</span><span class="fu">HCO3</span>(pHact<span class="op">,</span> PCO2act)<span class="op">;</span></span>
-<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>ui<span class="op">.</span><span class="fu">r</span>(HCO3<span class="op">,</span> <span class="dv">0</span><span class="op">,</span> <span class="st">'HCO&lt;sub&gt;3&lt;/sub&gt;&lt;sup&gt;-&lt;/sup&gt;'</span>)</span>
-<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>viewof Fact <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">number</span>({<span class="dt">label</span><span class="op">:</span> <span class="st">'Fréq. (/min)'</span>})</span>
-<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>viewof pHreq <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">number</span>({<span class="dt">label</span><span class="op">:</span> <span class="st">'pH'</span>})</span>
-<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>PCO2req <span class="op">=</span> hh<span class="op">.</span><span class="fu">PCO2</span>(pHreq<span class="op">,</span> HCO3)<span class="op">;</span></span>
-<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>ui<span class="op">.</span><span class="fu">r</span>(PCO2req<span class="op">,</span> <span class="dv">0</span><span class="op">,</span> <span class="st">'PCO₂ requise'</span><span class="op">,</span> <span class="st">'mmHg'</span>)</span>
-<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>Freq <span class="op">=</span> Fact <span class="op">*</span> PCO2act <span class="op">/</span> PCO2req<span class="op">;</span></span>
-<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>ui<span class="op">.</span><span class="fu">r</span>(Freq<span class="op">,</span> <span class="dv">0</span><span class="op">,</span> <span class="st">'Fréq.'</span><span class="op">,</span> <span class="st">'/min'</span>)</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</div>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="29" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 28;"><span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>viewof pHact <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">number</span>({<span class="dt">label</span><span class="op">:</span> <span class="st">'pH'</span>})</span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>viewof PCO2act <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">number</span>({<span class="dt">label</span><span class="op">:</span> <span class="st">'PaCO₂'</span>})</span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>HCO3 <span class="op">=</span> hh<span class="op">.</span><span class="fu">HCO3</span>(pHact<span class="op">,</span> PCO2act)<span class="op">;</span></span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>ui<span class="op">.</span><span class="fu">r</span>(HCO3<span class="op">,</span> <span class="dv">0</span><span class="op">,</span> <span class="st">'HCO&lt;sub&gt;3&lt;/sub&gt;&lt;sup&gt;-&lt;/sup&gt;'</span>)</span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>viewof Fact <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">number</span>({<span class="dt">label</span><span class="op">:</span> <span class="st">'Fréq. (/min)'</span>})</span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>viewof pHreq <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">number</span>({<span class="dt">label</span><span class="op">:</span> <span class="st">'pH'</span>})</span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>PCO2req <span class="op">=</span> hh<span class="op">.</span><span class="fu">PCO2</span>(pHreq<span class="op">,</span> HCO3)<span class="op">;</span></span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>ui<span class="op">.</span><span class="fu">r</span>(PCO2req<span class="op">,</span> <span class="dv">0</span><span class="op">,</span> <span class="st">'PCO₂ requise'</span><span class="op">,</span> <span class="st">'mmHg'</span>)</span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a>Freq <span class="op">=</span> Fact <span class="op">*</span> PCO2act <span class="op">/</span> PCO2req<span class="op">;</span></span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a>ui<span class="op">.</span><span class="fu">r</span>(Freq<span class="op">,</span> <span class="dv">0</span><span class="op">,</span> <span class="st">'Fréq.'</span><span class="op">,</span> <span class="st">'/min'</span>)</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="quarto-layout-panel" data-layout-ncol="2">
 <div class="quarto-layout-row">
 <section id="actuel" class="level3 cell quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
@@ -403,7 +411,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </main> <!-- /main -->
 <script type="ojs-module-contents">
-eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6ImhoID0gaW1wb3J0KCcvY2FsY3VsYXRyaWNlcy9oYW5kZXJzb24taGFzc2VsYmFsY2guanMnKVxudWkgPSBpbXBvcnQoJy9jYWxjdWxhdHJpY2VzL3VpLmpzJylcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMiIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6InZpZXdvZiBwSGFjdCA9IElucHV0cy5udW1iZXIoe2xhYmVsOiAncEgnfSlcbnZpZXdvZiBQQ08yYWN0ID0gSW5wdXRzLm51bWJlcih7bGFiZWw6ICdQYUNP4oKCJ30pXG5IQ08zID0gaGguSENPMyhwSGFjdCwgUENPMmFjdCk7XG51aS5yKEhDTzMsIDAsICdIQ088c3ViPjM8L3N1Yj48c3VwPi08L3N1cD4nKVxudmlld29mIEZhY3QgPSBJbnB1dHMubnVtYmVyKHtsYWJlbDogJ0Zyw6lxLiAoL21pbiknfSlcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMyIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6InZpZXdvZiBwSHJlcSA9IElucHV0cy5udW1iZXIoe2xhYmVsOiAncEgnfSlcblBDTzJyZXEgPSBoaC5QQ08yKHBIcmVxLCBIQ08zKTtcbnVpLnIoUENPMnJlcSwgMCwgJ1BDT+KCgiByZXF1aXNlJywgJ21tSGcnKVxuRnJlcSA9IEZhY3QgKiBQQ08yYWN0IC8gUENPMnJlcTtcbnVpLnIoRnJlcSwgMCwgJ0Zyw6lxLicsICcvbWluJylcblxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0UXVpZXQiLCJzb3VyY2UiOiJzaGlueUlucHV0KCdwSGFjdCcpIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0UXVpZXQiLCJzb3VyY2UiOiJzaGlueUlucHV0KCdQQ08yYWN0JykifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXRRdWlldCIsInNvdXJjZSI6InNoaW55SW5wdXQoJ0ZhY3QnKSJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldFF1aWV0Iiwic291cmNlIjoic2hpbnlJbnB1dCgncEhyZXEnKSJ9XX0=
+eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6ImltcG9ydCB7IHJlc3VsdFNwYW4gfSBmcm9tIFwiQHByb2dydC91dGlsaXRhaXJlc1wiXG5cbmhoID0gaW1wb3J0KCcvY2FsY3VsYXRyaWNlcy9oYW5kZXJzb24taGFzc2VsYmFsY2guanMnKVxudWkgPSBpbXBvcnQoJy9jYWxjdWxhdHJpY2VzL3VpLmpzJylcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMiIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6InZpZXdvZiBwSGFjdCA9IElucHV0cy5udW1iZXIoe2xhYmVsOiAncEgnfSlcbnZpZXdvZiBQQ08yYWN0ID0gSW5wdXRzLm51bWJlcih7bGFiZWw6ICdQYUNP4oKCJ30pXG5IQ08zID0gaGguSENPMyhwSGFjdCwgUENPMmFjdCk7XG51aS5yKEhDTzMsIDAsICdIQ088c3ViPjM8L3N1Yj48c3VwPi08L3N1cD4nKVxudmlld29mIEZhY3QgPSBJbnB1dHMubnVtYmVyKHtsYWJlbDogJ0Zyw6lxLiAoL21pbiknfSlcblxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0zIiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoidmlld29mIHBIcmVxID0gSW5wdXRzLm51bWJlcih7bGFiZWw6ICdwSCd9KVxuUENPMnJlcSA9IGhoLlBDTzIocEhyZXEsIEhDTzMpO1xudWkucihQQ08ycmVxLCAwLCAnUENP4oKCIHJlcXVpc2UnLCAnbW1IZycpXG5GcmVxID0gRmFjdCAqIFBDTzJhY3QgLyBQQ08ycmVxO1xudWkucihGcmVxLCAwLCAnRnLDqXEuJywgJy9taW4nKVxuXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXRRdWlldCIsInNvdXJjZSI6InNoaW55SW5wdXQoJ3BIYWN0JykifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXRRdWlldCIsInNvdXJjZSI6InNoaW55SW5wdXQoJ1BDTzJhY3QnKSJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldFF1aWV0Iiwic291cmNlIjoic2hpbnlJbnB1dCgnRmFjdCcpIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0UXVpZXQiLCJzb3VyY2UiOiJzaGlueUlucHV0KCdwSHJlcScpIn1dfQ==
 </script>
 <script type="module">
 if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
