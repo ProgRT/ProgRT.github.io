@@ -16,6 +16,8 @@ css:
 ## Calcul
 
 ```{ojs}
+import { resultSpan } from "@progrt/utilitaires"
+
 hh = import('/calculatrices/handerson-hasselbalch.js')
 ui = import('/calculatrices/ui.js')
 ```
@@ -29,6 +31,7 @@ viewof PCO2act = Inputs.number({label: 'PaCO₂'})
 HCO3 = hh.HCO3(pHact, PCO2act);
 ui.r(HCO3, 0, 'HCO<sub>3</sub><sup>-</sup>')
 viewof Fact = Inputs.number({label: 'Fréq. (/min)'})
+
 ```
 
 

@@ -26,7 +26,7 @@ categories:
 ::: {.column-margin}
 [Ressources supplémentaires]{.quarto-title-meta-heading}
 
-- [Calculatrice P<small>mus</small>](https://observablehq.com/d/3902c3b0909ab8e2?collection=@progrt/calculatrices-respiratoires){.bi .bi-calculator}
+- [Calculatrice P<small>mus</small>](/calculatrices/travail.qmd){.bi .bi-calculator}
 - [diapositives.pdf](diapo.pdf){.bi .bi-file-slides}
 
 :::

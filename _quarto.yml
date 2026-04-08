@@ -33,10 +33,13 @@ website:
         href: presentations.qmd
       - icon: calculator
         href: calculatrices/index.qmd
-    tools:
-      - icon: rss
-        title: Flux RSS
-        href: index.xml
+    #tools:
+      #- text: Observable
+        #icon: link
+        #href: https://observablehq.com
+      #- icon: rss
+        #title: Flux RSS
+        #href: index.xml
 
 format:
   html:
