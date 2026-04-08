@@ -55,22 +55,5 @@
   <guid>https://respiratoire.ca/billets/bohr/christian_bohr.html</guid>
   <pubDate>Sun, 01 Oct 2023 04:00:00 GMT</pubDate>
 </item>
-<item>
-  <title></title>
-  <dc:creator>Nicolas Blais St-Laurent</dc:creator>
-  <link>https://respiratoire.ca/billets/tcav/slides.html</link>
-  <description><![CDATA[ undefined ]]></description>
-  <guid>https://respiratoire.ca/billets/tcav/slides.html</guid>
-  <pubDate>Wed, 08 Apr 2026 19:42:49 GMT</pubDate>
-</item>
-<item>
-  <title>Ventilation adaptative contrôlée par le temps</title>
-  <link>https://respiratoire.ca/billets/tcav/tcav.html</link>
-  <description><![CDATA[ Traduit et adapté de <em><span class="citation" data-cites="habashi2005">Habashi (2005)</span></em>. ]]></description>
-  <category>APRV</category>
-  <guid>https://respiratoire.ca/billets/tcav/tcav.html</guid>
-  <pubDate>Wed, 08 Apr 2026 19:42:49 GMT</pubDate>
-  <media:content url="https://respiratoire.ca/billets/tcav/couverture.jpg" medium="image" type="image/jpeg"/>
-</item>
 </channel>
 </rss>

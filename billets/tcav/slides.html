@@ -263,8 +263,8 @@ Nicolas Blais St-Laurent
 <section id="effet-sur-lespace-mort-1" class="slide level2">
 <h2>Effet sur l’espace mort</h2>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="44" data-source-offset="-0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 43;"><span id="cb1-44"><a></a><span class="im">import</span> {exalations} <span class="im">from</span> <span class="st">"@progrt/signal"</span><span class="op">;</span></span>
-<span id="cb1-45"><a></a>sv <span class="op">=</span> <span class="im">import</span>(<span class="st">"https://cdn.jsdelivr.net/gh/progrt/simvent.js@3.3/src/simvent.js"</span>)<span class="op">;</span></span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="45" data-source-offset="-0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 44;"><span id="cb1-45"><a></a><span class="im">import</span> {exalations} <span class="im">from</span> <span class="st">"@progrt/signal"</span><span class="op">;</span></span>
+<span id="cb1-46"><a></a>sv <span class="op">=</span> <span class="im">import</span>(<span class="st">"https://cdn.jsdelivr.net/gh/progrt/simvent.js@3.3/src/simvent.js"</span>)<span class="op">;</span></span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <div id="ojs-cell-1-1" data-nodetype="declaration">
@@ -281,35 +281,35 @@ Nicolas Blais St-Laurent
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="49" data-source-offset="-0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 48;"><span id="cb2-49"><a></a>lung1 <span class="op">=</span> <span class="kw">new</span> sv<span class="op">.</span><span class="fu">SimpleLung</span>({</span>
-<span id="cb2-50"><a></a><span class="dt">Slope2</span><span class="op">:</span> <span class="fl">0.03</span><span class="op">,</span></span>
-<span id="cb2-51"><a></a><span class="dt">Vdaw</span><span class="op">:</span> <span class="fl">0.25</span></span>
-<span id="cb2-52"><a></a>})<span class="op">;</span></span>
-<span id="cb2-53"><a></a></span>
-<span id="cb2-54"><a></a>lung2 <span class="op">=</span> <span class="kw">new</span> sv<span class="op">.</span><span class="fu">SimpleLung</span>({</span>
-<span id="cb2-55"><a></a><span class="dt">Slope2</span><span class="op">:</span> <span class="fl">0.025</span><span class="op">,</span></span>
-<span id="cb2-56"><a></a><span class="dt">Vdaw</span><span class="op">:</span> <span class="fl">0.210</span></span>
-<span id="cb2-57"><a></a>})<span class="op">;</span></span>
-<span id="cb2-58"><a></a></span>
-<span id="cb2-59"><a></a>vent1 <span class="op">=</span> <span class="kw">new</span> sv<span class="op">.</span><span class="fu">FlowControler</span>({</span>
-<span id="cb2-60"><a></a><span class="dt">PEEP</span><span class="op">:</span> <span class="dv">0</span><span class="op">,</span></span>
-<span id="cb2-61"><a></a><span class="dt">Tvent</span><span class="op">:</span> <span class="dv">5</span></span>
-<span id="cb2-62"><a></a>})<span class="op">;</span></span>
-<span id="cb2-63"><a></a></span>
-<span id="cb2-64"><a></a>data1 <span class="op">=</span> vent1<span class="op">.</span><span class="fu">ventilate</span>(lung1)<span class="op">.</span><span class="at">timeData</span><span class="op">;</span></span>
-<span id="cb2-65"><a></a>data2 <span class="op">=</span> vent1<span class="op">.</span><span class="fu">ventilate</span>(lung2)<span class="op">.</span><span class="at">timeData</span><span class="op">;</span></span>
-<span id="cb2-66"><a></a></span>
-<span id="cb2-67"><a></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
-<span id="cb2-68"><a></a>    <span class="dt">width</span><span class="op">:</span> <span class="dv">400</span><span class="op">,</span></span>
-<span id="cb2-69"><a></a>    <span class="dt">height</span><span class="op">:</span> <span class="dv">300</span><span class="op">,</span></span>
-<span id="cb2-70"><a></a>    <span class="dt">grid</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
-<span id="cb2-71"><a></a>    <span class="dt">x</span><span class="op">:</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"Vc exp. (ml)"</span>}<span class="op">,</span></span>
-<span id="cb2-72"><a></a>    <span class="dt">y</span><span class="op">:</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"CO₂ (%)"</span><span class="op">,</span> <span class="dt">percent</span><span class="op">:</span> <span class="kw">true</span>}<span class="op">,</span></span>
-<span id="cb2-73"><a></a>    <span class="dt">marks</span><span class="op">:</span> [</span>
-<span id="cb2-74"><a></a>        Plot<span class="op">.</span><span class="fu">line</span>(data1<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> d<span class="kw">=&gt;</span>d<span class="op">.</span><span class="at">Vte</span> <span class="op">*</span> <span class="dv">1000</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"SCO2"</span>})<span class="op">,</span></span>
-<span id="cb2-75"><a></a>        Plot<span class="op">.</span><span class="fu">line</span>(data2<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> d<span class="kw">=&gt;</span>d<span class="op">.</span><span class="at">Vte</span> <span class="op">*</span> <span class="dv">1000</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"SCO2"</span><span class="op">,</span> <span class="dt">strokeDasharray</span><span class="op">:</span> [<span class="dv">5</span><span class="op">,</span> <span class="dv">5</span>]})<span class="op">,</span></span>
-<span id="cb2-76"><a></a>    ]</span>
-<span id="cb2-77"><a></a>})<span class="op">;</span></span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="50" data-source-offset="-0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 49;"><span id="cb2-50"><a></a>lung1 <span class="op">=</span> <span class="kw">new</span> sv<span class="op">.</span><span class="fu">SimpleLung</span>({</span>
+<span id="cb2-51"><a></a><span class="dt">Slope2</span><span class="op">:</span> <span class="fl">0.03</span><span class="op">,</span></span>
+<span id="cb2-52"><a></a><span class="dt">Vdaw</span><span class="op">:</span> <span class="fl">0.25</span></span>
+<span id="cb2-53"><a></a>})<span class="op">;</span></span>
+<span id="cb2-54"><a></a></span>
+<span id="cb2-55"><a></a>lung2 <span class="op">=</span> <span class="kw">new</span> sv<span class="op">.</span><span class="fu">SimpleLung</span>({</span>
+<span id="cb2-56"><a></a><span class="dt">Slope2</span><span class="op">:</span> <span class="fl">0.025</span><span class="op">,</span></span>
+<span id="cb2-57"><a></a><span class="dt">Vdaw</span><span class="op">:</span> <span class="fl">0.210</span></span>
+<span id="cb2-58"><a></a>})<span class="op">;</span></span>
+<span id="cb2-59"><a></a></span>
+<span id="cb2-60"><a></a>vent1 <span class="op">=</span> <span class="kw">new</span> sv<span class="op">.</span><span class="fu">FlowControler</span>({</span>
+<span id="cb2-61"><a></a><span class="dt">PEEP</span><span class="op">:</span> <span class="dv">0</span><span class="op">,</span></span>
+<span id="cb2-62"><a></a><span class="dt">Tvent</span><span class="op">:</span> <span class="dv">5</span></span>
+<span id="cb2-63"><a></a>})<span class="op">;</span></span>
+<span id="cb2-64"><a></a></span>
+<span id="cb2-65"><a></a>data1 <span class="op">=</span> vent1<span class="op">.</span><span class="fu">ventilate</span>(lung1)<span class="op">.</span><span class="at">timeData</span><span class="op">;</span></span>
+<span id="cb2-66"><a></a>data2 <span class="op">=</span> vent1<span class="op">.</span><span class="fu">ventilate</span>(lung2)<span class="op">.</span><span class="at">timeData</span><span class="op">;</span></span>
+<span id="cb2-67"><a></a></span>
+<span id="cb2-68"><a></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
+<span id="cb2-69"><a></a>    <span class="dt">width</span><span class="op">:</span> <span class="dv">400</span><span class="op">,</span></span>
+<span id="cb2-70"><a></a>    <span class="dt">height</span><span class="op">:</span> <span class="dv">300</span><span class="op">,</span></span>
+<span id="cb2-71"><a></a>    <span class="dt">grid</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
+<span id="cb2-72"><a></a>    <span class="dt">x</span><span class="op">:</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"Vc exp. (ml)"</span>}<span class="op">,</span></span>
+<span id="cb2-73"><a></a>    <span class="dt">y</span><span class="op">:</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"CO₂ (%)"</span><span class="op">,</span> <span class="dt">percent</span><span class="op">:</span> <span class="kw">true</span>}<span class="op">,</span></span>
+<span id="cb2-74"><a></a>    <span class="dt">marks</span><span class="op">:</span> [</span>
+<span id="cb2-75"><a></a>        Plot<span class="op">.</span><span class="fu">line</span>(data1<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> d<span class="kw">=&gt;</span>d<span class="op">.</span><span class="at">Vte</span> <span class="op">*</span> <span class="dv">1000</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"SCO2"</span>})<span class="op">,</span></span>
+<span id="cb2-76"><a></a>        Plot<span class="op">.</span><span class="fu">line</span>(data2<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> d<span class="kw">=&gt;</span>d<span class="op">.</span><span class="at">Vte</span> <span class="op">*</span> <span class="dv">1000</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"SCO2"</span><span class="op">,</span> <span class="dt">strokeDasharray</span><span class="op">:</span> [<span class="dv">5</span><span class="op">,</span> <span class="dv">5</span>]})<span class="op">,</span></span>
+<span id="cb2-77"><a></a>    ]</span>
+<span id="cb2-78"><a></a>})<span class="op">;</span></span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <div id="ojs-cell-2-1" data-nodetype="declaration">
@@ -361,32 +361,32 @@ Nicolas Blais St-Laurent
 <h2>Ajustement du temps bas</h2>
 <p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><msub><mover><mi>V</mi><mo accent="true">̇</mo></mover><mrow><mi>f</mi><mi>i</mi><mi>n</mi></mrow></msub><msub><mover><mi>V</mi><mo accent="true">̇</mo></mover><mrow><mi>p</mi><mi>t</mi><mi>e</mi></mrow></msub></mfrac><mo>=</mo></mrow><annotation encoding="application/x-tex">\frac{\dot{V}_{fin}}{\dot{V}_{pte}}=</annotation></semantics></math> <span><span id="ojs-element-id-1"></span></span></p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb3" data-startfrom="93" data-source-offset="-0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 92;"><span id="cb3-93"><a></a>lung <span class="op">=</span> <span class="kw">new</span> sv<span class="op">.</span><span class="fu">SimpleLung</span>({<span class="dt">Raw</span><span class="op">:</span> <span class="dv">10</span>})<span class="op">;</span></span>
-<span id="cb3-94"><a></a>vent <span class="op">=</span> <span class="kw">new</span> sv<span class="op">.</span><span class="fu">APRV</span>({<span class="dt">Tlow</span><span class="op">:</span> <span class="fl">0.35</span>})<span class="op">;</span></span>
-<span id="cb3-95"><a></a>data <span class="op">=</span> vent<span class="op">.</span><span class="fu">ventilate</span>(lung)<span class="op">.</span><span class="at">timeData</span><span class="op">;</span></span>
-<span id="cb3-96"><a></a></span>
-<span id="cb3-97"><a></a>ex <span class="op">=</span> <span class="fu">exalations</span>(data)<span class="op">.</span><span class="fu">slice</span>(<span class="op">-</span><span class="dv">1</span>)[<span class="dv">0</span>]<span class="op">;</span></span>
-<span id="cb3-98"><a></a></span>
-<span id="cb3-99"><a></a>efr <span class="op">=</span> ex<span class="op">.</span><span class="at">flowRatio</span><span class="op">.</span><span class="fu">toLocaleString</span>(<span class="st">'fr'</span><span class="op">,</span> {<span class="dt">maximumFractionDigits</span><span class="op">:</span> <span class="dv">2</span>})<span class="op">;</span></span>
-<span id="cb3-100"><a></a><span class="co">//efr = ex.flowRatio;</span></span>
-<span id="cb3-101"><a></a></span>
-<span id="cb3-102"><a></a>cropped <span class="op">=</span> data<span class="op">.</span><span class="fu">filter</span>(d<span class="kw">=&gt;</span>{</span>
-<span id="cb3-103"><a></a>        <span class="cf">return</span> d<span class="op">.</span><span class="at">time</span> <span class="op">&gt;</span> ex<span class="op">.</span><span class="at">midPoint</span> <span class="op">-</span> <span class="dv">2</span><span class="op">*</span> ex<span class="op">.</span><span class="at">Tlow</span> <span class="op">&amp;&amp;</span></span>
-<span id="cb3-104"><a></a>        d<span class="op">.</span><span class="at">time</span> <span class="op">&lt;</span> ex<span class="op">.</span><span class="at">midPoint</span> <span class="op">+</span> <span class="dv">2</span><span class="op">*</span>ex<span class="op">.</span><span class="at">Tlow</span></span>
-<span id="cb3-105"><a></a>    }</span>
-<span id="cb3-106"><a></a>)<span class="op">;</span></span>
-<span id="cb3-107"><a></a></span>
-<span id="cb3-108"><a></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
-<span id="cb3-109"><a></a>    <span class="dt">width</span><span class="op">:</span> <span class="dv">400</span><span class="op">,</span></span>
-<span id="cb3-110"><a></a>    <span class="dt">height</span><span class="op">:</span> <span class="dv">300</span><span class="op">,</span></span>
-<span id="cb3-111"><a></a>    <span class="dt">grid</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
-<span id="cb3-112"><a></a>    <span class="dt">x</span><span class="op">:</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"Temps (s)"</span>}<span class="op">,</span></span>
-<span id="cb3-113"><a></a>    <span class="dt">y</span><span class="op">:</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"Débit (l/s)"</span>}<span class="op">,</span></span>
-<span id="cb3-114"><a></a>    <span class="dt">marks</span><span class="op">:</span> [</span>
-<span id="cb3-115"><a></a>        Plot<span class="op">.</span><span class="fu">line</span>(cropped<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"time"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"Flung"</span>})<span class="op">,</span></span>
-<span id="cb3-116"><a></a>        Plot<span class="op">.</span><span class="fu">dot</span>([ex<span class="op">.</span><span class="at">start</span><span class="op">,</span> ex<span class="op">.</span><span class="at">end</span>]<span class="op">,</span> { <span class="dt">x</span><span class="op">:</span> <span class="st">"time"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"Flung"</span><span class="op">,</span> <span class="dt">stroke</span><span class="op">:</span> <span class="st">"red"</span><span class="op">,</span> <span class="dt">tip</span><span class="op">:</span> <span class="kw">true</span> })<span class="op">,</span></span>
-<span id="cb3-117"><a></a>    ]</span>
-<span id="cb3-118"><a></a>})<span class="op">;</span></span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb3" data-startfrom="94" data-source-offset="-0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 93;"><span id="cb3-94"><a></a>lung <span class="op">=</span> <span class="kw">new</span> sv<span class="op">.</span><span class="fu">SimpleLung</span>({<span class="dt">Raw</span><span class="op">:</span> <span class="dv">10</span>})<span class="op">;</span></span>
+<span id="cb3-95"><a></a>vent <span class="op">=</span> <span class="kw">new</span> sv<span class="op">.</span><span class="fu">APRV</span>({<span class="dt">Tlow</span><span class="op">:</span> <span class="fl">0.35</span>})<span class="op">;</span></span>
+<span id="cb3-96"><a></a>data <span class="op">=</span> vent<span class="op">.</span><span class="fu">ventilate</span>(lung)<span class="op">.</span><span class="at">timeData</span><span class="op">;</span></span>
+<span id="cb3-97"><a></a></span>
+<span id="cb3-98"><a></a>ex <span class="op">=</span> <span class="fu">exalations</span>(data)<span class="op">.</span><span class="fu">slice</span>(<span class="op">-</span><span class="dv">1</span>)[<span class="dv">0</span>]<span class="op">;</span></span>
+<span id="cb3-99"><a></a></span>
+<span id="cb3-100"><a></a>efr <span class="op">=</span> ex<span class="op">.</span><span class="at">flowRatio</span><span class="op">.</span><span class="fu">toLocaleString</span>(<span class="st">'fr'</span><span class="op">,</span> {<span class="dt">maximumFractionDigits</span><span class="op">:</span> <span class="dv">2</span>})<span class="op">;</span></span>
+<span id="cb3-101"><a></a><span class="co">//efr = ex.flowRatio;</span></span>
+<span id="cb3-102"><a></a></span>
+<span id="cb3-103"><a></a>cropped <span class="op">=</span> data<span class="op">.</span><span class="fu">filter</span>(d<span class="kw">=&gt;</span>{</span>
+<span id="cb3-104"><a></a>        <span class="cf">return</span> d<span class="op">.</span><span class="at">time</span> <span class="op">&gt;</span> ex<span class="op">.</span><span class="at">midPoint</span> <span class="op">-</span> <span class="dv">2</span><span class="op">*</span> ex<span class="op">.</span><span class="at">Tlow</span> <span class="op">&amp;&amp;</span></span>
+<span id="cb3-105"><a></a>        d<span class="op">.</span><span class="at">time</span> <span class="op">&lt;</span> ex<span class="op">.</span><span class="at">midPoint</span> <span class="op">+</span> <span class="dv">2</span><span class="op">*</span>ex<span class="op">.</span><span class="at">Tlow</span></span>
+<span id="cb3-106"><a></a>    }</span>
+<span id="cb3-107"><a></a>)<span class="op">;</span></span>
+<span id="cb3-108"><a></a></span>
+<span id="cb3-109"><a></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
+<span id="cb3-110"><a></a>    <span class="dt">width</span><span class="op">:</span> <span class="dv">400</span><span class="op">,</span></span>
+<span id="cb3-111"><a></a>    <span class="dt">height</span><span class="op">:</span> <span class="dv">300</span><span class="op">,</span></span>
+<span id="cb3-112"><a></a>    <span class="dt">grid</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
+<span id="cb3-113"><a></a>    <span class="dt">x</span><span class="op">:</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"Temps (s)"</span>}<span class="op">,</span></span>
+<span id="cb3-114"><a></a>    <span class="dt">y</span><span class="op">:</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"Débit (l/s)"</span>}<span class="op">,</span></span>
+<span id="cb3-115"><a></a>    <span class="dt">marks</span><span class="op">:</span> [</span>
+<span id="cb3-116"><a></a>        Plot<span class="op">.</span><span class="fu">line</span>(cropped<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"time"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"Flung"</span>})<span class="op">,</span></span>
+<span id="cb3-117"><a></a>        Plot<span class="op">.</span><span class="fu">dot</span>([ex<span class="op">.</span><span class="at">start</span><span class="op">,</span> ex<span class="op">.</span><span class="at">end</span>]<span class="op">,</span> { <span class="dt">x</span><span class="op">:</span> <span class="st">"time"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"Flung"</span><span class="op">,</span> <span class="dt">stroke</span><span class="op">:</span> <span class="st">"red"</span><span class="op">,</span> <span class="dt">tip</span><span class="op">:</span> <span class="kw">true</span> })<span class="op">,</span></span>
+<span id="cb3-118"><a></a>    ]</span>
+<span id="cb3-119"><a></a>})<span class="op">;</span></span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <div id="ojs-cell-3-1" data-nodetype="declaration">
