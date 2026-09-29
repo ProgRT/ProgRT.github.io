@@ -10,7 +10,7 @@
 <atom:link href="https://respiratoire.ca/presentations.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.8.26</generator>
-<lastBuildDate>Fri, 22 May 2026 04:00:00 GMT</lastBuildDate>
+<lastBuildDate>Tue, 29 Sep 2026 04:00:00 GMT</lastBuildDate>
 <item>
   <title>Apprivoiser le mode PAV+</title>
   <dc:creator>Nicolas Blais St-Laurent</dc:creator>
@@ -681,17 +681,806 @@ Yang, Yan-Lin, Yang Liu, Ran Gao, De-Jing Song, Yi-Min Zhou, Ming-Yue Miao, Wei 
 </div></section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Réutilisation</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr_ca">CC BY-SA 4.0</a></div></div></section></div> ]]></description>
   <category>Présentation</category>
   <guid>https://respiratoire.ca/billets/PAV+/article.html</guid>
-  <pubDate>Fri, 22 May 2026 04:00:00 GMT</pubDate>
+  <pubDate>Tue, 29 Sep 2026 04:00:00 GMT</pubDate>
   <media:content url="https://respiratoire.ca/billets/PAV+/img/Pavlov.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
-  <title>Doser l&#39;aide inspiratoire</title>
-  <link>https://respiratoire.ca/</link>
-  <description></description>
+  <title>Doser l’aide inspiratoire</title>
+  <dc:creator>Nicolas Blais St-Laurent</dc:creator>
+  <link>https://respiratoire.ca/billets/aide_inspiratoire/aide_inspiratoire.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p><span class="quarto-title-meta-heading">Ressources supplémentaires</span></p>
+<ul>
+<li><a href="./diapo.pdf" class="bi bi-file-slides">diapo.pdf (2026)</a></li>
+<li><a href="https://respiratoire.ca/Presentations/src/aide_inspiratoire/slides.html" class="bi bi-file-slides">slides.html (2024)</a></li>
+</ul>
+</div></div><p>On reconnait de plus en plus l’importance de prévenir la dysfonction diaphragmatique induite par le ventilateur. Les données les plus récentes suggèrent qu’un niveau d’activité diaphragmatique excessivement faible ou excessivement élevé est un facteur déterminant dans le développement d’une dysfonction diaphragmatique chez les patients ventilés mécaniquement <span class="citation" data-cites="goligher2018">(Goligher et al. 2018)</span>. Il est par conséquent nécessaire d’avoir accès à des indicateurs permettant d’évaluer le niveau d’activité diaphragmatique des patients ventilés mécaniquement.</p>
+<div id="tbl-valRef" class="column-page-right quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-valRef-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: Valeurs de références des indicateurs cliniques de sur/sous-assistance.
+</figcaption>
+<div aria-describedby="tbl-valRef-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 16%">
+<col style="width: 20%">
+<col style="width: 37%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Paramètre</th>
+<th style="text-align: center;"></th>
+<th style="text-align: left;">Cible</th>
+<th style="text-align: left;">Référence</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Δ P<sub>occ</sub></td>
+<td style="text-align: center;"><img src="https://respiratoire.ca/billets/aide_inspiratoire/i/Pocc.svg" class="img-fluid figure-img"></td>
+<td style="text-align: left;">6 à 15 cm H₂O</td>
+<td style="text-align: left;"><span class="citation" data-cites="yang2023">Yang et al. (2023)</span>, <span class="citation" data-cites="devries2023">de Vries et al. (2023)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Ind. P<sub>mus</sub></td>
+<td style="text-align: center;"><img src="https://respiratoire.ca/billets/aide_inspiratoire/i/IPM.svg" class="img-fluid figure-img"></td>
+<td style="text-align: left;">0 à 2,5 cm H₂O</td>
+<td style="text-align: left;"><span class="citation" data-cites="yang2023">Yang et al. (2023)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">P<sub>0.1</sub></td>
+<td style="text-align: center;"><img src="https://respiratoire.ca/billets/aide_inspiratoire/i/P01.svg" class="img-fluid figure-img"></td>
+<td style="text-align: left;">1 à 2,5 cm H₂O</td>
+<td style="text-align: left;"><span class="citation" data-cites="yang2023">Yang et al. (2023)</span>, de Vries (2023), <span class="citation" data-cites="pletsch-assuncao2018">Pletsch-Assuncao et al. (2018)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Efforts non récompensés</td>
+<td style="text-align: center;"><img src="https://respiratoire.ca/billets/aide_inspiratoire/i/ENR.svg" class="img-fluid figure-img"></td>
+<td style="text-align: left;">&lt; 10 %</td>
+<td style="text-align: left;"><span class="citation" data-cites="pletsch-assuncao2018">Pletsch-Assuncao et al. (2018)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Ind. de débit</td>
+<td style="text-align: center;"><img src="https://respiratoire.ca/billets/aide_inspiratoire/i/ID.svg" class="img-fluid figure-img"></td>
+<td style="text-align: left;"><img src="https://respiratoire.ca/billets/aide_inspiratoire/i/ID20.svg" class="img-fluid figure-img"> <span>à</span> <img src="https://respiratoire.ca/billets/aide_inspiratoire/i/ID45.svg" class="img-fluid figure-img"> (2 à 4,5)</td>
+<td style="text-align: left;"><span class="citation" data-cites="albani2021">Albani, Pisani, et al. (2021)</span>, <span class="citation" data-cites="miao2022">Miao et al. (2022)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Fraction d’épaississement</td>
+<td style="text-align: center;"><img src="https://respiratoire.ca/billets/aide_inspiratoire/i/FE.svg" class="img-fluid figure-img"></td>
+<td style="text-align: left;">25 à 40 %</td>
+<td style="text-align: left;"><span class="citation" data-cites="goligher2015">Goligher et al. (2015)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<div id="tbl-valGold" class="column-page-right quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-valGold-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;2: Tests de références pour la détection de la sur/sous-assistance.
+</figcaption>
+<div aria-describedby="tbl-valGold-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 8%">
+<col style="width: 25%">
+<col style="width: 41%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Paramètre</th>
+<th></th>
+<th>Plage proposée</th>
+<th style="text-align: left;">Auteur</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">P<sub>musc</sub></td>
+<td><img src="https://respiratoire.ca/billets/aide_inspiratoire/i/Pmus.svg" height="60" class="figure-img"></td>
+<td>5 à 10 cm H₂O</td>
+<td style="text-align: left;"><span class="citation" data-cites="albani2021a">Albani, Fusina, et al. (2021)</span>, <span class="citation" data-cites="miao2022">Miao et al. (2022)</span>, <span class="citation" data-cites="yang2023">Yang et al. (2023)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Trav. resp.</td>
+<td><img src="https://respiratoire.ca/billets/aide_inspiratoire/i/WOB.svg" height="60" class="figure-img"></td>
+<td>&gt; 0,3 J/L</td>
+<td style="text-align: left;"><span class="citation" data-cites="miao2022">Miao et al. (2022)</span>, <span class="citation" data-cites="pletsch-assuncao2018">Pletsch-Assuncao et al. (2018)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">PPT<sub>es</sub>/m</td>
+<td><img src="https://respiratoire.ca/billets/aide_inspiratoire/i/PPT.svg" height="60" class="figure-img"></td>
+<td>50 à 200 cm H₂O·s/m</td>
+<td style="text-align: left;"><span class="citation" data-cites="miao2022">Miao et al. (2022)</span>, <span class="citation" data-cites="yang2023">Yang et al. (2023)</span>, <span class="citation" data-cites="pletsch-assuncao2018">Pletsch-Assuncao et al. (2018)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Efforts non récompensés</td>
+<td><img src="https://respiratoire.ca/billets/aide_inspiratoire/i/ENR.svg" height="60" class="figure-img"></td>
+<td>&lt; 10 %</td>
+<td style="text-align: left;"><span class="citation" data-cites="miao2022">Miao et al. (2022)</span>, <span class="citation" data-cites="pletsch-assuncao2018">Pletsch-Assuncao et al. (2018)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Fraction d’épaississement du diaphragme</td>
+<td><img src="https://respiratoire.ca/billets/aide_inspiratoire/i/FE.svg" height="60" class="figure-img"></td>
+<td>25 à 40 %</td>
+<td style="text-align: left;"><span class="citation" data-cites="goligher2015">Goligher et al. (2015)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">P<sub>0.1 es</sub></td>
+<td><img src="https://respiratoire.ca/billets/aide_inspiratoire/i/P01es.svg" height="60" class="figure-img"></td>
+<td>&gt; 1,5 cm H₂O</td>
+<td style="text-align: left;"><span class="citation" data-cites="pletsch-assuncao2018">Pletsch-Assuncao et al. (2018)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<section id="performance-diagnostique" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="performance-diagnostique">Performance diagnostique</h3>
+<p>Le tableau suivant compare la performance diagnostique des indicateurs de travail respiratoire évalués par différentes études.</p>
+<div class="column-screen-right">
+<div class="cell" data-tbl-cap="Performance diagnostiques des différents indicateurs">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="54" data-source-offset="-1" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 53;"><span id="cb1-54">interpCol <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> d3<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">interpolateHsl</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"red"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"green"</span>)</span>
+<span id="cb1-55"></span>
+<span id="cb1-56"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">function</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">colASC</span>(x){</span>
+<span id="cb1-57">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">interpCol</span>((x<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-.</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">5</span>)<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/.</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">5</span>)<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span>
+<span id="cb1-58">}</span>
+<span id="cb1-59"></span>
+<span id="cb1-60"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">function</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">fmtASC</span>(x){</span>
+<span id="cb1-61">    <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">const</span> c <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">colASC</span>(x)</span>
+<span id="cb1-62">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">html</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`&lt;span&gt;</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">${</span>x<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">&lt;/span&gt; &lt;span style="color:</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">${</span>c<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">;"&gt;⬤&lt;/span&gt;`</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span>
+<span id="cb1-63">}</span>
+<span id="cb1-64"></span>
+<span id="cb1-65"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">function</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">fmtInd</span>(x){</span>
+<span id="cb1-66">    <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">var</span> x <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> x<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">replace</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"0.1"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"&lt;sub&gt;0.1&lt;/sub&gt;"</span>)<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span>
+<span id="cb1-67">    <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">var</span> x <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> x<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">replace</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"mus"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"&lt;sub&gt;mus&lt;/sub&gt;"</span>)<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span>
+<span id="cb1-68">    <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">var</span> x <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> x<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">replace</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">" es"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"&lt;sub&gt; es&lt;/sub&gt;"</span>)<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span>
+<span id="cb1-69">    <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">var</span> x <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> x<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">replace</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"occ"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"&lt;sub&gt;occ&lt;/sub&gt;"</span>)<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span>
+<span id="cb1-70">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">html</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">${</span>x<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span>
+<span id="cb1-71">}</span>
+<span id="cb1-72"></span>
+<span id="cb1-73"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">function</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">fmtCond</span>(x){</span>
+<span id="cb1-74">    <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">var</span> x <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> x<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">replace</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Low effort"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Sur-assistance"</span>)<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span>
+<span id="cb1-75">    <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">var</span> x <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> x<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">replace</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"High effort"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Sous-assistance"</span>)<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span>
+<span id="cb1-76">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">html</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">${</span>x<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span>
+<span id="cb1-77">}</span>
+<span id="cb1-78"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">function</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">tablePerformance</span>(dataset){</span>
+<span id="cb1-79">    <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">const</span> columns <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> [</span>
+<span id="cb1-80">        <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Étude"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb1-81">        <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Indice"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb1-82">        <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Condition"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb1-83">        <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Référence"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb1-84">        <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Seuil"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb1-85">        <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"ASC"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb1-86">        <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Sen"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb1-87">        <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"VPN"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb1-88">        <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Spe"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb1-89">        <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"VPP"</span></span>
+<span id="cb1-90">    ]<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span>
+<span id="cb1-91"></span>
+<span id="cb1-92">    <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">const</span> header <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> {</span>
+<span id="cb1-93">        <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">Seuil</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"🎯 Seuil"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb1-94">        <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">Référence</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"🍎🍊 Référence"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb1-95">        <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">ASC</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"📈 Aire sous courbe"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb1-96">        <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">Sen</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Sensibilité"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb1-97">        <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">Spe</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Spécificité"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb1-98">        <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">VPP</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"✅ VPP"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb1-99">        <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">VPN</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"❌ VPN"</span></span>
+<span id="cb1-100">    }<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span>
+<span id="cb1-101"></span>
+<span id="cb1-102">    <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">const</span> aligns <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> {</span>
+<span id="cb1-103">        <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">Seuil</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"center"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb1-104">        <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">ASC</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"center"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb1-105">        <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">Sen</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"center"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb1-106">        <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">Spe</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"center"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb1-107">        <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">Référence</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"center"</span></span>
+<span id="cb1-108">    }<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span>
+<span id="cb1-109"></span>
+<span id="cb1-110">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> Inputs<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">table</span>(dataset<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span> {</span>
+<span id="cb1-111">        <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">columns</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span> columns<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb1-112">        <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">header</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span> header<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb1-113">        <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">align</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span> aligns<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb1-114">        <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">select</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">false</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb1-115">        <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">format</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span> {</span>
+<span id="cb1-116">            <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">ASC</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span> fmtASC<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb1-117">            <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">Iidice</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span> fmtInd<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb1-118">            <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">Condition</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span> fmtCond</span>
+<span id="cb1-119">        }<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb1-120">        <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">width</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span> {</span>
+<span id="cb1-121">            <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">ASC</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">250</span></span>
+<span id="cb1-122">        }<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb1-123">        <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">sort</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Indice"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb1-124">        <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">rows</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">28</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb1-125">        <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">select</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">false</span></span>
+<span id="cb1-126">    })</span>
+<span id="cb1-127">}</span>
+<span id="cb1-128"></span>
+<span id="cb1-129"></span>
+<span id="cb1-130"></span>
+<span id="cb1-131">data <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">FileAttachment</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"synthese.tsv"</span>)<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">tsv</span>({<span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">typed</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">true</span>})<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span>
+<span id="cb1-132"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">tablePerformance</span>(data)</span></code></pre></div></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-3" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-4" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-5" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-6" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-7" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-8" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Les références</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
+<div id="ref-albani2021a" class="csl-entry">
+Albani, Filippo, Federica Fusina, Gianni Ciabatti, Luigi Pisani, Valeria Lippolis, Maria Elena Franceschetti, Alessia Giovannini, et al. 2021. <span>«&nbsp;Flow <span>Index</span> Accurately Identifies Breaths with Low or High Inspiratory Effort during Pressure Support Ventilation&nbsp;»</span>. <em>Critical Care</em> 25 (1): 427. <a href="https://doi.org/10.1186/s13054-021-03855-4">https://doi.org/10.1186/s13054-021-03855-4</a>.
+</div>
+<div id="ref-albani2021" class="csl-entry">
+Albani, Filippo, Luigi Pisani, Gianni Ciabatti, Federica Fusina, Barbara Buizza, Anna Granato, Valeria Lippolis, et al. 2021. <span>«&nbsp;Flow <span>Index</span>: A Novel, Non-Invasive, Continuous, Quantitative Method to Evaluate Patient Inspiratory Effort During Pressure Support Ventilation&nbsp;»</span>. <em>Critical Care (London, England)</em> 25 (1): 196. <a href="https://doi.org/10.1186/s13054-021-03624-3">https://doi.org/10.1186/s13054-021-03624-3</a>.
+</div>
+<div id="ref-devries2023" class="csl-entry">
+de Vries, Heder J., Pieter R. Tuinman, Annemijn H. Jonkman, Ling Liu, Haibo Qiu, Armand R. J. Girbes, YingRui Zhang, Angelique M. E. de Man, Harm-Jan de Grooth, et Leo Heunks. 2023. <span>«&nbsp;Performance of <span>Noninvasive Airway Occlusion Maneuvers</span> to <span>Assess Lung Stress</span> and <span>Diaphragm Effort</span> in <span>Mechanically Ventilated Critically Ill Patients</span>&nbsp;»</span>. <em>Anesthesiology</em> 138 (3): 274‑88. <a href="https://doi.org/10.1097/ALN.0000000000004467">https://doi.org/10.1097/ALN.0000000000004467</a>.
+</div>
+<div id="ref-goligher2018" class="csl-entry">
+Goligher, Ewan C., Martin Dres, Eddy Fan, Gordon D. Rubenfeld, Damon C. Scales, Margaret S. Herridge, Stefannie Vorona, et al. 2018. <span>«&nbsp;Mechanical <span>Ventilation</span>–Induced <span>Diaphragm Atrophy Strongly Impacts Clinical Outcomes</span>&nbsp;»</span>. <em>American Journal of Respiratory and Critical Care Medicine</em> 197 (2): 204‑13. <a href="https://doi.org/10.1164/rccm.201703-0536OC">https://doi.org/10.1164/rccm.201703-0536OC</a>.
+</div>
+<div id="ref-goligher2015" class="csl-entry">
+Goligher, Ewan C., Eddy Fan, Margaret S. Herridge, Alistair Murray, Stefannie Vorona, Debbie Brace, Nuttapol Rittayamai, et al. 2015. <span>«&nbsp;Evolution of <span>Diaphragm Thickness</span> during <span>Mechanical Ventilation</span>. <span>Impact</span> of <span>Inspiratory Effort</span>&nbsp;»</span>. <em>American Journal of Respiratory and Critical Care Medicine</em> 192 (9): 1080‑88. <a href="https://doi.org/10.1164/rccm.201503-0620OC">https://doi.org/10.1164/rccm.201503-0620OC</a>.
+</div>
+<div id="ref-miao2022" class="csl-entry">
+Miao, Ming-Yue, Wei Chen, Yi-Min Zhou, Ran Gao, De-Jing Song, Shu-Peng Wang, Yan-Lin Yang, Linlin Zhang, et Jian-Xin Zhou. 2022. <span>«&nbsp;Validation of the Flow Index to Detect Low Inspiratory Effort during Pressure Support Ventilation&nbsp;»</span>. <em>Annals of Intensive Care</em> 12 (septembre): 89. <a href="https://doi.org/10.1186/s13613-022-01063-z">https://doi.org/10.1186/s13613-022-01063-z</a>.
+</div>
+<div id="ref-pletsch-assuncao2018" class="csl-entry">
+Pletsch-Assuncao, Renata, Mayra Caleffi Pereira, Jeferson George Ferreira, Letícia Zumpano Cardenas, André Luis Pereira de Albuquerque, Carlos Roberto Ribeiro de Carvalho, et Pedro Caruso. 2018. <span>«&nbsp;Accuracy of <span>Invasive</span> and <span>Noninvasive Parameters</span> for <span>Diagnosing Ventilatory Overassistance During Pressure Support Ventilation</span>*&nbsp;»</span>. <em>Critical Care Medicine</em> 46 (3): 411. <a href="https://doi.org/10.1097/CCM.0000000000002871">https://doi.org/10.1097/CCM.0000000000002871</a>.
+</div>
+<div id="ref-yang2023" class="csl-entry">
+Yang, Yan-Lin, Yang Liu, Ran Gao, De-Jing Song, Yi-Min Zhou, Ming-Yue Miao, Wei Chen, et al. 2023. <span>«&nbsp;Use of Airway Pressure-Based Indices to Detect High and Low Inspiratory Effort during Pressure Support Ventilation: A Diagnostic Accuracy Study&nbsp;»</span>. <em>Annals of Intensive Care</em> 13 (novembre): 111. <a href="https://doi.org/10.1186/s13613-023-01209-7">https://doi.org/10.1186/s13613-023-01209-7</a>.
+</div>
+</div></section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Réutilisation</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr">CC BY-SA 4.0</a></div></div></section></div> ]]></description>
   <category>Présentation</category>
-  <guid>https://respiratoire.ca/</guid>
-  <pubDate>Thu, 24 Oct 2024 04:00:00 GMT</pubDate>
-  <media:content url="https://respiratoire.ca/img/diapo/aide_inspiratoire.png" medium="image" type="image/png" height="81" width="144"/>
+  <guid>https://respiratoire.ca/billets/aide_inspiratoire/aide_inspiratoire.html</guid>
+  <pubDate>Sun, 17 Nov 2024 05:00:00 GMT</pubDate>
+  <media:content url="https://respiratoire.ca/billets/aide_inspiratoire/thumbnail.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
   <title>Zones d&#39;ombre du NAVA</title>

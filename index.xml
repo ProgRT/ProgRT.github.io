@@ -10,7 +10,7 @@
 <atom:link href="https://respiratoire.ca/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.8.26</generator>
-<lastBuildDate>Fri, 22 May 2026 04:00:00 GMT</lastBuildDate>
+<lastBuildDate>Tue, 29 Sep 2026 04:00:00 GMT</lastBuildDate>
 <item>
   <title>Apprivoiser le mode PAV+</title>
   <dc:creator>Nicolas Blais St-Laurent</dc:creator>
@@ -18,7 +18,7 @@
   <description><![CDATA[ Le mode PAV+ est un mode de ventilation spontanée continue facile à utiliser qui adapte automatiquement l’aide fournie au patient à son travail respiratoire. Cet article vise à fournir quelques clés pour faciliter son adoption. ]]></description>
   <category>Présentation</category>
   <guid>https://respiratoire.ca/billets/PAV+/article.html</guid>
-  <pubDate>Fri, 22 May 2026 04:00:00 GMT</pubDate>
+  <pubDate>Tue, 29 Sep 2026 04:00:00 GMT</pubDate>
   <media:content url="https://respiratoire.ca/billets/PAV+/img/Pavlov.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -26,8 +26,10 @@
   <dc:creator>Nicolas Blais St-Laurent</dc:creator>
   <link>https://respiratoire.ca/billets/aide_inspiratoire/aide_inspiratoire.html</link>
   <description><![CDATA[ On reconnait de plus en plus l’importance de prévenir la dysfonction diaphragmatique induite par le ventilateur. Les données les plus récentes suggèrent qu’une activité diaphragmatique excessive ou insuffisante élevé est un facteur déterminant dans le développement d’une dysfonction diaphragmatique chez les patients ventilés mécaniquement. L’ajustement de l’aide inspiratoire doit par conséquent se faire en visant le maintien d’une activité diaphragmatique adéquate. ]]></description>
+  <category>Présentation</category>
   <guid>https://respiratoire.ca/billets/aide_inspiratoire/aide_inspiratoire.html</guid>
   <pubDate>Sun, 17 Nov 2024 05:00:00 GMT</pubDate>
+  <media:content url="https://respiratoire.ca/billets/aide_inspiratoire/thumbnail.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
   <title>Ajustement du Tbas en APRV</title>
