@@ -19,10 +19,6 @@
   {
     "listing": "/index.html",
     "items": [
-      "/billets/aide_inspi/data/cas_surassistance/preview.html",
-      "/billets/aide_inspi/data/cas_surassistance/patient.html",
-      "/billets/aide_inspi/data/cas_sousassistance/commentaires.html",
-      "/billets/aide_inspi/data/cas_sousassistance/preview.html",
       "/billets/PAV+/article.html",
       "/billets/aide_inspi/article.html",
       "/billets/tbas/tbas.html",
