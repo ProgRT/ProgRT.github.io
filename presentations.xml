@@ -832,7 +832,7 @@ Table&nbsp;2: Tests de références pour la détection de la sur/sous-assistance
 <p>Le tableau suivant compare la performance diagnostique des indicateurs de travail respiratoire évalués par différentes études.</p>
 <div class="column-screen-right">
 <div class="cell" data-tbl-cap="Performance diagnostiques des différents indicateurs">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="54" data-source-offset="-1" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 53;"><span id="cb1-54">interpCol <span class="op" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="55" data-source-offset="-1" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 54;"><span id="cb1-55">interpCol <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> d3<span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -845,14 +845,14 @@ background-color: null;
 font-style: inherit;">,</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"green"</span>)</span>
-<span id="cb1-55"></span>
-<span id="cb1-56"><span class="kw" style="color: #003B4F;
+<span id="cb1-56"></span>
+<span id="cb1-57"><span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">function</span> <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">colASC</span>(x){</span>
-<span id="cb1-57">    <span class="cf" style="color: #003B4F;
+<span id="cb1-58">    <span class="cf" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">return</span> <span class="fu" style="color: #4758AB;
@@ -868,15 +868,15 @@ background-color: null;
 font-style: inherit;">5</span>)<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">;</span></span>
-<span id="cb1-58">}</span>
-<span id="cb1-59"></span>
-<span id="cb1-60"><span class="kw" style="color: #003B4F;
+<span id="cb1-59">}</span>
+<span id="cb1-60"></span>
+<span id="cb1-61"><span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">function</span> <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">fmtASC</span>(x){</span>
-<span id="cb1-61">    <span class="kw" style="color: #003B4F;
+<span id="cb1-62">    <span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">const</span> c <span class="op" style="color: #5E5E5E;
@@ -884,7 +884,7 @@ background-color: null;
 font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">colASC</span>(x)</span>
-<span id="cb1-62">    <span class="cf" style="color: #003B4F;
+<span id="cb1-63">    <span class="cf" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">return</span> <span class="fu" style="color: #4758AB;
@@ -906,15 +906,15 @@ background-color: null;
 font-style: inherit;">;"&gt;⬤&lt;/span&gt;`</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">;</span></span>
-<span id="cb1-63">}</span>
-<span id="cb1-64"></span>
-<span id="cb1-65"><span class="kw" style="color: #003B4F;
+<span id="cb1-64">}</span>
+<span id="cb1-65"></span>
+<span id="cb1-66"><span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">function</span> <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">fmtInd</span>(x){</span>
-<span id="cb1-66">    <span class="kw" style="color: #003B4F;
+<span id="cb1-67">    <span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">var</span> x <span class="op" style="color: #5E5E5E;
@@ -932,7 +932,7 @@ background-color: null;
 font-style: inherit;">"&lt;sub&gt;0.1&lt;/sub&gt;"</span>)<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">;</span></span>
-<span id="cb1-67">    <span class="kw" style="color: #003B4F;
+<span id="cb1-68">    <span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">var</span> x <span class="op" style="color: #5E5E5E;
@@ -950,7 +950,7 @@ background-color: null;
 font-style: inherit;">"&lt;sub&gt;mus&lt;/sub&gt;"</span>)<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">;</span></span>
-<span id="cb1-68">    <span class="kw" style="color: #003B4F;
+<span id="cb1-69">    <span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">var</span> x <span class="op" style="color: #5E5E5E;
@@ -968,7 +968,7 @@ background-color: null;
 font-style: inherit;">"&lt;sub&gt; es&lt;/sub&gt;"</span>)<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">;</span></span>
-<span id="cb1-69">    <span class="kw" style="color: #003B4F;
+<span id="cb1-70">    <span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">var</span> x <span class="op" style="color: #5E5E5E;
@@ -986,7 +986,7 @@ background-color: null;
 font-style: inherit;">"&lt;sub&gt;occ&lt;/sub&gt;"</span>)<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">;</span></span>
-<span id="cb1-70">    <span class="cf" style="color: #003B4F;
+<span id="cb1-71">    <span class="cf" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">return</span> <span class="fu" style="color: #4758AB;
@@ -1002,15 +1002,15 @@ background-color: null;
 font-style: inherit;">`</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">;</span></span>
-<span id="cb1-71">}</span>
-<span id="cb1-72"></span>
-<span id="cb1-73"><span class="kw" style="color: #003B4F;
+<span id="cb1-72">}</span>
+<span id="cb1-73"></span>
+<span id="cb1-74"><span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">function</span> <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">fmtCond</span>(x){</span>
-<span id="cb1-74">    <span class="kw" style="color: #003B4F;
+<span id="cb1-75">    <span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">var</span> x <span class="op" style="color: #5E5E5E;
@@ -1028,7 +1028,7 @@ background-color: null;
 font-style: inherit;">"Sur-assistance"</span>)<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">;</span></span>
-<span id="cb1-75">    <span class="kw" style="color: #003B4F;
+<span id="cb1-76">    <span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">var</span> x <span class="op" style="color: #5E5E5E;
@@ -1046,7 +1046,7 @@ background-color: null;
 font-style: inherit;">"Sous-assistance"</span>)<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">;</span></span>
-<span id="cb1-76">    <span class="cf" style="color: #003B4F;
+<span id="cb1-77">    <span class="cf" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">return</span> <span class="fu" style="color: #4758AB;
@@ -1062,78 +1062,78 @@ background-color: null;
 font-style: inherit;">`</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">;</span></span>
-<span id="cb1-77">}</span>
-<span id="cb1-78"><span class="kw" style="color: #003B4F;
+<span id="cb1-78">}</span>
+<span id="cb1-79"><span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">function</span> <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">tablePerformance</span>(dataset){</span>
-<span id="cb1-79">    <span class="kw" style="color: #003B4F;
+<span id="cb1-80">    <span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">const</span> columns <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> [</span>
-<span id="cb1-80">        <span class="st" style="color: #20794D;
+<span id="cb1-81">        <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"Étude"</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">,</span></span>
-<span id="cb1-81">        <span class="st" style="color: #20794D;
+<span id="cb1-82">        <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"Indice"</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">,</span></span>
-<span id="cb1-82">        <span class="st" style="color: #20794D;
+<span id="cb1-83">        <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"Condition"</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">,</span></span>
-<span id="cb1-83">        <span class="st" style="color: #20794D;
+<span id="cb1-84">        <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"Référence"</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">,</span></span>
-<span id="cb1-84">        <span class="st" style="color: #20794D;
+<span id="cb1-85">        <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"Seuil"</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">,</span></span>
-<span id="cb1-85">        <span class="st" style="color: #20794D;
+<span id="cb1-86">        <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"ASC"</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">,</span></span>
-<span id="cb1-86">        <span class="st" style="color: #20794D;
+<span id="cb1-87">        <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"Sen"</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">,</span></span>
-<span id="cb1-87">        <span class="st" style="color: #20794D;
+<span id="cb1-88">        <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"VPN"</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">,</span></span>
-<span id="cb1-88">        <span class="st" style="color: #20794D;
+<span id="cb1-89">        <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"Spe"</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">,</span></span>
-<span id="cb1-89">        <span class="st" style="color: #20794D;
+<span id="cb1-90">        <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"VPP"</span></span>
-<span id="cb1-90">    ]<span class="op" style="color: #5E5E5E;
+<span id="cb1-91">    ]<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">;</span></span>
-<span id="cb1-91"></span>
-<span id="cb1-92">    <span class="kw" style="color: #003B4F;
+<span id="cb1-92"></span>
+<span id="cb1-93">    <span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">const</span> header <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> {</span>
-<span id="cb1-93">        <span class="dt" style="color: #AD0000;
+<span id="cb1-94">        <span class="dt" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">Seuil</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -1142,7 +1142,7 @@ background-color: null;
 font-style: inherit;">"🎯 Seuil"</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">,</span></span>
-<span id="cb1-94">        <span class="dt" style="color: #AD0000;
+<span id="cb1-95">        <span class="dt" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">Référence</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -1151,7 +1151,7 @@ background-color: null;
 font-style: inherit;">"🍎🍊 Référence"</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">,</span></span>
-<span id="cb1-95">        <span class="dt" style="color: #AD0000;
+<span id="cb1-96">        <span class="dt" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">ASC</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -1160,7 +1160,7 @@ background-color: null;
 font-style: inherit;">"📈 Aire sous courbe"</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">,</span></span>
-<span id="cb1-96">        <span class="dt" style="color: #AD0000;
+<span id="cb1-97">        <span class="dt" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">Sen</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -1169,7 +1169,7 @@ background-color: null;
 font-style: inherit;">"Sensibilité"</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">,</span></span>
-<span id="cb1-97">        <span class="dt" style="color: #AD0000;
+<span id="cb1-98">        <span class="dt" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">Spe</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -1178,7 +1178,7 @@ background-color: null;
 font-style: inherit;">"Spécificité"</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">,</span></span>
-<span id="cb1-98">        <span class="dt" style="color: #AD0000;
+<span id="cb1-99">        <span class="dt" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">VPP</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -1187,24 +1187,24 @@ background-color: null;
 font-style: inherit;">"✅ VPP"</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">,</span></span>
-<span id="cb1-99">        <span class="dt" style="color: #AD0000;
+<span id="cb1-100">        <span class="dt" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">VPN</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">:</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"❌ VPN"</span></span>
-<span id="cb1-100">    }<span class="op" style="color: #5E5E5E;
+<span id="cb1-101">    }<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">;</span></span>
-<span id="cb1-101"></span>
-<span id="cb1-102">    <span class="kw" style="color: #003B4F;
+<span id="cb1-102"></span>
+<span id="cb1-103">    <span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">const</span> aligns <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> {</span>
-<span id="cb1-103">        <span class="dt" style="color: #AD0000;
+<span id="cb1-104">        <span class="dt" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">Seuil</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -1213,7 +1213,7 @@ background-color: null;
 font-style: inherit;">"center"</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">,</span></span>
-<span id="cb1-104">        <span class="dt" style="color: #AD0000;
+<span id="cb1-105">        <span class="dt" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">ASC</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -1222,7 +1222,7 @@ background-color: null;
 font-style: inherit;">"center"</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">,</span></span>
-<span id="cb1-105">        <span class="dt" style="color: #AD0000;
+<span id="cb1-106">        <span class="dt" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">Sen</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -1231,7 +1231,7 @@ background-color: null;
 font-style: inherit;">"center"</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">,</span></span>
-<span id="cb1-106">        <span class="dt" style="color: #AD0000;
+<span id="cb1-107">        <span class="dt" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">Spe</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -1240,18 +1240,18 @@ background-color: null;
 font-style: inherit;">"center"</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">,</span></span>
-<span id="cb1-107">        <span class="dt" style="color: #AD0000;
+<span id="cb1-108">        <span class="dt" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">Référence</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">:</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"center"</span></span>
-<span id="cb1-108">    }<span class="op" style="color: #5E5E5E;
+<span id="cb1-109">    }<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">;</span></span>
-<span id="cb1-109"></span>
-<span id="cb1-110">    <span class="cf" style="color: #003B4F;
+<span id="cb1-110"></span>
+<span id="cb1-111">    <span class="cf" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">return</span> Inputs<span class="op" style="color: #5E5E5E;
@@ -1261,28 +1261,28 @@ background-color: null;
 font-style: inherit;">table</span>(dataset<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">,</span> {</span>
-<span id="cb1-111">        <span class="dt" style="color: #AD0000;
+<span id="cb1-112">        <span class="dt" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">columns</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">:</span> columns<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">,</span></span>
-<span id="cb1-112">        <span class="dt" style="color: #AD0000;
+<span id="cb1-113">        <span class="dt" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">header</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">:</span> header<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">,</span></span>
-<span id="cb1-113">        <span class="dt" style="color: #AD0000;
+<span id="cb1-114">        <span class="dt" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">align</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">:</span> aligns<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">,</span></span>
-<span id="cb1-114">        <span class="dt" style="color: #AD0000;
+<span id="cb1-115">        <span class="dt" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">select</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -1292,49 +1292,49 @@ font-weight: bold;
 font-style: inherit;">false</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">,</span></span>
-<span id="cb1-115">        <span class="dt" style="color: #AD0000;
+<span id="cb1-116">        <span class="dt" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">format</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">:</span> {</span>
-<span id="cb1-116">            <span class="dt" style="color: #AD0000;
+<span id="cb1-117">            <span class="dt" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">ASC</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">:</span> fmtASC<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">,</span></span>
-<span id="cb1-117">            <span class="dt" style="color: #AD0000;
+<span id="cb1-118">            <span class="dt" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">Iidice</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">:</span> fmtInd<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">,</span></span>
-<span id="cb1-118">            <span class="dt" style="color: #AD0000;
+<span id="cb1-119">            <span class="dt" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">Condition</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">:</span> fmtCond</span>
-<span id="cb1-119">        }<span class="op" style="color: #5E5E5E;
+<span id="cb1-120">        }<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">,</span></span>
-<span id="cb1-120">        <span class="dt" style="color: #AD0000;
+<span id="cb1-121">        <span class="dt" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">width</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">:</span> {</span>
-<span id="cb1-121">            <span class="dt" style="color: #AD0000;
+<span id="cb1-122">            <span class="dt" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">ASC</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">:</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">250</span></span>
-<span id="cb1-122">        }<span class="op" style="color: #5E5E5E;
+<span id="cb1-123">        }<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">,</span></span>
-<span id="cb1-123">        <span class="dt" style="color: #AD0000;
+<span id="cb1-124">        <span class="dt" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">sort</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -1343,7 +1343,7 @@ background-color: null;
 font-style: inherit;">"Indice"</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">,</span></span>
-<span id="cb1-124">        <span class="dt" style="color: #AD0000;
+<span id="cb1-125">        <span class="dt" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">rows</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -1352,7 +1352,7 @@ background-color: null;
 font-style: inherit;">28</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">,</span></span>
-<span id="cb1-125">        <span class="dt" style="color: #AD0000;
+<span id="cb1-126">        <span class="dt" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">select</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -1360,12 +1360,12 @@ font-style: inherit;">:</span> <span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">false</span></span>
-<span id="cb1-126">    })</span>
-<span id="cb1-127">}</span>
-<span id="cb1-128"></span>
+<span id="cb1-127">    })</span>
+<span id="cb1-128">}</span>
 <span id="cb1-129"></span>
 <span id="cb1-130"></span>
-<span id="cb1-131">data <span class="op" style="color: #5E5E5E;
+<span id="cb1-131"></span>
+<span id="cb1-132">data <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -1385,7 +1385,7 @@ font-weight: bold;
 font-style: inherit;">true</span>})<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">;</span></span>
-<span id="cb1-132"><span class="fu" style="color: #4758AB;
+<span id="cb1-133"><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">tablePerformance</span>(data)</span></code></pre></div></div>
 <div class="cell-output cell-output-display">
